@@ -1,0 +1,41 @@
+<window>
+	<id>6</id>
+	<defaultcontrol>50</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<views>54,551,550,50,53,57</views>
+	<controls>
+		<control type="largeimage">
+			<include>FullscreenDimensions</include>
+			<visible>IsEmpty(ListItem.Art(fanart)) + [!Container().OnNext + !Container().OnPrevious]</visible>
+			<texture>$INFO[listitem.path]fanart.jpg</texture>
+			<animation effect="fade" start="0" end="100" time="1550">Visible</animation>	
+			<animation effect="fade" start="100" end="10" time="1550" delay="500">Hidden</animation>	
+		</control>
+
+		<control type="largeimage">
+			<include>FullscreenDimensions</include>
+			<visible>[Window.IsActive(25) + !Skin.HasSetting(novideofanart)] + !IsEmpty(ListItem.Art(fanart)) + [!Container().OnNext + !Container().OnPrevious]</visible>
+			<texture>$INFO[ListItem.Art(fanart)]</texture>
+			<animation effect="fade" start="0" end="100" time="1550">Visible</animation>	
+			<animation effect="fade" start="100" end="10" time="1550" delay="500">Hidden</animation>	
+		</control>
+		<include condition="!Skin.HasSetting(MissingFanartBlack)">MediaBackdropsVideo</include>   
+		<include>Furniture_HomeNowPlaying</include>
+		<include>Furniture_WallBackground</include>
+			<include>Furniture_MediaPanel</include>
+			<include>FullscreenDimensions</include>
+			<include>Animation_OpenCloseZoom</include>
+			<include>Furniture_Time</include>
+			<include>Furniture_WallTime</include>
+			<include>Furniture_WallRSS</include>
+			<include>Viewtype_List</include>
+			<include condition="!Skin.HasSetting(WallOff)">Viewtype_Wall</include>
+			<include condition="!Skin.HasSetting(SlimListOff)">Viewtype_List_Slim</include>
+			<include condition="!Skin.HasSetting(ClearListOff)">Viewtype_ClearList</include>
+			<include condition="!Skin.HasSetting(ShowcaseOff)">Viewtype_Showcase</include>
+			<include condition="!Skin.HasSetting(ListLowOff)">Viewtype_List_Low</include>
+			<include>NewMediaMenu</include>
+		<include>ScrollOffsetLabel</include>
+		<include condition="Skin.HasSetting(debug)">Furniture_Debug</include>
+	</controls>
+</window>

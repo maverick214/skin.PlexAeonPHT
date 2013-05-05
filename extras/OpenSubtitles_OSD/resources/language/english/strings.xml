@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+    <string id="0">OpenSubtitles_OSD</string>
+    <string id="1"></string>
+    <string id="2">Amet</string>
+
+
+    
+    <!-- Labels -->
+
+    <string id="630">Subtitle file downloaded and extracted as %s</string>
+    <string id="631">Extracting %s to %s</string>
+    <string id="632">Downloading %s from %s</string>
+    <string id="634">Error! %s</string>
+    <string id="636">Connecting anonymously...</string>
+    <string id="637">Connecting as %s...</string>
+    <string id="641">%s Settings</string>
+    <string id="642">Searching subtitles %s</string>
+    <string id="644">Extracted to %s</string>
+    <string id="645">Download cancelled</string>
+    <string id="647">by hash...</string>
+    <string id="648">by name...</string>
+
+
+    <!-- OSDB Messages -->
+    <string id="730">OSDB server name missing</string>
+    <string id="731">XMLRPC %s: %s</string>
+    <string id="732">LogIn</string>
+    <string id="733">LogOut</string>
+    <string id="734">GetSubLanguages</string>
+    <string id="735">CheckMovieHash</string>
+    <string id="736">SearchSubtitles</string>
+    <string id="737">Not connected to osdb server</string>
+    <string id="738">Hashing %s not found</string>
+    <string id="739">Hashing %s %s</string>
+    <string id="740">File found on share, remote files not supported</string>
+    <string id="743">HTTP %s: %s</string>
+    
+    
+    <!-- tarnslate below this line -->
+    <string id="500">You have not selected a valid language.</string>
+    <string id="501">Would you like to set a custom subtitles folder?</string>
+    <string id="502">Language selection</string>
+    <string id="503">Select default language</string>
+    <string id="504">Please choose subtitle folder</string>
+    <string id="505">Please choose prefered service</string>
+    <string id="506">Do you want to specify new settings?</string>
+    <string id="601">Items marked</string>
+    <string id="602">work better</string>
+    <string id="610">Search OpenSubtitles.org</string>
+    <string id="611">Search Sublight.si</string>
+    <string id="612">Manually enter search string</string>
+    <string id="633">Downloading file</string>
+    <string id="635">Connected</string>
+    <string id="642">Searching subtitles %s</string>
+    <string id="646">Connecting...</string>
+    <string id="649">Downloading subtitles...</string>
+    <string id="650">Extracting subtitles...</string>
+    <string id="651">Subtitles extracted</string>
+    <string id="652">Subtitles file downloaded and extracted</string>
+    <string id="653">Connection failed</string>
+    <string id="654">Error extracting subtitles</string>
+    <string id="741">No subtitles found</string>
+    <string id="742">%s subtitles found</string>
+    <string id="744">%s subtitles found for "%s"</string>
+    
+</strings>

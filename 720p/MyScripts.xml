@@ -1,0 +1,31 @@
+<window id="20">
+	<defaultcontrol>50</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<views>550,50,57,53</views>
+	<controls>
+		<control type="multiimage">
+			<include>BackgroundVarsGlobal</include>
+			<include>BackgroundVarsScripts</include>
+		</control>
+
+		<include>Furniture_WallBackground</include>
+		<control type="group">
+
+			<include>FullscreenDimensions</include>
+			<include>Animation_OpenCloseZoom</include>
+			<include>Furniture_Time</include>
+			<include>Furniture_MediaPanel</include>
+			<include>Viewtype_Wall</include>
+			<include>Furniture_WallTime</include>
+			<include>Furniture_WallRSS</include>
+			<include>Viewtype_List_Slim</include>
+			<include>Viewtype_List</include>
+			<include>Viewtype_Showcase</include>
+			<include>NewMediaMenu</include>
+		</control>
+
+		<include>Furniture_DarkGradient</include>
+		<!--<include>Background_ContextBlack</include>-->
+		<include>Furniture_Debug</include>
+	</controls>
+</window>

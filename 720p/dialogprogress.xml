@@ -1,0 +1,187 @@
+<window id="101">
+	<zorder>1</zorder>
+	<coordinates>
+	<system>1</system>
+	<posx>0</posx>
+	<posy>0</posy>
+	</coordinates>
+<!--	<include>Animation_DialogPopup</include> -->
+	<controls>
+
+
+<!--    Spinning DVD Animation
+
+		<control type="image">
+			<visible>true</visible>		
+			<description>Cd overlay</description>
+
+
+			<animation type="Visible">
+    		<effect type="slide" start="-50,0" end="0,0" time="300" tween="cubic" easing="out"/> 
+			<condition type="!Player.Playing"/>
+			</animation>
+
+			<animation type="WindowClose">
+    		<effect type="slide" start="0,0" end="-80,0" time="800" tween="cubic" easing="in"/> 
+			<effect type="fade" start="90" end="0" time="800" delay="500"/>
+			<condition type="!Player.Playing"/>
+			</animation>
+
+           <animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="true" condition="true">Conditional</animation>
+			<width>270</width>
+			<height>228</height>
+			<posx>-170</posx>
+			<posy>250</posy>
+			<texture>defaultDVD.png</texture>
+			<aspectratio align="bottom">keep</aspectratio>
+		</control>
+-->		
+
+<!--- New Spining Buffer --> 
+
+
+
+		<control type="image">
+			<posx>595</posx>
+			<posy>295</posy>
+			<width>95</width>
+			<height>88</height>
+			<aspectratio scalediffuse="false">scale</aspectratio>		
+			<texture diffuse="thumbs/cdcover_mask.png">AnimProgress.gif</texture>		
+			<bordertexture border="-11">thumbs/cd_shadow.png</bordertexture>
+   		    <colordiffuse>EFFFFFFF</colordiffuse>
+		</control>
+		
+		<control type="label">
+			<posx>608</posx>
+			<posy>340</posy>
+			<width>100</width>
+			<height>43</height>
+			<textcolor>CFFFFFFF</textcolor>
+			<label>Loading...</label>
+			<font>ProgressLoading</font>
+			<aligny>center</aligny>	
+		</control>
+
+		<control type="largeimage">
+			<posx>595</posx>
+			<posy>295</posy>
+			<width>95</width>
+			<height>88</height>
+			<texture diffuse="thumbs/cdcover_mask.png">thumbs/poster_glass_noedge.png</texture>		
+			<aspectratio scalediffuse="false">scale</aspectratio>		
+		</control>
+
+
+<!-- Old Aeon Buffering dialogs -->
+<!--
+	<control type="group">
+		<visible>Skin.HasSetting(StarkDialogs)</visible>
+		<animation effect="fade" time="200">WindowClose</animation>
+		<include>Dialogs_Group</include>
+		<include>Dialogs_Tablet</include>
+		<include>Dialogs_HardDrive</include>
+		<control type="progress" id="404">
+			<include>Dialogs_Progress</include>
+			<info>System.Progressbar</info>
+		</control>
+		<control type="label" id="1">
+			<include>Dialogs_Label1</include>
+		</control>
+		<control type="label" id="2">
+			<include>Dialogs_Label2</include>
+		</control>
+		<control type="label" id="3">
+			<include>Dialogs_Label3</include>
+		</control>
+		<control type="label" id="4">
+			<include>Dialogs_Label4</include>
+		</control>
+		<control type="button" id="10">
+        	<description>Cancel Button</description>
+		    <label>$LOCALIZE[222]</label>
+	    	<include>DialogButton</include>
+    	 </control>
+	</control>
+
+	<control type="group" id="901">
+		<posx>287</posx>
+		<posy>520</posy>
+		<width>707</width>
+		<height>183</height>
+		<visible>!Skin.HasSetting(StarkDialogs)</visible>
+		<animation effect="fade" time="200">WindowClose</animation>
+	
+		<control type="progress" id="20">
+			<description>Progressbar</description>
+			<posx>10</posx>
+			<posy>10</posy>
+			<width>688</width>
+			<height>163</height>
+			<texturebg>dialogs/progress_clear.png</texturebg>
+			<lefttexture>dialogs/progress_lefty.png</lefttexture>
+			<midtexture>dialogs/progress_middle2.png</midtexture>
+			<righttexture>dialogs/progress_righty.png</righttexture>
+			<overlaytexture>-</overlaytexture>
+		</control>
+
+		<control type="image">
+			<posx>10</posx>
+			<posy>10</posy>
+			<width>688</width>
+			<height>163</height>
+			<texture>dialogs/progress_backg.png</texture>		
+		</control>
+		
+		<control type="label" id="1">
+			<description>Heading Label</description>
+			<posx>40</posx>
+			<posy>55</posy>
+			<width>627</width>
+			<height>51</height>
+			<textcolor>a7ffffff</textcolor>
+			<align>center</align>
+			<font>Font_ProgressLabelSmall</font>
+		</control>
+		
+		<control type="label" id="2">
+			<description>Path</description>
+			<posx>40</posx>
+			<posy>75</posy>
+			<width>627</width>
+			<height>51</height>
+			<textcolor>a7ffffff</textcolor>
+			<align>center</align>
+			<font>Font_ProgressLabelSmall</font>
+		</control>
+
+		<control type="label" id="3">
+			<description>Heading Label</description>
+			<posx>40</posx>
+			<posy>95</posy>
+			<width>627</width>
+			<height>51</height>
+			<textcolor>a7ffffff</textcolor>
+			<align>center</align>
+			<font>Font_ProgressLabelSmall</font>
+			<visible>!Control.IsVisible(4)</visible>
+		</control>
+		
+		<control type="label" id="4">
+			<description>Path</description>
+			<posx>40</posx>
+			<posy>95</posy>
+			<width>627</width>
+			<height>51</height>
+			<align>center</align>
+			<font>Font_ProgressLabelBig</font>
+			<textcolor>d0ffffff</textcolor>
+			<label>-</label>
+			<include>DialogInfo</include>
+			<scroll>true</scroll>
+		</control>
+	</control>
+-->
+
+</controls>
+</window>

@@ -1,0 +1,258 @@
+<includes>
+
+<include name="Viewtype_MultiplexOld">
+	<control type="group">
+		<visible>Control.IsVisible(553)</visible>
+		<include>Animation_OpenCloseZoom</include>
+		<include>OldMultiplexInfoPaneTV</include>
+		<include>OldMultiplexInfoPaneMovies</include>
+		<include>OldMultiplexBaseTV</include>
+		<include>OldMultiplexBaseMovies</include>
+		<include>Furniture_MultiplexMediaFlags</include>
+		<include>OldMultiplexLabelsMovies</include>
+
+	    <control type="group">
+	        <visible>Window.IsActive(28) | [Window.IsActive(25) + !Container.Content(episodes)] | Window.IsActive(1)</visible>
+	        <include>CoverflowMovies</include>
+	    </control>
+	    <control type="group">
+	        <visible>Window.IsActive(20) | Window.IsActive(500) | Window.IsActive(502) | Window.IsActive(501) | Window.IsActive(2) | Container.Content(episodes)</visible>
+	        <include>CoverflowSquare</include>
+	    </control>
+	    <control type="group">
+	        <control type="fixedlist" id="553">
+	            <viewtype label="31582">list</viewtype>
+				<posx>-83</posx>
+				<posy>460</posy>
+				<width>2000</width>
+				<height>350</height>			
+	            <onleft>553</onleft>
+	            <onright>553</onright>
+	            <onup>7000</onup>
+	            <ondown>60</ondown>
+	            <pagecontrol>60</pagecontrol>
+	            <orientation>horizontal</orientation>
+				<scrolltime>300</scrolltime>
+	            <focusposition>6</focusposition>
+				<animation effect="slide" start="0,0" end="-380,35" condition="Container.Content(episodes)">Conditional</animation>
+               	<itemlayout condition="!Container.Content(episodes)" height="350" width="106">
+	  			<control type="group">
+					<animation effect="zoom" start="55" end="55" center="auto" condition="!Control.HasFocus(55)">Conditional</animation>
+                    <control type="largeimage">
+                        <include>MovieFlowThumbMain</include>
+                        <info>ListItem.Icon</info>
+						<visible>!Control.IsVisible(9000)</visible>
+                    </control>
+                    <control type="largeimage">
+                        <description>Glass overlay</description>
+                        <include>MovieFlowGlassOverlay</include>
+						<visible>!Control.IsVisible(9000)</visible>
+                    </control>
+				<control type="largeimage">
+					<posx>152</posx>
+					<posy>220</posy>
+					<width>70</width>
+					<height>40</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[ListItem.Property(mediaTag-videoResolution),hd/,.png]</texture>
+					<visible>!Skin.HasSetting(HDiconOff)</visible>
+				</control>
+				<control type="largeimage">
+					<posx>141</posx>
+					<posy>5</posy>
+					<width>80</width>
+					<height>80</height>
+					<visible>Skin.HasSetting(BlueDot)</visible>
+					<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
+					<info>ListItem.Overlay</info>
+				</control>
+				<control type="largeimage">
+					<posx>141</posx>
+					<posy>5</posy>
+					<width>80</width>
+					<height>80</height>
+					<visible>!Skin.HasSetting(BlueDot)</visible>
+					<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
+					<texture>NewLabel/$INFO[ListItem.overlay]</texture>
+				</control>
+                </control>
+				</itemlayout>
+                <focusedlayout condition="!Container.Content(episodes)" height="350" width="106">
+	   			 <control type="group">
+						<animation effect="zoom" start="55" end="55" center="auto" condition="!Control.HasFocus(55)">Conditional</animation>
+                    <control type="largeimage">
+                        <include>MovieFlowThumbMain</include>
+                        <info>ListItem.Icon</info>
+						<visible>!Control.IsVisible(9000)</visible>
+						<animation effect="zoom" start="100" end="120" center="135,130" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
+						<animation effect="zoom" start="120" end="100" center="135,130" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(55)">Unfocus</animation>
+                    </control>
+                    <control type="largeimage">
+                        <description>Glass overlay</description>
+                        <include>MovieFlowGlassOverlay</include>
+						<visible>!Control.IsVisible(9000)</visible>
+						<animation effect="zoom" start="100" end="120" center="135,130" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
+						<animation effect="zoom" start="120" end="100" center="135,130" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(55)">Unfocus</animation>
+					</control>
+				<control type="largeimage">
+					<posx>152</posx>
+					<posy>220</posy>
+					<width>70</width>
+					<height>40</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[ListItem.Property(mediaTag-videoResolution),hd/,.png]</texture>
+			   		<animation effect="fade" start="90" end="90" time="0" condition="true">Conditional</animation>
+					<animation effect="zoom" start="100" end="120" center="135,130" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
+					<animation effect="zoom" start="120" end="100" center="135,130" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(55)">Unfocus</animation>
+					<visible>!Skin.HasSetting(HDiconOff)</visible>
+				</control>
+				<control type="largeimage">
+					<posx>141</posx>
+					<posy>5</posy>
+					<width>80</width>
+					<height>80</height>
+					<visible>Skin.HasSetting(BlueDot)</visible>
+					<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
+					<info>ListItem.Overlay</info>
+					<animation effect="zoom" start="100" end="120" center="135,130" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
+					<animation effect="zoom" start="120" end="100" center="135,130" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(55)">Unfocus</animation>
+				</control>
+				<control type="largeimage">
+					<posx>141</posx>
+					<posy>5</posy>
+					<width>80</width>
+					<height>80</height>
+					<visible>!Skin.HasSetting(BlueDot)</visible>
+					<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
+					<texture>NewLabel/$INFO[ListItem.overlay]</texture>
+					<animation effect="zoom" start="100" end="120" center="135,130" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
+					<animation effect="zoom" start="120" end="100" center="135,130" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(55)">Unfocus</animation>
+				</control>
+                   </control>
+				</focusedlayout>
+ 
+               <itemlayout condition="Container.Content(episodes)" height="226" width="225">
+	   			 <control type="group">
+						<animation effect="zoom" start="50" end="50" center="auto" condition="!Control.HasFocus(55)">Conditional</animation>
+                    <control type="largeimage">
+						<texture diffuse="osd/bookmark_mask.png">defaultvideobig.png</texture>
+	   					<aspectratio scalediffuse="false">scale</aspectratio>
+	   					<posx>-815</posx>
+	   					<posy>20</posy>
+	 					<width>400</width>
+	    				<height>226</height>
+                        <info>ListItem.Icon</info>
+						<visible>!Control.IsVisible(9000) + Container.Content(episodes)</visible>
+                    </control>
+					<control type="largeimage">
+						<posx>-501</posx>
+						<posy>11</posy>
+						<width>80</width>
+						<height>80</height>
+						<visible>Skin.HasSetting(BlueDot)</visible>
+						<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
+						<info>ListItem.Overlay</info>
+					</control>
+					<control type="largeimage">
+						<posx>-521</posx>
+						<posy>12</posy>
+						<width>110</width>
+						<height>110</height>
+						<visible>!Skin.HasSetting(BlueDot)</visible>
+						<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
+						<texture>NewLabel/episode/$INFO[ListItem.overlay]</texture>
+					</control>
+		   			</control>
+				</itemlayout>
+                <focusedlayout condition="Container.Content(episodes)" height="226" width="225">
+	   			 <control type="group">
+						<animation effect="zoom" start="50" end="50" center="auto" condition="!Control.HasFocus(55)">Conditional</animation>
+                    <control type="largeimage">
+						<texture diffuse="osd/bookmark_mask.png">defaultvideobig.png</texture>
+	   					<aspectratio scalediffuse="false">scale</aspectratio>
+	    				<posx>-815</posx>
+	    				<posy>20</posy>
+	   				    <width>400</width>
+	   					<height>226</height>
+                        <info>ListItem.Icon</info>
+						<visible>!Control.IsVisible(9000) + Container.Content(episodes)</visible>
+						<animation effect="zoom" start="100" end="120" center="auto" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
+						<animation effect="zoom" start="120" end="100" center="auto" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(55)">Unfocus</animation>
+                   </control>
+					<control type="largeimage">
+						<posx>-501</posx>
+						<posy>11</posy>
+						<width>80</width>
+						<height>80</height>
+						<visible>Skin.HasSetting(BlueDot)</visible>
+						<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
+						<info>ListItem.Overlay</info>
+						<animation effect="zoom" center="-616,135" start="100" end="120" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
+						<animation effect="zoom" start="120" end="100" center="-616,135" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(55)">Unfocus</animation>
+					</control>
+					<control type="largeimage">
+						<posx>-521</posx>
+						<posy>12</posy>
+						<width>110</width>
+						<height>110</height>
+						<visible>!Skin.HasSetting(BlueDot)</visible>
+						<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
+						<texture>NewLabel/episode/$INFO[ListItem.overlay]</texture>
+						<animation effect="zoom" center="-616,135" start="100" end="120" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
+						<animation effect="zoom" start="120" end="100" center="-616,135" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(55)">Unfocus</animation>
+					</control>
+		   			</control>
+				</focusedlayout>
+	        </control>
+
+	        </control>
+		<control type="button" id="110">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>0</width>
+			<height>0</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onleft>553</onleft>
+			<onright>553</onright>
+			<onup>7000</onup>
+			<ondown>553</ondown>
+		</control>
+		<control type="scrollbar" id="60">
+			<description>My first scroll bar control</description>
+			<posx>67</posx>
+			<posy>673</posy>
+			<width>1147</width>
+			<height>41</height>
+			<visible allowhiddenfocus="true">Control.IsVisible(553) + Control.HasFocus(60) + !Control.IsVisible(105)</visible>
+			<texturesliderbackground>stripshow/stripshow_scrollbar.png</texturesliderbackground>
+			<texturesliderbar>-</texturesliderbar>
+			<texturesliderbarfocus>-</texturesliderbarfocus>
+			<textureslidernib>windows/scrollbarnub-nofocus.png</textureslidernib>
+			<textureslidernibfocus>windows/scrollbarnub-focus.png</textureslidernibfocus>
+			<pulseonselect/>
+			<orientation>horizontal</orientation>
+			<showonepage>false</showonepage>
+			<onup>553</onup>
+			<ondown>197</ondown>
+			<onleft>60</onleft>
+			<onright>60</onright>
+			<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+			<include>Animation_HideMultiplex</include>
+		</control>
+		<control type="button" id="197">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>0</width>
+			<height>0</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onleft>553</onleft>
+			<onright>553</onright>
+			<onup>553</onup>
+			<ondown>553</ondown>
+		</control>
+	</control>
+
+	</include>
+</includes>

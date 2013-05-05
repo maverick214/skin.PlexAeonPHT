@@ -1,0 +1,1357 @@
+<includes>
+	<!-- Wall view mod -->
+	<include name="WallInfoPaneTopLeft">
+		<width>442</width>
+		<height>432</height>
+		<texture>wall/info_pane_topleft.png</texture>
+	</include>
+
+	<include name="WallInfoPaneTopLeftTitle">
+		<posy>-10</posy>
+		<width>442</width>
+		<height>442</height>
+		<texture>wall/info_pane_topleft_title.png</texture>
+	</include>
+
+	<include name="WallInfoPaneMidLeft">
+		<width>442</width>
+		<height>432</height>
+		<texture>wall/info_pane_midleft.png</texture>
+	</include>
+
+	<include name="WallInfoPaneMidLeftTitle">
+		<posy>-10</posy>
+		<width>442</width>
+		<height>442</height>
+		<texture>wall/info_pane_midleft_title.png</texture>
+	</include>
+
+	<include name="WallInfoPaneBottomLeft">
+		<width>442</width>
+		<height>432</height>
+		<texture>wall/info_pane_bottomleft.png</texture>
+	</include>
+
+	<include name="WallInfoPaneBottomLeftTitle">
+		<posy>-10</posy>
+		<width>442</width>
+		<height>442</height>
+		<texture>wall/info_pane_bottomleft_title.png</texture>
+	</include>
+
+	<include name="WallInfoPaneTopRight">
+		<width>442</width>
+		<height>432</height>
+		<texture>wall/info_pane_topright.png</texture>
+	</include>
+
+	<include name="WallInfoPaneTopRightTitle">
+		<posy>-10</posy>
+		<width>442</width>
+		<height>442</height>
+		<texture>wall/info_pane_topright_title.png</texture>
+	</include>
+
+	<include name="WallInfoPaneMidRight">
+		<width>442</width>
+		<height>432</height>
+		<texture>wall/info_pane_midright.png</texture>
+	</include>
+
+	<include name="WallInfoPaneMidRightTitle">
+		<posy>-10</posy>
+		<width>442</width>
+		<height>442</height>
+		<texture>wall/info_pane_midright_title.png</texture>
+	</include>
+
+	<include name="WallInfoPaneBottomRight">
+		<width>442</width>
+		<height>432</height>
+		<texture>wall/info_pane_bottomright.png</texture>
+	</include>
+
+	<include name="WallInfoPaneBottomRightTitle">
+		<posy>-10</posy>
+		<width>442</width>
+		<height>442</height>
+		<texture>wall/info_pane_bottomright_title.png</texture>
+	</include>
+
+	<include name="WallInfoLabel">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>187</width>
+		<height>13</height>
+		<font>Font_WallInfoLabel</font>
+		<textcolor>abFFFFFF</textcolor>
+	</include>
+
+	<include name="WallInfoValue">
+		<posx>0</posx>
+		<posy>14</posy>
+		<width>187</width>
+		<height>13</height>
+		<font>Font_WallInfoValue</font>
+		<textcolor>FFFFFFFF</textcolor>
+	</include>
+
+	<include name="WallTitleLabel">
+		<posx>0</posx>
+		<posy>-25</posy>
+		<width>394</width>
+		<height>17</height>
+		<align>center</align>
+		<font>Font_WallTitleMod</font>
+		<textcolor>cdFFFFFF</textcolor>
+	</include>
+
+	<include name="WallInfoPanelMovieInfoTitle">
+		<control type="group">
+
+			<control type="label">
+				<include>WallTitleLabel</include>
+				<label>$INFO[ListItem.Title]</label>
+			</control>
+
+		</control>
+
+	</include>
+
+	<include name="WallInfoPaneMovieInfo">
+		<control type="group">
+
+			<posx>19</posx>
+			<posy>25</posy>
+			<include condition="Skin.HasSetting(showtitle)">WallInfoPanelMovieInfoTitle</include>
+			<control type="group">
+
+				<control type="label">
+					<include>WallInfoLabel</include>
+					<label>$LOCALIZE[31402]:</label>
+				</control>
+
+				<control type="label">
+					<include>WallInfoValue</include>
+					<label fallback="31425">$INFO[ListItem.Property(FirstDirector)]</label>
+				</control>
+
+			</control>
+
+			<control type="group">
+
+				<posy>38</posy>
+				<control type="label">
+					<include>WallInfoLabel</include>
+					<label>$LOCALIZE[31401]:</label>
+				</control>
+
+				<control type="label">
+					<include>WallInfoValue</include>
+					<label fallback="31425">$INFO[ListItem.Property(FirstWriter)]</label>
+				</control>
+
+			</control>
+
+			<control type="group">
+
+				<posy>76</posy>
+				<control type="label">
+					<include>WallInfoLabel</include>
+					<label>$LOCALIZE[31436]:</label>
+				</control>
+
+				<control type="label">
+					<include>WallInfoValue</include>
+					<label fallback="31425">$INFO[ListItem.Year]</label>
+				</control>
+
+			</control>
+
+			<control type="group">
+
+				<posx>208</posx>
+				<control type="label">
+					<include>WallInfoLabel</include>
+					<label>$LOCALIZE[12391]:</label>
+				</control>
+
+				<control type="label">
+					<include>WallInfoValue</include>
+					<label fallback="31425">$INFO[ListItem.Duration]</label>
+				</control>
+
+			</control>
+
+			<control type="group">
+
+				<posy>38</posy>
+				<posx>208</posx>
+				<control type="label">
+					<include>WallInfoLabel</include>
+					<label>$LOCALIZE[31417]:</label>
+				</control>
+
+				<control type="label">
+					<include>WallInfoValue</include>
+					<label fallback="31425">$INFO[ListItem.MPAA]</label>
+				</control>
+
+			</control>
+
+			<control type="group">
+
+				<posy>76</posy>
+				<posx>208</posx>
+				<control type="label">
+					<include>WallInfoLabel</include>
+					<label>$LOCALIZE[31408]:</label>
+				</control>
+
+				<control type="label">
+					<include>WallInfoValue</include>
+					<label fallback="31425">$INFO[ListItem.Rating]</label>
+				</control>
+
+			</control>
+
+			<control type="textbox">
+				<posy>113</posy>
+				<posx>0</posx>
+				<width>395</width>
+				<height>128</height>
+				<font>Font_WallPlot</font>
+				<info>Container(53).ListItem.Plot</info>
+				<textcolor>d0FFFFFF</textcolor>
+				<autoscroll delay="15000" time="2000" repeat="10000">Skin.HasSetting(allowscroll)</autoscroll>
+			</control>
+
+			<control type="group">
+
+				<posx>4</posx>
+				<posy>259</posy>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>187</width>
+					<height>113</height>
+					<texture>common/black.png</texture>
+					<colordiffuse>94FFFFFF</colordiffuse>
+				</control>
+
+				<control type="largeimage">
+					<posx>1</posx>
+					<posy>1</posy>
+					<width>185</width>
+					<height>111</height>
+					<aspectratio>scale</aspectratio>
+					<fadetime>400</fadetime>
+					<texture>$INFO[ListItem.Art(fanart)]</texture>
+				</control>
+<!--
+				<control type="image">
+					<posx>200</posx>
+					<posy>0</posy>
+					<width>187</width>
+					<height>113</height>
+					<texture>common/black.png</texture>
+					<colordiffuse>94FFFFFF</colordiffuse>
+				</control>
+
+				<control type="largeimage">
+					<posx>201</posx>
+					<posy>1</posy>
+					<width>185</width>
+					<height>111</height>
+					<aspectratio>scale</aspectratio>
+					<fadetime>400</fadetime>
+					<texture>$INFO[ListItem.Path,,extrathumbs/thumb2.jpg]</texture>
+				</control>
+-->
+			</control>
+
+		</control>
+
+	</include>
+
+	<include name="WallInfoAnimation">
+		<animation type="Visible" reversible="false">
+			<effect type="fade" start="0" end="100" time="400" delay="3085" />
+			<effect type="zoom" center="auto" start="0" end="100" time="550" delay="5000" tween="back" acceleration="-2" />
+		</animation>
+	</include>
+
+	<include name="WallInfoOpenAnimationAuto">
+		<animation type="WindowOpen" reversible="false">
+			<effect type="fade" start="0" end="100" time="400" delay="3085" />
+			<effect type="zoom" center="auto" start="0" end="100" time="550" delay="5000" tween="back" acceleration="-2" />
+		</animation>
+	</include>
+
+	<include name="WallInfoOpenAnimationOn">
+		<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+	</include>
+
+	<include name="WallInfoPaneMoviesVars">
+		<width>442</width>
+		<height>432</height>
+		<include>WallInfoOpenAnimationAuto</include>
+<!--		<include condition="Skin.HasSetting(wallinfoon)">WallInfoOpenAnimationOn</include> -->
+		<animation effect="fade" end="0" time="200">WindowClose</animation>
+		<include>WallInfoAnimation</include>
+		<visible>Container.Content(movies) + Control.HasFocus(53) + [Window.IsActive(25) | Window.IsActive(1)]</visible>
+	</include>
+
+	<include name="WallInfoPaneMoviesBig">
+		<!-- Column 0 -->
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>240</posx>
+			<posy>144</posy>
+			<visible>Container(53).Column(0) + Container(53).Row(0)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneTopRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneTopRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>240</posx>
+			<posy>144</posy>
+			<visible>Container(53).Column(0) + Container(53).Row(1)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>240</posx>
+			<posy>144</posy>
+			<visible>Container(53).Column(0) + Container(53).Row(2)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneBottomRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneBottomRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<!-- Column 1 -->
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>362</posx>
+			<posy>144</posy>
+			<visible>Container(53).Column(1) + Container(53).Row(0)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneTopRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneTopRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>362</posx>
+			<posy>144</posy>
+			<visible>Container(53).Column(1) + Container(53).Row(1)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>362</posx>
+			<posy>144</posy>
+			<visible>Container(53).Column(1) + Container(53).Row(2)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneBottomRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneBottomRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<!-- Column 2 -->
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>485</posx>
+			<posy>144</posy>
+			<visible>Container(53).Column(2) + Container(53).Row(0)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneTopRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneTopRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>485</posx>
+			<posy>144</posy>
+			<visible>Container(53).Column(2) + Container(53).Row(1)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>485</posx>
+			<posy>144</posy>
+			<visible>Container(53).Column(2) + Container(53).Row(2)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneBottomRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneBottomRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<!-- Column 3 -->
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>607</posx>
+			<posy>144</posy>
+			<visible>Container(53).Column(3) + Container(53).Row(0)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneTopRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneTopRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>607</posx>
+			<posy>144</posy>
+			<visible>Container(53).Column(3) + Container(53).Row(1)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>607</posx>
+			<posy>144</posy>
+			<visible>Container(53).Column(3) + Container(53).Row(2)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneBottomRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneBottomRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<!-- Column 4 -->
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>113</posx>
+			<posy>144</posy>
+			<visible>Container(53).Column(4) + Container(53).Row(0)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneTopLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneTopLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>113</posx>
+			<posy>144</posy>
+			<visible>Container(53).Column(4) + Container(53).Row(1)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>113</posx>
+			<posy>144</posy>
+			<visible>Container(53).Column(4) + Container(53).Row(2)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneBottomLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneBottomLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<!-- Column 5 -->
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>236</posx>
+			<posy>144</posy>
+			<visible>Container(53).Column(5) + Container(53).Row(0)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneTopLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneTopLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>236</posx>
+			<posy>144</posy>
+			<visible>Container(53).Column(5) + Container(53).Row(1)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>236</posx>
+			<posy>144</posy>
+			<visible>Container(53).Column(5) + Container(53).Row(2)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneBottomLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneBottomLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<!-- Column 6 -->
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>358</posx>
+			<posy>144</posy>
+			<visible>Container(53).Column(6) + Container(53).Row(0)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneTopLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneTopLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>358</posx>
+			<posy>144</posy>
+			<visible>Container(53).Column(6) + Container(53).Row(1)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>358</posx>
+			<posy>144</posy>
+			<visible>Container(53).Column(6) + Container(53).Row(2)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneBottomLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneBottomLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<!-- Column 7 -->
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>481</posx>
+			<posy>144</posy>
+			<visible>Container(53).Column(7) + Container(53).Row(0)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneTopLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneTopLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>481</posx>
+			<posy>144</posy>
+			<visible>Container(53).Column(7) + Container(53).Row(1)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>481</posx>
+			<posy>144</posy>
+			<visible>Container(53).Column(7) + Container(53).Row(2)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneBottomLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneBottomLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<!-- Column 8 -->
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>604</posx>
+			<posy>144</posy>
+			<visible>Container(53).Column(8) + Container(53).Row(0)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneTopLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneTopLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>604</posx>
+			<posy>144</posy>
+			<visible>Container(53).Column(8) + Container(53).Row(1)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>604</posx>
+			<posy>144</posy>
+			<visible>Container(53).Column(8) + Container(53).Row(2)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneBottomLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneBottomLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+	</include>
+
+	<include name="WallInfoPaneMoviesSmall">
+		<!-- Column 0 -->
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>211</posx>
+			<posy>104</posy>
+			<visible>Container(53).Column(0) + Container(53).Row(0)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneTopRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneTopRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>211</posx>
+			<posy>71</posy>
+			<visible>Container(53).Column(0) + Container(53).Row(1)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>211</posx>
+			<posy>216</posy>
+			<visible>Container(53).Column(0) + Container(53).Row(2)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>211</posx>
+			<posy>185</posy>
+			<visible>Container(53).Column(0) + Container(53).Row(3)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneBottomRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneBottomRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<!-- Column 1 -->
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>312</posx>
+			<posy>104</posy>
+			<visible>Container(53).Column(1) + Container(53).Row(0)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneTopRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneTopRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>312</posx>
+			<posy>71</posy>
+			<visible>Container(53).Column(1) + Container(53).Row(1)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>312</posx>
+			<posy>216</posy>
+			<visible>Container(53).Column(1) + Container(53).Row(2)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>312</posx>
+			<posy>185</posy>
+			<visible>Container(53).Column(1) + Container(53).Row(3)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneBottomRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneBottomRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<!-- Column 2 -->
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>413</posx>
+			<posy>104</posy>
+			<visible>Container(53).Column(2) + Container(53).Row(0)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneTopRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneTopRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>413</posx>
+			<posy>71</posy>
+			<visible>Container(53).Column(2) + Container(53).Row(1)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>413</posx>
+			<posy>216</posy>
+			<visible>Container(53).Column(2) + Container(53).Row(2)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>413</posx>
+			<posy>185</posy>
+			<visible>Container(53).Column(2) + Container(53).Row(3)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneBottomRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneBottomRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<!-- Column 3 -->
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>514</posx>
+			<posy>104</posy>
+			<visible>Container(53).Column(3) + Container(53).Row(0)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneTopRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneTopRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>514</posx>
+			<posy>71</posy>
+			<visible>Container(53).Column(3) + Container(53).Row(1)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>514</posx>
+			<posy>216</posy>
+			<visible>Container(53).Column(3) + Container(53).Row(2)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>514</posx>
+			<posy>185</posy>
+			<visible>Container(53).Column(3) + Container(53).Row(3)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneBottomRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneBottomRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<!-- Column 4 -->
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>615</posx>
+			<posy>104</posy>
+			<visible>Container(53).Column(4) + Container(53).Row(0)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneTopRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneTopRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>615</posx>
+			<posy>71</posy>
+			<visible>Container(53).Column(4) + Container(53).Row(1)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>615</posx>
+			<posy>216</posy>
+			<visible>Container(53).Column(4) + Container(53).Row(2)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>615</posx>
+			<posy>185</posy>
+			<visible>Container(53).Column(4) + Container(53).Row(3)</visible>
+			<control type="image">
+				<posx>-9</posx>
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneBottomRight</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneBottomRightTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<!-- Column 5 -->
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>130</posx>
+			<posy>104</posy>
+			<visible>Container(53).Column(5) + Container(53).Row(0)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneTopLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneTopLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>130</posx>
+			<posy>71</posy>
+			<visible>Container(53).Column(5) + Container(53).Row(1)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>130</posx>
+			<posy>216</posy>
+			<visible>Container(53).Column(5) + Container(53).Row(2)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>130</posx>
+			<posy>185</posy>
+			<visible>Container(53).Column(5) + Container(53).Row(3)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneBottomLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneBottomLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<!-- Column 6 -->
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>231</posx>
+			<posy>104</posy>
+			<visible>Container(53).Column(6) + Container(53).Row(0)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneTopLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneTopLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>231</posx>
+			<posy>71</posy>
+			<visible>Container(53).Column(6) + Container(53).Row(1)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>231</posx>
+			<posy>216</posy>
+			<visible>Container(53).Column(6) + Container(53).Row(2)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>231</posx>
+			<posy>185</posy>
+			<visible>Container(53).Column(6) + Container(53).Row(3)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneBottomLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneBottomLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<!-- Column 7 -->
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>332</posx>
+			<posy>104</posy>
+			<visible>Container(53).Column(7) + Container(53).Row(0)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneTopLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneTopLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>332</posx>
+			<posy>71</posy>
+			<visible>Container(53).Column(7) + Container(53).Row(1)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>332</posx>
+			<posy>216</posy>
+			<visible>Container(53).Column(7) + Container(53).Row(2)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>332</posx>
+			<posy>185</posy>
+			<visible>Container(53).Column(7) + Container(53).Row(3)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneBottomLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneBottomLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<!-- Column 8 -->
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>433</posx>
+			<posy>104</posy>
+			<visible>Container(53).Column(8) + Container(53).Row(0)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneTopLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneTopLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>433</posx>
+			<posy>71</posy>
+			<visible>Container(53).Column(8) + Container(53).Row(1)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>433</posx>
+			<posy>216</posy>
+			<visible>Container(53).Column(8) + Container(53).Row(2)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>433</posx>
+			<posy>185</posy>
+			<visible>Container(53).Column(8) + Container(53).Row(3)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneBottomLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneBottomLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<!-- Column 9 -->
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>534</posx>
+			<posy>104</posy>
+			<visible>Container(53).Column(9) + Container(53).Row(0)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneTopLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneTopLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>534</posx>
+			<posy>71</posy>
+			<visible>Container(53).Column(9) + Container(53).Row(1)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>534</posx>
+			<posy>216</posy>
+			<visible>Container(53).Column(9) + Container(53).Row(2)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>534</posx>
+			<posy>185</posy>
+			<visible>Container(53).Column(9) + Container(53).Row(3)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneBottomLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneBottomLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<!-- Column 10 -->
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>635</posx>
+			<posy>104</posy>
+			<visible>Container(53).Column(10) + Container(53).Row(0)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneTopLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneTopLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>635</posx>
+			<posy>71</posy>
+			<visible>Container(53).Column(10) + Container(53).Row(1)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>635</posx>
+			<posy>216</posy>
+			<visible>Container(53).Column(10) + Container(53).Row(2)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneMidLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneMidLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+		<control type="group">
+
+			<include>WallInfoPaneMoviesVars</include>
+			<posx>635</posx>
+			<posy>185</posy>
+			<visible>Container(53).Column(10) + Container(53).Row(3)</visible>
+			<control type="image">
+				<include condition="!Skin.HasSetting(showtitle)">WallInfoPaneBottomLeft</include>
+				<include condition="Skin.HasSetting(showtitle)">WallInfoPaneBottomLeftTitle</include>
+			</control>
+
+			<include>WallInfoPaneMovieInfo</include>
+		</control>
+
+	</include>
+
+</includes>

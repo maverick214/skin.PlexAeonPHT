@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+    <string id="0">OpenSubtitles_OSD</string>
+    <string id="1"></string>
+    <string id="2">Amet</string>
+
+
+    
+    <!-- Labels -->
+
+    <string id="630">Subtitle file downloaded and extracted as %s</string>
+    <string id="631">Extracting %s to %s</string>
+    <string id="632">Downloading %s from %s</string>
+    <string id="634">Error! %s</string>
+    <string id="636">Connecting anonymously...</string>
+    <string id="637">Connecting as %s...</string>
+    <string id="641">%s Settings</string>
+    <string id="644">Extracted to %s</string>
+    <string id="645">Download cancelled</string>
+    <string id="647">by hash...</string>
+    <string id="648">by name...</string>
+
+
+    <!-- OSDB Messages -->
+    <string id="730">OSDB server name missing</string>
+    <string id="731">XMLRPC %s: %s</string>
+    <string id="732">LogIn</string>
+    <string id="733">LogOut</string>
+    <string id="734">GetSubLanguages</string>
+    <string id="735">CheckMovieHash</string>
+    <string id="736">SearchSubtitles</string>
+    <string id="737">Not connected to osdb server</string>
+    <string id="738">Hashing %s not found</string>
+    <string id="739">Hashing %s %s</string>
+    <string id="740">File found on share, remote files not supported</string>
+    <string id="743">HTTP %s: %s</string>
+    
+    
+    <!-- translate below this line -->
+    <!-- Slovenski -->
+    <string id="500">Niste izbrali pravega jezika</string>
+    <string id="501">Želite nastaviti privzeto pot?</string>
+    <string id="502">Izbira jezika</string>
+    <string id="503">Izberi privzeti jezik</string>
+    <string id="504">Prosim izberite željeno pot</string>
+    <string id="505">Prosim izberite prednostni servis</string>
+    <string id="506">Želite ponastaviti nastavitve na privzete vrednosti?</string>
+    <string id="601">Označene postavke</string>
+    <string id="602">delovati bolje</string>
+    <string id="610">Iskanje z OpenSubtitles.org</string>
+    <string id="611">Iskanje s Sublight.si</string>
+    <string id="612">Ročno vnesi iskalni niz</string>
+    <string id="633">Prenašam datoteko</string>
+    <string id="635">Povezan</string>
+    <string id="642">Iskanje podnapisov %s</string>
+    <string id="646">Povezujem...</string>
+    <string id="649">Prenašam podnapise...</string>
+    <string id="650">Dekompresiram podnapise...</string>
+    <string id="651">Podnapisi so dekompresirani</string>
+    <string id="652">Podnapisi so prenešeni in dekompresirani</string>
+    <string id="653">Povezava ni uspela.</string>
+    <string id="654">Napaka pri dekompresiranju podnapisov</string>
+    <string id="741">Podnapisi niso bili najdeni</string>
+    <string id="742">%s podnapisov najdenih</string>
+    <string id="744">%s podnapisov najdenih za "%s"</string>
+    
+</strings>

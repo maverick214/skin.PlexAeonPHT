@@ -1,0 +1,32 @@
+<includes>
+	<include name="FilemanagerPanelExtents">
+		<width>620</width>
+		<height>647</height>
+	</include>
+
+	<include name="FilemanagerPanelCommonObjects">
+		<control type="image">
+			<include>FilemanagerPanelExtents</include>
+			<posx>0</posx>
+			<posy>0</posy>
+			<texture>list/listpanel_black.png</texture>
+		</control>
+
+		<control type="image">
+			<include>FilemanagerPanelExtents</include>
+			<posx>0</posx>
+			<posy>0</posy>
+			<texture>list/listpanel_back_noreflect.png</texture>
+		</control>
+
+		<control type="image">
+			<posx>525</posx>
+			<posy>64</posy>
+			<width>85</width>
+			<height>555</height>
+			<texture>list/listpanel_detailwide.png</texture>
+		</control>
+
+	</include>
+
+</includes>

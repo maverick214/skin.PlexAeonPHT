@@ -1,0 +1,61 @@
+<window id="500">
+	<defaultcontrol always="true">50</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<views>550,50,551,52,54,57,53</views>
+	<controls>
+ 		<control type="multiimage">
+			<include>BackgroundVarsGlobal</include>
+			<include>BackgroundVarsMusic</include>
+		</control>   
+		<control type="largeimage">
+			<include>FullscreenDimensions</include>
+			<visible>Skin.HasSetting(nomusicfanart)</visible>
+			<texture>$INFO[ListItem.Art(fanart)]</texture>
+			<animation effect="fade" start="0" end="100" time="1550" delay="0">Visible</animation>	
+		</control>
+ 
+		<control type="multiimage">
+			<include>FullscreenDimensions</include>
+			<imagepath>-</imagepath>
+			<timeperimage>20000</timeperimage>
+			<fadetime>2000</fadetime>
+			<randomize>true</randomize>
+       		<animation effect="fade" start="0" end="100" time="1200" reversible="false" delay="0">Visible</animation>	
+			<info>Skin.String(CustomMusicFolder)</info>
+			<visible>!Skin.HasSetting(nomusicfanart)</visible>
+		</control>
+		<control type="group">
+	
+		<control type="image">
+			<include>FullscreenDimensions</include>
+			<fadetime>400</fadetime>
+			<texture>musicgenrefanart/$INFO[ListItem.Label].jpg</texture>
+			<visible>[Skin.HasSetting(musicgenre_fanart_onoff) + Container.Content(genres)]</visible>
+		</control>
+		<!-- ADD End -->
+		<include>Furniture_HomeNowPlaying</include>
+		<include>Furniture_WallBackground</include>
+		<control type="group">
+			<include>FullscreenDimensions</include>
+			<include>Animation_OpenCloseZoom</include>
+			<include>Furniture_Time</include>
+			<include>Furniture_MediaPanel</include>
+			<include>Viewtype_Music_Multiplex</include>
+			<include>Viewtype_Wall</include>
+			<include>Furniture_WallTime</include>
+			<include>Furniture_WallRSS</include>
+			<include>Viewtype_List</include>
+			<include>Viewtype_List_Slim</include>
+			<include>Viewtype_List_Low</include>
+			<include>Viewtype_ClearList</include>
+			<include>Viewtype_Showcase</include>
+			<include>NewMediaMenu</include>
+		</control>
+		<include>Furniture_DarkGradient</include>
+		<include>ScrollOffsetLabel</include>
+		<!--<include>Background_ContextBlack</include>-->
+		<include condition="Skin.HasSetting(debug)">Furniture_Debug</include>
+		<include>CerberosSmoke</include>
+		</control>
+	</controls>
+</window>

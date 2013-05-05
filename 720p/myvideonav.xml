@@ -1,0 +1,43 @@
+<window id="25">
+	<defaultcontrol always="true">50</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<views>50,551,52,553,555,563,53,512,57,55,54,598</views>
+	<controls>
+    <include>Curtain</include>    
+	<control type="group">
+		<visible>[Container.Content(Movies) + !Skin.HasSetting(NoMovieFanart)] | [[Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(episodes)] + !Skin.HasSetting(NoTVFanart)] | [![Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(episodes)] + !Skin.HasSetting(curtains)]</visible>
+		<control type="largeimage">
+			<include>FullscreenDimensions</include>
+			<animation effect="zoom" start="110" end="130" center="auto" time="30000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
+			<animation effect="slide" start="-10,-10" end="20,20" time="14000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
+			<animation effect="rotate" center="360,640" start="-2" end="2" time="22000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(animation_bg)">Conditional</animation>
+			<animation effect="fade" start="40" end="40" condition="Skin.HasSetting(DimFanart)">Conditional</animation>
+			<fadetime>1000</fadetime>
+			<texture>$INFO[ListItem.Art(fanart)]</texture>
+		</control>
+	</control>
+	<include>Furniture_HomeNowPlaying</include>
+	<include condition="!Skin.HasSetting(TotalsPanelOff)">Furniture_Navigation</include>
+	<include>Furniture_MediaPanel</include>
+	<include>Viewtype_Poster_Half</include>
+	<include>Viewtype_List</include>
+	<include condition="!Skin.HasSetting(InfoWallOff)">ViewType_InfoWall</include>
+	<include condition="!Skin.HasSetting(CoverflowOff)">Viewtype_Coverflow</include>
+	<include condition="!Container.Content(plugins)">ViewType_Wall</include>
+	<include condition="!Skin.HasSetting(ListLowOff)">Viewtype_List_Low</include>
+	<include condition="!Skin.HasSetting(ShowcaseOff)">Viewtype_Showcase</include>
+	<!--	<include condition="!Skin.HasSetting(SlimListOff)">Viewtype_List_Slim</include> -->
+	<include condition="!Skin.HasSetting(Anoobie3Off)">Viewtype_Anoobie3</include>
+	<include condition="!Skin.HasSetting(MultiplexOff)">Viewtype_Multiplex</include>
+	<include condition="!Skin.HasSetting(OldMultiplexOff)">Viewtype_MultiplexOld</include>
+	<include condition="!Skin.HasSetting(Anoobie2Off)">Viewtype_Anoobie2</include>  
+	<include condition="!Skin.HasSetting(ClearListOff)">Viewtype_ClearList</include>
+	<include>NewMediaMenu</include>
+	<include>Furniture_DarkGradient</include>
+	<include>ScrollOffsetLabel</include>
+	<include condition="Skin.HasSetting(debug)">Furniture_Debug</include>
+	<include>Furniture_Time</include>
+	<include>CerberosSmoke</include>
+</controls>
+</window>
+ 

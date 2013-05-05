@@ -1,0 +1,775 @@
+<includes>
+	<include name="buttonVars">
+		<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+		<posy>0</posy>
+		<width>194</width>
+		<height>290</height>
+		<texturefocus>home/home_latestadded_small_focus.png</texturefocus>
+		<texturenofocus>home/home_latestadded_small.png</texturenofocus>
+	</include>
+
+	<include name="buttonVarsTV">
+		<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+		<posy>0</posy>
+		<width>194</width>
+		<height>178</height>
+		<texturefocus>home/home_latestaddedtv_small_focus.png</texturefocus>
+		<texturenofocus>home/home_latestaddedtv_small.png</texturenofocus>
+	</include>
+
+	<include name="buttonVarsMusic">
+		<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+		<posy>0</posy>
+		<width>194</width>
+		<height>260</height>
+		<texturefocus>home/home_latestaddedmusic_small_focus.png</texturefocus>
+		<texturenofocus>home/home_latestaddedmusic_small.png</texturenofocus>
+	</include>
+
+	<include name="groupVars">
+		<animation effect="slide" start="0,-20" end="0,-20" time="0" condition="!Skin.HasSetting(highertime)">Conditional</animation>
+		<animation effect="zoom" start="100" end="84" time="200" center="640,80" condition="Player.HasAudio + Skin.HasSetting(lowermainmenu)">Conditional</animation>
+		<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+		<animation effect="fade" start="0" end="100" time="500">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+		<orientation>horizontal</orientation>
+		<focusposition>0</focusposition>
+		<posy>40</posy>
+	</include>
+
+	<include name="labelTitle">
+		<posy>13</posy>
+		<posx>12</posx>
+		<width>170</width>
+		<height>20</height>
+		<align>center</align>
+		<font>Font_LatestAdditionsTiles</font>
+		<textcolor>BFFFFFFF</textcolor>
+		<scrollspeed>30</scrollspeed>
+	</include>
+
+	<include name="labelYear">
+		<posy>36</posy>
+		<posx>12</posx>
+		<width>170</width>
+		<height>20</height>
+		<align>center</align>
+		<aligny>center</aligny>
+		<font>Font_LatestAdditionsYear</font>
+		<textcolor>BFFFFFFF</textcolor>
+	</include>
+
+	<include name="coverVars">
+		<colordiffuse>EEFFFFFF</colordiffuse>
+		<posx>0</posx>
+		<posy>32</posy>
+		<width>194</width>
+		<height>290</height>
+	</include>
+
+	<include name="coverVarsTV">
+		<colordiffuse>EEFFFFFF</colordiffuse>
+		<posx>0</posx>
+		<posy>68</posy>
+		<width>194</width>
+		<height>110</height>
+	</include>
+
+	<include name="coverVarsMusic">
+		<colordiffuse>EEFFFFFF</colordiffuse>
+		<posx>0</posx>
+		<posy>66</posy>
+		<width>194</width>
+		<height>194</height>
+	</include>
+
+	<include name="latest_added">
+		<control type="button" id="500">
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick>-</onclick>
+			<label>-</label>
+			<posy>-100</posy>
+			<posx>0</posx>
+			<onfocus>XBMC.RunScript(U:/skin/PlexAeon/extras/latest_added.py,limit=6&amp;albums=True)</onfocus>
+			<onfocus>SetFocus(300)</onfocus>
+		</control>
+
+		<!--Latest Movie-->
+		<control type="grouplist" id="510">
+			<posx>46</posx>
+			<posy>40</posy>
+			<orientation>horizontal</orientation>
+			<onup>300</onup>
+			<ondown>300</ondown>
+			<onleft>510</onleft>
+			<onright>510</onright>
+			<animation effect="slide" start="0,-20" end="0,-20" time="0" condition="!Skin.HasSetting(highertime)">Conditional</animation>
+			<animation effect="zoom" start="100" end="84" time="200" center="640,80" condition="Player.HasAudio + Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="500">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+			<control type="button" id="1">
+				<include>buttonVars</include>
+				<animation effect="fade" start="0" end="100" delay="1000" time="400">Visible</animation>
+				<onclick>$INFO[Window.Property(LatestMovie.1.Path),PlayMedia(,)]</onclick>
+				<visible>Container(300).HasFocus(6) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestMovie.1.Title))</visible>
+			</control>
+
+			<control type="button" id="2">
+				<include>buttonVars</include>
+				<animation effect="fade" start="0" end="100" delay="1100" time="400">Visible</animation>
+				<onclick>$INFO[Window.Property(LatestMovie.2.Path),PlayMedia(,)]</onclick>
+				<visible>Container(300).HasFocus(6) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestMovie.2.Title))</visible>
+			</control>
+
+			<control type="button" id="3">
+				<include>buttonVars</include>
+				<animation effect="fade" start="0" end="100" delay="1200" time="400">Visible</animation>
+				<onclick>$INFO[Window.Property(LatestMovie.3.Path),PlayMedia(,)]</onclick>
+				<visible>Container(300).HasFocus(6) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestMovie.3.Title))</visible>
+			</control>
+
+			<control type="button" id="4">
+				<include>buttonVars</include>
+				<animation effect="fade" start="0" end="100" delay="1300" time="400">Visible</animation>
+				<onclick>$INFO[Window.Property(LatestMovie.4.Path),PlayMedia(,)]</onclick>
+				<visible>Container(300).HasFocus(6) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestMovie.4.Title))</visible>
+			</control>
+
+			<control type="button" id="5">
+				<include>buttonVars</include>
+				<animation effect="fade" start="0" end="100" delay="1400" time="400">Visible</animation>
+				<onclick>$INFO[Window.Property(LatestMovie.5.Path),PlayMedia(,)]</onclick>
+				<visible>Container(300).HasFocus(6) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestMovie.5.Title))</visible>
+			</control>
+
+			<control type="button" id="6">
+				<include>buttonVars</include>
+				<animation effect="fade" start="0" end="100" delay="1500" time="400">Visible</animation>
+				<onclick>$INFO[Window.Property(LatestMovie.6.Path),PlayMedia(,)]</onclick>
+				<visible>Container(300).HasFocus(6) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestMovie.6.Title))</visible>
+			</control>
+
+		</control>
+
+		<control type="group">
+
+			<visible>Container(300).HasFocus(6) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestMovie.1.Title))</visible>
+			<animation effect="fade" start="0" end="100" delay="1000" time="400">Visible</animation>
+			<include>groupVars</include>
+			<posx>46</posx>
+			<control type="label">
+				<include>labelTitle</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestMovie.1.Title)][/UPPERCASE]</label>
+			</control>
+
+			<control type="label">
+				<include>labelYear</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestMovie.1.Year)] / $INFO[Window.Property(LatestMovie.1.RunningTime)][/UPPERCASE]</label>
+			</control>
+
+			<control type="image">
+				<texture diffuse="home/home_latestadded_small_mask.png">$INFO[Window.Property(LatestMovie.1.Thumb)]</texture>
+				<include>coverVars</include>
+			</control>
+
+			<control type="image">
+				<texture>home/home_latestadded_small_glass.png</texture>
+				<include>coverVars</include>
+			</control>
+
+		</control>
+
+		<control type="group">
+
+			<visible>Container(300).HasFocus(6) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestMovie.2.Title))</visible>
+			<animation effect="fade" start="0" end="100" delay="1100" time="400">Visible</animation>
+			<include>groupVars</include>
+			<posx>245</posx>
+			<control type="label">
+				<include>labelTitle</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestMovie.2.Title)][/UPPERCASE]</label>
+			</control>
+
+			<control type="label">
+				<include>labelYear</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestMovie.2.Year)] / $INFO[Window.Property(LatestMovie.2.RunningTime)][/UPPERCASE]</label>
+			</control>
+
+			<control type="image">
+				<texture diffuse="home/home_latestadded_small_mask.png">$INFO[Window.Property(LatestMovie.2.Thumb)]</texture>
+				<include>coverVars</include>
+			</control>
+
+			<control type="image">
+				<texture>home/home_latestadded_small_glass.png</texture>
+				<include>coverVars</include>
+			</control>
+
+		</control>
+
+		<control type="group">
+
+			<visible>Container(300).HasFocus(6) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestMovie.2.Title))</visible>
+			<animation effect="fade" start="0" end="100" delay="1200" time="400">Visible</animation>
+			<include>groupVars</include>
+			<posx>444</posx>
+			<control type="label">
+				<include>labelTitle</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestMovie.3.Title)][/UPPERCASE]</label>
+			</control>
+
+			<control type="label">
+				<include>labelYear</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestMovie.3.Year)] / $INFO[Window.Property(LatestMovie.3.RunningTime)][/UPPERCASE]</label>
+			</control>
+
+			<control type="image">
+				<texture diffuse="home/home_latestadded_small_mask.png">$INFO[Window.Property(LatestMovie.3.Thumb)]</texture>
+				<include>coverVars</include>
+			</control>
+
+			<control type="image">
+				<texture>home/home_latestadded_small_glass.png</texture>
+				<include>coverVars</include>
+			</control>
+
+		</control>
+
+		<control type="group">
+
+			<visible>Container(300).HasFocus(6) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestMovie.2.Title))</visible>
+			<animation effect="fade" start="0" end="100" delay="1300" time="400">Visible</animation>
+			<include>groupVars</include>
+			<posx>643</posx>
+			<control type="label">
+				<include>labelTitle</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestMovie.4.Title)][/UPPERCASE]</label>
+			</control>
+
+			<control type="label">
+				<include>labelYear</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestMovie.4.Year)] / $INFO[Window.Property(LatestMovie.4.RunningTime)][/UPPERCASE]</label>
+			</control>
+
+			<control type="image">
+				<texture diffuse="home/home_latestadded_small_mask.png">$INFO[Window.Property(LatestMovie.4.Thumb)]</texture>
+				<include>coverVars</include>
+			</control>
+
+			<control type="image">
+				<texture>home/home_latestadded_small_glass.png</texture>
+				<include>coverVars</include>
+			</control>
+
+		</control>
+
+		<control type="group">
+
+			<visible>Container(300).HasFocus(6) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestMovie.2.Title))</visible>
+			<animation effect="fade" start="0" end="100" delay="1400" time="400">Visible</animation>
+			<include>groupVars</include>
+			<posx>842</posx>
+			<control type="label">
+				<include>labelTitle</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestMovie.5.Title)][/UPPERCASE]</label>
+			</control>
+
+			<control type="label">
+				<include>labelYear</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestMovie.5.Year)] / $INFO[Window.Property(LatestMovie.5.RunningTime)][/UPPERCASE]</label>
+			</control>
+
+			<control type="image">
+				<texture diffuse="home/home_latestadded_small_mask.png">$INFO[Window.Property(LatestMovie.5.Thumb)]</texture>
+				<include>coverVars</include>
+			</control>
+
+			<control type="image">
+				<texture>home/home_latestadded_small_glass.png</texture>
+				<include>coverVars</include>
+			</control>
+
+		</control>
+
+		<control type="group">
+
+			<visible>Container(300).HasFocus(6) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestMovie.2.Title))</visible>
+			<animation effect="fade" start="0" end="100" delay="1500" time="400">Visible</animation>
+			<include>groupVars</include>
+			<posx>1041</posx>
+			<control type="label">
+				<include>labelTitle</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestMovie.6.Title)][/UPPERCASE]</label>
+			</control>
+
+			<control type="label">
+				<include>labelYear</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestMovie.6.Year)] / $INFO[Window.Property(LatestMovie.6.RunningTime)][/UPPERCASE]</label>
+			</control>
+
+			<control type="image">
+				<texture diffuse="home/home_latestadded_small_mask.png">$INFO[Window.Property(LatestMovie.6.Thumb)]</texture>
+				<include>coverVars</include>
+			</control>
+
+			<control type="image">
+				<texture>home/home_latestadded_small_glass.png</texture>
+				<include>coverVars</include>
+			</control>
+
+		</control>
+
+		<!--Latest Episode-->
+		<control type="grouplist" id="510">
+			<posx>46</posx>
+			<posy>40</posy>
+			<orientation>horizontal</orientation>
+			<onup>300</onup>
+			<ondown>300</ondown>
+			<onleft>510</onleft>
+			<onright>510</onright>
+			<animation effect="slide" start="0,-20" end="0,-20" time="0" condition="!Skin.HasSetting(highertime)">Conditional</animation>
+			<animation effect="zoom" start="100" end="84" time="200" center="640,80" condition="Player.HasAudio + Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="500">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+			<control type="button" id="1">
+				<include>buttonVarsTV</include>
+				<animation effect="fade" start="0" end="100" delay="1000" time="400">Visible</animation>
+				<onclick>$INFO[Window.Property(LatestEpisode.1.Path),PlayMedia(,)]</onclick>
+				<visible>Container(300).HasFocus(7) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestEpisode.1.ShowTitle))</visible>
+			</control>
+
+			<control type="button" id="2">
+				<include>buttonVarsTV</include>
+				<animation effect="fade" start="0" end="100" delay="1100" time="400">Visible</animation>
+				<onclick>$INFO[Window.Property(LatestEpisode.2.Path),PlayMedia(,)]</onclick>
+				<visible>Container(300).HasFocus(7) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestEpisode.2.ShowTitle))</visible>
+			</control>
+
+			<control type="button" id="3">
+				<include>buttonVarsTV</include>
+				<animation effect="fade" start="0" end="100" delay="1200" time="400">Visible</animation>
+				<onclick>$INFO[Window.Property(LatestEpisode.3.Path),PlayMedia(,)]</onclick>
+				<visible>Container(300).HasFocus(7) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestEpisode.3.ShowTitle))</visible>
+			</control>
+
+			<control type="button" id="4">
+				<include>buttonVarsTV</include>
+				<animation effect="fade" start="0" end="100" delay="1300" time="400">Visible</animation>
+				<onclick>$INFO[Window.Property(LatestEpisode.4.Path),PlayMedia(,)]</onclick>
+				<visible>Container(300).HasFocus(7) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestEpisode.4.ShowTitle))</visible>
+			</control>
+
+			<control type="button" id="5">
+				<include>buttonVarsTV</include>
+				<animation effect="fade" start="0" end="100" delay="1400" time="400">Visible</animation>
+				<onclick>$INFO[Window.Property(LatestEpisode.5.Path),PlayMedia(,)]</onclick>
+				<visible>Container(300).HasFocus(7) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestEpisode.5.ShowTitle))</visible>
+			</control>
+
+			<control type="button" id="6">
+				<include>buttonVarsTV</include>
+				<animation effect="fade" start="0" end="100" delay="1500" time="400">Visible</animation>
+				<onclick>$INFO[Window.Property(LatestEpisode.6.Path),PlayMedia(,)]</onclick>
+				<visible>Container(300).HasFocus(7) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestEpisode.6.ShowTitle))</visible>
+			</control>
+
+		</control>
+
+		<control type="group">
+
+			<visible>Container(300).HasFocus(7) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestEpisode.1.ShowTitle))</visible>
+			<animation effect="fade" start="0" end="100" delay="1000" time="400">Visible</animation>
+			<include>groupVars</include>
+			<posx>46</posx>
+			<control type="label">
+				<include>labelTitle</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestEpisode.1.ShowTitle)][/UPPERCASE]</label>
+			</control>
+
+			<control type="label">
+				<include>labelYear</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestEpisode.1.EpisodeTitle)][/UPPERCASE]</label>
+			</control>
+
+			<control type="image">
+				<texture diffuse="home/home_latestaddedtv_small_mask.png">$INFO[Window.Property(LatestEpisode.1.Thumb)]</texture>
+				<include>coverVarsTV</include>
+			</control>
+
+			<control type="image">
+				<texture>home/home_latestaddedtv_small_glass.png</texture>
+				<include>coverVarsTV</include>
+			</control>
+
+		</control>
+
+		<control type="group">
+
+			<visible>Container(300).HasFocus(7) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestEpisode.2.ShowTitle))</visible>
+			<animation effect="fade" start="0" end="100" delay="1100" time="400">Visible</animation>
+			<include>groupVars</include>
+			<posx>245</posx>
+			<control type="label">
+				<include>labelTitle</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestEpisode.2.ShowTitle)][/UPPERCASE]</label>
+			</control>
+
+			<control type="label">
+				<include>labelYear</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestEpisode.2.EpisodeTitle)][/UPPERCASE]</label>
+			</control>
+
+			<control type="image">
+				<texture diffuse="home/home_latestaddedtv_small_mask.png">$INFO[Window.Property(LatestEpisode.2.Thumb)]</texture>
+				<include>coverVarsTV</include>
+			</control>
+
+			<control type="image">
+				<texture>home/home_latestaddedtv_small_glass.png</texture>
+				<include>coverVarsTV</include>
+			</control>
+
+		</control>
+
+		<control type="group">
+
+			<visible>Container(300).HasFocus(7) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestEpisode.2.ShowTitle))</visible>
+			<animation effect="fade" start="0" end="100" delay="1200" time="400">Visible</animation>
+			<include>groupVars</include>
+			<posx>444</posx>
+			<control type="label">
+				<include>labelTitle</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestEpisode.3.ShowTitle)][/UPPERCASE]</label>
+			</control>
+
+			<control type="label">
+				<include>labelYear</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestEpisode.3.EpisodeTitle)][/UPPERCASE]</label>
+			</control>
+
+			<control type="image">
+				<texture diffuse="home/home_latestaddedtv_small_mask.png">$INFO[Window.Property(LatestEpisode.3.Thumb)]</texture>
+				<include>coverVarsTV</include>
+			</control>
+
+			<control type="image">
+				<texture>home/home_latestaddedtv_small_glass.png</texture>
+				<include>coverVarsTV</include>
+			</control>
+
+		</control>
+
+		<control type="group">
+
+			<visible>Container(300).HasFocus(7) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestEpisode.2.ShowTitle))</visible>
+			<animation effect="fade" start="0" end="100" delay="1300" time="400">Visible</animation>
+			<include>groupVars</include>
+			<posx>643</posx>
+			<control type="label">
+				<include>labelTitle</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestEpisode.4.ShowTitle)][/UPPERCASE]</label>
+			</control>
+
+			<control type="label">
+				<include>labelYear</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestEpisode.4.EpisodeTitle)][/UPPERCASE]</label>
+			</control>
+
+			<control type="image">
+				<texture diffuse="home/home_latestaddedtv_small_mask.png">$INFO[Window.Property(LatestEpisode.4.Thumb)]</texture>
+				<include>coverVarsTV</include>
+			</control>
+
+			<control type="image">
+				<texture>home/home_latestaddedtv_small_glass.png</texture>
+				<include>coverVarsTV</include>
+			</control>
+
+		</control>
+
+		<control type="group">
+
+			<visible>Container(300).HasFocus(7) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestEpisode.2.ShowTitle))</visible>
+			<animation effect="fade" start="0" end="100" delay="1400" time="400">Visible</animation>
+			<include>groupVars</include>
+			<posx>842</posx>
+			<control type="label">
+				<include>labelTitle</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestEpisode.5.ShowTitle)][/UPPERCASE]</label>
+			</control>
+
+			<control type="label">
+				<include>labelYear</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestEpisode.5.EpisodeTitle)][/UPPERCASE]</label>
+			</control>
+
+			<control type="image">
+				<texture diffuse="home/home_latestaddedtv_small_mask.png">$INFO[Window.Property(LatestEpisode.5.Thumb)]</texture>
+				<include>coverVarsTV</include>
+			</control>
+
+			<control type="image">
+				<texture>home/home_latestaddedtv_small_glass.png</texture>
+				<include>coverVarsTV</include>
+			</control>
+
+		</control>
+
+		<control type="group">
+
+			<visible>Container(300).HasFocus(7) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestEpisode.2.ShowTitle))</visible>
+			<animation effect="fade" start="0" end="100" delay="1500" time="400">Visible</animation>
+			<include>groupVars</include>
+			<posx>1041</posx>
+			<control type="label">
+				<include>labelTitle</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestEpisode.6.ShowTitle)][/UPPERCASE]</label>
+			</control>
+
+			<control type="label">
+				<include>labelYear</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestEpisode.6.EpisodeTitle)][/UPPERCASE]</label>
+			</control>
+
+			<control type="image">
+				<texture diffuse="home/home_latestaddedtv_small_mask.png">$INFO[Window.Property(LatestEpisode.6.Thumb)]</texture>
+				<include>coverVarsTV</include>
+			</control>
+
+			<control type="image">
+				<texture>home/home_latestaddedtv_small_glass.png</texture>
+				<include>coverVarsTV</include>
+			</control>
+
+		</control>
+
+		<!--Latest Music -->
+		<control type="grouplist" id="510">
+			<posx>46</posx>
+			<posy>40</posy>
+			<orientation>horizontal</orientation>
+			<onup>300</onup>
+			<ondown>300</ondown>
+			<onleft>510</onleft>
+			<onright>510</onright>
+			<animation effect="slide" start="0,-20" end="0,-20" time="0" condition="!Skin.HasSetting(highertime)">Conditional</animation>
+			<animation effect="zoom" start="100" end="84" time="200" center="640,80" condition="Player.HasAudio + Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="500">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+			<control type="button" id="1">
+				<include>buttonVarsMusic</include>
+				<animation effect="fade" start="0" end="100" delay="1000" time="400">Visible</animation>
+				<onclick>$INFO[Window.Property(LatestSong.1.Path),PlayMedia(,)]</onclick>
+				<visible>Container(300).HasFocus(1) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestSong.1.Artist))</visible>
+			</control>
+
+			<control type="button" id="2">
+				<include>buttonVarsMusic</include>
+				<animation effect="fade" start="0" end="100" delay="1100" time="400">Visible</animation>
+				<onclick>$INFO[Window.Property(LatestSong.2.Path),PlayMedia(,)]</onclick>
+				<visible>Container(300).HasFocus(1) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestSong.2.Artist))</visible>
+			</control>
+
+			<control type="button" id="3">
+				<include>buttonVarsMusic</include>
+				<animation effect="fade" start="0" end="100" delay="1200" time="400">Visible</animation>
+				<onclick>$INFO[Window.Property(LatestSong.3.Path),PlayMedia(,)]</onclick>
+				<visible>Container(300).HasFocus(1) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestSong.3.Artist))</visible>
+			</control>
+
+			<control type="button" id="4">
+				<include>buttonVarsMusic</include>
+				<animation effect="fade" start="0" end="100" delay="1300" time="400">Visible</animation>
+				<onclick>$INFO[Window.Property(LatestSong.4.Path),PlayMedia(,)]</onclick>
+				<visible>Container(300).HasFocus(1) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestSong.4.Artist))</visible>
+			</control>
+
+			<control type="button" id="5">
+				<include>buttonVarsMusic</include>
+				<animation effect="fade" start="0" end="100" delay="1400" time="400">Visible</animation>
+				<onclick>$INFO[Window.Property(LatestSong.5.Path),PlayMedia(,)]</onclick>
+				<visible>Container(300).HasFocus(1) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestSong.5.Artist))</visible>
+			</control>
+
+			<control type="button" id="6">
+				<include>buttonVarsMusic</include>
+				<animation effect="fade" start="0" end="100" delay="1500" time="400">Visible</animation>
+				<onclick>$INFO[Window.Property(LatestSong.6.Path),PlayMedia(,)]</onclick>
+				<visible>Container(300).HasFocus(1) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestSong.6.Artist))</visible>
+			</control>
+
+		</control>
+
+		<control type="group">
+
+			<visible>Container(300).HasFocus(1) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestSong.1.Artist))</visible>
+			<animation effect="fade" start="0" end="100" delay="1000" time="400">Visible</animation>
+			<include>groupVars</include>
+			<posx>46</posx>
+			<control type="label">
+				<include>labelTitle</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestSong.1.Artist)][/UPPERCASE]</label>
+			</control>
+
+			<control type="label">
+				<include>labelYear</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestSong.1.Album)][/UPPERCASE]</label>
+			</control>
+
+			<control type="image">
+				<texture diffuse="home/home_latestaddedmusic_small_mask.png">$INFO[Window.Property(LatestSong.1.Thumb)]</texture>
+				<include>coverVarsMusic</include>
+			</control>
+
+			<control type="image">
+				<texture>home/home_latestaddedmusic_small_glass.png</texture>
+				<include>coverVarsMusic</include>
+			</control>
+
+		</control>
+
+		<control type="group">
+
+			<visible>Container(300).HasFocus(1) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestSong.2.Artist))</visible>
+			<animation effect="fade" start="0" end="100" delay="1100" time="400">Visible</animation>
+			<include>groupVars</include>
+			<posx>245</posx>
+			<control type="label">
+				<include>labelTitle</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestSong.2.Artist)][/UPPERCASE]</label>
+			</control>
+
+			<control type="label">
+				<include>labelYear</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestSong.2.Album)][/UPPERCASE]</label>
+			</control>
+
+			<control type="image">
+				<texture diffuse="home/home_latestaddedmusic_small_mask.png">$INFO[Window.Property(LatestSong.2.Thumb)]</texture>
+				<include>coverVarsMusic</include>
+			</control>
+
+			<control type="image">
+				<texture>home/home_latestaddedmusic_small_glass.png</texture>
+				<include>coverVarsMusic</include>
+			</control>
+
+		</control>
+
+		<control type="group">
+
+			<visible>Container(300).HasFocus(1) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestSong.2.Artist))</visible>
+			<animation effect="fade" start="0" end="100" delay="1200" time="400">Visible</animation>
+			<include>groupVars</include>
+			<posx>444</posx>
+			<control type="label">
+				<include>labelTitle</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestSong.3.Artist)][/UPPERCASE]</label>
+			</control>
+
+			<control type="label">
+				<include>labelYear</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestSong.3.Album)][/UPPERCASE]</label>
+			</control>
+
+			<control type="image">
+				<texture diffuse="home/home_latestaddedmusic_small_mask.png">$INFO[Window.Property(LatestSong.3.Thumb)]</texture>
+				<include>coverVarsMusic</include>
+			</control>
+
+			<control type="image">
+				<texture>home/home_latestaddedmusic_small_glass.png</texture>
+				<include>coverVarsMusic</include>
+			</control>
+
+		</control>
+
+		<control type="group">
+
+			<visible>Container(300).HasFocus(1) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestSong.2.Artist))</visible>
+			<animation effect="fade" start="0" end="100" delay="1300" time="400">Visible</animation>
+			<include>groupVars</include>
+			<posx>643</posx>
+			<control type="label">
+				<include>labelTitle</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestSong.4.Artist)][/UPPERCASE]</label>
+			</control>
+
+			<control type="label">
+				<include>labelYear</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestSong.4.Album)][/UPPERCASE]</label>
+			</control>
+
+			<control type="image">
+				<texture diffuse="home/home_latestaddedmusic_small_mask.png">$INFO[Window.Property(LatestSong.4.Thumb)]</texture>
+				<include>coverVarsMusic</include>
+			</control>
+
+			<control type="image">
+				<texture>home/home_latestaddedmusic_small_glass.png</texture>
+				<include>coverVarsMusic</include>
+			</control>
+
+		</control>
+
+		<control type="group">
+
+			<visible>Container(300).HasFocus(1) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestSong.2.Artist))</visible>
+			<animation effect="fade" start="0" end="100" delay="1400" time="400">Visible</animation>
+			<include>groupVars</include>
+			<posx>842</posx>
+			<control type="label">
+				<include>labelTitle</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestSong.5.Artist)][/UPPERCASE]</label>
+			</control>
+
+			<control type="label">
+				<include>labelYear</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestSong.5.Album)][/UPPERCASE]</label>
+			</control>
+
+			<control type="image">
+				<texture diffuse="home/home_latestaddedmusic_small_mask.png">$INFO[Window.Property(LatestSong.5.Thumb)]</texture>
+				<include>coverVarsMusic</include>
+			</control>
+
+			<control type="image">
+				<texture>home/home_latestaddedmusic_small_glass.png</texture>
+				<include>coverVarsMusic</include>
+			</control>
+
+		</control>
+
+		<control type="group">
+
+			<visible>Container(300).HasFocus(1) + !Skin.HasSetting(noweatherpopup) + Skin.HasSetting(homelatest) + !IsEmpty(Window.Property(LatestSong.2.Artist))</visible>
+			<animation effect="fade" start="0" end="100" delay="1500" time="400">Visible</animation>
+			<include>groupVars</include>
+			<posx>1041</posx>
+			<control type="label">
+				<include>labelTitle</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestSong.6.Artist)][/UPPERCASE]</label>
+			</control>
+
+			<control type="label">
+				<include>labelYear</include>
+				<label>[UPPERCASE]$INFO[Window.Property(LatestSong.6.Album)][/UPPERCASE]</label>
+			</control>
+
+			<control type="image">
+				<texture diffuse="home/home_latestaddedmusic_small_mask.png">$INFO[Window.Property(LatestSong.6.Thumb)]</texture>
+				<include>coverVarsTV</include>
+			</control>
+
+			<control type="image">
+				<texture>home/home_latestaddedmusic_small_glass.png</texture>
+				<include>coverVarsTV</include>
+			</control>
+
+		</control>
+
+	</include>
+
+</includes>

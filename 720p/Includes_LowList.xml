@@ -1,0 +1,2171 @@
+	<includes>
+	<!-- FONT COLORS -->
+	<include name="lowlistcolorfocus">
+		<textcolor>FFFFFFFF</textcolor>
+		<selectedcolor>FFFFFFFF</selectedcolor>
+	</include>
+
+	<include name="lowlistcolornofocus">
+		<textcolor>FF939597</textcolor>
+		<selectedcolor>9b3cd2fd</selectedcolor>
+	</include>
+
+	<include name="lowlistdetailcolornofocus">
+		<textcolor>FF939597</textcolor>
+		<selectedcolor>9b3cd2fd</selectedcolor>
+	</include>
+	<!-- ANIMATIONS -->
+	<include name="Animation_HideList">
+		<animation type="Conditional" condition="[Control.HasFocus(55110) | Control.IsVisible(55111) | Control.IsVisible(55112)]">
+			<effect type="fade" start="100" end="0" time="200"/>
+		</animation>
+	</include>
+	<include name="Animation_LandscapeIconSlide">
+		<animation effect="slide" start="0,0" end="80,0" time="0" condition="Container.Content(episodes) | Window.IsActive(25)">Conditional</animation>
+	</include>
+	<include name="Animation_MusicContentSlide">
+		<animation effect="slide" start="0,0" end="40,0" time="0" condition="Container.Content(songs)">Conditional</animation>
+	</include>
+	<include name="Animation_HighListSlide">
+		<animation effect="slide" start="0,0" end="0,-110" time="150" condition="Skin.HasSetting(highlist)">Conditional</animation>
+	</include>
+	<include name="Animation_HighListSlide2">
+		<animation effect="slide" start="0,0" end="0,-160" time="150" condition="!Skin.HasSetting(highlist) + [Control.HasFocus(55110) | Control.IsVisible(55111) | Control.IsVisible(55112)]">Conditional</animation>
+	</include>
+	<include name="Animation_HighListSlideSmall">
+		<animation effect="slide" start="0,0" end="0,-50" time="200" condition="[Skin.HasSetting(highlist) + [Control.HasFocus(55110) | Control.IsVisible(55111) | Control.IsVisible(55112)]] | ControlGroup(55103).HasFocus()">Conditional</animation>
+	</include>
+	<include name="Animation_WideInfoLabelSlide">
+		<animation effect="slide" start="0,0" end="0,-55" time="200" condition="!Skin.HasSetting(highlist)">Conditional</animation>
+	</include>
+	<include name="Animation_DetailMenuSlide">
+		<animation effect="slide" start="0,0" end="-555,0" time="100" condition="Skin.HasSetting(lowlistrsson)">Conditional</animation>
+	</include>
+
+	<!-- ANIMATIONS -->
+	<include name="Animation_MusicContentSlide">
+		<animation effect="slide" start="0,0" end="40,0" time="0" condition="Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)">Conditional</animation>
+	</include>
+
+	<include name="Animation_LandscapeIconSlide">
+		<animation effect="slide" start="0,0" end="40,0" time="0" condition="Container.Content(episodes) | Window.IsActive(25)">Conditional</animation>
+	</include>
+
+	<include name="Animation_HighListSlide">
+		<animation effect="slide" start="0,0" end="0,-110" time="200" condition="Skin.HasSetting(highlist)">Conditional</animation>
+	</include>
+
+	<include name="Animation_AntiHighListSlide">
+		<animation effect="slide" start="0,0" end="0,110" time="0" condition="Skin.HasSetting(highlist)">Conditional</animation>
+	</include>
+
+	<include name="Animation_HighListHalfSlide">
+		<animation effect="slide" start="0,0" end="0,-70" time="200" condition="Skin.HasSetting(highlist)">Conditional</animation>
+	</include>
+
+	<include name="Animation_HighListShrink">
+		<animation effect="zoom" end="90" center="330,0" time="75" condition="Skin.HasSetting(highlist)">Conditional</animation>
+	</include>
+
+	<include name="Animation_DetailMenuSlideForRSS">
+		<animation effect="slide" start="0,0" end="-550,0" time="150" condition="Skin.HasSetting(lowlistrsson) + !ControlGroup(7003).HasFocus() + !Control.IsVisible(7898)">Conditional</animation>
+	</include>
+
+	<include name="Animation_SlideRightForIcons">
+		<animation effect="slide" start="0,0" end="60" time="150" condition="Container.Content(albums) + Skin.HasSetting(musiclistfull)">Conditional</animation>
+	</include>
+
+	<include name="Animation_PlotFade">
+		<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+		<animation effect="fade" start="100" end="0" time="150">Hidden</animation>
+	</include>
+
+	<!-- LOW LIST ICON ROLLER -->
+	<!-- Square icon variables -->
+	<include name="ListIcon_SquarePos-3">
+		<posx>60</posx>
+		<posy>-20</posy>
+	</include>
+
+	<include name="ListIcon_SquarePos-2">
+		<posx>50</posx>
+		<posy>-5</posy>
+	</include>
+
+	<include name="ListIcon_SquarePos-1">
+		<posx>40</posx>
+		<posy>13</posy>
+	</include>
+
+	<include name="ListIcon_SquarePos0">
+		<posx>30</posx>
+		<posy>45</posy>
+	</include>
+
+	<include name="ListIcon_SquarePos1">
+		<posx>40</posx>
+		<posy>100</posy>
+	</include>
+
+	<include name="ListIcon_SquarePos2">
+		<posx>50</posx>
+		<posy>140</posy>
+	</include>
+
+	<include name="ListIcon_SquarePos3">
+		<posx>60</posx>
+		<posy>177</posy>
+	</include>
+
+	<include name="ListIcon_SquareVars_Z4">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>170</width>
+		<height>170</height>
+		<visible>[Container.Content(artists) + !Skin.HasSetting(artistrolleroff)] | [Container.Content(albums) + !Skin.HasSetting(albumrolleroff)] | [Container.Content(songs) + !Skin.HasSetting(songrolleroff)] | Window.IsActive(500) | Window.IsActive(501)</visible>
+		<visible>!Player.HasAudio</visible>
+		<include>Animation_HighListHalfSlide</include>
+	</include>
+
+	<include name="ListIcon_SquareVars_Z3">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>190</width>
+		<height>190</height>
+		<visible>[Container.Content(artists) + !Skin.HasSetting(artistrolleroff)] | [Container.Content(albums) + !Skin.HasSetting(albumrolleroff)] | [Container.Content(songs) + !Skin.HasSetting(songrolleroff)] | Window.IsActive(500) | Window.IsActive(501)</visible>
+		<visible>!Player.HasAudio</visible>
+		<include>Animation_HighListHalfSlide</include>
+	</include>
+
+	<include name="ListIcon_SquareVars_Z2">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>210</width>
+		<height>210</height>
+		<visible>[Container.Content(artists) + !Skin.HasSetting(artistrolleroff)] | [Container.Content(albums) + !Skin.HasSetting(albumrolleroff)] | [Container.Content(songs) + !Skin.HasSetting(songrolleroff)] | Window.IsActive(500) | Window.IsActive(501)</visible>
+		<visible>!Player.HasAudio</visible>
+		<include>Animation_HighListHalfSlide</include>
+	</include>
+
+	<include name="ListIcon_SquareVars_Z1">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>230</width>
+		<height>230</height>
+		<visible>[Container.Content(artists) + !Skin.HasSetting(artistrolleroff)] | [Container.Content(albums) + !Skin.HasSetting(albumrolleroff)] | [Container.Content(songs) + !Skin.HasSetting(songrolleroff)] | Window.IsActive(500) | Window.IsActive(501)</visible>
+		<visible>!Player.HasAudio</visible>
+		<include>Animation_HighListHalfSlide</include>
+	</include>
+
+	<include name="ListIcon_SquareVars_Z0">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>250</width>
+		<height>250</height>
+		<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Window.IsActive(500) | Window.IsActive(501)</visible>
+		<include>Animation_HighListHalfSlide</include>
+	</include>
+
+	<!-- Square icons -->
+	<include name="ListIcon_Square_Z3">
+		<control type="largeimage">
+			<include>ListIcon_SquareVars_Z3</include>
+			<bordertexture border="-13">thumbs/cd_shadow_light.png</bordertexture>
+			<texture>thumbs/cd_glass_noedge.png</texture>
+		</control>
+
+		<control type="largeimage">
+			<include>ListIcon_SquareVars_Z3</include>
+			<include>MusicShowcaseOverlay</include>
+		</control>
+
+	</include>
+
+	<include name="ListIcon_Square_Z2">
+		<control type="largeimage">
+			<include>ListIcon_SquareVars_Z2</include>
+			<bordertexture border="-14">thumbs/cd_shadow_light.png</bordertexture>
+			<texture>thumbs/cd_glass_noedge.png</texture>
+		</control>
+
+		<control type="largeimage">
+			<include>ListIcon_SquareVars_Z2</include>
+			<include>MusicShowcaseOverlay</include>
+		</control>
+
+	</include>
+
+	<include name="ListIcon_Square_Z1">
+		<control type="largeimage">
+			<include>ListIcon_SquareVars_Z1</include>
+			<bordertexture border="-16">thumbs/cd_shadow_light.png</bordertexture>
+			<texture>thumbs/cd_glass_noedge.png</texture>
+		</control>
+
+		<control type="largeimage">
+			<include>ListIcon_SquareVars_Z1</include>
+			<include>MusicShowcaseOverlay</include>
+		</control>
+
+	</include>
+
+	<include name="ListIcon_Square_Z0">
+		<control type="largeimage">
+			<include>ListIcon_SquareVars_Z0</include>
+			<bordertexture border="-20">thumbs/cd_shadow_light.png</bordertexture>
+			<texture>thumbs/cd_glass_noedge.png</texture>
+			<visible>![Container.Content(artists) + Skin.HasSetting(artistrolleroff)]</visible>
+		</control>
+
+		<control type="largeimage">
+			<include>ListIcon_SquareVars_Z0</include>
+			<include>MusicShowcaseOverlay</include>
+			<visible>![Container.Content(artists) + Skin.HasSetting(artistrolleroff)]</visible>
+		</control>
+
+	</include>
+	<include name="ListIcon_PosterIconGroup">
+		<posx>22</posx>
+		<posy>-87</posy>>
+	</include>
+
+<include name="LowList_DVDCaseVars">
+	<posx>-17</posx>
+	<posy>0</posy>
+	<width>310</width>
+	<height>405</height>
+	<fadetime>200</fadetime>
+	<visible>Window.IsActive(25) + [!Container.Content(episodes) | [Container.Content(episodes) + [Control.HasFocus(55110) | Control.IsVisible(55111) | Control.IsVisible(55112)]]]</visible>
+</include>
+<include name="LowList_DVDCaseReflect">
+	<posy>380</posy>
+	<include>LowList_DVDCaseVars</include>
+</include>
+<include name="LowList_PosterIconVars">
+	<posx>0</posx>
+	<posy>0</posy>
+	<width>266</width>
+	<height>400</height>
+	<fadetime>200</fadetime>
+</include>
+<include name="LowList_PosterIconInCase">
+	<posx>25</posx>
+	<posy>10</posy>
+	<width>251</width>
+	<height>375</height>
+</include>
+<include name="LowList_PosterIconReflect">
+	<posy>405</posy>
+	<colordiffuse>ccFFFFFF</colordiffuse>
+	<include>LowList_PosterIconVars</include>
+</include>
+<include name="LowList_PosterIconInCaseReflect">
+	<posy>414</posy>
+	<colordiffuse>aaFFFFFF</colordiffuse>
+	<include>LowList_PosterIconInCase</include>
+</include>
+<include name="LowList_PosterIconGlass">
+	<texture>thumbs/poster_glass_noedge.png</texture>
+	<include>LowList_PosterIconVars</include>
+</include>
+<include name="LowList_DVDCaseGlass">
+	<texture>thumbs/boxes/poster_glass.png</texture>
+	<include>LowList_DVDCaseVars</include>
+</include>
+<include name="LowList_PosterIconNormal">
+	<texture diffuse="thumbs/movieposter_mask.png">$INFO[ListItem.Icon]</texture>
+</include>
+<include name="LowList_PosterIconPoster">
+	<texture diffuse="thumbs/movieposter_mask.png">$INFO[listitem.path]poster.jpg</texture>
+</include>
+<include name="LowList_PosterIconSeason">
+	<texture diffuse="thumbs/movieposter_mask.png">$INFO[SeasonThumb]</texture>
+</include>
+<include name="LowList_DVDIconNormal">
+	<texture diffuse="thumbs/boxes/movieposter_mask.png">$INFO[ListItem.Icon]</texture>
+</include>
+<include name="LowList_DVDIconPoster">
+	<texture diffuse="thumbs/boxes/movieposter_mask.png">$INFO[listitem.path]poster.jpg</texture>
+</include>
+<include name="LowList_DVDIconSeason">
+	<texture diffuse="thumbs/boxes/movieposter_mask.png">$INFO[SeasonThumb]</texture>
+</include>
+<include name="LowList_PosterIconNormalReflect">
+	<texture flipy="true" diffuse="thumbs/movieposter_mask_reflect.png">$INFO[ListItem.Icon]</texture>
+</include>
+<include name="LowList_PosterIconPosterReflect">
+	<texture flipy="true" diffuse="thumbs/movieposter_mask_reflect.png">$INFO[listitem.path]poster.jpg</texture>
+</include>
+<include name="LowList_PosterIconSeasonReflect">
+	<texture flipy="true" diffuse="thumbs/movieposter_mask_reflect.png">$INFO[SeasonThumb]</texture>
+</include>
+<include name="LowList_DVDIconNormalReflect">
+	<texture flipy="true" diffuse="thumbs/boxes/movieposter_mask_reflect.png">$INFO[ListItem.Icon]</texture>
+</include>
+<include name="LowList_DVDIconPosterReflect">
+	<texture flipy="true" diffuse="thumbs/boxes/movieposter_mask_reflect.png">$INFO[listitem.path]poster.jpg</texture>
+</include>
+<include name="LowList_DVDIconSeasonReflect">
+	<texture flipy="true" diffuse="thumbs/boxes/movieposter_mask_reflect.png">$INFO[SeasonThumb]</texture>
+</include>
+<!-- Poster Media Icons -->
+<include name="LowList_PosterMediaIcons">
+	<control type="group">
+		<include>ListIcon_PosterIconGroup</include>
+		<visible>!Container.Content(episodes) + !Window.IsActive(2) + !Window.IsActive(1) + ![Control.HasFocus(55110) | Control.IsVisible(55111) | Control.IsVisible(55112)] + ![Window.IsActive(25) + ![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]</visible>
+		<control type="largeimage">
+			<description>DVD Case Frame</description>
+			<include>LowList_DVDCaseVars</include>
+			<texture>thumbs/boxes/poster_shadow.png</texture>
+			<visible>Skin.HasSetting(dvdcase)</visible>
+		</control>
+		<control type="largeimage">
+			<description>Poster Icon Mask</description>
+			<include>LowList_PosterIconVars</include>
+			<texture diffuse="thumbs/movieposter_mask.png">common/black.png</texture>
+			<bordertexture border="-18">thumbs/movieposter_frame.png</bordertexture>
+			<visible>!Skin.HasSetting(dvdcase)</visible>
+		</control>
+		<control type="largeimage">
+			<description>POSTER icon</description>
+			<include condition="!Skin.HasSetting(dvdcase)">LowList_PosterIconVars</include>
+			<include condition="Skin.HasSetting(dvdcase)">LowList_PosterIconInCase</include>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<include condition="!Skin.HasSetting(dvdcase)">LowList_PosterIconNormal</include>
+			<include condition="Skin.HasSetting(dvdcase)">LowList_DVDIconNormal</include>
+			<visible>Container.Content(movies) | Container.Content(seasons) | Container.Content(tvshows)</visible>
+		</control>
+		<control type="largeimage">
+			<description>Poster Icon Glass</description>
+			<include condition="!Skin.HasSetting(dvdcase)">LowList_PosterIconGlass</include>
+			<include condition="Skin.HasSetting(dvdcase)">LowList_DVDCaseGlass</include>
+		</control>
+			<control type="largeimage">
+				<posx>200</posx>
+				<posy>355</posy>
+				<width>54</width>
+				<height>35</height>
+				<fadetime>200</fadetime>
+				<aspectratio>keep</aspectratio>
+				<texture>$INFO[ListItem.Property(mediaTag-videoResolution),hd/,.png]</texture>
+			<visible>!Skin.HasSetting(HDiconOff)</visible>			
+			</control>
+		<control type="largeimage">
+			<description>DVD Case Double Thick Glass</description>
+			<include>LowList_DVDCaseGlass</include>
+			<visible>Skin.HasSetting(dvdcase)</visible>
+		</control>
+		<control type="largeimage">
+			<description>DVD Case Frame Reflect</description>
+			<include>LowList_DVDCaseReflect</include>
+			<texture>thumbs/boxes/poster_shadow_reflect.png</texture>
+			<visible>Skin.HasSetting(dvdcase)</visible>
+		</control>
+	</control>
+</include>
+<!-- Square icon variables -->
+<include name="ListIcon_SquareIconGroup(0)">
+	<posx>8</posx>
+	<posy>0</posy>
+</include>
+<include name="LowList_CDCaseVars">
+	<posx>0</posx>
+	<posy>0</posy>
+	<width>305</width>
+	<height>278</height>
+</include>
+<include name="LowList_CDCaseReflect">
+	<posy>269</posy>
+	<include>LowList_CDCaseVars</include>
+</include>
+<include name="LowList_SquareIconVars">
+	<posx>0</posx>
+	<posy>0</posy>
+	<width>285</width>
+	<height>285</height>
+</include>
+<include name="LowList_SquareIconInCase">
+	<posx>41</posx>
+	<posy>12</posy>
+	<width>250</width>
+	<height>248</height>
+</include>
+<include name="LowList_SquareIconReflect">
+	<posy>294</posy>
+	<include>LowList_SquareIconVars</include>
+	<texture flipy="true" diffuse="thumbs/cdcover_mask_reflect.png">$INFO[ListItem.Icon]</texture>
+</include>
+<include name="LowList_SquareIconInCaseReflect">
+	<posy>287</posy>
+	<include>LowList_SquareIconInCase</include>
+	<texture flipy="true" diffuse="thumbs/boxes/cdcover_mask_reflect.png">$INFO[ListItem.Icon]</texture>
+</include>
+<include name="LowList_SquareIconGlass">
+	<texture>thumbs/cd_glass_noedge.png</texture>
+	<include>LowList_SquareIconVars</include>
+</include>
+<include name="LowList_CDCaseGlass">
+	<texture>thumbs/boxes/cd_glass.png</texture>
+	<include>LowList_CDCaseVars</include>
+</include>
+<!-- Square Media Icons -->
+<include name="LowList_SquareMediaIcons">
+	<control type="group">
+		<include>ListIcon_SquareIconGroup(0)</include>
+		<animation effect="slide" delay="1500" time="500" start="0,0" end="0,-50" tween="cubic" easing="inout" condition="Player.HasAudio">Conditional</animation>
+		<animation effect="slide" start="0,0" end="0,-50" time="200" condition="[[Control.HasFocus(55110) | Control.IsVisible(55111) | Control.IsVisible(55112)] | ControlGroup(55103).HasFocus()] + !Player.HasAudio">Conditional</animation>
+		<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)</visible>
+		<control type="largeimage">
+			<description>CD Case Frame</description>
+			<include>LowList_CDCaseVars</include>
+			<texture>thumbs/boxes/cd_shadow_light.png</texture>
+			<visible>Skin.HasSetting(dvdcase)</visible>
+		</control>
+		<control type="largeimage">
+			<description>Square Icon Mask</description>
+			<include>ListIcon_SquareIconVars</include>
+			<texture diffuse="thumbs/cdcover_mask.png">common/black.png</texture>
+			<bordertexture border="-16">thumbs/cd_shadow.png</bordertexture>
+			<visible>!Skin.HasSetting(dvdcase)</visible>
+		</control>
+		<control type="largeimage">
+			<description>Square Icon</description>
+			<include condition="!Skin.HasSetting(dvdcase)">LowList_SquareIconVars</include>
+			<include condition="Skin.HasSetting(dvdcase)">LowList_SquareIconInCase</include>
+			<aspectratio scalediffuse="false">scale</aspectratio>
+			<texture diffuse="thumbs/cdcover_mask.png">$INFO[ListItem.Icon]</texture>
+		</control>
+		<control type="largeimage">
+			<description>Square Icon Overlay</description>
+			<include>LowList_SquareIconVars</include>
+			<texture>home/nowplaying_overlay.png</texture>
+			<visible>!Skin.HasSetting(dvdcase)</visible>
+		</control>
+		<control type="largeimage">
+			<description>Square Icon Glass</description>
+			<include condition="!Skin.HasSetting(dvdcase)">LowList_SquareIconGlass</include>
+			<include condition="Skin.HasSetting(dvdcase)">LowList_CDCaseGlass</include>
+		</control>
+		<control type="largeimage">
+			<description>CD Case Double Thick Glass</description>
+			<include>LowList_CDCaseGlass</include>
+			<visible>Skin.HasSetting(dvdcase)</visible>
+		</control>
+		<control type="largeimage">
+			<description>CD Case Frame Reflect</description>
+			<include>LowList_CDCaseReflect</include>
+			<texture>thumbs/boxes/cd_shadow_reflect.png</texture>
+			<visible>Skin.HasSetting(dvdcase)</visible>
+		</control>
+		<control type="largeimage">
+			<description>Square Icon Reflection</description>
+			<include condition="!Skin.HasSetting(dvdcase)">LowList_SquareIconReflect</include>
+			<include condition="Skin.HasSetting(dvdcase)">LowList_SquareIconInCaseReflect</include>
+			<colordiffuse>66FFFFFF</colordiffuse>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+		</control>
+		<control type="largeimage">
+			<description>CD Case Frame Reflect</description>
+			<include>LowList_CDCaseReflect</include>
+			<texture>thumbs/boxes/cd_glass_reflect.png</texture>
+			<visible>Skin.HasSetting(dvdcase)</visible>
+		</control>
+	</control>
+</include>
+<!-- Episode icon variables -->
+<include name="ListIcon_EpisodeIconGroup">
+	<posx>0</posx>
+	<posy>37</posy>
+</include>
+<include name="LowList_EpisodeCaseVars">
+	<posx>-13</posx>
+	<posy>-13</posy>
+	<width>343</width>
+	<height>251</height>
+</include>
+<include name="LowList_EpisodeCaseReflect">
+	<posy>220</posy>
+	<include>LowList_EpisodeCaseVars</include>
+</include>
+<include name="LowList_EpisodeIconVars">
+	<posx>0</posx>
+	<posy>0</posy>
+	<width>319</width>
+	<height>223</height>
+</include>
+<include name="LowList_EpisodeIconReflect">
+	<posy>240</posy>
+	<include>LowList_EpisodeIconVars</include>
+	<texture flipy="true" diffuse="thumbs/cdcover_mask_reflect.png">$INFO[ListItem.Icon]</texture>
+</include>
+<include name="LowList_EpisodeIconReflectPlugin">
+	<posy>240</posy>
+	<include>LowList_EpisodeIconVars</include>
+	<texture flipy="true" diffuse="thumbs/cdcover_mask_reflect.png">$INFO[ListItem.Art(fanart)]</texture>
+</include>
+<include name="LowList_EpisodeIconInCaseReflect">
+	<posy>252</posy>
+	<include>LowList_EpisodeIconVars</include>
+	<texture flipy="true" diffuse="thumbs/boxes/cdcover_mask_reflect.png">$INFO[ListItem.Icon]</texture>
+</include>
+<include name="LowList_EpisodeIconGlass">
+	<texture>thumbs/cd_glass_noedge.png</texture>
+	<include>LowList_EpisodeIconVars</include>
+</include>
+<include name="LowList_EpisodeCaseGlass">
+	<texture>multiplex/boxes/multiplex_tvglass.png</texture>
+	<include>LowList_EpisodeCaseVars</include>
+</include>
+<!-- Episode Media Icons -->
+<include name="LowList_EpisodeMediaIcons">
+
+
+		<!-- Plugin Content -->
+	<control type="group">
+		<include>ListIcon_EpisodeIconGroup</include>
+		<animation type="Visible">
+			<effect type="fade" time="450" start="0" end="100" />
+			<effect type="slide" start="0,-50" end="0,0" time="200" />
+		</animation>
+		<animation effect="fade" time="500" start="100" end="0" condition="[Control.HasFocus(55110) | Control.IsVisible(55111) | Control.IsVisible(55112)]">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-10,0" time="300" condition="Control.HasFocus(61)">Conditional</animation>
+		<visible>Container.Content(plugincontent) | Container.Content(plugins)</visible>
+		<control type="image">
+			<posx>-5</posx>
+			<posy>-100</posy>
+			<width>319</width>
+			<height>379</height>
+			<aspectratio scalediffuse="false">keep</aspectratio>
+			<fadetime>200</fadetime>
+			<info>ListItem.Art(thumb)</info>
+		</control>
+		<control type="image">
+			<posx>-5</posx>
+			<posy>-100</posy>
+			<width>319</width>
+			<height>379</height>
+			<texture>$INFO[ListItem.Art(fanart)]</texture>
+			<aspectratio scalediffuse="false">keep</aspectratio>
+			<fadetime>200</fadetime>
+			<visible>IsEmpty(ListItem.Art(thumb)) + Window.IsActive(25)</visible>
+		</control>
+
+	</control>
+
+
+	<control type="group">
+		<include>ListIcon_EpisodeIconGroup</include>
+		<animation type="Visible">
+			<effect type="fade" time="450" start="0" end="100" />
+			<effect type="slide" start="0,-50" end="0,0" time="200" />
+		</animation>
+		<animation effect="fade" time="500" start="100" end="0" condition="[Control.HasFocus(55110) | Control.IsVisible(55111) | Control.IsVisible(55112)]">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-10,0" time="300" condition="Control.HasFocus(61)">Conditional</animation>
+		<visible>[Container.Content(episodes) | Window.IsActive(2) | [Window.IsActive(25) + ![Container.Content(movies) | Container.Content(plugins) | Container.Content(plugincontent) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]] + ![Control.HasFocus(55110) | Control.IsVisible(55111) | Control.IsVisible(55112)]</visible>
+		<control type="largeimage">
+			<description>Episode Case Frame</description>
+			<include>LowList_EpisodeCaseVars</include>
+			<texture>multiplex/boxes/multiplex_tvborder.png</texture>
+			<visible>Skin.HasSetting(dvdcase)</visible>
+		</control>
+		<control type="largeimage">
+			<include>LowList_EpisodeIconVars</include>
+			<texture diffuse="thumbs/cdcover_mask.png">defaultvideo.png</texture>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<info>ListItem.Icon</info>
+		</control>
+		<control type="largeimage">
+			<include>LowList_EpisodeIconVars</include>
+			<texture>$INFO[ListItem.Art(fanart)]</texture>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<visible>IsEmpty(LisItem.Icon) + IsEmpty(ListItem.Art(thumb)) + Window.IsActive(25)</visible>
+		</control>
+
+		<control type="largeimage">
+			<include>LowList_EpisodeIconVars</include>
+			<bordertexture border="-42,-18,-42,-20">thumbs/cd_shadow_light.png</bordertexture>
+			<texture>common/blank.png</texture>
+			<visible>!Skin.HasSetting(dvdcase)</visible>
+		</control>
+		<control type="largeimage">
+			<description>Episode Icon Glass</description>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<include condition="!Skin.HasSetting(dvdcase)">LowList_EpisodeIconGlass</include>
+			<include condition="Skin.HasSetting(dvdcase)">LowList_EpisodeCaseGlass</include>
+		</control>
+		<control type="largeimage">
+			<description>Episode Case Double Thick Glass</description>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<include>LowList_EpisodeCaseGlass</include>
+			<visible>Skin.HasSetting(dvdcase)</visible>
+		</control>
+		<control type="largeimage">
+			<description>Episode Case Frame Reflect</description>
+			<include>LowList_EpisodeCaseReflect</include>
+			<texture>multiplex/boxes/multiplex_tvborderreflect.png</texture>
+			<visible>Skin.HasSetting(dvdcase)</visible>
+		</control>
+		<control type="largeimage">
+			<include>LowList_EpisodeIconReflect</include>
+			<aspectratio align="center" aligny="top">scale</aspectratio>
+						<visible>![IsEmpty(LisItem.Icon) + IsEmpty(ListItem.Art(thumb)) + Window.IsActive(25)]</visible>
+
+		</control>
+		<control type="largeimage">
+			<include>LowList_EpisodeIconReflectPlugin</include>
+			<aspectratio align="center" aligny="top">scale</aspectratio>
+			<visible>IsEmpty(LisItem.Icon) + IsEmpty(ListItem.Art(thumb)) + Window.IsActive(25)</visible>
+		</control>
+		<control type="largeimage">
+			<description>Episode Case Frame Reflect</description>
+			<include>LowList_EpisodeCaseReflect</include>
+			<texture>multiplex/boxes/multiplex_tvglassreflect.png</texture>
+			<visible>Skin.HasSetting(dvdcase)</visible>
+		</control>
+	</control>
+</include>
+	<!-- Square icon roller -->
+	<include name="LowList_SquareIconRoller">
+		<!-- Static Icons -->
+		<control type="group">
+
+			<posx>0</posx>
+			<posy>0</posy>
+			<visible>[!Container.OnPrevious + !Container.OnNext] | [Container.Content(artists) + Skin.HasSetting(artistrolleroff)] | [Container.Content(albums) + Skin.HasSetting(albumrolleroff)] | [Container.Content(songs) + Skin.HasSetting(songrolleroff)] | Player.HasAudio</visible>
+			<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
+			<animation effect="fade" start="0" end="100" time="0" delay="200">Visible</animation>
+			<control type="group">
+
+				<include>ListIcon_SquarePos-3</include>
+				<animation effect="fade" start="0" end="60" time="0" condition="true">Conditional</animation>
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z3</include>
+					<include>MusicShowcaseThumbMain</include>
+					<info>ListItem(-3).Icon</info>
+				</control>
+
+				<include>ListIcon_Square_Z3</include>
+			</control>
+
+			<control type="group">
+
+				<include>ListIcon_SquarePos3</include>
+				<animation effect="fade" start="0" end="60" time="0" condition="true">Conditional</animation>
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z3</include>
+					<include>MusicShowcaseThumbMain</include>
+					<info>ListItem(3).Icon</info>
+				</control>
+
+				<include>ListIcon_Square_Z3</include>
+			</control>
+
+			<control type="group">
+
+				<include>ListIcon_SquarePos-2</include>
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z2</include>
+					<include>MusicShowcaseThumbMain</include>
+					<info>ListItem(-2).Icon</info>
+				</control>
+
+				<include>ListIcon_Square_Z2</include>
+			</control>
+
+			<control type="group">
+
+				<include>ListIcon_SquarePos2</include>
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z2</include>
+					<include>MusicShowcaseThumbMain</include>
+					<info>ListItem(2).Icon</info>
+				</control>
+
+				<include>ListIcon_Square_Z2</include>
+			</control>
+
+			<control type="group">
+
+				<include>ListIcon_SquarePos-1</include>
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z1</include>
+					<include>MusicShowcaseThumbMain</include>
+					<info>ListItem(-1).Icon</info>
+				</control>
+
+				<include>ListIcon_Square_Z1</include>
+			</control>
+
+			<control type="group">
+
+				<include>ListIcon_SquarePos1</include>
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z1</include>
+					<include>MusicShowcaseThumbMain</include>
+					<info>ListItem(1).Icon</info>
+				</control>
+
+				<include>ListIcon_Square_Z1</include>
+			</control>
+
+			<control type="group">
+
+				<include>ListIcon_SquarePos0</include>
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z0</include>
+					<include>MusicShowcaseThumbMain</include>
+					<info>ListItem.Icon</info>
+					<visible>![Container.Content(artists) + Skin.HasSetting(artistrolleroff)]</visible>
+				</control>
+
+				<include>ListIcon_Square_Z0</include>
+				<control type="largeimage">
+					<posy>259</posy>
+					<include>ListIcon_SquareVars_Z0</include>
+					<include>MusicShowcaseThumbReflection</include>
+					<info>ListItem.Icon</info>
+					<visible>false</visible>
+				</control>
+
+			</control>
+
+		</control>
+
+		<!-- Rolling Down -->
+		<control type="group">
+
+			<posx>0</posx>
+			<posy>0</posy>
+			<control type="group">
+
+				<include>ListIcon_SquarePos2</include>
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z2</include>
+					<include>MusicShowcaseThumbMain</include>
+					<info>ListItem(3).Icon</info>
+					<visible>Container.OnPrevious</visible>
+					<animation type="Hidden">
+						<effect type="fade" start="100" end="60" time="200" />
+						<effect type="zoom" end="10,37,190,190" time="200" />
+					</animation>
+				</control>
+
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z2</include>
+					<bordertexture border="-14">thumbs/cd_shadow_light.png</bordertexture>
+					<texture>thumbs/cd_glass_noedge.png</texture>
+					<visible>Container.OnPrevious</visible>
+					<animation type="Hidden">
+						<effect type="fade" start="100" end="60" time="200" />
+						<effect type="zoom" end="10,37,190,190" time="200" />
+					</animation>
+				</control>
+
+			</control>
+
+			<control type="group">
+
+				<include>ListIcon_SquarePos-3</include>
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z3</include>
+					<include>MusicShowcaseThumbMain</include>
+					<info>ListItem(-3).Icon</info>
+					<visible>Container.OnPrevious</visible>
+					<animation type="Hidden">
+						<effect type="fade" start="10" end="60" time="200" />
+					</animation>
+				</control>
+
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z3</include>
+					<bordertexture border="-10">thumbs/cd_shadow_light.png</bordertexture>
+					<texture>thumbs/cd_glass_noedge.png</texture>
+					<visible>Container.OnPrevious</visible>
+					<animation type="Hidden">
+						<effect type="fade" start="10" end="60" time="200" />
+					</animation>
+				</control>
+
+			</control>
+
+			<control type="group">
+
+				<include>ListIcon_SquarePos-3</include>
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z3</include>
+					<include>MusicShowcaseThumbMain</include>
+					<info>ListItem(-2).Icon</info>
+					<visible>Container.OnPrevious</visible>
+					<animation type="Hidden">
+						<effect type="zoom" end="-10,15,210,210" time="200" />
+					</animation>
+				</control>
+
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z3</include>
+					<bordertexture border="-12">thumbs/cd_shadow_light.png</bordertexture>
+					<texture>thumbs/cd_glass_noedge.png</texture>
+					<visible>Container.OnPrevious</visible>
+					<animation type="Hidden">
+						<effect type="zoom" end="-10,15,210,210" time="200" />
+					</animation>
+				</control>
+
+			</control>
+
+			<control type="group">
+
+				<include>ListIcon_SquarePos1</include>
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z1</include>
+					<include>MusicShowcaseThumbMain</include>
+					<info>ListItem(2).Icon</info>
+					<visible>Container.OnPrevious</visible>
+					<animation type="Hidden">
+						<effect type="zoom" end="10,40,210,210" time="200" />
+					</animation>
+				</control>
+
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z1</include>
+					<bordertexture border="-16">thumbs/cd_shadow_light.png</bordertexture>
+					<texture>thumbs/cd_glass_noedge.png</texture>
+					<visible>Container.OnPrevious</visible>
+					<animation type="Hidden">
+						<effect type="zoom" end="10,40,210,210" time="200" />
+					</animation>
+				</control>
+
+			</control>
+
+			<control type="group">
+
+				<include>ListIcon_SquarePos-2</include>
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z2</include>
+					<include>MusicShowcaseThumbMain</include>
+					<info>ListItem(-1).Icon</info>
+					<visible>Container.OnPrevious</visible>
+					<animation type="Hidden">
+						<effect type="zoom" end="-10,18,230,230" time="200" />
+					</animation>
+				</control>
+
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z2</include>
+					<bordertexture border="-14">thumbs/cd_shadow_light.png</bordertexture>
+					<texture>thumbs/cd_glass_noedge.png</texture>
+					<visible>Container.OnPrevious</visible>
+					<animation type="Hidden">
+						<effect type="zoom" end="-10,18,230,230" time="200" />
+					</animation>
+				</control>
+
+			</control>
+
+			<control type="group">
+
+				<include>ListIcon_SquarePos0</include>
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z0</include>
+					<include>MusicShowcaseThumbMain</include>
+					<info>ListItem(1).Icon</info>
+					<visible>Container.OnPrevious</visible>
+					<visible>!Player.HasAudio</visible>
+					<visible>[Container.Content(artists) + !Skin.HasSetting(artistrolleroff)] | [Container.Content(albums) + !Skin.HasSetting(albumrolleroff)] | [Container.Content(songs) + !Skin.HasSetting(songrolleroff)] | Window.IsActive(500) | Window.IsActive(501)</visible>
+					<animation effect="zoom" end="10,55,230,230" time="200">Hidden</animation>
+				</control>
+
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z0</include>
+					<bordertexture border="-20">thumbs/cd_shadow_light.png</bordertexture>
+					<texture>thumbs/cd_glass_noedge.png</texture>
+					<visible>Container.OnPrevious</visible>
+					<visible>!Player.HasAudio</visible>
+					<visible>[Container.Content(artists) + !Skin.HasSetting(artistrolleroff)] | [Container.Content(albums) + !Skin.HasSetting(albumrolleroff)] | [Container.Content(songs) + !Skin.HasSetting(songrolleroff)] | Window.IsActive(500) | Window.IsActive(501)</visible>
+					<animation effect="zoom" end="10,55,230,230" time="200">Hidden</animation>
+				</control>
+
+			</control>
+
+			<control type="group">
+
+				<include>ListIcon_SquarePos-1</include>
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z1</include>
+					<include>MusicShowcaseThumbMain</include>
+					<info>ListItem.Icon</info>
+					<visible>Container.OnPrevious</visible>
+					<animation effect="zoom" end="-10,32,250,250" time="200">Hidden</animation>
+				</control>
+
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z1</include>
+					<bordertexture border="-16">thumbs/cd_shadow_light.png</bordertexture>
+					<texture>thumbs/cd_glass_noedge.png</texture>
+					<visible>Container.OnPrevious</visible>
+					<animation effect="zoom" end="-10,32,250,250" time="200">Hidden</animation>
+				</control>
+
+			</control>
+
+		</control>
+
+		<!-- Rolling Up -->
+		<control type="group">
+
+			<posx>0</posx>
+			<posy>0</posy>
+			<control type="group">
+
+				<include>ListIcon_SquarePos3</include>
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z3</include>
+					<include>MusicShowcaseThumbMain</include>
+					<info>ListItem(3).Icon</info>
+					<visible>Container.OnNext</visible>
+					<animation type="Hidden">
+						<effect type="fade" start="10" end="60" time="200" />
+					</animation>
+				</control>
+
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z3</include>
+					<bordertexture border="-10">thumbs/cd_shadow_light.png</bordertexture>
+					<texture>thumbs/cd_glass_noedge.png</texture>
+					<visible>Container.OnNext</visible>
+					<animation type="Hidden">
+						<effect type="fade" start="10" end="60" time="200" />
+					</animation>
+				</control>
+
+			</control>
+
+			<control type="group">
+
+				<include>ListIcon_SquarePos-2</include>
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z2</include>
+					<include>MusicShowcaseThumbMain</include>
+					<info>ListItem(-3).Icon</info>
+					<visible>Container.OnNext</visible>
+					<animation type="Hidden">
+						<effect type="fade" start="100" end="60" time="200" />
+						<effect type="zoom" end="10,-15,190,190" time="200" />
+					</animation>
+				</control>
+
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z2</include>
+					<bordertexture border="-14">thumbs/cd_shadow_light.png</bordertexture>
+					<texture>thumbs/cd_glass_noedge.png</texture>
+					<visible>Container.OnNext</visible>
+					<animation type="Hidden">
+						<effect type="fade" start="100" end="60" time="200" />
+						<effect type="zoom" end="10,-15,190,190" time="200" />
+					</animation>
+				</control>
+
+			</control>
+
+			<control type="group">
+
+				<include>ListIcon_SquarePos3</include>
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z3</include>
+					<include>MusicShowcaseThumbMain</include>
+					<info>ListItem(2).Icon</info>
+					<visible>Container.OnNext</visible>
+					<animation type="Hidden">
+						<effect type="zoom" end="-10,-37,210,210" time="200" />
+					</animation>
+				</control>
+
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z3</include>
+					<bordertexture border="-12">thumbs/cd_shadow_light.png</bordertexture>
+					<texture>thumbs/cd_glass_noedge.png</texture>
+					<visible>Container.OnNext</visible>
+					<animation type="Hidden">
+						<effect type="zoom" end="-10,-37,210,210" time="200" />
+					</animation>
+				</control>
+
+			</control>
+
+			<control type="group">
+
+				<include>ListIcon_SquarePos-1</include>
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z1</include>
+					<include>MusicShowcaseThumbMain</include>
+					<info>ListItem(-2).Icon</info>
+					<visible>Container.OnNext</visible>
+					<animation effect="zoom" end="10,-18,210,210" time="200">Hidden</animation>
+				</control>
+
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z1</include>
+					<bordertexture border="-16">thumbs/cd_shadow_light.png</bordertexture>
+					<texture>thumbs/cd_glass_noedge.png</texture>
+					<visible>Container.OnNext</visible>
+					<animation effect="zoom" end="10,-18,210,210" time="200">Hidden</animation>
+				</control>
+
+			</control>
+
+			<control type="group">
+
+				<include>ListIcon_SquarePos2</include>
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z2</include>
+					<include>MusicShowcaseThumbMain</include>
+					<info>ListItem(1).Icon</info>
+					<visible>Container.OnNext</visible>
+					<animation type="Hidden">
+						<effect type="zoom" end="-10,-40,230,230" time="200" />
+					</animation>
+				</control>
+
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z2</include>
+					<bordertexture border="-14">thumbs/cd_shadow_light.png</bordertexture>
+					<texture>thumbs/cd_glass_noedge.png</texture>
+					<visible>Container.OnNext</visible>
+					<animation type="Hidden">
+						<effect type="zoom" end="-10,-40,230,230" time="200" />
+					</animation>
+				</control>
+
+			</control>
+
+			<control type="group">
+
+				<include>ListIcon_SquarePos0</include>
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z0</include>
+					<include>MusicShowcaseThumbMain</include>
+					<info>ListItem(-1).Icon</info>
+					<visible>Container.OnNext</visible>
+					<visible>!Player.HasAudio</visible>
+					<visible>[Container.Content(artists) + !Skin.HasSetting(artistrolleroff)] | [Container.Content(albums) + !Skin.HasSetting(albumrolleroff)] | [Container.Content(songs) + !Skin.HasSetting(songrolleroff)] | Window.IsActive(500) | Window.IsActive(501)</visible>
+					<animation effect="zoom" end="10,-32,230,230" time="200">Hidden</animation>
+				</control>
+
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z0</include>
+					<bordertexture border="-20">thumbs/cd_shadow_light.png</bordertexture>
+					<texture>thumbs/cd_glass_noedge.png</texture>
+					<visible>Container.OnNext</visible>
+					<visible>!Player.HasAudio</visible>
+					<visible>[Container.Content(artists) + !Skin.HasSetting(artistrolleroff)] | [Container.Content(albums) + !Skin.HasSetting(albumrolleroff)] | [Container.Content(songs) + !Skin.HasSetting(songrolleroff)] | Window.IsActive(500) | Window.IsActive(501)</visible>
+					<animation effect="zoom" end="10,-32,230,230" time="200">Hidden</animation>
+				</control>
+
+			</control>
+
+			<control type="group">
+
+				<include>ListIcon_SquarePos1</include>
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z1</include>
+					<include>MusicShowcaseThumbMain</include>
+					<info>ListItem.Icon</info>
+					<visible>Container.OnNext</visible>
+					<animation type="Hidden">
+						<effect type="zoom" end="-10,-55,250,250" time="200" />
+					</animation>
+				</control>
+
+				<control type="largeimage">
+					<include>ListIcon_SquareVars_Z1</include>
+					<bordertexture border="-16">thumbs/cd_shadow_light.png</bordertexture>
+					<texture>thumbs/cd_glass_noedge.png</texture>
+					<visible>Container.OnNext</visible>
+					<animation type="Hidden">
+						<effect type="zoom" end="-10,-55,250,250" time="200" />
+					</animation>
+				</control>
+
+			</control>
+
+		</control>
+
+	</include>
+
+	<!-- LOW LIST DETAIL LABELS -->
+	<include name="LowList_DetailInfoLabelVars">
+		<posx>10</posx>
+		<height>16</height>
+		<width>350</width>
+		<font>Font_ContextMenuButton</font>
+		<textcolor>abffffff</textcolor>
+	</include>
+
+	<include name="LowList_DetailInfoValueVars">
+		<posx>10</posx>
+		<height>16</height>
+		<width>350</width>
+		<font>Font_MultiplexInfoLabel</font>
+		<textcolor>ffffffff</textcolor>
+	</include>
+
+	<!-- Label position vars -->
+	<include name="LowList_DetailInfoLabelPos1">
+		<posy>5</posy>
+		<include>LowList_DetailInfoLabelVars</include>
+	</include>
+
+	<include name="LowList_DetailInfoLabelPos2">
+		<posy>45</posy>
+		<include>LowList_DetailInfoLabelVars</include>
+	</include>
+
+	<include name="LowList_DetailInfoLabelPos3">
+		<posy>85</posy>
+		<include>LowList_DetailInfoLabelVars</include>
+	</include>
+
+	<include name="LowList_DetailInfoLabelPos4">
+		<posy>125</posy>
+		<include>LowList_DetailInfoLabelVars</include>
+	</include>
+
+	<include name="LowList_DetailInfoLabelPos4L">
+		<posy>125</posy>
+		<width>200</width>
+		<include>LowList_DetailInfoLabelVars</include>
+	</include>
+
+	<include name="LowList_DetailInfoLabelPos4R">
+		<posy>125</posy>
+		<posx>10r</posx>
+		<align>right</align>
+		<width>135</width>
+		<include>LowList_DetailInfoLabelVars</include>
+	</include>
+
+	<include name="LowList_DetailInfoLabelPosXX">
+		<posy>226</posy>
+		<posx>0r</posx>
+		<align>right</align>
+		<width>190</width>
+		<include>LowList_DetailInfoLabelVars</include>
+	</include>
+
+	<include name="LowList_DetailInfoLabelPosXXRight">
+		<posy>213</posy>
+		<posx>200</posx>
+		<width>160</width>
+		<include>LowList_DetailInfoLabelVars</include>
+	</include>
+
+	<!-- Tagline Label -->
+	<include name="LowList_TaglineLabel">
+		<control type="group">
+
+			<posx>0</posx>
+			<posy>-55</posy>
+			<width>360</width>
+			<height>200</height>
+			<visible>Skin.HasSetting(highlist)</visible>
+			<animation effect="slide" start="0,0" end="0,-52" time="200" condition="Skin.HasSetting(highlist)">Conditional</animation>
+
+			<control type="label">
+				<description>TAGLINE label</description>
+				<posx>5</posx>
+				<posy>10</posy>
+				<width>370</width>
+				<align>left</align>
+				<height>16</height>
+				<font>Font_OSDMusicArtist</font>
+				<label>[COLOR ffffffff][B]$INFO[ListItem.tagline,","][/B][/COLOR]</label>
+				<visible>Container.Content(movies) + !IsEmpty(ListItem.tagline)</visible>
+			</control>
+
+			<control type="label">
+				<posx>5</posx>
+				<posy>10</posy>
+				<width>270</width>
+				<align>left</align>
+				<height>16</height>
+				<font>Font_OSDMusicArtist</font>
+				<label>[COLOR ffffffff][B]...[/B][/COLOR]</label>
+				<visible>Container.Content(movies) + IsEmpty(ListItem.tagline)</visible>
+			</control>
+
+		</control>
+
+	</include>
+
+	<!-- Text box vars -->
+	<include name="LowList_ShortTextBox">
+		<posy>8</posy>
+		<posx>10</posx>
+		<height>99</height>
+		<width>350</width>
+		<font>Font_MultiplexPlotSmall</font>
+		<textcolor>d0ffffff</textcolor>
+		<autoscroll delay="4000" time="4000" repeat="10000">true</autoscroll>
+		<include>Animation_PlotFade</include>
+	</include>
+
+	<include name="LowList_TallTextBox">
+		<posy>8</posy>
+		<posx>10</posx>
+		<height>200</height>
+		<width>350</width>
+		<font>Font_MultiplexPlotSmall</font>
+		<textcolor>d0ffffff</textcolor>
+		<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+		<animation effect="fade" start="100" end="0" time="150">Hidden</animation>
+		<autoscroll delay="8000" time="4000" repeat="10000">true</autoscroll>
+		<include>Animation_HighListSlide</include>
+	</include>
+
+	<!-- LOW LIST DETAIL SEPARATORS -->
+	<include name="LowList_Detail_Separator">
+		<posx>15</posx>
+		<height>1</height>
+		<width>324</width>
+		<texture>lowlist/lowlistpanel_line.png</texture>
+		<include>common-fade-quick</include>
+	</include>
+
+	<include name="LowList_Detail_Separators">
+		<control type="group">
+
+			<posx>890</posx>
+			<posy>503</posy>
+			<width>360</width>
+			<height>217</height>
+			<!-- High list separators -->
+			<control type="largeimage">
+				<include>LowList_Detail_Separator</include>
+				<posy>-75</posy>
+				<visible>Skin.HasSetting(highlist) + [Control.IsVisible(7802) | Control.IsVisible(7812)]</visible>
+			</control>
+
+			<control type="largeimage">
+				<include>LowList_Detail_Separator</include>
+				<posy>-65</posy>
+				<visible>Skin.HasSetting(highlist) + [Control.IsVisible(7814) | Control.IsVisible(7850)]</visible>
+			</control>
+
+			<control type="largeimage">
+				<include>LowList_Detail_Separator</include>
+				<posy>-35</posy>
+				<visible>Skin.HasSetting(highlist) + [Control.IsVisible(7802) | Control.IsVisible(7812)]</visible>
+			</control>
+
+			<control type="largeimage">
+				<include>LowList_Detail_Separator</include>
+				<posy>5</posy>
+				<visible>Skin.HasSetting(highlist) + [Control.IsVisible(7802) | Control.IsVisible(7812)]</visible>
+			</control>
+
+			<control type="largeimage">
+				<include>LowList_Detail_Separator</include>
+				<posy>115</posy>
+				<visible>Skin.HasSetting(highlist) + [Control.IsVisible(7801) | Control.IsVisible(7802) | Control.IsVisible(7811) | Control.IsVisible(7812) | Control.IsVisible(7831)]</visible>
+			</control>
+
+			<!-- Low list separators -->
+			<control type="largeimage">
+				<include>LowList_Detail_Separator</include>
+				<posy>35</posy>
+				<visible>!Skin.HasSetting(highlist) + [Control.IsVisible(7802) | Control.IsVisible(7812)]</visible>
+			</control>
+
+			<control type="largeimage">
+				<include>LowList_Detail_Separator</include>
+				<posy>75</posy>
+				<visible>!Skin.HasSetting(highlist) + [Control.IsVisible(7802) | Control.IsVisible(7812)]</visible>
+			</control>
+
+			<control type="largeimage">
+				<include>LowList_Detail_Separator</include>
+				<posy>115</posy>
+				<visible>!Skin.HasSetting(highlist) + [Control.IsVisible(7802) | Control.IsVisible(7812) | Control.IsVisible(7831) | Control.IsVisible(7811)]</visible>
+			</control>
+
+			<!-- Bottom separator -->
+			<control type="largeimage">
+				<include>LowList_Detail_Separator</include>
+				<posy>155</posy>
+				<visible>[![Control.IsVisible(7898) | [!Skin.HasSetting(highlist) + [Control.IsVisible(7814) | Control.IsVisible(7820) | Control.IsVisible(7850)]]]] + Control.IsVisible(551)</visible>
+			</control>
+
+		</control>
+
+	</include>
+
+	<!-- MENU BAR (7000) NEW BUTTONS -->
+	<include name="LowList_HighLoButton">
+		<control type="togglebutton" id="9400">
+			<include>Objects_MediaMenuButton</include>
+			<label>$LOCALIZE[535]: $LOCALIZE[391]</label>
+			<altlabel>$LOCALIZE[535]: $LOCALIZE[393]</altlabel>
+			<onclick>Skin.SetBool(highlist)</onclick>
+			<altclick>Skin.Reset(highlist)</altclick>
+			<visible>Control.IsVisible(551)</visible>
+		</control>
+
+	</include>
+
+	<include name="LowList_SlimFullToggleButton">
+		<control type="togglebutton" id="940">
+			<include>Objects_MediaMenuButton</include>
+			<include>Objects_ListLayoutStrings</include>
+			<usealttexture>Skin.HasSetting(artistlistfull)</usealttexture>
+			<onclick>Skin.SetBool(artistlistfull)</onclick>
+			<altclick>Skin.Reset(artistlistfull)</altclick>
+			<visible>Control.IsVisible(551) + Container.Content(artists)</visible>
+		</control>
+
+		<control type="togglebutton" id="941">
+			<include>Objects_MediaMenuButton</include>
+			<include>Objects_ListLayoutStrings</include>
+			<usealttexture>Skin.HasSetting(albumlistfull)</usealttexture>
+			<onclick>Skin.SetBool(albumlistfull)</onclick>
+			<altclick>Skin.Reset(albumlistfull)</altclick>
+			<visible>Control.IsVisible(551) + Container.Content(albums)</visible>
+		</control>
+
+		<control type="togglebutton" id="942">
+			<include>Objects_MediaMenuButton</include>
+			<include>Objects_ListLayoutStrings</include>
+			<usealttexture>Skin.HasSetting(songlistfull)</usealttexture>
+			<onclick>Skin.SetBool(songlistfull)</onclick>
+			<altclick>Skin.Reset(songlistfull)</altclick>
+			<visible>Control.IsVisible(551) + Container.Content(songs)</visible>
+		</control>
+
+	</include>
+
+
+	<!-- LOW LIST DETAIL PANELS -->
+	<include name="ListDetail_PanelVars">
+		<posx>890</posx>
+		<posy>503</posy>
+		<width>360</width>
+		<height>217</height>
+		<animation effect="fade" start="0" end="100" time="350">Visible</animation>
+		<animation effect="fade" start="100" end="0" time="400">Hidden</animation>
+		<include>Animation_CommonFade</include>
+	</include>
+
+	<!-- Music Detail Panels -->
+	<include name="LowList_MusicDetailPanels">
+		<!-- Music description panel -->
+		<control type="group" id="7801">
+			<description>MUSIC DESCRIPTION detail panel</description>
+			<include>ListDetail_PanelVars</include>
+			<visible>Control.IsVisible(551) + [Control.HasFocus(7701) | [!ControlGroup(7003).HasFocus() + Skin.HasSetting(musicdescpanelon) + !Control.IsVisible(7898)]]</visible>
+			<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)</visible>
+			<control type="textbox">
+				<description>BIOGROPHY: (Short)</description>
+				<include>LowList_ShortTextBox</include>
+				<textcolor>d0ffffff</textcolor>
+				<label fallback="-">$INFO[ListItem.Property(description),[COLOR abffffff][UPPERCASE]$LOCALIZE[21887][/UPPERCASE]:[/COLOR] ]</label>
+				<visible>!Skin.HasSetting(highlist) + Container.Content(artists)</visible>
+			</control>
+
+			<control type="textbox">
+				<description>DESCRIPTION: (Short)</description>
+				<include>LowList_ShortTextBox</include>
+				<label fallback="-">$INFO[ListItem.Property(description),[COLOR abffffff][UPPERCASE]$LOCALIZE[183][/UPPERCASE]:[/COLOR] ]</label>
+				<visible>!Skin.HasSetting(highlist) + Container.Content(albums)</visible>
+			</control>
+
+			<control type="textbox">
+				<description>COMMENT: (Short)</description>
+				<include>LowList_ShortTextBox</include>
+				<label fallback="-">$INFO[ListItem.comment,[COLOR abffffff][UPPERCASE]$LOCALIZE[569][/UPPERCASE]:[/COLOR] ]</label>
+				<visible>!Skin.HasSetting(highlist) + Container.Content(songs)</visible>
+			</control>
+
+			<control type="textbox">
+				<description>DESCRIPTION: (Tall)</description>
+				<include>LowList_TallTextBox</include>
+				<label>$INFO[ListItem.Property(description),[UPPERCASE][COLOR 66ffffff]$LOCALIZE[21887]/$LOCALIZE[21821]:[/COLOR][/UPPERCASE][CR]]</label>
+				<visible>Skin.HasSetting(highlist) + !IsEmpty(ListItem.Property(description))</visible>
+			</control>
+
+			<control type="textbox">
+				<description>COMMENT: (Tall)</description>
+				<include>LowList_TallTextBox</include>
+				<label fallback="31425">$INFO[ListItem.Comment,[UPPERCASE][COLOR 66ffffff]$LOCALIZE[21806]:[/COLOR][/UPPERCASE][CR]]</label>
+				<visible>Skin.HasSetting(highlist) + IsEmpty(ListItem.Property(description))</visible>
+			</control>
+
+			<!-- Artist labels -->
+			<control type="label">
+				<description>FORMED: info label</description>
+				<include>LowList_DetailInfoLabelPos4</include>
+				<label>$LOCALIZE[21894]: [COLOR d0ffffff]$INFO[ListItem.Property(Formed)][/COLOR]</label>
+				<visible>!IsEmpty(ListItem.Property(Formed))</visible>
+				<visible>Container.Content(artists)</visible>
+			</control>
+
+			<control type="label">
+				<description>BORN: info label</description>
+				<include>LowList_DetailInfoLabelPos4</include>
+				<label>$LOCALIZE[21893]: [COLOR d0ffffff]$INFO[ListItem.Property(Born)][/COLOR]</label>
+				<visible>IsEmpty(ListItem.Property(Formed)) + !IsEmpty(ListItem.Property(Born))</visible>
+				<visible>Container.Content(artists)</visible>
+			</control>
+
+			<control type="label">
+				<include>LowList_DetailInfoLabelPos4</include>
+				<label>$LOCALIZE[21900]: [COLOR d0ffffff]$LOCALIZE[161][/COLOR]</label>
+				<visible>IsEmpty(ListItem.Property(Formed)) + IsEmpty(ListItem.Property(Born))</visible>
+				<visible>Container.Content(artists)</visible>
+			</control>
+
+			<!-- Album/Song labels -->
+			<control type="label">
+				<description>GENRE: info label</description>
+				<include>LowList_DetailInfoLabelPos4</include>
+				<label>$LOCALIZE[515]: [COLOR d0ffffff]$INFO[ListItem.genre][/COLOR]</label>
+				<visible>!IsEmpty(ListItem.genre)</visible>
+				<visible>!Container.Content(artists) + !Container.Content(songs)</visible>
+			</control>
+
+			<control type="label">
+				<include>LowList_DetailInfoLabelPos4</include>
+				<label>$LOCALIZE[515]: [COLOR d0ffffff]$LOCALIZE[161][/COLOR]</label>
+				<visible>IsEmpty(ListItem.genre)</visible>
+				<visible>!Container.Content(artists) + !Container.Content(songs)</visible>
+			</control>
+
+			<include>ListDetail_Stars</include>
+		</control>
+
+		<!-- Music info detail panel -->
+		<control type="group" id="7802">
+			<description>MUSIC INFO detail panel</description>
+			<include>ListDetail_PanelVars</include>
+			<visible>Control.IsVisible(551) + [Control.HasFocus(7702) | [!ControlGroup(7003).HasFocus() + !Skin.HasSetting(musicinfopaneloff) + !Control.IsVisible(7898)]] + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]</visible>
+			<visible>Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)</visible>
+			<!-- Song page -->
+			<control type="group">
+
+				<posx>0</posx>
+				<posy>0</posy>
+				<visible>Container.Content(songs)</visible>
+				<control type="label">
+					<description>ARTIST: info label</description>
+					<include>LowList_DetailInfoLabelPos1</include>
+					<label>$LOCALIZE[557]: [COLOR d0ffffff]$INFO[ListItem.artist][/COLOR]</label>
+					<visible>!IsEmpty(ListItem.Artist)</visible>
+					<include>Animation_HighListSlide</include>
+				</control>
+
+				<control type="label">
+					<include>LowList_DetailInfoLabelPos1</include>
+					<label>$LOCALIZE[557]: [COLOR d0ffffff]$LOCALIZE[161][/COLOR]</label>
+					<visible>IsEmpty(ListItem.Artist)</visible>
+					<include>Animation_HighListSlide</include>
+				</control>
+
+				<control type="label">
+					<description>ALBUM: info label</description>
+					<include>LowList_DetailInfoLabelPos2</include>
+					<label>$LOCALIZE[558]: [COLOR d0ffffff]$INFO[ListItem.album][/COLOR]</label>
+					<visible>!IsEmpty(ListItem.album)</visible>
+					<include>Animation_HighListSlide</include>
+				</control>
+
+				<control type="label">
+					<include>LowList_DetailInfoLabelPos2</include>
+					<label>$LOCALIZE[558]: [COLOR d0ffffff]$LOCALIZE[161][/COLOR]</label>
+					<visible>IsEmpty(ListItem.album)</visible>
+					<include>Animation_HighListSlide</include>
+				</control>
+
+				<control type="label">
+					<description>GENRE: info label</description>
+					<include>LowList_DetailInfoLabelPos3</include>
+					<label>$LOCALIZE[515]: [COLOR d0ffffff]$INFO[ListItem.genre][/COLOR]</label>
+					<visible>!IsEmpty(ListItem.genre)</visible>
+					<include>Animation_HighListSlide</include>
+				</control>
+
+				<control type="label">
+					<include>LowList_DetailInfoLabelPos3</include>
+					<label>$LOCALIZE[515]: [COLOR d0ffffff]$LOCALIZE[161][/COLOR]</label>
+					<visible>IsEmpty(ListItem.genre) + !Container.Content(songs)</visible>
+					<include>Animation_HighListSlide</include>
+				</control>
+
+				<control type="label">
+					<description>YEAR: info label</description>
+					<include>LowList_DetailInfoLabelPos4L</include>
+					<label>$LOCALIZE[345]: [COLOR d0ffffff]$INFO[ListItem.year][/COLOR]</label>
+					<visible>!IsEmpty(ListItem.year)</visible>
+				</control>
+
+				<control type="label">
+					<include>LowList_DetailInfoLabelPos4L</include>
+					<label>$LOCALIZE[345]: [COLOR d0ffffff]$LOCALIZE[161][/COLOR]</label>
+					<visible>IsEmpty(ListItem.year) + !Container.Content(songs)</visible>
+				</control>
+
+			</control>
+
+			<!-- Album page -->
+			<control type="group">
+
+				<posx>0</posx>
+				<posy>0</posy>
+				<visible>Container.Content(albums)</visible>
+				<control type="label">
+					<description>ARTIST: info label</description>
+					<include>LowList_DetailInfoLabelPos1</include>
+					<label>$LOCALIZE[557]: [COLOR d0ffffff]$INFO[ListItem.artist][/COLOR]</label>
+					<visible>!IsEmpty(ListItem.Artist)</visible>
+					<include>Animation_HighListSlide</include>
+				</control>
+
+				<control type="label">
+					<include>LowList_DetailInfoLabelPos1</include>
+					<label>$LOCALIZE[557]: [COLOR d0ffffff]$LOCALIZE[161][/COLOR]</label>
+					<visible>IsEmpty(ListItem.Artist)</visible>
+					<include>Animation_HighListSlide</include>
+				</control>
+
+				<control type="label">
+					<description>LABEL: info label</description>
+					<include>LowList_DetailInfoLabelPos2</include>
+					<label>$LOCALIZE[21899]: [COLOR d0ffffff]$INFO[ListItem.Property(label)][/COLOR]</label>
+					<visible>!IsEmpty(ListItem.Property(label))</visible>
+					<include>Animation_HighListSlide</include>
+				</control>
+
+				<control type="label">
+					<include>LowList_DetailInfoLabelPos2</include>
+					<label>$LOCALIZE[21899]: [COLOR d0ffffff]$LOCALIZE[161][/COLOR]</label>
+					<visible>IsEmpty(ListItem.Property(label))</visible>
+					<include>Animation_HighListSlide</include>
+				</control>
+
+				<control type="label">
+					<description>GENRE: info label</description>
+					<include>LowList_DetailInfoLabelPos3</include>
+					<label>$LOCALIZE[515]: [COLOR d0ffffff]$INFO[ListItem.genre][/COLOR]</label>
+					<visible>!IsEmpty(ListItem.genre)</visible>
+					<include>Animation_HighListSlide</include>
+				</control>
+
+				<control type="label">
+					<include>LowList_DetailInfoLabelPos3</include>
+					<label>$LOCALIZE[515]: [COLOR d0ffffff]$LOCALIZE[161][/COLOR]</label>
+					<visible>IsEmpty(ListItem.genre)</visible>
+					<include>Animation_HighListSlide</include>
+				</control>
+
+				<control type="label">
+					<description>YEAR: info label</description>
+					<include>LowList_DetailInfoLabelPos4L</include>
+					<label>$LOCALIZE[345]: [COLOR d0ffffff]$INFO[ListItem.year][/COLOR]</label>
+					<visible>!IsEmpty(ListItem.year)</visible>
+				</control>
+
+				<control type="label">
+					<include>LowList_DetailInfoLabelPos4L</include>
+					<label>$LOCALIZE[345]: [COLOR d0ffffff]$LOCALIZE[161][/COLOR]</label>
+					<visible>IsEmpty(ListItem.year)</visible>
+				</control>
+
+			</control>
+
+			<!-- Artist page -->
+			<control type="group">
+
+				<posx>0</posx>
+				<posy>0</posy>
+				<visible>Container.Content(artists)</visible>
+				<control type="label">
+					<description>FORMED: info label</description>
+					<include>LowList_DetailInfoLabelPos1</include>
+					<label>$LOCALIZE[21894]: [COLOR d0ffffff]$INFO[ListItem.Property(Formed)][/COLOR]</label>
+					<visible>!IsEmpty(ListItem.Property(Formed))</visible>
+					<include>Animation_HighListSlide</include>
+				</control>
+
+				<control type="label">
+					<description>BORN: info label</description>
+					<include>LowList_DetailInfoLabelPos1</include>
+					<label>$LOCALIZE[21893]: [COLOR d0ffffff]$INFO[ListItem.Property(Born)][/COLOR]</label>
+					<visible>IsEmpty(ListItem.Property(Formed)) + !IsEmpty(ListItem.Property(Born))</visible>
+					<include>Animation_HighListSlide</include>
+				</control>
+
+				<control type="label">
+					<include>LowList_DetailInfoLabelPos1</include>
+					<label>$LOCALIZE[21900]: [COLOR d0ffffff]$LOCALIZE[161][/COLOR]</label>
+					<visible>IsEmpty(ListItem.Property(Formed)) + IsEmpty(ListItem.Property(Born))</visible>
+					<include>Animation_HighListSlide</include>
+				</control>
+
+				<control type="label">
+					<description>STYLES: info label</description>
+					<include>LowList_DetailInfoLabelPos2</include>
+					<label>$LOCALIZE[176]: [COLOR d0ffffff]$INFO[ListItem.Property(style)][/COLOR]</label>
+					<visible>!IsEmpty(ListItem.Property(style))</visible>
+					<include>Animation_HighListSlide</include>
+				</control>
+
+				<control type="label">
+					<include>LowList_DetailInfoLabelPos2</include>
+					<label>$LOCALIZE[176]: [COLOR d0ffffff]$LOCALIZE[161][/COLOR]</label>
+					<visible>IsEmpty(ListItem.Property(style))</visible>
+					<include>Animation_HighListSlide</include>
+				</control>
+
+				<control type="label">
+					<description>MOODS: info label</description>
+					<include>LowList_DetailInfoLabelPos3</include>
+					<label>$LOCALIZE[175]: [COLOR d0ffffff]$INFO[ListItem.Property(mood)][/COLOR]</label>
+					<visible>!IsEmpty(ListItem.Property(mood))</visible>
+					<include>Animation_HighListSlide</include>
+				</control>
+
+				<control type="label">
+					<include>LowList_DetailInfoLabelPos3</include>
+					<label>$LOCALIZE[175]: [COLOR d0ffffff]$LOCALIZE[161][/COLOR]</label>
+					<visible>IsEmpty(ListItem.Property(mood))</visible>
+					<include>Animation_HighListSlide</include>
+				</control>
+
+				<control type="label">
+					<description>YEARS ACTIVE: info label</description>
+					<include>LowList_DetailInfoLabelPos4L</include>
+					<label>$LOCALIZE[21898]: [COLOR d0ffffff]$INFO[ListItem.Property(YearsActive)][/COLOR]</label>
+					<visible>!IsEmpty(ListItem.Property(YearsActive))</visible>
+				</control>
+
+				<control type="label">
+					<include>LowList_DetailInfoLabelPos4L</include>
+					<label>$LOCALIZE[21898]: [COLOR d0ffffff]$LOCALIZE[161][/COLOR]</label>
+					<visible>IsEmpty(ListItem.Property(YearsActive))</visible>
+				</control>
+
+			</control>
+
+			<control type="textbox">
+				<include>LowList_ShortTextBox</include>
+				<textcolor>d0ffffff</textcolor>
+				<label fallback="-">$INFO[ListItem.Property(description),[COLOR abffffff][UPPERCASE]$LOCALIZE[21887][/UPPERCASE]:[/COLOR] ]</label>
+				<visible>Skin.HasSetting(highlist) + Container.Content(artists)</visible>
+			</control>
+
+			<control type="textbox">
+				<include>LowList_ShortTextBox</include>
+				<label fallback="-">$INFO[ListItem.Property(description),[COLOR abffffff][UPPERCASE]$LOCALIZE[183][/UPPERCASE]:[/COLOR] ]</label>
+				<visible>Skin.HasSetting(highlist) + Container.Content(albums)</visible>
+			</control>
+
+			<control type="textbox">
+				<include>LowList_ShortTextBox</include>
+				<label fallback="-">$INFO[ListItem.comment,[COLOR abffffff][UPPERCASE]$LOCALIZE[569][/UPPERCASE]:[/COLOR] ]</label>
+				<visible>Skin.HasSetting(highlist) + Container.Content(songs)</visible>
+			</control>
+
+			<include>ListDetail_Stars</include>
+		</control>
+
+	</include>
+
+	<!-- Movie detail panels -->
+	<include name="LowList_MovieDetailPanels">
+		<!-- Movie plot detail panel-->
+		<control type="group" id="7811">
+			<description>MOVIE PLOT detail panel</description>
+			<include>ListDetail_PanelVars</include>
+			<visible>Control.IsVisible(551) + [Control.HasFocus(7711) | [Container.Content(movies) + !ControlGroup(7003).HasFocus() + !Skin.HasSetting(movieplotpaneloff) + !Control.IsVisible(7898)]]</visible>
+			<control type="textbox">
+				<description>PLOT OUTLINE: (Short)</description>
+				<include>LowList_ShortTextBox</include>
+				<label fallback="31425">$INFO[ListItem.PlotOutline,[COLOR abffffff][UPPERCASE]$LOCALIZE[203][/UPPERCASE]:[/COLOR] ]</label>
+				<visible>!Skin.HasSetting(highlist)</visible>
+			</control>
+
+			<control type="textbox">
+				<description>MOVIE PLOT: (Tall)</description>
+				<include>LowList_TallTextBox</include>
+				<label fallback="31414">$INFO[ListItem.Plot,[UPPERCASE][COLOR 66ffffff]$LOCALIZE[20338] $LOCALIZE[207]:[/COLOR][/UPPERCASE][CR]]</label>
+				<visible>Skin.HasSetting(highlist)</visible>
+			</control>
+
+			<control type="label">
+				<description>RUNTIME: info label</description>
+				<include>LowList_DetailInfoLabelPos4L</include>
+				<label>[UPPERCASE]$LOCALIZE[12391]: [COLOR d0ffffff]$INFO[ListItem.Duration][/COLOR][/UPPERCASE]</label>
+				<visible>Window.IsActive(25)</visible>
+			</control>
+			<control type="largeimage">
+                <description>IMDB Star Rating</description>
+                <posx>235</posx>
+                <posy>125</posy>
+                <width>100</width>
+                <height>20</height>
+                <info>ListItem.StarRating</info>
+                <colordiffuse>FFffff00</colordiffuse>
+				<visible>Window.IsActive(25)</visible>
+				<visible>!Skin.HasSetting(movieratingtext)</visible>
+			</control>
+			<control type="label">
+         	    <posx>235</posx>
+                <posy>125</posy>
+                <width>100</width>
+				<label fallback="31425">IMDB: [COLOR FFFFFFFF]$INFO[ListItem.Rating][/COLOR]</label>
+				<include>LowList_DetailInfoLabelPos4L</include>
+			    <visible>!IsEmpty(ListItem.Rating)</visible>
+				<visible>Skin.HasSetting(movieratingtext)</visible>
+			</control>
+
+		</control>
+
+		<!-- Movie info panel -->
+		<control type="group" id="7812">
+			<description>MOVIE INFO detail panel</description>
+			<include>ListDetail_PanelVars</include>
+			<visible>Control.IsVisible(551) + [Control.HasFocus(7712) | Container.Content(movies) + !ControlGroup(7003).HasFocus() + Skin.HasSetting(movieinfopanelon) + !Control.IsVisible(7898)] + [Window.IsActive(25) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]</visible>
+			<control type="label">
+				<description>DIRECTED BY: info label</description>
+				<include>LowList_DetailInfoLabelPos1</include>
+				<label>$LOCALIZE[31402]: [COLOR d0ffffff]$INFO[ListItem.director][/COLOR]</label>
+				<visible>Window.IsActive(25)</visible>
+				<include>Animation_HighListSlide</include>
+			</control>
+
+			<control type="label">
+				<description>GENRE: info label</description>
+				<include>LowList_DetailInfoLabelPos2</include>
+				<label>$LOCALIZE[515]: [COLOR d0ffffff]$INFO[ListItem.genre][/COLOR]</label>
+				<visible>Window.IsActive(25)</visible>
+				<include>Animation_HighListSlide</include>
+			</control>
+
+			<control type="label">
+				<description>MPAA: info label</description>
+				<include>LowList_DetailInfoLabelPos3</include>
+				<label>$LOCALIZE[20074]: [COLOR d0ffffff]$INFO[ListItem.mpaa][/COLOR]</label>
+				<visible>Window.IsActive(25)</visible>
+				<include>Animation_HighListSlide</include>
+			</control>
+
+			<control type="textbox">
+				<description>PLOT OUTLINE: (Short)</description>
+				<include>LowList_ShortTextBox</include>
+				<label fallback="-">$INFO[ListItem.PlotOutline,[COLOR abffffff][UPPERCASE]$LOCALIZE[203][/UPPERCASE]:[/COLOR] ]</label>
+				<visible>Skin.HasSetting(highlist)</visible>
+			</control>
+
+			<control type="label">
+				<description>RUNTIME: info label</description>
+				<include>LowList_DetailInfoLabelPos4L</include>
+				<label>$LOCALIZE[12391]: [COLOR d0ffffff]$INFO[ListItem.Duration][/COLOR]</label>
+				<visible>!IsEmpty(ListItem.DurationStr)</visible>
+			</control>
+		</control>
+
+		<!-- Movie Gallery/Slideshow detail panel -->
+		<control type="group" id="7814">
+			<description>SLIDESHOW detail panel</description>
+			<include>ListDetail_PanelVars</include>
+			<visible>Control.IsVisible(551) + Container.Content(movies) + [Control.HasFocus(7714) | !ControlGroup(7003).HasFocus() + Skin.HasSetting(moviegallerypanelon) + !Control.IsVisible(7898)]</visible>
+			<control type="largeimage">
+				<posx>5</posx>
+				<posy>10</posy>
+				<width>360</width>
+				<height>196</height>
+				<fadetime>800</fadetime>
+				<aspectratio>scale</aspectratio>
+				<texture fallback="common/black.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
+				<animation effect="slide" start="0,0" end="0,-65" time="200" condition="Skin.HasSetting(highlist)">Conditional</animation>
+				<include>Animation_BackgroundFade</include>
+			</control>
+
+			<include>LowList_TaglineLabel</include>
+		</control>
+
+		<!-- Movie trailer detail panel -->
+		<control type="group" id="7814">
+			<description>TRAILER detail panel</description>
+			<include>ListDetail_PanelVars</include>
+			<visible>Control.IsVisible(551) + Control.HasFocus(7720)</visible>
+			<control type="label">
+				<posx>5</posx>
+				<posy>10</posy>
+				<width>360</width>
+				<height>196</height>
+				<fadetime>400</fadetime>
+				<textcolor>d0ffffff</textcolor>
+				<font>Font_OSDMusicTitle</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>"Click" to[CR]start trailer</label>
+				<visible>!Player.HasVideo + !IsEmpty(ListItem.Trailer)</visible>
+				<animation effect="slide" start="0,0" end="0,-65" time="200" condition="Skin.HasSetting(highlist)">Conditional</animation>
+			</control>
+
+			<control type="label">
+				<posx>5</posx>
+				<posy>10</posy>
+				<width>360</width>
+				<height>196</height>
+				<fadetime>400</fadetime>
+				<textcolor>abffffff</textcolor>
+				<font>Font_OSDMusicTitle</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>No trailer[CR]for this video</label>
+				<visible>!Player.HasVideo + IsEmpty(ListItem.Trailer)</visible>
+				<animation effect="slide" start="0,0" end="0,-65" time="200" condition="Skin.HasSetting(highlist)">Conditional</animation>
+			</control>
+
+			<control type="videowindow">
+				<posx>5</posx>
+				<posy>10</posy>
+				<width>360</width>
+				<height>196</height>
+				<visible>Player.HasVideo</visible>
+				<animation effect="slide" start="0,0" end="0,-65" time="200" condition="Skin.HasSetting(highlist)">Conditional</animation>
+			</control>
+
+			<include>LowList_TaglineLabel</include>
+		</control>
+
+	</include>
+
+	<!-- TV Detail Panels -->
+	<include name="LowList_TvDetailPanels">
+		<!-- TV description detail panel-->
+		<control type="group" id="7831">
+			<description>TV DESCRIPTION detail panel</description>
+			<include>ListDetail_PanelVars</include>
+			<visible>[Window.IsActive(25) + !Container.Content(movies) + !Skin.HasSetting(tvdescpaneloff) + !Control.IsVisible(7898)] | Window.IsActive(1)</visible>
+			<control type="textbox">
+				<description>DESCRIPTION: (Short - TV Shows and Episodes)</description>
+				<include>LowList_ShortTextBox</include>
+				<label>$INFO[ListItem.Plot,[UPPERCASE][COLOR 66ffffff]$LOCALIZE[21821]: [/COLOR][/UPPERCASE]]</label>
+				<visible>!Container.Content(seasons) + !Skin.HasSetting(highlist) + ![Skin.HasSetting(tvdescpaneloff) + IsEmpty(ListItem.Art(fanart)) + IsEmpty(container.property(fanart_image))]</visible>
+			</control>
+
+			<control type="textbox">
+				<description>DESCRIPTION: (Short - Seasons)</description>
+				<include>LowList_ShortTextBox</include>
+				<label>$INFO[Container.Property(description),[UPPERCASE][COLOR 66ffffff]$LOCALIZE[21821]: [/COLOR][/UPPERCASE]]</label>
+				<visible>Container.Content(seasons) + !Skin.HasSetting(highlist) + ![Skin.HasSetting(tvdescpaneloff) + IsEmpty(ListItem.Art(fanart)) + IsEmpty(container.property(fanart_image))]</visible>
+			</control>
+
+			<control type="textbox">
+				<description>DESCRIPTION: (Tall - TV Shows and Episodes)</description>
+				<include>LowList_TallTextBox</include>
+				<label>$INFO[ListItem.Plot,[UPPERCASE][COLOR 66ffffff]$LOCALIZE[21821]:[/COLOR][/UPPERCASE][CR]]</label>
+				<visible>!Container.Content(seasons) + !Container.Content(plugincontent) + Skin.HasSetting(highlist) + ![Skin.HasSetting(tvdescpaneloff) + IsEmpty(ListItem.Art(fanart)) + IsEmpty(container.property(fanart_image))]</visible>
+			</control>
+			<control type="textbox">
+				<description>DESCRIPTION: (Tall - Plugins)</description>
+				<include>LowList_TallTextBox</include>
+				<label>[COLOR 66ffffff]$INFO[ListItem.Year][CR][/COLOR]$INFO[ListItem.Plot]</label>
+				<visible>Container.Content(plugincontent) + Skin.HasSetting(highlist) + ![Skin.HasSetting(tvdescpaneloff) + IsEmpty(ListItem.Art(fanart)) + IsEmpty(container.property(fanart_image))]</visible>
+			</control>
+
+			<control type="textbox">
+				<description>DESCRIPTION: (Tall - Seasons)</description>
+				<include>LowList_TallTextBox</include>
+				<label>$INFO[Container.Property(description),[UPPERCASE][COLOR 66ffffff]$LOCALIZE[21821]:[/COLOR][/UPPERCASE][CR]]</label>
+				<visible>Container.Content(seasons) + Skin.HasSetting(highlist) + ![Skin.HasSetting(tvdescpaneloff) + IsEmpty(ListItem.Art(fanart)) + IsEmpty(container.property(fanart_image))]</visible>
+			</control>
+
+			<!-- Left aligned labels -->
+			<control type="label">
+				<description>GENRE:</description>
+				<include>LowList_DetailInfoLabelPos4L</include>
+				<label>[UPPERCASE]$LOCALIZE[515]:[/UPPERCASE] [COLOR d0ffffff]$INFO[ListItem.Firstgenre][/COLOR]</label>
+				<visible>!IsEmpty(ListItem.genre)</visible>
+				<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
+			</control>
+			<control type="label">
+				<description>Label 2</description>
+				<include>LowList_DetailInfoLabelPos4L</include>
+				<label>[UPPERCASE]$LOCALIZE[12391]:[/UPPERCASE]  [COLOR d0ffffff]$INFO[ListItem.label2][/COLOR]</label>
+				<visible>!IsEmpty(ListItem.label2) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+			</control>
+			<control type="label">
+				<description>GENRE:</description>
+				<include>LowList_DetailInfoLabelPos4L</include>
+				<label>[UPPERCASE]$LOCALIZE[515]:[/UPPERCASE] [COLOR d0ffffff]-[/COLOR]</label>
+				<visible>!IsEmpty(ListItem.genre)</visible>
+				<visible>!Container.Content(episodes) + !Container.Content(seasons) +  !Window.IsActive(25)</visible>
+			</control>
+
+			<control type="label">
+				<include>LowList_DetailInfoLabelPos4L</include>
+				<label>$LOCALIZE[31439]: [COLOR d0ffffff]$INFO[ListItem.Property(WatchedEpisodes)][/COLOR]</label>
+				<visible>Container.Content(seasons)</visible>
+			</control>
+<!--
+			<control type="label">
+				<description>FIRST AIRED:</description>
+				<include>LowList_DetailInfoLabelPos4L</include>
+				<label>[UPPERCASE]$LOCALIZE[20416]:[/UPPERCASE] [COLOR d0ffffff]$INFO[ListItem.premiered][/COLOR]</label>
+				<visible>!IsEmpty(ListItem.premiered)</visible>
+				<visible>Container.Content(episodes)</visible>
+			</control>
+
+			<control type="label">
+				<include>LowList_DetailInfoLabelPos4L</include>
+				<label>$LOCALIZE[20416]: [COLOR d0ffffff]-[/COLOR]</label>
+				<visible>IsEmpty(ListItem.premiered)</visible>
+				<visible>Container.Content(episodes)</visible>
+			</control>
+-->
+			<!-- Right aligned labels -->
+			<control type="label">
+				<description>EPISODES:</description>
+				<include>LowList_DetailInfoLabelPos4R</include>
+				<label>[UPPERCASE]$LOCALIZE[20360]:[/UPPERCASE] [COLOR d0ffffff]$INFO[ListItem.episode][/COLOR]</label>
+				<visible>!IsEmpty(ListItem.episode)</visible>
+				<visible>Container.Content(tvshows)</visible>
+			</control>
+
+			<control type="label">
+				<include>LowList_DetailInfoLabelPos4R</include>
+				<label>[UPPERCASE]$LOCALIZE[20360]:[/UPPERCASE] [COLOR d0ffffff]-[/COLOR]</label>
+				<visible>IsEmpty(ListItem.episode)</visible>
+				<visible>Container.Content(tvshows)</visible>
+			</control>
+
+			<control type="label">
+				<description>UNWATCHED:</description>
+				<include>LowList_DetailInfoLabelPos4R</include>
+				<label>$LOCALIZE[31440]: [COLOR d0ffffff]$INFO[ListItem.Property(UNwatchedEpisodes)][/COLOR]</label>
+				<visible>Container.Content(seasons)</visible>
+			</control>
+
+			<control type="label">
+				<include>LowList_DetailInfoLabelPos4R</include>
+				<label>$LOCALIZE[16102]: [COLOR d0ffffff]-[/COLOR]</label>
+				<visible>IsEmpty(ListItem.Property(WatchedEpisodes))</visible>
+				<visible>Container.Content(seasons)</visible>
+			</control>
+
+		</control>
+
+	</include>
+
+	<!-- Common detail panels -->
+	<include name="LowList_CommonDetailPanels">
+		<!-- Fanart detail panel -->
+		<control type="group" id="7850">
+			<description>FANART detail panel</description>
+			<include>ListDetail_PanelVars</include>
+			<visible>Control.IsVisible(551) + [[Control.HasFocus(7713) | [Container.Content(movies) + !ControlGroup(7003).HasFocus() + Skin.HasSetting(moviefanartpanelon) + !Control.IsVisible(7898)]] | [Control.HasFocus(7703) | [!ControlGroup(7003).HasFocus() + Skin.HasSetting(musicfanartpanelon) + !Control.IsVisible(7898) + [Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)]]]]</visible>
+			<!-- Music Labels -->
+			<control type="group">
+
+				<posx>0</posx>
+				<posy>8</posy>
+				<width>360</width>
+				<height>16</height>
+				<visible>Skin.HasSetting(highlist)</visible>
+				<include>Animation_HighListSlide</include>
+				<!-- Artist page -->
+				<control type="label">
+					<description>ARTIST info left label</description>
+					<width>170</width>
+					<include>LowList_DetailInfoLabelPos1</include>
+					<label>$INFO[ListItem.artist]</label>
+					<visible>Container.Content(artists)</visible>
+				</control>
+
+				<control type="label">
+					<description>STYLES info right label</description>
+					<posx>0r</posx>
+					<align>right</align>
+					<width>170</width>
+					<include>LowList_DetailInfoLabelPos1</include>
+					<label>[COLOR ffffffff]$INFO[ListItem.Property(style)][/COLOR]</label>
+					<visible>Container.Content(artists)</visible>
+				</control>
+
+				<!-- Album page -->
+				<control type="label">
+					<description>ARTIST info left label</description>
+					<width>170</width>
+					<include>LowList_DetailInfoLabelPos1</include>
+					<label>$INFO[ListItem.artist]</label>
+					<visible>Container.Content(albums)</visible>
+				</control>
+
+				<control type="label">
+					<description>LABEL / YEAR info right label</description>
+					<posx>0r</posx>
+					<align>right</align>
+					<width>170</width>
+					<include>LowList_DetailInfoLabelPos1</include>
+					<label>$INFO[ListItem.Property(label)] [COLOR ffffffff]$INFO[ListItem.Year,(,)][/COLOR]</label>
+					<visible>Container.Content(albums)</visible>
+				</control>
+
+				<!-- Song page -->
+				<control type="label">
+					<description>ALBUM info left label</description>
+					<width>360</width>
+					<include>LowList_DetailInfoLabelPos1</include>
+					<label>$INFO[ListItem.album] [COLOR ffffffff]$INFO[ListItem.Year,(,)][/COLOR]</label>
+					<visible>Container.Content(songs)</visible>
+				</control>
+
+			</control>
+
+			<!-- Fanart -->
+			<control type="largeimage">
+				<posx>5</posx>
+				<posy>10</posy>
+				<width>360</width>
+				<height>196</height>
+				<fadetime>400</fadetime>
+				<aspectratio>scale</aspectratio>
+				<texture>$INFO[ListItem.Art(fanart)]</texture>
+				<visible>!IsEmpty(Container(551).ListItem.Art(fanart)) + [Container.Content(artists) | Container.Content(movies)]</visible>
+				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+				<animation effect="slide" start="0,0" end="0,-65" time="200" condition="Skin.HasSetting(highlist)">Conditional</animation>
+				<include>Animation_BackgroundFade</include>
+			</control>
+
+			<control type="largeimage">
+				<posx>5</posx>
+				<posy>10</posy>
+				<width>360</width>
+				<height>196</height>
+				<fadetime>400</fadetime>
+				<aspectratio>scale</aspectratio>
+				<texture>$INFO[container.property(fanart_image)]</texture>
+				<visible>!IsEmpty(container.property(fanart_image)) + [Container.Content(albums) | Container.Content(songs)]</visible>
+				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+				<animation effect="slide" start="0,0" end="0,-65" time="200" condition="Skin.HasSetting(highlist)">Conditional</animation>
+				<include>Animation_BackgroundFade</include>
+			</control>
+
+			<include condition="Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)">ListDetail_Stars</include>
+			<include condition="Window.IsActive(25)">LowList_TaglineLabel</include>
+		</control>
+
+		<include>LowList_MediaFlags</include>
+		<!-- Settings detail panel -->
+		<control type="group" id="7898">
+			<description>SETTINGS detail panel</description>
+			<include>ListDetail_PanelVars</include>
+			<visible>Control.IsVisible(551) + [Control.HasFocus(7798) | ControlGroup(78980).HasFocus()]</visible>
+			<control type="grouplist" id="78980">
+				<posx>0</posx>
+				<posy>5</posy>
+				<width>350</width>
+				<height>195</height>
+				<orientation>vertical</orientation>
+				<onleft>50</onleft>
+				<ondown>78980</ondown>
+				<onright>-</onright>
+				<onup>7003</onup>
+				<control type="radiobutton" id="78981">
+					<include>ListDetail_RadioButtonVars</include>
+					<label>$LOCALIZE[557] $LOCALIZE[535] $LOCALIZE[31072]</label>
+					<onclick>Skin.ToggleSetting(artistlistfull)</onclick>
+					<selected>Skin.HasSetting(artistlistfull)</selected>
+					<include>Animation_HighListSlide</include>
+					<visible>Container.Content(artists)</visible>
+				</control>
+
+				<control type="radiobutton" id="78982">
+					<include>ListDetail_RadioButtonVars</include>
+					<label>$LOCALIZE[558] $LOCALIZE[535] $LOCALIZE[31072]</label>
+					<onclick>Skin.ToggleSetting(albumlistfull)</onclick>
+					<selected>Skin.HasSetting(albumlistfull)</selected>
+					<include>Animation_HighListSlide</include>
+					<visible>Container.Content(albums)</visible>
+				</control>
+
+				<control type="radiobutton" id="78983">
+					<include>ListDetail_RadioButtonVars</include>
+					<label>$LOCALIZE[179] $LOCALIZE[535] $LOCALIZE[31072]</label>
+					<onclick>Skin.ToggleSetting(songlistfull)</onclick>
+					<selected>Skin.HasSetting(songlistfull)</selected>
+					<include>Animation_HighListSlide</include>
+					<visible>Container.Content(songs)</visible>
+				</control>
+
+				<control type="radiobutton" id="78988">
+					<include>ListDetail_RadioButtonVars</include>
+					<label>SINGLE $LOCALIZE[31045] FOR $LOCALIZE[133]</label>
+			<!--		<include>fast-fade</include> -->
+					<onclick>Skin.ToggleSetting(artistrolleroff)</onclick>
+					<selected>Skin.HasSetting(artistrolleroff)</selected>
+					<include>Animation_HighListSlide</include>
+					<visible>Container.Content(artists)</visible>
+				</control>
+
+				<control type="radiobutton" id="78989">
+					<include>ListDetail_RadioButtonVars</include>
+					<label>SINGLE $LOCALIZE[31045] FOR $LOCALIZE[132]</label>
+					<onclick>Skin.ToggleSetting(albumrolleroff)</onclick>
+					<selected>Skin.HasSetting(albumrolleroff)</selected>
+					<include>Animation_HighListSlide</include>
+					<visible>Container.Content(albums)</visible>
+				</control>
+
+				<control type="radiobutton" id="789810">
+					<include>ListDetail_RadioButtonVars</include>
+					<label>SINGLE $LOCALIZE[31045] FOR $LOCALIZE[134]</label>
+					<onclick>Skin.ToggleSetting(songrolleroff)</onclick>
+					<selected>Skin.HasSetting(songrolleroff)</selected>
+					<include>Animation_HighListSlide</include>
+					<visible>Container.Content(songs)</visible>
+				</control>
+
+				<control type="radiobutton" id="789812">
+					<include>ListDetail_RadioButtonVars</include>
+					<label>$LOCALIZE[557] $LOCALIZE[536] $LOCALIZE[1405] $LOCALIZE[535]</label>
+					<onclick>Skin.ToggleSetting(hidelistartisticons)</onclick>
+					<selected>!Skin.HasSetting(hidelistartisticons)</selected>
+					<include>Animation_HighListSlide</include>
+					<visible>Container.Content(artists)</visible>
+				</control>
+
+				<control type="radiobutton" id="789813">
+					<include>ListDetail_RadioButtonVars</include>
+					<label>$LOCALIZE[558] $LOCALIZE[536] $LOCALIZE[1405] $LOCALIZE[535]</label>
+					<onclick>Skin.ToggleSetting(hidelistalbumicons)</onclick>
+					<selected>!Skin.HasSetting(hidelistalbumicons)</selected>
+					<include>Animation_HighListSlide</include>
+					<visible>Container.Content(albums)</visible>
+				</control>
+
+				<control type="radiobutton" id="789814">
+					<include>ListDetail_RadioButtonVars</include>
+					<label>$LOCALIZE[179] $LOCALIZE[536] $LOCALIZE[1405] $LOCALIZE[535]</label>
+					<onclick>Skin.ToggleSetting(hidelistsongicons)</onclick>
+					<selected>!Skin.HasSetting(hidelistsongicons)</selected>
+					<include>Animation_HighListSlide</include>
+					<visible>Container.Content(songs)</visible>
+				</control>
+				<control type="radiobutton" id="789817">
+					<include>ListDetail_RadioButtonVars</include>
+					<label>$LOCALIZE[310799]</label>
+					<onclick>Skin.ToggleSetting(LowListGenre)</onclick>
+					<selected>Skin.HasSetting(LowListGenre)</selected>
+					<include>Animation_HighListSlide</include>
+				</control>
+
+			</control>
+
+		</control>
+
+	</include>
+
+</includes>

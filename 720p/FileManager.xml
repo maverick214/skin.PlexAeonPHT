@@ -1,0 +1,276 @@
+<window id="3">
+	<defaultcontrol>20</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+		<control type="multiimage">
+			<include>FullscreenDimensions</include>
+			<timeperimage>20000</timeperimage>
+			<fadetime>400</fadetime>
+			<randomize>true</randomize>
+			<imagepath>backdrops/default_settings</imagepath>
+			<info>Skin.String(CustomSettings)</info>
+			<animation effect="fade" start="0" end="100" time="300" >WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="300" >WindowClose</animation>
+		</control>
+
+		<include>Furniture_WallTime</include>
+		<!-- LEFT PANEL -->
+		<control type="group">
+
+			<posx>20</posx>
+			<posy>50</posy>
+			<include>FilemanagerPanelExtents</include>
+			<animation effect="slide" start="-640" end="0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+			<animation effect="slide" start="0" end="-640" time="300" tween="quadratic" easing="in">WindowClose</animation>
+			<animation effect="fade" time="200" start="75" end="100" reversible="false" condition="Control.HasFocus(20)">Conditional</animation>
+			<animation effect="fade" time="200" start="100" end="75" reversible="false" condition="Control.HasFocus(21)">Conditional</animation>
+			<include>FilemanagerPanelCommonObjects</include>
+			<control type="label" id="101">
+				<posx>20</posx>
+				<posy>24</posy>
+				<width>475</width>
+				<font>Font_FileBrowserHeading</font>
+				<scroll>true</scroll>
+				<textcolor>dcffffff</textcolor>
+			</control>
+
+			<control type="label">
+				<posx>568</posx>
+				<posy>32</posy>
+				<align>center</align>
+				<font>Font_ListSmall</font>
+				<textcolor>dcffffff</textcolor>
+				<label>$INFO[Container(20).NumItems] $LOCALIZE[31005]</label>
+			</control>
+
+		</control>
+
+		<!-- /Left Panel -->
+		<!-- Left list -->
+		<control type="list" id="20">
+			<viewtype label="31752">list</viewtype>
+			<posx>20</posx>
+			<posy>124</posy>
+			<width>620</width>
+			<height>525</height>
+			<scrolltime>0</scrolltime>
+			<onright>21</onright>
+			<onup>20</onup>
+			<ondown>20</ondown>
+			<animation effect="slide" start="-640" end="0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+			<animation effect="slide" start="0" end="-640" time="300" tween="quadratic" easing="in">WindowClose</animation>
+			<animation effect="fade" time="200" start="75" end="100" reversible="false" condition="Control.HasFocus(20)">Conditional</animation>
+			<animation effect="fade" time="200" start="100" end="75" reversible="false" condition="Control.HasFocus(21)">Conditional</animation>
+			<itemlayout height="40">
+				<control type="image">
+					<posx>12</posx>
+					<posy>41</posy>
+					<height>1</height>
+					<width>600</width>
+					<texture>list/listpanel_line.png</texture>
+				</control>
+
+				<control type="label">
+					<posx>20</posx>
+					<posy>0</posy>
+					<width>500</width>
+					<height>39</height>
+					<font>Font_ListSmall</font>
+					<aligny>center</aligny>
+					<textcolor>dcffffff</textcolor>
+					<selectedcolor>dcffffff</selectedcolor>
+					<info>ListItem.Label</info>
+				</control>
+
+				<control type="label">
+					<posx>568</posx>
+					<posy>0</posy>
+					<width>85</width>
+					<height>41</height>
+					<font>Font_ListDetail</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>dcffffff</textcolor>
+					<selectedcolor>dcffffff</selectedcolor>
+					<label>[UPPERCASE]$INFO[ListItem.Size][/UPPERCASE]</label>
+				</control>
+
+			</itemlayout>
+			<focusedlayout height="40">
+				<control type="image">
+					<posx>12</posx>
+					<posy>41</posy>
+					<height>1</height>
+					<width>600</width>
+					<texture>list/listpanel_line.png</texture>
+				</control>
+
+				<control type="image">
+					<posx>8</posx>
+					<posy>-5</posy>
+					<width>604</width>
+					<height>50</height>
+					<visible>Control.HasFocus(20)</visible>
+					<texture>list/listpanel_selectbar.png</texture>
+				</control>
+
+				<control type="label">
+					<posx>20</posx>
+					<posy>0</posy>
+					<width>500</width>
+					<height>39</height>
+					<font>Font_ListSmall</font>
+					<aligny>center</aligny>
+					<textcolor>ff151515</textcolor>
+					<selectedcolor>ff151515</selectedcolor>
+					<info>ListItem.Label</info>
+				</control>
+
+				<control type="label">
+					<posx>568</posx>
+					<posy>0</posy>
+					<width>85</width>
+					<height>41</height>
+					<font>Font_ListDetail</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>ff151515</textcolor>
+					<selectedcolor>ff151515</selectedcolor>
+					<label>[UPPERCASE]$INFO[ListItem.Size][/UPPERCASE]</label>
+				</control>
+
+			</focusedlayout>
+		</control>
+
+		<!-- /left list -->
+		<!-- Right Panel -->
+		<control type="group">
+
+			<posx>640</posx>
+			<posy>50</posy>
+			<include>FilemanagerPanelExtents</include>
+			<animation effect="slide" start="640" end="0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+			<animation effect="slide" start="0" end="640" time="300" tween="quadratic" easing="in">WindowClose</animation>
+			<animation effect="fade" time="200" start="75" end="100" reversible="false" condition="Control.HasFocus(21)">Conditional</animation>
+			<animation effect="fade" time="200" start="100" end="75" reversible="false" condition="Control.HasFocus(20)">Conditional</animation>
+			<include>FilemanagerPanelCommonObjects</include>
+			<control type="label" id="102">
+				<posx>20</posx>
+				<posy>24</posy>
+				<width>475</width>
+				<font>Font_FileBrowserHeading</font>
+				<scroll>true</scroll>
+				<textcolor>dcffffff</textcolor>
+			</control>
+
+			<control type="label">
+				<posx>568</posx>
+				<posy>32</posy>
+				<align>center</align>
+				<font>Font_ListSmall</font>
+				<textcolor>dcffffff</textcolor>
+				<label>$INFO[Container(21).NumItems] $LOCALIZE[31005]</label>
+			</control>
+
+		</control>
+
+		<!-- /Right Panel -->
+		<!-- Right list -->
+		<control type="list" id="21">
+			<viewtype label="31752">list</viewtype>
+			<posx>640</posx>
+			<posy>124</posy>
+			<width>620</width>
+			<height>525</height>
+			<scrolltime>0</scrolltime>
+			<onleft>20</onleft>
+			<onup>21</onup>
+			<ondown>21</ondown>
+			<animation effect="slide" start="640" end="0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+			<animation effect="slide" start="0" end="640" time="300" tween="quadratic" easing="in">WindowClose</animation>
+			<animation effect="fade" time="200" start="75" end="100" reversible="false" condition="Control.HasFocus(21)">Conditional</animation>
+			<animation effect="fade" time="200" start="100" end="75" reversible="false" condition="Control.HasFocus(20)">Conditional</animation>
+			<itemlayout height="40">
+				<control type="image">
+					<posx>12</posx>
+					<posy>41</posy>
+					<height>1</height>
+					<width>600</width>
+					<texture>list/listpanel_line.png</texture>
+				</control>
+
+				<control type="label">
+					<posx>20</posx>
+					<posy>0</posy>
+					<width>500</width>
+					<height>39</height>
+					<font>Font_ListSmall</font>
+					<aligny>center</aligny>
+					<textcolor>dcffffff</textcolor>
+					<selectedcolor>dcffffff</selectedcolor>
+					<info>ListItem.Label</info>
+				</control>
+
+				<control type="label">
+					<posx>568</posx>
+					<posy>0</posy>
+					<width>85</width>
+					<height>41</height>
+					<font>Font_ListDetail</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>dcffffff</textcolor>
+					<selectedcolor>dcffffff</selectedcolor>
+					<label>[UPPERCASE]$INFO[ListItem.Size][/UPPERCASE]</label>
+				</control>
+
+			</itemlayout>
+			<focusedlayout height="40">
+				<control type="image">
+					<posx>12</posx>
+					<posy>41</posy>
+					<height>1</height>
+					<width>600</width>
+					<texture>list/listpanel_line.png</texture>
+				</control>
+
+				<control type="image">
+					<posx>8</posx>
+					<posy>-5</posy>
+					<width>604</width>
+					<height>50</height>
+					<visible>Control.HasFocus(21)</visible>
+					<texture>list/listpanel_selectbar.png</texture>
+				</control>
+
+				<control type="label">
+					<posx>20</posx>
+					<posy>0</posy>
+					<width>500</width>
+					<height>39</height>
+					<font>Font_ListSmall</font>
+					<aligny>center</aligny>
+					<textcolor>ff151515</textcolor>
+					<selectedcolor>ff151515</selectedcolor>
+					<info>ListItem.Label</info>
+				</control>
+
+				<control type="label">
+					<posx>568</posx>
+					<posy>0</posy>
+					<width>85</width>
+					<height>41</height>
+					<font>Font_ListDetail</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>ff151515</textcolor>
+					<selectedcolor>ff151515</selectedcolor>
+					<label>[UPPERCASE]$INFO[ListItem.Size][/UPPERCASE]</label>
+				</control>
+
+			</focusedlayout>
+		</control>
+
+		<!-- /Right list -->
+	</controls>
+</window>

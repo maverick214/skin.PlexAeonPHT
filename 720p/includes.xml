@@ -1,0 +1,458 @@
+<includes>
+	<include file="Defaults.xml" />
+	<include file="Includes_Animations.xml" />
+	<include file="Includes_Backgrounds.xml" />
+	<include file="Includes_Conditions.xml" />
+	<include file="Includes_Dialogs.xml" />
+	<include file="Includes_Objects.xml" />
+	<include file="Includes_Furniture.xml" />
+	<include file="Includes_Colours.xml" />
+	<include file="Includes_MainMenu.xml" />
+	<include file="Includes_Reset.xml" />
+	<include file="Includes_Assistant_LabelsButtons.xml" />
+	<include file="Includes_Settings_LabelsButtons.xml" />
+	<include file="Includes_Settings_Presets.xml" />
+	<include file="Includes_Settings_Welcome.xml" />
+	<include file="Includes_Submenu.xml" />
+	<include file="Viewtype_Showcase.xml" />
+	<include file="Viewtype_StripShow.xml" />
+	<include file="Viewtype_Multiplex.xml" />
+	<include file="Viewtype_MultiplexOld.xml" />
+	<include file="Viewtype_Multiplex2.xml" />
+	<include file="Viewtype_List.xml" />
+	<include file="Viewtype_Wall.xml" />
+	<include file="Viewtype_InfoWall.xml" />
+	<include file="Viewtype_MusicWall.xml" />
+	<include file="Viewtype_List_Slim.xml" />
+	<include file="Includes_Filemanager.xml" />
+	<include file="Viewtype_List_Low.xml" />
+	<include file="Includes_LowList.xml" />
+	<include file="Includes_CDDVDMod.xml" />
+	<include file="Includes_NightMod.xml" />
+	<include file="Includes_WallMod.xml" />
+	<include file="PlexIncludes.xml" />
+	<include file="Viewtype_ClearList.xml" />
+	<include file="Viewtype_Music_Multiplex.xml" />	
+	<include file="Includes_genre.xml" />	  
+	<include file="Viewtype_Coverflow.xml" />
+	<include file="Viewtype_Includes.xml" />
+	<include file="Viewtype_Poster_Half.xml" />
+	<include file="Viewtype_RecentlyAdded_Lower.xml" />
+	<include file="Viewtype_RecentlyAdded_Center.xml" />
+
+	<include name="Search_Label">
+		<posx>15</posx>
+		<font>Font_MediaWindowTitleMenu</font>
+		<textcolor>FFFFFFFF</textcolor>
+		<shadowcolor>FF222222</shadowcolor>
+		<width>278</width>
+		<height>30</height>
+	</include>
+	<include name="Search_Label_Unfocused">
+		<posx>15</posx>
+		<font>Font_MediaWindowTitleMenu</font>
+		<textcolor>FF888888</textcolor>
+		<shadowcolor>FF222222</shadowcolor>
+		<width>278</width>
+		<height>30</height>
+	</include>
+	
+	<include name="Search_Result">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>880</width>
+		<itemlayout width="140" height="200">
+			<control type="image">
+				<posx>15</posx>
+				<posy>10</posy>
+				<width>128</width>
+				<height>140</height>
+				<info>ListItem.Art(thumb)</info>
+				<aspectratio aligny="bottom">keep</aspectratio>
+			</control>
+			<control type="label">
+				<visible>ListItem.Type(episode)</visible>
+				<posx>81</posx>
+				<posy>160</posy>
+				<width>130</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<scroll>false</scroll>
+				<label>$INFO[ListItem.tvshowtitle]</label>
+				<font>MediumSmallTitleFont</font>
+				<textcolor>FF999999</textcolor>
+				<wrapmultiline>false</wrapmultiline>
+			</control>
+			<control type="label">
+				<visible>ListItem.Type(album) | ListItem.Type(track)</visible>
+				<posx>81</posx>
+				<posy>160</posy>
+				<width>130</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<scroll>false</scroll>
+				<label>$INFO[ListItem.artist]</label>
+				<font>MediumSmallTitleFont</font>
+				<textcolor>FF999999</textcolor>
+				<wrapmultiline>false</wrapmultiline>
+			</control>
+			<control type="label">
+				<posx>81</posx>
+				<posy>180</posy>
+				<width>130</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<scroll>false</scroll>
+				<label>$INFO[ListItem.Title]</label>
+				<font>MediumSmallTitleFont</font>
+				<textcolor>FF999999</textcolor>
+				<wrapmultiline>false</wrapmultiline>
+			</control>
+		</itemlayout>
+
+		<focusedlayout width="140" height="200">
+			<control type="image">
+				<posx>15</posx>
+				<posy>10</posy>
+				<width>128</width>
+				<height>140</height>
+				<info>ListItem.Art(thumb)</info>
+				<aspectratio aligny="bottom">keep</aspectratio>
+			</control>
+			<control type="label">
+				<visible>ListItem.Type(episode)</visible>
+				<posx>81</posx>
+				<posy>160</posy>
+				<width>130</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<scroll>false</scroll>
+				<label>$INFO[ListItem.tvshowtitle]</label>
+				<font>MediumSmallTitleFont</font>
+				<textcolor>FFFFFFFF</textcolor>
+				<wrapmultiline>false</wrapmultiline>
+			</control>
+			<control type="label">
+				<visible>ListItem.Type(album) | ListItem.Type(track)</visible>
+				<posx>81</posx>
+				<posy>160</posy>
+				<width>130</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<scroll>false</scroll>
+				<label>$INFO[ListItem.artist]</label>
+				<font>MediumSmallTitleFont</font>
+				<textcolor>FFFFFFFF</textcolor>
+				<wrapmultiline>false</wrapmultiline>
+			</control>
+			<control type="label">
+				<posx>81</posx>
+				<posy>180</posy>
+				<width>130</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<scroll>false</scroll>
+				<label>$INFO[ListItem.Title]</label>
+				<font>MediumSmallTitleFont</font>
+				<textcolor>FFFFFFFF</textcolor>
+				<wrapmultiline>false</wrapmultiline>
+			</control>
+		</focusedlayout>
+	</include>
+	<include name="Search_Keyboard_Button">
+		<width>45</width>
+		<height>40</height>
+		<font>LargeSearchFont</font>
+		<textcolor>FFFFFFFF</textcolor>
+		<focusedcolor>Focused</focusedcolor>
+		<align>center</align>
+		<aligny>center</aligny>
+		<texturefocus>plex-search-button.png</texturefocus>
+		<textureclick border="10">-</textureclick>
+	</include>
+	<include name="Search_Keyboard_ToggleButton">
+		<width>36</width>
+		<height>36</height>
+		<font>LargeDefaultFont</font>
+		<textcolor>FFFFFFFF</textcolor>
+		<focusedcolor>Focused</focusedcolor>
+		<align>center</align>
+		<aligny>center</aligny>
+		<texturenofocus border="18" diffuse="grey.png">button_keyboard.png</texturenofocus>
+		<texturefocus border="18" diffuse="masks/10b9f2.png">button_keyboard.png</texturefocus>
+		<textureclick border="18">-</textureclick>
+	</include>
+	<include name="Search_Keyboard_Big_Button">
+		<width>80</width>
+		<height>80</height>
+		<font>LargeDefaultFont</font>
+		<textcolor>FFFFFFFF</textcolor>
+		<focusedcolor>Focused</focusedcolor>
+		<align>center</align>
+		<aligny>center</aligny>
+		<texturenofocus>button_kb.png</texturenofocus>
+		<texturefocus>button_kb_on.png</texturefocus>
+		<textureclick>button_kb_click.png</textureclick>
+	</include>
+
+	<include name="ColourVideoCodecVars">
+		<texture>$INFO[ListItem.Property(mediaTag-videoCodec),flagging/video/,.png]</texture>
+	</include>
+
+	<include name="WhiteVideoCodecVars">
+		<info>Listitem.Art(mediaTag::videoCodec)</info>
+	</include>
+
+	<include name="ColourVideoResolutionVars">
+		<texture>$INFO[ListItem.Property(mediaTag-videoResolution),flagging/video/,.png]</texture>
+	</include>
+
+	<include name="WhiteVideoResolutionVars">
+		<info>Listitem.Art(mediaTag::videoResolution)</info>
+	</include>
+	
+	<include name="ColourAudioCodecVars">
+		<texture>$INFO[ListItem.Property(mediaTag-audioCodec),flagging/audio/,.png]</texture>
+	</include>
+
+	<include name="WhiteAudioCodecVars">
+		<info>Listitem.Art(mediaTag::audioCodec)</info>
+	</include>
+
+	<include name="ColourAudioChannelsVars">
+		<texture>$INFO[ListItem.Property(mediaTag-audioChannels),flagging/audio/,.png]</texture>
+	</include>
+
+	<include name="WhiteAudioChannelsVars">
+		<info>Listitem.Art(mediaTag::audioChannels)</info>
+	</include>
+
+	<include name="ColouraspectRatioVars">
+		<texture>$INFO[ListItem.Property(mediaTag-aspectRatio),flagging/aspectratio/,.png]</texture>
+	</include>
+
+	<include name="WhiteaspectRatioVars">
+		<info>Listitem.Art(mediaTag::aspectRatio)</info>
+	</include>
+
+	<include name="ColourcontentRatingVars">
+		<!--	<texture>$INFO[ListItem.Property(mediaTag-contentRating),flagging/ratings/mpaa_,.png]</texture> -->
+		<info>Listitem.Art(mediaTag::contentRating)</info>
+	</include>
+
+	<include name="WhitecontentRatingVars">
+		<info>Listitem.Art(mediaTag::contentRating)</info>
+	</include>
+
+	<include name="ColourStudioVars">
+			<texture>$INFO[ListItem.Property(mediaTag-studio),flagging/studios/,.png]</texture>
+	</include>
+
+	<include name="WhiteStudioVars">
+		<info>Listitem.Art(mediaTag::studio)</info>
+	</include>
+
+	<!-- Text colours ================================== -->
+	<include name="subcolornofocus">
+		<textcolor>ff969696</textcolor>
+		<selectedcolor>9b3cd2fd</selectedcolor>
+	</include>
+
+<include name="listcolornofocus">
+	<textcolor>9bFFFFFF</textcolor>
+	<selectedcolor>9b3cd2fd</selectedcolor>
+</include>
+
+<include name="listcolorfocus">
+	<textcolor>FFFFFFFF</textcolor>
+	<selectedcolor>9b3cd2fd</selectedcolor>
+</include>
+
+	<include name="subcolorfocus">
+		<textcolor>ff2e2e2e</textcolor>
+		<selectedcolor>ff2e2e2e</selectedcolor>
+	</include>
+
+	<include name="detailcolornofocus">
+		<textcolor>dcbdbdbd</textcolor>
+		<selectedcolor>dcbdbdbd</selectedcolor>
+	</include>
+
+	<include name="listobjects">
+		<textcolor>ff969696</textcolor>
+	</include>
+
+	<include name="detailcolorfocus">
+		<textcolor>FF585858</textcolor>
+		<selectedcolor>FF585858</selectedcolor>
+	</include>
+
+	<include name="playsymbol">
+		<textcolor>00FFFFFF</textcolor>
+		<selectedcolor>10FFFFFF</selectedcolor>
+	</include>
+
+	<include name="playlistcolor1">
+		<textcolor>FFFFFFFF</textcolor>
+		<selectedcolor>e1b1e021</selectedcolor>
+	</include>
+
+	<include name="playlistcolor2">
+		<textcolor>FFFFFFFF</textcolor>
+		<selectedcolor>e1b1e021</selectedcolor>
+	</include>
+
+	<include name="settingsmenufont">
+		<textcolor>FFa8a8a8</textcolor>
+		<selectedcolor>e1b1e021</selectedcolor>
+		<focusedcolor>ffffffff</focusedcolor>
+	</include>
+
+	<include name="settingsmenubar">
+		<textcolor>FFffffff</textcolor>
+		<focusedcolor>FFffff00</focusedcolor>
+		<selectedcolor>FFffff00</selectedcolor>
+	</include>
+
+	<include name="osdfont">
+		<textcolor>FFffffff</textcolor>
+		<focusedcolor>FFababab</focusedcolor>
+		<selectedcolor>FFababab</selectedcolor>
+	</include>
+
+	<include name="osdfont2">
+		<textcolor>FFb8b8b8</textcolor>
+		<focusedcolor>FFFFFFFF</focusedcolor>
+		<selectedcolor>FFFFFFFF</selectedcolor>
+	</include>
+
+	<!-- Global time and weather panel ================================== -->
+	<include name="Window-Files">
+		<control type="label" id="12">
+			<posx>70</posx>
+			<posy>580</posy>
+			<label>-</label>
+			<font>objects</font>
+			<textcolor>59FFFFFF</textcolor>
+			<include>common-fade-quick</include>
+			<visible>!Control.IsVisible(51) + !Control.IsVisible(57) + !Control.IsVisible(58) + !Control.IsVisible(53) + !Control.IsVisible(551) + !Control.IsVisible(552)</visible>
+		</control>
+</include>
+ <!-- Weather -->
+  <include name="WeatherButton">
+    <posy>24</posy>
+    <width>170</width>
+    <include>DialogButton</include>
+  </include>
+
+  <constant name="WeatherDayHeight">120</constant>
+
+  <include name="WeatherDayTitle">
+    <posx>160</posx>
+    <posy>0</posy>
+    <label>-</label>
+    <font>MediumSmallTitleCapsFont</font>
+  </include>
+
+  <constant name="WeatherDayVerticalGap">26</constant>
+
+  <include name="WeatherDayCaption">
+    <font>Font_SettingsSectionMenuButtonSubtitle</font>
+    <width>80</width>
+    <visible>Weather.IsFetched</visible>
+  </include>
+
+  <include name="WeatherDayLabel">
+    <label>-</label>
+    <width>70</width>
+  </include>
+
+  <include name="WeatherDayConditions">
+    <posx>160</posx>
+    <width>420</width>
+    <label>-</label>
+  </include>
+
+  <constant name="WeatherCurrentVerticalGap">35</constant>
+
+  <include name="WeatherCurrentCaption">
+    <posx>40</posx>
+    <height>35</height>
+    <align>left</align>
+    <aligny>center</aligny>
+    <font>SmallTitleCapsFont</font>
+	<textcolor>c0FFFFFF</textcolor>
+    <visible>Weather.IsFetched</visible>
+  </include>
+
+  <include name="WeatherCurrentValue">
+    <posx>150</posx>
+    <width>192</width>
+    <height>35</height>
+    <align>left</align>
+    <aligny>center</aligny>
+	<textcolor>FFFFFFFF</textcolor>
+    <label>-</label>
+  </include>
+    <include name="HomeWeatherBGFade">
+    <animation effect="fade" start="0" end="100" time="600" condition="!Window.Previous(MyWeather)">WindowOpen</animation>
+  </include>
+
+ <include name="HomeWeatherSummaryPos">
+    <posx>990</posx>
+    <posy>11</posy>
+  </include>
+
+  <include name="HomeWeatherSummaryBGDims">
+    <posx>-16</posx>
+    <posy>-17</posy>
+    <width>310</width>
+    <height>82</height>
+  </include>
+
+  <constant name="HomeWeatherTextWidth">220</constant>
+
+  <include name="HomeWeatherSummaryImgDims">
+    <posx>226</posx>
+    <width>50</width>
+    <height>50</height>
+  </include>
+
+	<!-- Menu styles ================================== -->
+	<include name="filemanmenugroup">
+		<posx>67</posx>
+		<posy>597</posy>
+		<width>1145</width>
+		<height>40</height>
+		<itemgap>0</itemgap>
+		<orientation>horizontal</orientation>
+		<onup>21</onup>
+		<ondown>21</ondown>
+		<include>common-fade-quick</include>
+	</include>
+
+	<include name="browsermenugroup">
+		<posx>67</posx>
+		<posy>565</posy>
+		<width>1145</width>
+		<height>40</height>
+		<itemgap>0</itemgap>
+		<orientation>horizontal</orientation>
+		<onup>450</onup>
+		<ondown>450</ondown>
+		<include>common-fade-quick</include>
+	</include>
+
+	<include name="selectmenugroup">
+		<posx>302</posx>
+		<posy>565</posy>
+		<width>1145</width>
+		<height>40</height>
+		<itemgap>0</itemgap>
+		<orientation>horizontal</orientation>
+		<onup>450</onup>
+		<ondown>450</ondown>
+		<include>common-fade-quick</include>
+	</include>
+
+</includes>

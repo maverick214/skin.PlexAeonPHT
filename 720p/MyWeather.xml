@@ -1,0 +1,516 @@
+<window id="2600">
+  <defaultcontrol always="true">3</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+
+
+	<controls>
+	<!-- Background_Wallpaper -->
+    <control type="group">
+		<visible>true</visible>
+	    <animation effect="fade" time="1000"  start="80" end="80" reversible="true">WindowOpen</animation>
+
+  		<control type="multiimage">
+			<include>FullscreenDimensions</include>
+			<imagepath>backdrops/winter</imagepath>
+			<info>Skin.String(CustomWeather)</info>
+			<visible>System.Date(12-21, 12-31)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>FullscreenDimensions</include>
+			<imagepath>backdrops/winter</imagepath>
+			<info>Skin.String(CustomWeather)</info>
+			<visible>System.Date(01-01, 03-21)</visible>
+		</control>
+		
+		<control type="multiimage">
+			<include>FullscreenDimensions</include>
+			<imagepath>backdrops/spring</imagepath>
+			<info>Skin.String(CustomWeather)</info>
+			<visible>System.Date(03-21,06-21)</visible>
+		</control>
+
+		<control type="multiimage">
+			<include>FullscreenDimensions</include>
+			<imagepath>backdrops/summer</imagepath>
+			<info>Skin.String(CustomWeather)</info>
+			<visible>System.Date(06-21,09-23)</visible>
+		</control>		
+		
+		<control type="multiimage">
+			<include>FullscreenDimensions</include>
+			<imagepath>backdrops/autumn</imagepath>
+			<info>Skin.String(CustomWeather)</info>
+			<visible>System.Date(09-23,12-21)</visible>
+		</control>
+
+	</control>
+<!--
+		<control type="multiimage">
+			<include>Background_ImageFolder</include>
+			<imagepath>weather/$INFO[Weather.FanartCode]</imagepath>
+			<visible>!Skin.HasSetting(NoCustomWeatherConditions)</visible>
+	    <animation effect="fade" time="1000"  start="80" end="80" reversible="true">WindowOpen</animation>
+		</control>
+-->
+		<!--Background_Wallpaper end -->	
+		<include>Furniture_HomeNowPlaying</include>   
+
+    <control type="group">
+  
+    </control>
+	 
+		<control type="group">
+
+			<posx>0</posx>
+			<posy>40</posy>
+			<width>1280</width>
+			<height>287</height>
+			<animation effect="slide" start="0,-20" end="0,-20" time="0" condition="!Skin.HasSetting(highertime)">Conditional</animation>
+			<animation effect="zoom" start="100" end="90" time="200" center="640,80" condition="Player.HasAudio + Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="500">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+			<control type="group">
+
+				<posx>67</posx>
+				<animation effect="fade" start="0" end="100" delay="500" time="400">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+				
+			 	<control type="image">
+					<posy>0</posy>
+					<width>283</width>
+					<height>287</height>
+					<texture>home/home_weather_big.png</texture>
+				</control>
+ 
+				<control type="label">
+					<posx>10</posx>
+					<posy>0</posy>
+					<width>263</width>
+					<height>63</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>Font_WeatherTitle</font>
+					<textcolor>c0FFFFFF</textcolor>
+					<scroll>true</scroll>
+					<label>$INFO[Weather.Location]</label>
+				</control>
+
+				<control type="label">
+					<posx>20</posx>
+					<posy>7</posy>
+					<width>141</width>
+					<height>220</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>Font_WeatherLabel</font>
+					<textcolor>c0FFFFFF</textcolor>					
+					<label>$LOCALIZE[31008][CR]$LOCALIZE[32030]</label>
+				</control>
+
+				<control type="label">
+					<posx>263</posx>
+					<posy>92</posy>
+					<width>141</width>
+					<height>220</height>
+					<align>right</align>
+					<font>Font_WeatherLabel</font>
+        		    <wrapmultiline>true</wrapmultiline>
+					<textcolor>FFFFFFFF</textcolor>					
+					<label>$INFO[Weather.Temperature][CR]$INFO[Weather.Conditions]</label>
+				</control>	
+				<control type="image">
+					<posx>90</posx>
+					<include>Objects_WeatherIcon</include>
+					<texture>$INFO[Weather.Conditions]</texture>				
+     			    <aspectratio>keep</aspectratio>
+				</control>					
+			</control>
+		 
+		
+			<!-- 4 day -->
+			<control type="group">
+				<visible>true</visible>
+				<control type="group">
+					<posx>370</posx>
+					<visible>true</visible>
+					<animation effect="fade" start="0" end="100" delay="700" time="600">WindowOpen</animation>
+					<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+					<control type="image">
+						<include>Objects_WeatherBack</include>
+					</control>
+					<control type="label" id="31">
+						<include>Objects_WeatherDay</include>
+						
+					</control>
+					<control type="label" id="32">
+						<posx>0</posx>
+						<include>Objects_WeatherTemp</include>
+						
+					</control>
+					<control type="label" id="33">
+						<posx>99</posx>
+						<include>Objects_WeatherTemp</include>
+					</control>
+					<control type="label" id="34">
+						<include>Objects_ConditionDay</include>
+					</control>
+					
+					   <control type="image" id="35">     
+        			    <description>day icon</description>
+    				 	<include>Objects_WeatherIconSmall</include>
+     		            <texture>-</texture>
+     			       <aspectratio>keep</aspectratio>
+     			     </control>
+
+	<!--				<control type="multiimage">
+						<include>Objects_WeatherIcon</include>
+						<imagepath>\icon\$INFO[Window(Weather).Property(Day0.FanartCode)]</imagepath>
+						<timeperimage>75</timeperimage>
+						<randomize>false</randomize>
+						<fadetime>0</fadetime>
+						<visible>true</visible>
+					</control>  
+					-->
+				</control>
+				<control type="group">
+					<posx>586</posx>
+					<visible>true</visible>
+					<animation effect="fade" start="0" end="100" delay="800" time="800">WindowOpen</animation>
+					<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+					<control type="image">
+						<include>Objects_WeatherBack</include>
+					</control>
+						<control type="label" id="41">
+						<include>Objects_WeatherDay</include>
+						
+					</control>
+					<control type="label" id="42">
+						<posx>0</posx>
+						<include>Objects_WeatherTemp</include>
+						
+					</control>
+					<control type="label" id="43">
+						<posx>99</posx>
+						<include>Objects_WeatherTemp</include>
+					</control>
+					<control type="label" id="44">
+						<include>Objects_ConditionDay</include>
+					</control>
+						
+					   <control type="image" id="45">     
+        			    <description>day icon</description>
+    				 	<include>Objects_WeatherIconSmall</include>
+     		            <texture>-</texture>
+     			       <aspectratio>keep</aspectratio>
+     			     </control>
+	
+	<!--				<control type="multiimage">
+						<include>Objects_WeatherIcon</include>
+						<imagepath>\icon\$INFO[Window(Weather).Property(Day1.FanartCode)]</imagepath>
+						<timeperimage>75</timeperimage>
+						<randomize>false</randomize>
+						<fadetime>0</fadetime>
+						<visible>Skin.HasSetting(weathericons)</visible>
+					</control>
+					
+					-->
+				</control>
+				<control type="group">
+					<posx>802</posx>
+					<visible>true</visible>
+					<animation effect="fade" start="0" end="100" delay="900" time="1000">WindowOpen</animation>
+					<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+					<control type="image">
+						<include>Objects_WeatherBack</include>
+					</control>
+							<control type="label" id="51">
+						<include>Objects_WeatherDay</include>
+						
+					</control>
+					<control type="label" id="52">
+						<posx>0</posx>
+						<include>Objects_WeatherTemp</include>
+						
+					</control>
+					<control type="label" id="53">
+						<posx>99</posx>
+						<include>Objects_WeatherTemp</include>
+					</control>
+					<control type="label" id="54">
+						<include>Objects_ConditionDay</include>
+					</control>
+						
+					   <control type="image" id="55">     
+        			    <description>day icon</description>
+    				 	<include>Objects_WeatherIconSmall</include>
+     		            <texture>-</texture>
+     			       <aspectratio>keep</aspectratio>
+     			     </control>
+				</control>
+<!--					<control type="multiimage">
+						<include>Objects_WeatherIcon</include>
+						<imagepath>\icon\$INFO[Window(Weather).Property(Day2.FanartCode)]</imagepath>
+						<timeperimage>75</timeperimage>
+						<randomize>false</randomize>
+						<fadetime>0</fadetime>
+						<visible>Skin.HasSetting(weathericons)</visible>
+					</control>
+					-->
+				<control type="group">
+					<posx>1018</posx>
+					<visible>true</visible>
+					<animation effect="fade" start="0" end="100" delay="1000" time="1000">WindowOpen</animation>
+					<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+					<control type="image">
+						<include>Objects_WeatherBack</include>
+					</control>
+							<control type="label" id="61">
+						<include>Objects_WeatherDay</include>
+						
+					</control>
+					<control type="label" id="62">
+						<posx>0</posx>
+						<include>Objects_WeatherTemp</include>
+						
+					</control>
+					<control type="label" id="63">
+						<posx>99</posx>
+						<include>Objects_WeatherTemp</include>
+					</control>
+					<control type="label" id="64">
+						<include>Objects_ConditionDay</include>
+					</control>
+					
+					   <control type="image" id="65">     
+        			    <description>day icon</description>
+    				 	<include>Objects_WeatherIconSmall</include>
+     		            <texture>-</texture>
+     			       <aspectratio>keep</aspectratio>
+     			     </control>
+
+				</control>
+			</control>
+		</control>
+
+ 
+    <control type="group">
+      <include>MediaViewFade</include>
+      			<animation effect="slide" start="0,-20" end="0,-20" time="0" condition="!Skin.HasSetting(highertime)">Conditional</animation>
+			<animation effect="zoom" start="100" end="90" time="200" center="640,80" condition="Player.HasAudio + Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="fade" start="0" end="100" time="500">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+
+      <control type="group">
+        <include>TopOverlayTitlePos</include>
+
+        <include>TopOverlayFirstTitleAreaBG</include>
+<!--
+        <control type="label">
+          <description>Weather label</description>
+          <include>TopOverlayFirstTitleAreaText</include>
+	   <label>$LOCALIZE[8]</label>
+        </control>
+-->
+      </control>
+
+      <control type="group">
+        <posx>25</posx>
+        <posy>140</posy>
+
+        <control type="spincontrol" id="3">
+          <description>Location Select</description>
+          <align>right</align>
+          <posx>20</posx>
+          <posy>1</posy>
+          <font>-</font>
+          <reverse>yes</reverse>
+          <onup>2</onup>
+          <ondown>2</ondown>
+          <onleft>3</onleft>
+          <onright>2</onright>
+        </control>
+ 
+        <control type="group">
+          <posx>68</posx>
+			<control type="image">
+			<description>background image</description>
+			<posx>-110</posx>
+			<posy>-200</posy>
+			<width>1380</width>
+			<height>830</height>
+			<texture>-</texture>
+		</control>
+        </control>
+      </control>
+
+				
+	 	<control type="image">
+	       <posx>615</posx>
+		   <posy>356</posy>
+		   <width>600</width>
+		   <height>320</height>
+		   <texture>home/home_weather_big.png</texture>
+		</control>
+
+      <control type="group">
+        <description>Current Weather</description>
+        <posx>600</posx>
+        <posy>246</posy>
+
+<!-- Current Conditions -->
+ 
+        <control type="group">
+          <posy>120</posy>
+
+				<control type="label">
+					<posx>190</posx>
+					<posy>-5</posy>
+					<width>263</width>
+					<height>63</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>Font_WeatherTitle</font>
+					<textcolor>FFFFFFFF</textcolor>
+					<scroll>true</scroll>
+					<label>CURRENT CONDITIONS</label>
+				</control>
+
+          <control type="group">
+            <posx>350</posx>
+	        <posy>20</posy>
+            <control type="image" id="21">
+              <description>current weather icon</description>
+	          <posy>30</posy>
+              <height>220</height>
+              <width>220</width>
+              <texture>-</texture>
+              <aspectratio>keep</aspectratio>
+            </control>
+    
+            <control type="label" id="22">
+              <description>current condition label</description>
+              <posx>15</posx>
+              <posy>246</posy>
+              <width>200</width>
+              <wrapmultiline>true</wrapmultiline>
+              <label>-</label>
+              <align>center</align>
+			  <textcolor>FFFFFFFF</textcolor>
+              <font>SmallTitleCapsFont</font>
+            </control>
+          </control>
+  
+          <control type="group">
+            <posy>20</posy>
+
+            <control type="group">
+              <description>Current Temp</description>
+
+              <control type="label">
+                <description>Caption</description>
+                <label>401</label>
+                <include>WeatherCurrentCaption</include>
+              </control>
+              <control type="label" id="23">
+                <description>Value</description>
+                <include>WeatherCurrentValue</include>
+              </control>
+
+              <control type="group">
+                <description>Current Feels Like Temp</description>
+                <posy>WeatherCurrentVerticalGap</posy>
+
+                <control type="label">
+                  <description>Caption</description>
+                  <label>402</label>
+                  <include>WeatherCurrentCaption</include>
+                </control>
+                <control type="label" id="24">
+                  <description>Value</description>
+                  <include>WeatherCurrentValue</include>
+                </control>
+
+                <control type="group">
+                  <description>Dew Point</description>
+                  <posy>WeatherCurrentVerticalGap</posy>
+
+                  <control type="label">
+                    <description>Caption</description>
+                    <label>405</label>
+                    <include>WeatherCurrentCaption</include>
+                  </control>
+                  <control type="label" id="27">
+                    <description>Value</description>
+                    <include>WeatherCurrentValue</include>
+                  </control>
+
+                  <control type="group">
+                    <description>Humidity</description>
+                    <posy>WeatherCurrentVerticalGap</posy>
+
+                    <control type="label">
+                      <description>Caption</description>
+                      <label>406</label>
+                      <include>WeatherCurrentCaption</include>
+                    </control>
+                    <control type="label" id="28">
+                      <description>Value</description>
+                      <include>WeatherCurrentValue</include>
+                    </control>
+
+                    <control type="group">
+                      <description>UV Index</description>
+                      <posy>WeatherCurrentVerticalGap</posy>
+
+                      <control type="label">
+                        <description>Caption</description>
+                        <label>403</label>
+                        <include>WeatherCurrentCaption</include>
+                      </control>
+                      <control type="label" id="25">
+                        <description>Value</description>
+                        <include>WeatherCurrentValue</include>
+                      </control>
+
+                      <control type="group">
+                        <description>Wind</description>
+                        <posy>WeatherCurrentVerticalGap</posy>
+
+                        <control type="label">
+                          <description>Caption</description>
+                          <label>404</label>
+                          <include>WeatherCurrentCaption</include>
+                        </control>
+                        <control type="label" id="26">
+                          <description>Value</description>
+                          <include>WeatherCurrentValue</include>
+                        </control>
+                      </control>
+                    </control>
+                  </control>
+                </control>
+              </control>
+            </control>
+          </control>
+        </control>
+      </control>
+
+<!--      <include>Clock</include>
+
+      <control type="group">
+        <include>MusicOverlayNowPlayingDims</include>
+        <visible>Player.HasAudio</visible>
+        <include>HomeSlideLeft</include>
+
+        <include>MusicNowPlaying</include>
+      </control>
+    -->
+      <include>MusicNowPlayingIndicators</include>
+ 	  <include>CerberosSmoke</include>
+   </control>
+
+
+
+	</controls>
+</window>

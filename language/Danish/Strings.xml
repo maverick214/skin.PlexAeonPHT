@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes" ?>
+<!-- $Revision: 204$ -->
+<!--  strings 31000 thru 31999 reserved for skins  -->
+
+ <strings>
+	<string id="31000">0.9 (STARK)</string> <!-- DO NOT CHANGE -->
+	<string id="31001">N/A</string>
+	<string id="31002">DÆMPET</string>
+	<string id="31003">VALGMULIGHEDER FOR VEJRET IKKE TILGÆNGELIGE I DENNE VERSION</string>
+	<string id="31004">NULSTIL[CR]BAGGRUND</string>
+	<string id="31005">POSTER</string>
+	<string id="31006">AFSPILLER</string>
+	<string id="31007">PAUSET</string>
+	<string id="31008">MIDLERTIDIG</string>
+	<string id="31009">ENHEDER</string>
+  
+<!-- Main Menu -->
+  
+	<string id="31010">MUSIK APPS</string>
+	<string id="31011">PLEX ONLINE</string>
+	<string id="31012">BILLED APPS</string>
+	<string id="31013">FILM</string>
+	<string id="31014">TV SHOWS</string>
+	<string id="31015">VIDEO APPS</string>
+	<string id="31016">INDSTILLINGER</string>
+	<string id="31017">VEJR</string>
+	<string id="31018">AFSPIL DISK</string>
+	<string id="31019">LUK NED</string>
+	<string id="31020">SCRIPTS</string>
+	<string id="31021">FAVORITTER</string>
+
+<!-- Plexaeon Viewtype Mods Settings-->
+
+	<string id="32010">BRUG TV PLAKATER TIL MULTIPLEX</string>
+	<string id="32011">NYT VÆG UDSEENDE</string>
+	<string id="32012">BRUG GAMMEL CLEARLIST EPISODE INFO VISNING</string>
+	<string id="32013">VEJR BAGGRUND EFTER NUVÆRENDE WEATHER BACKDROP BY CURRENT WEATHER CONDITIONS</string>
+	<string id="32014">AKTIVER OPSTARTS SPILLELISTE  (SPILLELISTE, LYD ELLER VIDEO)</string>
+	<string id="32015">- STI TIL OPSTARTS-FIL/SPILLELISTE</string>
+	<string id="32016">INGEN 'EKSTRA ZOOM' PÅ GENVEJSMENU</string>
+	<string id="32017">Brug DVD Covere</string>	
+	<string id="32018">HURTIG RULNING BOGSTAVS POPUP</string>
+	<string id="32019">BRUG VERTIKAL VISNINGSTYPE MENU</string>
+	<string id="32020">AFSPIL BAG MENUER (TRYK TAB TASTEN EN ENKELT GANG NÅR VIDEO AFSPILLES)</string>
+	<string id="32021">STI TIL LYDKONTROLS AVI</string>
+	<string id="32022">AKTIVER BIOGRAF AFSPILNINGSTILSTAND (AFSPILLER EN TILFÆLDIG VIDEO FØR FILMEN STARTER)</string>
+	<string id="32023">- PATH TO CINEMA FOLDER</string>
+	<string id="32024">CLEARART TVPROGRAM OVERLEJRING (FRA VED TVPOSTER)</string>
+	<string id="32025">EKSTRA OSD INFORMATION</string>
+	<string id="32026">STI TIL BRUGERDEFINERET TÆPPE BAGGRUND</string>
+	<string id="32027">BRUG BAGGRUND TIL MANGLENDE FANKUNST (FRA VED SORT SKÆRM)</string>
+	<string id="32028">ANIMEREDE BAGGRUNDE (KEN BURNS EFFEKT)</string>
+	<string id="32029">VIS NAVIGATIONS PANEL</string>
+	<string id="32030">TILSTAND</string>
+	<string id="32031">OSD UNDERTEKSTER</string>
+	<string id="31170">VED AT TRYKKE OP AKTIVERES GENVEJSMENUEN (FRA AKTIVERER FAVORITTER)</string>
+	<string id="31171">MØRKT PANEL</string>
+	<string id="31172">BENYT VÅGEBLUS I STEDET FOR LUK NED PÅ HJEMMESKÆRMEN</string>
+	<string id="31173">BENYT ALTERNATIV DIALOG POPUPS (AEON STARK STIL)</string>
+
+<!-- Media Window titles -->
+ 
+	<string id="31030">APPS</string> 
+	<string id="31031">BILLEDER</string>
+	<string id="31032">FILM</string> 
+	<string id="31033">TV</string>
+	<string id="31034">VIDEOER</string>
+	<string id="31035">VEJR</string>
+	<string id="31036">SCRIPTS</string>
+	<string id="31037">MUSIC</string>
+	<string id="31038">SPILLELISTE</string>
+	<string id="31039">EDITOR</string>
+	<string id="31040">SPILLER</string>
+	<string id="31041">AF:</string>
+
+<!-- Media Window options -->
+	<string id="31542">Gulv: [COLOR=FFFFFFFF]Klar[/COLOR]</string>
+	<string id="31042">Gulv: [COLOR=FFFFFFFF]Lys[/COLOR]</string>
+	<string id="31043">Gulv: [COLOR=FFFFFFFF]Nat[/COLOR]</string>
+	<string id="31044">[COLOR=FFFFFFFF]Kunst[/COLOR]</string>
+	<string id="31045">[COLOR=FFFFFFFF]Miniaturebillede[/COLOR]</string>
+	<string id="31046">[COLOR=FFFFFFFF]Indhold[/COLOR]</string>
+	<string id="31047">Layout</string>
+	<string id="31048">Udløser</string>
+	<string id="31049">Auto</string>
+	<string id="31050">Udseende:</string> 
+	<string id="31051">Tilfældig</string>
+	<string id="31052">Tyk</string> 
+	<string id="31053">Tynd</string> 
+	<string id="31054">Opsætning</string> 
+	<string id="31055">Stabel</string> 
+	<string id="31056">Miniaturebilleder: Kvadratiske</string>
+	<string id="31057">Filer</string>
+	<string id="31058">Skjul sete</string>
+	<string id="31059">Miniaturebilleder: [COLOR=FFFFFFFF]Plakat[/COLOR]</string>
+	<string id="31060">Layout: Fladt</string>
+	<string id="31061">Flyde miniaturebilleder</string>
+	<string id="31022">Dæmp fankunst</string>	
+	<string id="31062">Sæson</string>
+	<string id="310621">Alle sæsoner</string>
+	<string id="31063">Afsnit</string>
+	<string id="31064">Fankunst</string>
+	<string id="31065">Panel</string>
+	<string id="31066">Unwatched Icon</string>
+	<string id="31067">FanKunst</string>
+	<string id="31068">Bibliotek</string>
+	<string id="31069">Medie flag</string>
+	<string id="31070">Info panel</string>
+	<string id="31071">Slank</string>
+	<string id="31072">Fuld</string>
+	<string id="31073">[COLOR=FFFFFFFF]Standard[/COLOR]</string>
+	<string id="31074">Max visningstype</string>
+	<string id="31075">Layout</string>
+	<string id="31076">Gitter</string>
+	<string id="31077">Tændt</string>
+	<string id="31078">Slukket</string>
+	<string id="31079">Autoskjul</string>
+	<string id="310791">Layout: [COLOR=FFFFFFFF]Horisontalt[/COLOR]</string>
+	<string id="310792">Layout: [COLOR=FFFFFFFF]Verticalt[/COLOR]</string>
+	<string id="310793">Tynd liste</string>
+	<string id="310794">Tynd Liste: Til</string>
+	<string id="310795">Tynd info</string>
+	<string id="310796">Tynd Info: Til</string>
+	<string id="310797">Paneler: [COLOR=FFFFFFFF]Lys[/COLOR]</string>
+	<string id="310798">Paneler: [COLOR=FFFFFFFF]Nat[/COLOR]</string>
+	<string id="310799">Benyt genrer i fuld liste</string>	
+<!-- Aeon Customisation Virtual Home page labels -->
+  
+	<string id="31080">Baggrunde</string>
+	<string id="31081">SKIFT BAGGRUNDE</string>
+	<string id="31082">FLYT HØJRE/VENSTRE FOR AT GENNEMSE, VÆLG FOR AT ÆNDRE</string>
+	<string id="31083">BRUGERDEFINEREDE BAGGRUNDE</string>
+	<string id="31084">VÆLG BAGGRUNDS TYPE</string>
+	<string id="31085">FLYT OP FOR ENKELT BAGGRUND, NED FOR DIASSHOW MAPPE</string>
+	<string id="31086">GENVEJE</string>
+	<string id="31087">SKIFT HJEMMESKÆRMS GENVEJE</string>
+	<string id="31088">FLYT VENSTRE/HØJRE FOR AT GENNEMSE, VÆLG FOR AT ÆNDRE</string>
+	<string id="31089">MØBLER</string>
+	<string id="31090">ARRANGER HJEMMESKÆRMENS SIDE OBJEKTER</string>
+	<string id="31091">FLYT VENSTRE/HØJRE FOR AT GENNEMSE, VÆLG FOR AT FLYTTE</string>
+	<string id="31092">VÆLG FOR AT FLYTTE HOVEDMENUEN</string>
+	<string id="31093">VÆLG FOR AT KOBLE TIDSPANEL</string>
+	<string id="31094">VÆLG FOR AT FRAKOBLE TIDSPANEL</string>
+	<string id="31095">VÆLG FOR AT KOBLE RSS FEED</string>
+	<string id="31096">VÆLG FOR AT KOBLE RSS FEED AF</string>
+	<string id="31097">NULSTIL INDSTILLINGER</string>
+	<string id="31098">NULSTIL HJEM INDSTILLINGER</string>
+	<string id="31099">FLYT VENSTRE/HØJRE FOR AT AKTIVERE KNAP</string>
+	<string id="31100">FORSIGTIG: DETTE KAN IKKE FORTRYDES</string>
+	<string id="31101">FLYT HVOR SOM HELST FOR AT ANNULERRE, VÆLG FOR AT FORTSÆTTE</string>
+	<string id="31102">VÆLG</string>
+	<string id="31103">BAGGRUNDS TYPE</string>
+	<string id="31104">SKIFT MELLEM</string>
+	<string id="31105">GENVEJ</string>
+	<string id="31106">ARRANGER OSD OBJEKTER</string>
+	<string id="31107">MOVE LEFT/RIGHT TO BROWSE, SELECT TO TOGGLE</string>
+	<string id="31108">SKIFT MELLEM ØVERSTE DETALJE STILE (NUVÆRENDE: MINIMAL)</string>
+	<string id="31109">SKIFT STATUSLINIE (NUVÆRENDE: TIL)</string>
+	<string id="31110">SKIFT TIDS/LÆNGDE TEKST (NUVÆRENDE: FRA)</string>
+	<string id="31111">TOGGLE UPPER DETAIL STYLES (CURRENTLY: MAX)</string>
+	<string id="31112">SKIFT STATUSLINIE (NUVÆRENDE: FRA)</string>
+	<string id="31113">SKIFT TIDS/LÆNGDE TEKST (NUVÆRENDE: TIL)</string>	
+  
+<!-- Aeon Customisation Menu labels -->
+  
+	<string id="31120">BAGGRUNDE</string>
+	<string id="31121">PERSONLIGGØR PLEXAEON</string>
+	<string id="31122">GENVEJE</string>
+	<string id="31123">FYLD HJEMMESKÆRM</string>
+	<string id="31124">MØBEL</string> 
+	<string id="31125">TID OG FEEDS</string>
+	<string id="31126">TØM</string> 
+	<string id="31127">SLET PERSONLIGE INDSTILLINGER</string>
+	<string id="31128">OSD</string>
+	<string id="31129">LIVE MUSIK INFO</string>
+
+<!-- PLEX Settings Menu labels -->
+  
+	<string id="31140">VIDEO</string>
+	<string id="31141">OPSKALERING OG UNDERTEKSTER</string>
+	<string id="31142">MUSIK</string>
+	<string id="31143">VISUALIZER LAST.FM</string>
+	<string id="31144">PROGRAMMER</string>
+	<string id="31145">SPIL OG PROGRAMMER</string>
+	<string id="31146">BILLEDER</string>
+	<string id="31147">BROWSER AND DIASSHOW</string>
+	<string id="31148">VEJR</string>
+	<string id="31149">PLACERING OG UDSEENDE</string>
+	<string id="31150">SOFTWARE UPDATERING</string>
+	<string id="31151">SØG EFTER PLEX UPDATERING</string>
+	<string id="31152">SYSTEM</string>
+	<string id="31153">LAGER OG HARDWARE</string>
+	<string id="31154">UDSEENDE</string>
+	<string id="31155">GRÆNSEFLADE OG SKÆRM</string>
+	<string id="31156">VÆLG</string>
+	<string id="31157">PERSONLIGGØR PLEXAEON</string>
+	<string id="31158">AVANCERET</string>
+	<string id="31159">UDVIDEDE PLEXAEON VALGMULIGHEDER</string>
+	<string id="31160">PROFILER</string>
+	<string id="31161">BRUGERKONTI</string>
+	<string id="31162">LOGIN SKÆRM</string>
+	<string id="31163">MULIGHEDER</string>
+	<string id="31164">LOGIN SKÆRM</string>
+	<string id="31165">BRUGERE</string>
+	<string id="31166">ADMINISTRER PROFILER</string>
+	<string id="31167">LYD TEST</string>
+	<string id="31168">SURROUND SOUND CHECK</string>
+	<string id="31169">AVANCERET</string>
+
+<!--  Button / Shutdown Menu  --> 
+
+	<string id="31200">Indstillinger</string> 
+	<string id="31201">Tilpas</string>
+	<string id="31202">Luk Mac ned</string> 
+	<string id="31203">Hjemme Visuals: Fra</string>
+	<string id="31204">Hjemme Visuals: Til</string> 
+	<string id="31205">Afspiller nu</string>
+	<string id="31206">Nedlukningsur</string> 
+	<string id="31207">Vågeblus Mac</string> 
+	<string id="31208">Afslut Plex</string>
+	<string id="31209">Log af</string>
+	<string id="31210">Skub ud</string>
+
+<!--  Shutdown Submenu  --> 
+
+	<string id="31211">Genopfrisk</string> 
+	<string id="31212">Udsæt</string> 
+	<string id="31213">Luk ned</string>
+	<string id="31214">Off Timer</string>
+
+<!--  Set Content / Add Source dialogs  --> 
+  
+	<string id="31220">MAPPE INDEHOLDER:</string>
+	<string id="31221">SKRIV STI ELLER SØG EFTER MEDIERS PLACERING</string>
+	<string id="31222">CHOOSE A NAME FOR THIS SHARE</string>
+	<string id="31223">LIST</string>
+	<string id="31224">FLISE</string>
+
+<!-- Aeon Advanced Menu labels -->
+  
+	<string id="31230">PLEXAEON</string> 
+	<string id="31231">VALG</string>
+	<string id="31232">GENERELT</string>
+	<string id="31233">GLOBALE INDSTILLINGER</string>
+	<string id="31234">HOME</string>
+	<string id="31235">FORSIDE VALG</string>
+	<string id="31236">VISNINGER</string>
+	<string id="31237">VISNINGS VALG</string>
+	<string id="31238">FORUDINDSTILLINGER</string>
+	<string id="31239">HURTIG KONFIGURATION</string>
+	<string id="31240">FANKUNST</string>
+	<string id="31241">KONTEKSTUELT KUNSTVÆRK</string>
+	<string id="31242">AKTIVER ALLE</string>
+	<string id="31243">DEAKTIVER ALLE</string>
+	<string id="31244">MENUER</string>
+	<string id="31245">BROWSING OPSTILLING</string>
+	<string id="31246">VISNINGSTYPER</string>
+	<string id="31247">DEAKTIVER VISNINGSTYPER</string>
+	<string id="312573">Tryk NED for at se trailer</string>
+	<string id="312574">Tryk 'X' for at stoppe</string>
+	<string id="312575">TRYK HØJRE FOR AT AFSPILLE TRAILER</string>
+  
+<!-- Aeon Advanced options -->
+
+	<string id="31249">MEDIE FLAG SKIFT</string>
+	<string id="31250">MULTIPLEX/SHOWCASE LAYOUT (FANKUNST, INDHOLD, MINIATUREBILLEDSHOW)</string>
+	<string id="31251">MULTIPLEX/SHOWCASE INFO BYT (TIL, FRA, AUTO, UDLØSER)</string>
+	<string id="31252">GLIDENDE EFFEKT FOR HJEMMESKÆRMSMENU</string>
+	<string id="31253">LINK SPIL GENVEJ TIL  'LAUNCHER' PLUGIN</string>
+	<string id="31258">VIS BEDØMMELSE (IMDB, ETC.) PÅ FILMS INFO SIDE</string>
+	<string id="31259">STANDART IKONER TOR MEDIEFLAG (FRA PÅ TOMT INDHOLD)</string>
+	<string id="31260">VIS TIDSPANEL</string>
+	<string id="31261">HJEMMESIDE VEJR POP-UP</string>
+	<string id="31262">KONTEKSTUELLE KUNSTVÆRKER (FANKUNST) FOR MUSIK</string>
+	<string id="31264">KONTEKSTUELLE KUNSTVÆRKER (FANKUNST) FOR FILM</string>
+	<string id="31265">KONTEKSTUELLE KUNSTVÆRKER (FANKUNST) FOR TV</string>
+	<string id="31266">KONTEKSTUELLE KUNSTVÆRKER FOR BILLEDER</string>
+	<string id="31268">VIS RSS / AFSPILLER NU PÅ VÆGVISNING</string>
+	<string id="312691">VIS ASPEKT FORHOLD (BRUGER STUDIETS HVIS SLÅET FRA)</string>
+	<string id="312692">BRUG CD-KUNST TIL AFSPILLER NU VISUALISERING</string>
+	<string id="312693">- BENYT HOVEDMENU BRUGERDEFINEREDE BAGGRUNDE TIL CD-KUNST</string>
+	<string id="312694">- AKTIVER BRUGERDEFINERET STI TIL MUSIKKUNSTNER FANKUNST OG CD BILLDER</string>
+	<string id="312695">- STI TIL MUSIK FANKUNST OG CD BILLEDER</string>
+	<string id="31270">ZOOM ANIMATIONER</string>
+	<string id="31271">FADE PANEL/LIST VISNINGS MENU NÅR INAKTIV</string>
+	<string id="31278">TILLAD SCROLLING FOR INDHOLD/BIO/ANMELDELSE INFO</string>
+	<string id="31279">KONTEKSTUELLE KUNSTVÆRKER (FANKUNST) FOR FULDSKÆRMS INFO SIDER</string>
+	<string id="31280">UDVIKLER MODE</string>
+	<string id="31281">MEDIE FLAG (STUDIE IKONER, KILDEINFO, ETC.)</string>
+	<string id="31284">HJEMMESIDE VISUALISERING</string>
+	<string id="31285">BENYT TEKST FOR FILM INFO BEDØMMELSE (BENYTTER STJERNER HVIS DEAKTIVERET)</string>
+	<string id="31286">BENYT TEKST FOR MUSIK INFO BEDØMMELSE (BENYTTER STJERNER HVIS DEAKTIVERET)</string>	
+	<string id="31287">KIOSK MODE (FJERNER MENUER FRA MEDIE VINDUER, LÅSER ALLE VISNINGER)</string>
+	<string id="31288">FILMSØGNING (FILMBIBLIOTEK)</string>
+	<string id="31289">TVSØGNING (TV BIBLIOTEK)</string>
+	<string id="31290">INDSTILLINGSGENVEJE (ALLE MEDIER)</string>
+	<string id="31291">SET/USET FILM SKIFT (FILMBIBLIOTEK)</string>
+	<string id="31292">SET/USET TV SKIFT (TV BIBLIOTEK)</string>
+	<string id="31293">FILVISNINGSGENVEJ (FILM OG TV BIBLIOTEKER)</string>
+	<string id="31294">STØRRE TASTATUR / NUMERISK TASTATUR</string>
+	<string id="31295">FORBEDRET LÆSBARHED (STØRRE TID OG RSS)</string>
+	<string id="31296">LYS / NAT TEMA SKIFTE</string>
+	<string id="31297">BENYT ENKELT MINIATUREBILLEDE TIL MUSIKLISTE</string>
+	<string id="31298">BENYT ENKELT MINIATUREBILLEDE TIL FILMLISTE</string>
+	<string id="31299">VIS RSS / AFSPILLER NU I SHOWCASE VISNING</string>
+	<string id="31310">SKJUL AFSPILLER NU I VISUALIZER</string>
+	
+<!-- PLEX Settings Menu headings -->
+	
+	<string id="31300">VIDEO</string>
+	<string id="31301">BILLEDER</string>
+	<string id="31302">UDSEENDE</string>
+	<string id="31303">NETVÆRK</string>
+	<string id="31304">SYSTEM</string>
+	<string id="31305">MUSIK</string>
+	<string id="31306">VEJR</string>
+	<string id="31307">PROGRAMMER</string>
+	<string id="31308">VALGMULIGHEDER</string>
+	
+<!-- PLEX Settings Subtitles -->
+	
+	<string id="31319">VISNINGSSTANDART</string>
+	<string id="31320">KVALITER OG OPSKALLERING</string>
+	<string id="31321">MÆRKER OG SKÆRM</string>
+	<string id="31322">MÆRKER OG SKÆRM</string>	
+	<string id="31324">MÆRKER OG SKÆRME</string>
+	<string id="31325">TIMING OG EFFEKTER</string>
+	<string id="31326">SKIN UDSEENDE OG LYD</string>
+	<string id="31327">SPROG OG PLACERING</string>
+	<string id="31328">RSS FEEDS</string>
+	
+	<string id="31331">UPDATE PLEX</string>
+	<string id="31332">KLIENT</string>
+	<string id="31333">UPDATE PLEX</string>
+	<string id="31336">OPLØSNINGEN OG KALIBRERING</string>
+	<string id="31337">HARDWARE</string>
+	<string id="31338">APPLE FJERNBETJENING</string>
+	<string id="31339">SERVER VALGMULIGHEDER</string>
+	<string id="31340">TIDER OG INDHOLD</string>
+	<string id="31341">TIDER OG INDHOLD</string>
+	<string id="31342">VISUALISERING</string> 
+	<string id="31343">AUTO START</string> 
+	<string id="31344">BAGGRUNDE OG LYDNIVEAU</string> 
+	<string id="31345">BAGGRUND OG TEMA</string>
+	<string id="31349">OMRÅDEKODER OG REGION</string>
+	<string id="31350">BROWSING STANDARTER</string>
+	
+
+<!--  Fullscreen info panel  -->
+
+	<string id="31400">INGEN PLAKAT[CR][CR]CHECK OM DU HAR ET SEPERAT "STORT" MINIATUREBILLEDE[CR]SAMMEN MED DIN FILMFIL OG AT[CR]NAVNEKONVENTIONEN ER OVERHOLDT[CR](BARBARELLA.MKV-BIG.PNG)[CR][CR]CHECK PLEXAEON MANUALEN FOR FLERE DETALJER</string>
+	<string id="31401">SKREVET AF</string>
+	<string id="31402">INSTRUERET AF</string>
+	<string id="31403">AFSNIT</string>
+	<string id="31404">STUDIE:</string>
+	<string id="31405">MEDVIRKENDE</string>
+	<string id="31406">AFSNIT</string>
+	<string id="31407">PREMIERED</string>
+	<string id="31408">IMDB</string>
+	<string id="31409">Trailer</string>
+	<string id="31410">Genindlæs</string>
+	<string id="31411">Se</string>
+	<string id="31412">Fankunst</string>
+	<string id="31413">STEMNINGER</string>
+	<string id="31414">INDHOLD DETALJER UTILGÆNGELIGE</string>
+	<string id="31415">BIOGRAFI UTILGÆNGELIG</string>
+	<string id="31416">STILE</string>
+	<string id="31417">BEDØMMELSER</string>
+	<string id="31418">Miniaturebilleder</string>
+	<string id="31419">Genopfrisk</string>
+	<string id="31420">Fortsæt</string>
+	<string id="31421">Spil</string>
+	<string id="31422">NOTER</string>
+	<string id="31423">LABEL</string>
+	<string id="31424">ALBUM BEDØMMENSE UTILGÆNGELIG</string>
+	<string id="31425">IKKE TILGÆNGELIG</string>
+	<string id="31426">SPOR</string>
+	<string id="31427">LÆNGDE</string>
+	<string id="31428">INGEN KOMMENTARER</string>
+	<string id="31429">ALBUM INFO</string>
+	<string id="31430">BIND</string>
+	<string id="31431">TRYK UP ELLER NED FOR AT ÆNDRE BEDØMMELSEN</string>
+	<string id="31432">SÆSON</string>
+	<string id="31433">AFSNIT</string>
+	<string id="31434">LÆNGDE</string>
+	<string id="31435">DETALJER FOR MEDVIRKENDE UTILGÆNGELIG</string>
+	<string id="31436">ÅR</string>
+	<string id="31438">GENRE</string>
+	<string id="31439">SET</string>
+	<string id="31440">USET</string>
+	<string id="31441">DATO INFO UTILGÆNGELIG</string>
+	<string id="31442">DATO FOR ÆNDRING IKKE TILGÆNGELIG</string>
+	<string id="31443">OPLØSNINGS INFO UTILGÆNGELIG</string>
+	<string id="31444">FILSTØRRELSE UTILGÆNGELIG</string>
+	<string id="31445">RATING</string>
+	<string id="31446">NYE AFSNIT</string>
+	<string id="31447">NY EPISODE</string>
+	<string id="31448">TOTALE ANTAL AFSNIT</string>
+			
+<!--  Aeon Assistant  -->
+
+	<string id="31500">NYHEDER</string>
+	<string id="31501">ONLINE AEON UPDATERINGER</string>
+	<string id="31502">VITALE</string>
+	<string id="31503">PLEX STATISTIKKER</string>
+	<string id="31504">KREDITERINGER</string>
+	<string id="31505">FORFATTER OG TAK</string>
+	<string id="31510">ASSISTENT</string>
+	<string id="31511">SENESTE NYT</string>
+	<string id="31512">RETURNER HER FOR PERIODISKE OPDATERINGER FRA AEON SERVEREN</string>
+	<string id="31520">START TUR</string>
+	<string id="31521">AEON VELKOMSTSIDE</string>
+	<string id="31522">BACK TO BASICS</string>
+	<string id="31523">TRYK CALG FOR AT GENTAGE AEON INTRODUKTIONSTUR</string>
+	<string id="31524">KONTAKTER AEON SERVER</string>
+	
+<!--  Aeon Assistant Tutorials  -->
+
+	<!-- 31550-31590 RESERVED -->
+	
+<!-- Aeon Assistant vitals -->
+
+	<string id="31598">XBMC BUILD DATE[CR]AEON VERSION[CR]NUVÆRENDE TEMA[CR]SPROG[CR]SKÆRMOPLØSNING[CR]TILGÆNGELIG RAM[CR]SYSTEMDREV PLADS[CR]CPU TEMPERATUR[CR]GPU TEMPERATUR[CR]SYSTEM UPTIME[CR]ONLINE STATUS[CR]IP ADDRESSE[CR]OPTISK DREV</string>
+	
+<!-- Debug mode -->
+
+	<string id="31600">AEON VERSION: 1.0</string>
+	<string id="31601">TILGÆNGELIG SYSTEM RAM:</string>
+	<string id="31602">PLEX BUILD DATE:</string>
+	<string id="31603">FPS:</string>
+	<string id="31604">NUVÆRENDE VIDNUE ID:</string>
+	<string id="31605">NUVÆRENDE FOKUS</string>
+	<string id="31606">AKTIV VISNINGSTYPE TYPE:</string>
+	<string id="31607">GENOPFRISK</string>
+	<string id="31608">INFO TIL/FRA</string>
+	<string id="31609">DETTE BIBLIOTEK ER TOMT</string>
+	<string id="31610">POPULATE IT VIA THE VIDEOS WINDOW</string>
+	<string id="31611">POPULATE IT VIA THE FILES WINDOW</string>
+
+<!-- Welcome screen / Aeon Tour -->
+<!-- ENSURE LOWER/UPPER CASE IS OBEYED --> 
+
+	<string id="31650">Velkommen til PlexAeon det hjem til din hjemmebiograf[CR]Måden du nyder dine film, tv-shows, musik og billeder er[CR]ved at ændre sig. For at starte med at benytte PlexAeon, tryk H eller tryk MENU på din[CR]fjernbetjening, eller for et DIAS-show, tryk højre tre gange og vælg</string>
+	<string id="31651">Midtfor i Aeon er en horisontan-scrolling menu som giver øjeblikkelig adgang til[CD]dets forskellige møljøer. Baggrunde kan tilknyttes hver enkelte valgmulighed[CR]enten som et enkelt billede eller DIAS-show. Menuen kan skifte position[CR]med et enkelt tryk. Tid og RSS kan også flyttes eller frakobles</string>
+	<string id="31652">Film og musik kan nydes gennem fire særskilte visningstyper[CR]Hver er designet til at møde specifikke krav. Showcase tilbyder maksimal[CR]kunstværks synlighed; Panel tilbyder en mere konventionel miniaturebilledvisning;[CR]List taler for sig selv; Væg tilbyder maksimal skærmudnyttelse for store samlinger</string>
+	<string id="31653">Aeon elsker kunstværk. Dets visuelle filosofi kredser omkring smag og[CR]lyster fra den individuelle bruger. Kan du lide actionfilm?[CR]Fantasy computerspil? Medrivende dramatik? Dekorer dit miljø derefter[CR]Plakater of cover kunst, blicer i mellemtiden vist i smuk high definition</string>
+	<string id="31654">Byg et bibliotek af film, TV shows eller musik og lad Aeon udnytte den[CR]fulde kraft bag Plex, og få en rig og informativ browsing oplevelse.[CR]Indholds sammendrag og album anmeldelser er kun toppen af isbjerget takket være[CR]informationer trukket fra IMDb, AllMusic eller en af mange brugervalgte kilder.</string>	
+	<string id="31655">TRYK MENU FOR AT STARTE ELLER TRYK H PÅ DIT TASTATUR</string>
+	<string id="31656">TRYK NED FOR NÆSTE DIAS, VÆLG FOR AT SPRINGE OVER</string>
+	<string id="31657">TRYK NED FOR NÆSTE DIAS, OP FOR FORRIGE DIAS, ELLER VÆLG FOR AT SPRINGE OVER</string>
+	<string id="31659">Navigering mellem Aeon's visningsmuligheder og vinduer kunne ikke være lettere.[CR]Den globale menu kan tilgås til hver en tid og fra hvert et sted, og giver[CR]genveje til indstillinger, tilpasning og Aeon assistenten.Et fir-vejs[CR]"kompas" giver øjeblikkelig adgang til enhver visningstype.</string>
+	<string id="31660">Hvert aspekt af Aeon og PLEX kan konfigureres bag scenen.[CR]Et mangefacettet indstillingsmøljø er tilgælgeligt fra enhver skærm,[CR]delt ind i sektioner for enkelt brug. Dets virtuelle hjemmeside tilbyder en[CR]intuitiv visuel reference til alle dine for all your personaliseringsbehov.</string>
+	<string id="31661">Der er ingen grænser for hvor mange tappeter du kan strø ud over Aeon's[CR]baggrund. Mapper indeholdende tussinder af billeder kan tildeles[CR]sektioner som film og billeder. Alt over den nuværende skærm-[CR]opløsning nedskalleres, alt under opskalleres.</string>
+	<string id="31662">Kontroler alle aspekter af PLEX's medieafspilning uden at miste et sekund.[CR]On-screen displays(OSD) for video og musik lader dig justere alt fra[CR]undertekster og aspekt ratio til individuel lyd-synkronisering. Permanenter bogmærker[CR]kan sættes for hurtigt at finde dine ynglingsscener.</string>
+	<string id="31663">Nu er de dage hvor tilpasning havde en pris, og da[CR]højkvalitetes kunst var langt fra at være det. Aeon projektets hjemmeside tilbyder hundreder[CR]af de bedste tapeter til alle Aeon's vinduer, helt uden omkostninger og irriterende[]CR]reklamer. Check Aeon Assistenten for live updateringer og nyt indhold.</string>
+
+<!-- OSD -->
+
+	<string id="31700">KODEC</string>
+	<string id="31701">BITRATE</string>
+	<string id="31702">SAMPLERATE</string>
+	<string id="31703">KANALER</string>
+	<string id="31706">NÆSTE</string>
+	<string id="31705">SPOL TILBAGE</string>
+	<string id="31704">SPOL FREM</string>
+	<string id="31707">LYDNIVEAU</string>
+	<string id="31708">POSITION</string>
+	<string id="31709">SPILLETID</string>
+	<string id="31710">SLUTTID</string>
+	<string id="31711">BOGMÆRKER TILGÆNGELIGE</string>
+	<string id="31712">OP/NED: MENU/BOGMÆRKER[CR]VENSTRE/HØJRE: MENU VALGMULIGHEDER</string>
+	<string id="31713">TING I AFSPILNINGSLISTEN</string>
+	<string id="31714">NUVÆRENDE POSITION</string>
+	<string id="31715">TIDLIGERE</string>
+	<string id="31716">SANG TITEL</string>
+	<string id="31717">ALBUM TITEL</string>
+	<string id="31718">KUNSTNER NAVN</string>
+	<string id="31719">AFSPILNINGSTID / LÆNGDE</string>
+	<string id="31720">NUVÆRENDE TID</string>
+	
+<!-- View select -->
+
+	<string id="31750">Væg</string>
+	<string id="31751">Showcase</string>
+	<string id="31752">Fuld Liste</string>
+	<string id="31753">Panel</string>	
+	<string id="31754">Vælg</string>	
+	<string id="31755">RETNINGER VÆLGER VISNINGSTYPE[CR]KLIK FOR AT AFBRYDE</string>	
+	<string id="31756">KUN LISTE VISNINGSTYPE ER TILGÆNGELIGT FOR AFSNIT</string>
+	<string id="31757">Multiplex</string>
+	<string id="31578">Stripshow</string>
+	<string id="31579">Slank Liste</string>
+	<string id="31580">Lav Liste</string>
+	<string id="31581">Klar List</string>
+	<string id="31582">Gammel Multiplex</string>
+	<string id="31785">Anoobie2</string>
+	<string id="31786">Anoobie3</string>
+<!-- Aeon Settings panel labels -->
+
+<!-- Aeon Settings panel labels -->
+  
+	<string id="31800">VIDEO OPSKALLERING OG UNDERTEKST SKRIFTTYPE</string>
+	<string id="31801">VALGMULIGHED FOR AT SLÅ SOFTWARE OPSKALLERING TIL, HARDWARE ACCELERATION OG INDSTILLE UNDERTEKST[CR]SKRIFTTYPE OG STØRRELSE</string>
+	<string id="31802">MUSIK</string>
+	<string id="31803">VALGMULIGHED FOR AT INDSTILLE MUSIK VISUALISERING, AKTIVERE LAST.FM OG AKTIVERE BAGGRUNDSMUSIK UNDER TV-SHOWS</string>
+	<string id="31804"></string>
+	<string id="31805"></string>
+	<string id="31806">ROTER VED AT BENNYTTE EXIF INFORMATION</string>
+	<string id="31807">MODERNE KAMERARE TILFØJER DATA I HVERT BILLEDE DET TAGER. MED DENNE MULIGHED SLÅET TIL,[CR]ROTERES BILLEDER SÅ DEN RIGTIGE ORIENTERING VISES</string>
+	<string id="31808">LIVE VEJRUDSIGT</string>
+	<string id="31809">PLEX VISER UDSIGTER PÅ OP TIL TRE STEDER, LEVERET AF WEATHER.COM.[CR]UD OVER PLACERING KAN DU OGSÅ VÆLGE MELLEM VISNING I CELCIUS OG FAHRENHEIT</string>
+	<string id="31810">FÅ ET KLARRER OVERBLIK</string>
+	<string id="31811">SKIFT DINE BAGGRUNDE, SLÅ MENUELEMENTER FRA, KONFIGURER DIN MUSIK VISNING.  MEN HVIS DU VIRKELIGT[CR] VIL PERSONLIGGØRE DEN PLEXAEON OPLEVELSE, BEVÆG DIG OVER I AVANCEREDE INDSTILLINGER.</string>
+	<string id="31812">PLEX UPDATES</string>
+	<string id="31813">MANUEL CHECK EFTER PLEX UPDATES, ELLER SÆT PLEX TIL AUTOMATISK AT CHECKE HVER DAG</string>
+	<string id="31814">ET SANDT HIGH DEFINITION MEDIE MILJØ</string>
+	<string id="31815">PLEXAEON RENDERER STØRSTEDELEN AF DET TEKSTURER I NATIVE 1080P, OG NDESKALLERER DEM FOR AT PASSE[CR] TIL ALLE HD SKÆRME. DET ER TOPPEN AF DIGITAL UNDERHOLDNING</string>
+	<string id="31816">KAN DIN HARDWARE KLARE DET?</string>
+	<string id="31817">PLEX HAR BESKEDNE KRAV TIL ALLE SYSTEMER, MEN VILER PÅ CPU KRAFT[CR]SPECIELT TIL HD VIDEO. PIXEL SHADER 3 KOMPATIBLE VIDEOKORT KAN OGSÅ VARMT ANBEFALES</string>
+	<string id="31818">DE FINESTE DETALJER</string>	
+	<string id="31819">KLIK IGENNEM FOR YDERLIGERE HÅNDTERING AF PLEXAEON OPLEVELSEN</string>
+	<string id="31820">ALLE HAR DERES EGET</string>
+	<string id="31821">PLEX UNDERSTØTTER FLERE BRUGERPROFILER G TILLADER DERVED INDIVIDUELLE BRUGERE AT GEMME DERES EGEN[CR]KONFIGURATION. RSS FEEDS, VISNINGS INDSTILLINGER OG MEDIE BIBLIOTEKER GEMMES SEPERAT</string>
+	<string id="31822">LYD SURROUND SOUND CHECK</string>	
+	<string id="31823">CHECK DIT SURROUND SOUND SYSTEM</string>
+	<string id="31824">IKKE I STAND TIL AT TESTE -- VIDEO FIL IKKE SAT -- SÆT DIN TEST AVI FIL I AVANCERET VISNINGEN</string>
+	
+<!-- Credits -->
+
+	<string id="31900">TEXTURES</string>
+	<string id="31901">STANDART TAPETER</string>
+	<string id="31902">STANDART IKONER INDEHOLDER ELEMENTER AF</string>
+	<string id="31903">PLACERING</string>
+	<string id="31904">TESTING</string>
+	<string id="31905">AEONPROJECT HJEMMESIDE</string>
+	<string id="31906">TAK</string>
+	<string id="31907">ALLE PÅ PLEX FORUM</string>
+	<string id="31908">...OG DIG</string>
+	<string id="31909">AEON VENDER TILBAGE OM</string>
+	<string id="31910">VEJR TAPETER</string>
+	
+<!-- Submenu / Objects -->
+
+	<string id="31920">NYLIGT</string>
+	<string id="31921">TITLER</string>
+	<string id="31922">GENRE</string>
+	<string id="31923">ÅR</string>
+	<string id="31924">SKUESPILLERE</string>
+	<string id="31925">INSTRUKTØRER</string>
+	<string id="31926">STUDIER</string>
+	<string id="31927">ARTISTER</string>
+	<string id="31928">ALBUM</string>
+	<string id="31929">AFSPILNINGSLISTER</string>
+	<string id="31930">NYLIGT AFSPILLET</string>
+	<string id="31931">VIDEOER</string>
+	<string id="31932">FILER</string>
+	<string id="31933">SHOWS</string>
+	<string id="31934">FILM</string>
+	<string id="31935">ELEMENTER</string>
+	<string id="31936">SPOR</string>
+	<string id="31937">SÆSONNER</string>
+	<string id="31938">AFSNIT</string>
+	<string id="31939">SHOUTCAST</string>	
+	<string id="31940">SPILLER NU</string> 
+	<string id="31941">MEST SPILLET</string>
+	<string id="31950">NYEAPPS</string>
+	<string id="31951">POPULÆRE</string>
+	<string id="31952">KATEGORIER</string>
+	<string id="31953">INSTALLER</string>
+	<string id="31954">HISTORIK</string>
+	<string id="31955">MEDIE TYPER</string>
+	<string id="31956">ALLE APPS</string>
+	<string id="31957">SPOT</string>	
+
+<!-- Trailer Mod -->
+
+	<string id="32000">[COLOR=FFFFFFFF]Trailer[/COLOR]</string>
+	<string id="32001">[COLOR=FFFFFFFF]Stor Trailer[/COLOR]</string>
+	<string id="32002">[COLOR=FFFFFFFF]plakat[/COLOR]</string>
+	
+</strings>

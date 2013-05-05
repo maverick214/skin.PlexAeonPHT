@@ -1,0 +1,169 @@
+<window id="142">
+	<defaultcontrol always="true">1</defaultcontrol>
+	<controls>
+	<control type="group">
+	
+	
+		<posx>0</posx>
+		<posy>569</posy>
+		<width>1280</width>
+		<height>151</height>
+		<animation type="Visible">
+			<effect type="fade" time="400" start="0" end="100" />
+			<effect type="slide" time="400" start="0,151" end="0,0" easing="out" tween="cubic" />
+		</animation>
+		<animation type="Hidden">
+			<effect type="fade" time="400" start="100" end="0" />
+			<effect type="slide" time="400" start="0,0" end="0,151" easing="in" tween="cubic" />
+		</animation>
+		<animation type="WindowOpen">
+			<effect type="fade" time="400" start="0" end="100" />
+			<effect type="slide" time="400" start="0,151" end="0,0" easing="out" tween="cubic" />
+		</animation>
+		<animation type="WindowClose">
+			<effect type="fade" time="400" start="100" end="0" />
+			<effect type="slide" time="400" start="0,0" end="0,151" easing="in" tween="cubic" />
+		</animation>
+
+		<control type="progress">
+			<description>Progressbar</description>
+			<posx>0</posx>
+			<posy>-75</posy>
+			<width>1280</width>
+			<height>226</height>
+			<info>Player.Progress</info>
+			<texturebg>osd/osd_progress_clear.png</texturebg>
+			<lefttexture>-</lefttexture>
+			<midtexture>osd/osd_progressmid.png</midtexture>
+			<righttexture>-</righttexture>
+			<overlaytexture>-</overlaytexture>
+			<include>Animation_CommonFade</include>				
+		</control>
+		
+		<control type="image">
+			<posx>0</posx>
+			<posy>-75</posy>
+			<width>1280</width>			
+			<height>226</height>
+			<texture>osd/fullscreen_bottom.png</texture>
+		</control>
+
+		<control type="label">
+			<posx>0</posx>
+			<posy>45</posy>
+			<width>1280</width>
+			<height>-180</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>Font_OSDMusicArtist</font>
+			<visible>VideoPlayer.Content(episodes)</visible>
+			<label>$LOCALIZE[31006] : $INFO[VideoPlayer.TVShowTitle] - $LOCALIZE[31433] $INFO[VideoPlayer.Season].$INFO[VideoPlayer.Episode]</label>
+			<animation effect="slide" start="0,0" end="0,-12" time="200" condition="Control.IsVisible(212)">Conditional</animation>			
+		</control>
+		
+		<control type="label">
+			<posx>0</posx>
+			<posy>45</posy>
+			<width>1280</width>
+			<height>-180</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>Font_OSDMusicArtist</font>
+			<visible>VideoPlayer.Content(movies)</visible>
+			<label>$LOCALIZE[31006]</label>
+			<animation effect="slide" start="0,0" end="0,-12" time="200" condition="Control.IsVisible(212)">Conditional</animation>			
+		</control>
+		
+		<control type="label">
+			<posx>0</posx>
+			<posy>75</posy>
+			<width>1280</width>
+			<height>-170</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>Font_OSDMusicTitle</font>
+			<label>[COLOR FFFFFFFF]$INFO[VideoPlayer.Title][/COLOR]</label>
+			<animation effect="slide" start="0,0" end="0,-12" time="200" condition="Control.IsVisible(212)">Conditional</animation>			
+		</control>
+		
+		<control type="textbox">
+		<posy>5</posy>
+		<posx>345</posx>
+		<width>600</width>
+		<height>85</height>
+		<aligny>top</aligny>
+		<align>center</align>
+		<font>Font_OSDOptions</font>
+		<label>[COLOR cdc1c2c3]$INFO[VideoPlayer.Plot][/COLOR]</label>
+		<autoscroll delay="8000" time="1500" ></autoscroll>
+		<animation effect="slide" start="0,0" end="0,-12" time="200" condition="Control.IsVisible(212)">Conditional</animation>	
+	</control>
+	
+		<control type="label">
+			<posx>0</posx>
+			<posy>92</posy>
+			<width>1280</width>
+			<height>30</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>Font_OSDMusicArtist</font>
+			<label>[COLOR 91FFFFFF]$INFO[VideoPlayer.Time] / $INFO[VideoPlayer.Duration][/COLOR]</label>
+		</control>	
+		<label>$INFO[Player.FinishTime]</label>
+		
+		<control type="label">
+			<posx>930</posx>
+			<posy>92</posy>
+			<width>500</width>
+			<height>30</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>Font_OSDMusicArtist</font>
+			<label>[COLOR 91FFFFFF]$LOCALIZE[31710] $INFO[Player.FinishTime][/COLOR]</label>
+		</control>	
+	
+	</control>
+	
+		<control type="group">
+	
+		<posx>0</posx>
+		<posy>569</posy>
+		<width>1280</width>
+		<height>151</height>
+		<animation type="Visible">
+			<effect type="fade" time="400" start="0" end="100" />
+			<effect type="slide" time="400" start="0,-151" end="0,0" easing="out" tween="cubic" />
+		</animation>
+		<animation type="Hidden">
+			<effect type="fade" time="400" start="100" end="0" />
+			<effect type="slide" time="400" start="0,0" end="0,-151" easing="in" tween="cubic" />
+		</animation>
+		<animation type="WindowOpen">
+			<effect type="fade" time="400" start="0" end="100" />
+			<effect type="slide" time="400" start="0,-151" end="0,0" easing="out" tween="cubic" />
+		</animation>
+		<animation type="WindowClose">
+			<effect type="fade" time="400" start="100" end="0" />
+			<effect type="slide" time="400" start="0,0" end="0,-151" easing="in" tween="cubic" />
+		</animation>
+				<control type="image">
+			<posx>990</posx>
+			<posy>-570</posy>
+			<width>451</width>
+			<height>27</height>
+			<texture flipy="true">common/timepanel_mid.png</texture>
+		</control>
+
+		<control type="label">
+			<posx>1270</posx>
+			<posy>-565</posy>
+			<width>400</width>
+			<font>Font_Time</font>
+			<align>right</align>
+			<include>Colour_WhiteAlpha80</include>
+			<label>[COLOR FFe5e5e5][UPPERCASE]$INFO[System.Date][/UPPERCASE]  |  [/COLOR][COLOR FFcdcdcd]$INFO[System.Time][/COLOR]</label>
+		</control>
+		</control>
+	</controls>
+</window>
+

@@ -1,0 +1,13 @@
+<skin>
+  <defaultresolution>720p</defaultresolution>
+  <defaultresolutionwide>720p</defaultresolutionwide>
+  <version>3.5.3</version>
+  <effectslowdown>.5</effectslowdown>
+  <zoom>1.0</zoom>
+
+<credits>
+	<skinname>PlexAeon PHT</skinname>
+    	<name>Aeon by Duncan Harris, Modified by Maverick214</name>
+</credits>
+</skin>
+

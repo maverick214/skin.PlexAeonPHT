@@ -1,0 +1,300 @@
+<includes>
+	<include name="Submenu_Button">
+		<width>131</width>
+		<height>30</height>
+		<align>center</align>
+		<aligny>center</aligny>
+		<font>Font_Submenu</font>
+		<textcolor>5fFFFFFF</textcolor>
+		<focusedcolor>FFFFFFFF</focusedcolor>
+	</include>
+
+	<include name="Submenu">
+		<control type="button" id="352">
+			<onfocus>SetFocus(300)</onfocus>
+		</control>
+		<control type="group">
+
+			<posx>79</posx>
+			<posy>386</posy>
+			<visible>ControlGroup(943).HasFocus()</visible>
+			<animation effect="slide" start="0,0" end="0,275" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<include>Animation_SubMenu</include>
+			<control type="image">
+				<width>1123</width>
+				<height>33</height>
+				<texture>home/submenubar_music.png</texture>
+			</control>
+
+			<control type="grouplist" id="943">
+				<posx>39</posx>
+				<width>1048</width>
+				<height>33</height>
+				<itemgap>0</itemgap>
+				<onup>300</onup>
+				<ondown>352</ondown>
+				<scroll>false</scroll>
+				<orientation>horizontal</orientation>
+
+				<control type="button" id="47">
+					<include>Submenu_Button</include>
+					<label>31156</label>
+					<onclick>XBMC.ActivateWindow(1604)</onclick>
+				</control>
+
+				<control type="button" id="42">
+					<include>Submenu_Button</include>
+					<label>31169</label>
+					<onclick>XBMC.ActivateWindow(56)</onclick>
+				</control>
+
+				<control type="button" id="46">
+					<include>Submenu_Button</include>
+					<label>31154</label>
+					<onclick>XBMC.ActivateWindow(AppearanceSettings)</onclick>
+				</control>
+
+				<control type="button" id="45">
+					<include>Submenu_Button</include>
+					<label>31152</label>
+					<onclick>XBMC.ActivateWindow(SystemSettings)</onclick>
+				</control>
+
+				<control type="button" id="40">
+					<include>Submenu_Button</include>
+					<label>31140</label>
+					<onclick>XBMC.ActivateWindow(VideosSettings)</onclick>
+				</control>
+
+				<control type="button" id="41">
+					<include>Submenu_Button</include>
+					<label>31142</label>
+					<onclick>XBMC.ActivateWindow(MusicSettings)</onclick>
+				</control>
+
+				<control type="button" id="43">
+					<include>Submenu_Button</include>
+					<label>31146</label>
+					<onclick>XBMC.ActivateWindow(PicturesSettings)</onclick>
+				</control>
+<!--
+				<control type="button" id="44">
+					<include>Submenu_Button</include>
+					<label>31017</label>
+					<onclick>XBMC.ActivateWindow(WeatherSettings)</onclick>
+				</control>
+-->
+
+			</control>
+
+		</control>
+		<control type="group">
+			<posx>79</posx>
+			<posy>386</posy>
+			<visible>ControlGroup(944).HasFocus()</visible>
+			<animation effect="slide" start="0,0" end="0,275" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<include>Animation_SubMenu</include>
+			<control type="image">
+				<width>1123</width>
+				<height>33</height>
+				<texture>home/submenubar_music.png</texture>
+			</control>
+			<control type="grouplist" id="944">
+				<posx>39</posx>
+				<width>1048</width>
+				<height>33</height>
+				<itemgap>0</itemgap>
+				<align>center</align>
+				<onup>300</onup>
+				<ondown>352</ondown>
+				<scroll>false</scroll>
+				<orientation>horizontal</orientation>
+				<control type="button" id="40">
+					<include>Submenu_Button</include>
+					<description>Shutdown</description>
+					<label>31208</label>
+					<onclick>Shutdown</onclick>
+				</control>
+				<control type="button" id="41">
+					<include>Submenu_Button</include>
+					<description>Eject Tray</description>
+					<label>31210</label>
+					<onclick>System.EjectTray()</onclick>
+				</control>
+				<control type="button" id="42">
+					<include>Submenu_Button</include>
+					<description>Sleep MAC</description>
+					<label>31207</label>
+					<onclick>Plex.Suspend</onclick>
+				</control>
+				<control type="button" id="43">
+					<include>Submenu_Button</include>
+					<label>31211</label>
+					<onclick>XBMC.ReloadSkin()</onclick>
+				</control>
+				<control type="button" id="44">
+					<include>Submenu_Button</include>
+					<label>31212</label>
+					<onclick>Plex.Suspend</onclick>
+				</control>
+				<control type="button" id="45">
+					<include>Submenu_Button</include>
+					<label>31213</label>
+					<onclick>Plex.Powerdown</onclick>
+				</control>
+				<control type="button" id="46">
+					<include>Submenu_Button</include>
+					<description>Log Out</description>
+					<label>31209</label>
+					<onclick>System.LogOff()</onclick>
+				</control>
+				<control type="button" id="47">
+					<include>Submenu_Button</include>
+					<description>Shutdown Timer</description>
+					<label>31214</label>
+					<onclick>AlarmClock(,Shutdown,)</onclick>
+				</control>
+			</control>
+		</control>
+
+		<control type="group">
+			<posx>79</posx>
+			<posy>386</posy>
+			<visible>ControlGroup(945).HasFocus()</visible>
+			<animation effect="slide" start="0,0" end="0,275" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<include>Animation_SubMenu</include>
+			<control type="image">
+				<width>1123</width>
+				<height>33</height>
+				<texture>home/submenubar_music.png</texture>
+			</control>
+			<control type="grouplist" id="945">
+				<posx>39</posx>
+				<width>1048</width>
+				<height>33</height>
+				<itemgap>0</itemgap>
+				<align>center</align>
+				<onup>300</onup>
+				<ondown>352</ondown>
+				<scroll>false</scroll>
+				<orientation>horizontal</orientation>
+				<control type="button" id="40">
+					<include>Submenu_Button</include>
+					<label>CNET TV</label>
+					<onclick>ActivateWindow(10024,plex://localhost/video/cnettv/)</onclick>
+				</control>
+
+				<control type="button" id="41">
+					<include>Submenu_Button</include>
+					<label>TRAILERS</label>
+					<onclick>ActivateWindow(10024,plex://localhost/video/amt/)</onclick>
+				</control>
+
+				<control type="button" id="42">
+					<include>Submenu_Button</include>
+					<label>CNN</label>
+					<onclick>ActivateWindow(10024,plex://localhost/video/CNN/)</onclick>
+				</control>
+
+				<control type="button" id="43">
+					<include>Submenu_Button</include>
+					<label>YOUTUBE</label>
+					<onclick>ActivateWindow(10024,plex://localhost/video/youtube/)</onclick>
+				</control>
+
+				<control type="button" id="44">
+					<include>Submenu_Button</include>
+					<label>NETFLIX</label>
+					<onclick>ActivateWindow(10024,plex://localhost/video/netflix/)</onclick>
+				</control>
+				<control type="button" id="45">
+					<include>Submenu_Button</include>
+					<label>HULU</label>
+					<onclick>ActivateWindow(10024,plex://localhost/video/hulu/)</onclick>
+				</control>
+				<control type="button" id="46">
+					<include>Submenu_Button</include>
+					<label>DAILY SHOW</label>
+					<onclick>ActivateWindow(10024,plex://localhost/video/thedailyshow/)</onclick>
+				</control>
+				<control type="button" id="47">
+					<include>Submenu_Button</include>
+					<label>JOOST</label>
+					<onclick>ActivateWindow(10024,plex://localhost/video/joost/)</onclick>
+				</control>
+			</control>
+		</control>
+
+		<control type="group">
+			<posx>79</posx>
+			<posy>386</posy>
+			<visible>ControlGroup(946).HasFocus()</visible>
+			<animation effect="slide" start="0,0" end="0,275" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<include>Animation_SubMenu</include>
+			<control type="image">
+				<width>1123</width>
+				<height>33</height>
+				<texture>home/submenubar_music.png</texture>
+			</control>
+			<control type="grouplist" id="946">
+				<posx>39</posx>
+				<width>1048</width>
+				<height>33</height>
+				<itemgap>0</itemgap>
+				<onup>300</onup>
+				<ondown>352</ondown>
+				<scroll>false</scroll>
+				<orientation>horizontal</orientation>
+				<control type="button" id="40">
+			 	<include>Submenu_Button</include>  
+					<label>What's New</label>
+					<onclick>ActivateWindow(10001,plex://localhost/system/appstore/new/,return)</onclick>
+				</control>
+
+				<control type="button" id="41">
+					<include>Submenu_Button</include>
+					<label>Popular</label>
+					<onclick>ActivateWindow(1,plex://localhost/system/appstore/popular/,return)</onclick>
+				</control>
+
+				<control type="button" id="42">
+					<include>Submenu_Button</include>
+					<label>Categories</label>
+					<onclick>ActivateWindow(1,plex://localhost/system/appstore/categories/,return)</onclick>
+				</control>
+
+				<control type="button" id="43">
+					<include>Submenu_Button</include>
+					<label>Installed</label>
+					<onclick>ActivateWindow(1,plex://localhost/system/appstore/installed/,return)</onclick>
+				</control>
+
+				<control type="button" id="44">
+					<include>Submenu_Button</include>
+					<label>History</label>
+					<onclick>ActivateWindow(1,plex://localhost/system/appstore/history/,return)</onclick>
+				</control>
+
+				<control type="button" id="45">
+					<include>Submenu_Button</include>
+					<label>Media Types</label>
+					<onclick>ActivateWindow(1,plex://localhost/system/appstore/types/,return)</onclick>
+				</control>
+
+
+				<control type="button" id="46">
+					<include>Submenu_Button</include>
+					<label>All Plugins</label>
+					<onclick>ActivateWindow(1,plex://localhost/system/appstore/apps/,return)</onclick>
+				</control>
+
+				<control type="button" id="47">
+					<include>Submenu_Button</include>
+					<label>Featured</label>
+					<onclick>ActivateWindow(1,plex://localhost/system/appstore/featured/,return)</onclick>
+				</control>
+
+			</control>
+		</control>
+	</include>
+</includes>

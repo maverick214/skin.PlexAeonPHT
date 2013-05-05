@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+    <string id="0">OpenSubtitles_OSD</string>
+    <string id="1"></string>
+    <string id="2">Amet</string>
+
+
+    
+    <!-- Labels -->
+
+    <string id="630">Subtitle file downloaded and extracted as %s</string>
+    <string id="631">Extracting %s to %s</string>
+    <string id="632">Downloading %s from %s</string>
+    <string id="634">Error! %s</string>
+    <string id="636">Connecting anonymously...</string>
+    <string id="637">Connecting as %s...</string>
+    <string id="641">%s Settings</string>
+    <string id="644">Extracted to %s</string>
+    <string id="645">Download cancelled</string>
+    <string id="647">by hash...</string>
+    <string id="648">by name...</string>
+
+
+    <!-- OSDB Messages -->
+    <string id="730">OSDB server name missing</string>
+    <string id="731">XMLRPC %s: %s</string>
+    <string id="732">LogIn</string>
+    <string id="733">LogOut</string>
+    <string id="734">GetSubLanguages</string>
+    <string id="735">CheckMovieHash</string>
+    <string id="736">SearchSubtitles</string>
+    <string id="737">Not connected to osdb server</string>
+    <string id="738">Hashing %s not found</string>
+    <string id="739">Hashing %s %s</string>
+    <string id="740">File found on share, remote files not supported</string>
+    <string id="743">HTTP %s: %s</string>
+    
+    
+    <!-- translate below this line -->
+    <!-- Dutch -->
+    <string id="500">U heeft geen geldige taal geselecteerd.</string>
+    <string id="501">Wilt u een aparte map voor ondertiteling kiezen?</string>
+    <string id="502">Taal selectie</string>
+    <string id="503">Selecteer Standaard Taal</string>
+    <string id="504">Kies aangepaste map</string>
+    <string id="505">Kies gewenste dienst</string>
+    <string id="506">Wilt u de standaard instellingen herstellen?</string>
+    <string id="601">Items geselecteerd</string>
+    <string id="602">werkt beter</string>
+    <string id="610">Zoek in OpenSubtitles.org</string>
+    <string id="611">Zoek in Sublight.si</string>
+    <string id="612">Handmatig invoeren zoekopdracht</string>
+    <string id="633">Bestand wordt gedownload</string>
+    <string id="635">Verbonden</string>
+    <string id="642">Bezig de volgende ondertiteling te zoeken %s</string>
+    <string id="646">Verbinding maken...</string>
+    <string id="649">Downloaden Ondertiteling...</string>
+    <string id="650">Uitpakken Ondertiteling...</string>
+    <string id="651">Ondertiteling uitgepakt</string>
+    <string id="652">Ondertiteling gedownload en uitgepakt</string>
+    <string id="653">Verbinding mislukt.</string>
+    <string id="654">Error tijdens het uitpakken van de ondertiteling</string>
+    <string id="741">Geen ondertiteling gevonden</string>
+    <string id="742">%s ondertiteling gevonden</string>
+    <string id="744">%s ondertiteling gevonden voor "%s"</string>
+    
+</strings>

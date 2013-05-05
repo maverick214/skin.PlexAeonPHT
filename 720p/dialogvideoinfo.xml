@@ -1,0 +1,860 @@
+<window type="dialog" id="2003">
+	<defaultcontrol>8</defaultcontrol>
+	<zorder>1</zorder>
+	<coordinates>
+	<system>1</system>
+	<posx>0</posx>
+	<posy>0</posy>
+	</coordinates>
+	<include>Animation_CommonFade</include>
+	<controls>
+
+	<control type="image">
+		<include>FullscreenDimensions</include>
+		<texture>common/darkgrey.png</texture>
+		<colordiffuse>EFFFFFFF</colordiffuse>
+	</control>	
+
+	<control type="image">
+		<description>background image</description>
+		<posx>486</posx>
+		<posy>0</posy>
+		<width>795</width>
+		<height>720</height>
+		<texture>info/info_rightpanelbottom.png</texture>
+		<colordiffuse>A7FFFFFF</colordiffuse>
+		<include>Animation_CommonFade</include>
+	</control>
+<!--
+	<control type="image">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>510</width>
+		<height>720</height>
+		<texture>common/darkgrey.png</texture>
+		<visible>Container.Content(episodes)</visible>
+	</control>	
+	
+	<control type="image">
+		<posx>0</posx>
+		<posy>83</posy>
+		<width>510</width>
+		<height>637</height>
+		<texture>info/musicinfogradient.png</texture>
+		<visible>Container.Content(episodes)</visible>
+	</control>
+-->
+	<control type="group">
+		<posx>35</posx>
+		<animation effect="rotatey" time="0" start="-20" end="-20" center="20,0" condition="true">Conditional</animation>
+		<animation effect="slide" start="430" end="0" time="700" tween="cubic" easing="out" delay="400">WindowOpen</animation>
+		<visible>Container.Content(episodes)</visible>
+		<control type="image">
+			<description>Cover image</description>
+			<width>400</width>
+			<height>400</height>
+			<posy>160</posy>
+			<texture>$INFO[ListItem.Art(thumb)]</texture>
+			<aspectratio>keep</aspectratio>
+		</control>
+		<control type="image">
+			<description>Cover image</description>
+			<posy>390</posy>
+			<width>400</width>
+			<height>380</height>
+			<texture flipy="true" diffuse="common/Thumb_Mask1.png">$INFO[ListItem.Art(thumb)]</texture>
+			<animation effect="fade" start="20" end="20" time="0" condition="!Skin.HasSetting(lite)">Conditional</animation>	
+			<aspectratio>keep</aspectratio>
+		</control>
+	</control>
+	
+	<control type="image">
+		<description>Cover image</description>
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>486</width>
+		<height>720</height>
+		<texture>info/movieinfogradient.png</texture>
+		<aspectratio>stretch</aspectratio>
+		<visible>![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Container.Content(episodes)</visible>	
+	</control>
+
+	<control type="largeimage">
+		<description>Cover image</description>
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>486</width>
+		<height>720</height>
+		<texture>$INFO[ListItem.Art(thumb)]</texture>
+		<aspectratio>stretch</aspectratio>
+		<visible>!Container.Content(episodes)</visible>
+	</control>
+<!--	
+	<control type="largeimage">
+		<description>Cover image</description>
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>486</width>
+		<height>720</height>
+		<texture>$INFO[listitem.path]movie.tbn</texture>
+		<aspectratio>stretch</aspectratio>
+		<fadetime>500</fadetime>
+		<visible>![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>		
+	</control>
+	
+	<control type="largeimage">
+		<description>Cover image</description>
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>486</width>
+		<height>720</height>
+		<texture>$INFO[listitem.path]poster.jpg</texture>
+		<aspectratio>stretch</aspectratio>
+		<fadetime>500</fadetime>
+		<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Container.Content(episodes)</visible>		
+	</control>	
+	
+	<control type="largeimage">
+		<description>Cover image</description>
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>486</width>
+		<height>720</height>
+		<texture>$INFO[listitem.path]-big.png</texture>
+		<aspectratio>stretch</aspectratio>
+		<fadetime>500</fadetime>
+		<visible>![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Container.Content(episodes)</visible>		
+	</control>	
+-->
+<!--	
+	<control type="image">
+		<description>background image</description>
+		<posx>486</posx>
+		<posy>0</posy>
+		<width>795</width>
+		<height>720</height>
+		<texture>info/info_rightpaneltop.png</texture>
+		<visible>!Container.Content(episodes)</visible>			
+	</control>	
+-->
+<!-- Movie info -->
+
+	<control type="group">
+		<posx>550</posx>
+		<posy>45</posy>
+		<width>695</width>
+		<height>569</height>
+		<visible>Container.Content(movies)</visible>
+
+		<control type="image">
+			<description>background image</description>
+			<posx>0</posx>
+			<posy>55</posy>
+			<width>695</width>
+			<height>569</height>
+			<texture>info/info_panellines_movie.png</texture>
+			<animation effect="fade" start="70" end="70" time="0" condition="Skin.HasSetting(lite)">Conditional</animation>				
+		</control>
+<!--
+		<control type="label">
+			<description>Filename</description>
+			<posy>635</posy>
+			<posx>0</posx>
+			<width>700</width>
+			<include>Objects_FSInfoLabel</include>
+			<visible>Control.Hasfocus(10)</visible>
+			<scroll>true</scroll>
+			<wrapmultiline>true</wrapmultiline>
+			<label>$INFO[ListItem.filenameandpath]</label>
+		</control>
+-->
+		<control type="image">
+			<posx>90</posx>
+			<posy>70</posy>
+			<width>55</width>
+			<height>35</height>
+			<aspectratio>keep</aspectratio>
+			<visible>false</visible>
+			<info>Listitem.Art(mediaTag::Studio)</info>
+		</control>
+
+		<control type="image">
+			<posx>0</posx>
+			<posy>65</posy>
+			<width>85</width>
+			<height>45</height>
+			<aspectratio>keep</aspectratio>
+			<align>left</align>
+			<visible>Container.Content(movies)</visible>
+			<include condition="Skin.HasSetting(WhiteMediaFlags)">WhitecontentRatingVars</include>
+			<include condition="!Skin.HasSetting(WhiteMediaFlags)">ColourcontentRatingVars</include>
+
+		</control>
+
+		<control type="label">
+			<description>Movie title</description>
+			<posx>0</posx>
+			<posy>-35</posy>
+			<width>700</width>
+			<font>Font_FSInfoTitle</font>
+			<label>$INFO[ListItem.Title]</label>
+			<include>White_OffWhite</include>
+		</control>
+		
+		<control type="label">
+			<description>Movie year</description>
+			<posx>181</posx>
+			<posy>58</posy>
+			<align>center</align>
+			<include>Objects_FSInfoYear</include>
+		</control>
+		
+		<control type="label">
+			<description>Genre</description>
+			<posx>5</posx>
+			<posy>15</posy>
+			<width>670</width>
+			<include>Objects_FSInfoGenre</include>
+		</control>
+<!--
+		<control type="label">
+			<description>MPAA</description>
+			<visible>Skin.HasSetting(nomediaflags)</visible>
+			<posy>588</posy>
+			<posx>0</posx>
+			<width>700</width>
+			<include>Objects_FSInfoValue</include>
+			<label fallback="31425">$INFO[ListItem.mpaa]</label>
+		</control>
+-->	
+		<control type="label">
+			<description>Directed by:</description>
+			<posy>113</posy>
+			<include>Objects_FSInfoLabel</include>
+			<label>31402</label>
+		</control>
+		
+		<control type="label">
+			<description>Written by:</description>
+			<posy>141</posy>
+			<include>Objects_FSInfoLabel</include>
+			<label>31401</label>
+		</control>
+		
+		<control type="label">
+			<description>Duration:</description>
+			<posy>169</posy>
+			<include>Objects_FSInfoLabel</include>
+			<label>31434</label>
+		</control>		
+<!--		
+		<control type="label">
+			<description>Starring:</description>
+			<posy>197</posy>
+			<include>Objects_FSInfoLabel</include>
+			<label>31405</label>
+		</control>
+-->		
+		<control type="label">
+			<description>Director</description>
+			<posy>112</posy>
+			<include>Objects_FSInfoValue</include>
+			<label fallback="31425">$INFO[ListItem.Director]</label>
+		</control>
+
+	
+		<control type="label">
+			<description>Writer</description>
+			<posy>141</posy>
+			<include>Objects_FSInfoValue</include>
+			<label fallback="31425">$INFO[ListItem.Writer]</label>
+		</control>
+		
+		<control type="label">
+			<description>Writer</description>
+			<posy>169</posy>
+			<include>Objects_FSInfoValue</include>
+			<label fallback="31425">$INFO[ListItem.Duration]</label>
+		</control>		
+<!--		
+		<control type="textbox">
+			<description>Cast</description>
+			<posx>120</posx>
+			<posy>203</posy>
+			<width>500</width>
+			<height>108</height>
+			<align>left</align>
+			<font>Font_FSInfoData</font>
+			<label fallback="31435">$INFO[ListItem.CastAndRole]</label>
+			<include>White_OffWhite</include>
+		</control>
+-->
+
+ <!-- castmod new buttons added-->
+	<control type="grouplist" id="9000">
+			<width>700</width>
+			<height>33</height>
+			<itemgap>0</itemgap>
+			<orientation>horizontal</orientation>
+    	    <posx>-37</posx>
+       		<posy>210</posy>
+            <ondown>50</ondown>
+
+        <control type="button" id ="5">
+          <description>Plot/Cast</description>
+          <label>$LOCALIZE[206]</label>
+          <include>Objects_FSInfoButton</include>
+ 		</control>
+
+ 		<control type="togglebutton" id ="8">
+          <description>Play/Browse to Show</description>
+		  <label>$LOCALIZE[31411]</label>
+          <include>Objects_FSInfoButton</include>
+          <altlabel>[UPPERCASE]$LOCALIZE[1024][/UPPERCASE]</altlabel>
+          <usealttexture>Container.Content(TVShows)</usealttexture>
+        </control>
+<!--
+        <control type="button" id ="9">
+          <description>Resume</description>
+          <label>[UPPERCASE]$LOCALIZE[13404][/UPPERCASE]</label>
+          <include>Objects_FSInfoButton</include>
+          <visible>!Container.Content(TVShows)</visible>
+        </control>
+-->
+        <control type="button" id ="6">
+          <description>Refresh</description>
+          <label>31410</label>
+          <include>Objects_FSInfoButton</include>
+          <animation effect="slide" start="0,0" end="0,-30" time="0" condition="Container.Content(TVShows)">conditional</animation>
+		</control>
+     	<control type="button" id ="10">
+          <description>Get Thumb</description>
+   	      <label>31418</label>
+          <include>Objects_FSInfoButton</include>
+          <animation effect="slide" start="0,0" end="0,-30" time="0" condition="Container.Content(TVShows)">conditional</animation>
+		</control>
+    	<control type="button" id ="12">
+          <description>Get Fanart</description>
+          <label>31412</label>
+          <include>Objects_FSInfoButton</include>
+          <visible>!Container.Content(TVShows)</visible>	
+		</control>
+	    <control type="button" id ="11">
+          <description>Trailer</description>
+          <label>31409</label>
+          <include>Objects_FSInfoButton</include>
+          <visible>!IsEmpty(ListItem.Trailer)</visible>
+        </control>
+<!--
+		<control type="button" id="13">
+			<label>Cinema</label>
+			<include>Objects_FSInfoButton</include>
+			<visible>Skin.HasSetting(enablecinema)</visible>
+			<onclick>RunScript(U:/skin/PlexAeon/extras/VideoIntro/VideoIntro.py)</onclick>
+		</control>			
+-->
+    </control>
+      <!-- end castmod new buttons added-->
+      <control type="textbox">
+        <description>Plot</description>
+         <posx>3</posx>
+			<posy>250</posy>
+			<width>630</width>
+			<height>312</height>
+			<align>left</align>
+			<font>Font_FSInfoPlot</font>
+			<label fallback="31414">$INFO[ListItem.Plot]</label>
+			<autoscroll delay="15000" time="3000" repeat="10000">true</autoscroll>			
+			<include>White_OffWhite</include>
+		<!-- castmod prevents it from showing when cast container shows -->
+        <visible>!Control.IsVisible(50)</visible>
+        <!-- end castmod prevents it from showing when cast container shows -->
+		</control>
+
+		<include>Furniture_MovieInfoMediaFlags</include>		
+<!--
+		<control type="label">
+			<description>IMDB rating</description>
+			<visible>!Skin.HasSetting(nomediaflags)+Skin.HasSetting(movieratingtext)</visible>
+			<posx>380</posx>
+			<posy>577</posy>
+			<width>110</width>
+			<height>29</height>
+			<align>left</align>
+			<font>Font_FSIMDBData</font>
+			<label>[UPPERCASE]$INFO[ListItem.Rating][/UPPERCASE]</label>
+			<include>White_OffWhite</include>
+		</control>
+--> 
+		<control type="image">
+			<description>IMDB rating</description>
+			<posx>340</posx>
+			<posy>70</posy>
+			<width>151</width>
+			<height>30</height>
+			<info>ListItem.StarRating</info>
+			<visible>true</visible>
+      		<colordiffuse>FFFFFF00</colordiffuse>
+		</control>
+	 
+	</control>
+
+<!-- TV info -->
+
+	<control type="group">
+		<posx>550</posx>
+		<posy>45</posy>
+		<width>695</width>
+		<height>569</height>
+		<visible>Container.Content(tvshows)</visible>
+		
+		<control type="image">
+			<description>background image</description>
+			<posx>0</posx>
+			<posy>60</posy>
+			<width>695</width>
+			<height>569</height>
+			<texture>info/info_tv_panellines.png</texture>
+			<visible>Container.Content(tvshows)</visible>
+			<animation effect="fade" start="70" end="70" time="0" condition="Skin.HasSetting(lite)">Conditional</animation>				
+		</control>
+<!--
+		<control type="label">
+			<description>Filename</description>
+			<posy>635</posy>
+			<posx>0</posx>
+			<width>700</width>
+			<include>Objects_FSInfoLabel</include>
+			<visible>Control.Hasfocus(10)</visible>
+			<scroll>true</scroll>
+			<wrapmultiline>true</wrapmultiline>
+			<label>$INFO[ListItem.filenameandpath]</label>
+		</control>		
+-->
+		<control type="label">
+			<description>Movie title</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>700</width>
+			<font>Font_FSInfoTitle</font>
+			<label>$INFO[ListItem.Label]</label>
+			<include>White_OffWhite</include>
+		</control>
+		
+		<control type="label">
+			<description>Movie year</description>
+			<posx>0</posx>
+			<posy>58</posy>
+			<align>left</align>
+			<include>Objects_FSInfoYear</include>
+		</control>
+		
+		<control type="label">
+			<description>Genre</description>
+			<posx>120</posx>
+			<posy>58</posy>
+			<width>370</width>
+			<include>Objects_FSInfoGenre</include>
+		</control>
+		
+		<control type="label">
+			<description>Premiered:</description>
+			<posy>112</posy>
+			<label>31407</label>
+			<include>Objects_FSInfoLabel</include>
+		</control>
+		
+		<control type="label">
+			<description>Written by:</description>
+			<posy>141</posy>
+			<label>31406</label>
+			<include>Objects_FSInfoLabel</include>
+		</control>
+<!--		
+		<control type="label">
+			<description>Starring:</description>
+			<posy>170</posy>
+			<label>31405</label>
+			<include>Objects_FSInfoLabel</include>
+		</control>
+-->	
+		<control type="label">
+			<description>Director</description>
+			<posy>112</posy>
+			<label fallback="31425">$INFO[ListItem.Premiered]</label>
+			<include>Objects_FSInfoValue</include>
+		</control>
+		
+		<control type="label">
+			<description>Writer</description>
+			<posy>141</posy>
+			<label fallback="31425">$INFO[ListItem.Episode]</label>
+			<include>Objects_FSInfoValue</include>
+		</control>
+<!--		
+		<control type="textbox">
+			<description>Cast</description>
+			<posx>120</posx>
+			<posy>173</posy>
+			<width>500</width>
+			<height>108</height>
+			<align>left</align>
+			<font>Font_FSInfoData</font>
+			<label fallback="31435">$INFO[ListItem.CastAndRole]</label>
+			<include>White_OffWhite</include>
+		</control>
+-->
+<!-- castmod new buttons added-->
+	<control type="grouplist" id="9000">
+			<width>848</width>
+			<height>33</height>
+			<itemgap>0</itemgap>
+			<orientation>horizontal</orientation>
+    	    <posx>-37</posx>
+       		<posy>210</posy>
+			<ondown>50</ondown>
+        <control type="button" id ="5">
+          <description>Plot/Cast</description>
+          <label>[UPPERCASE]$LOCALIZE[206][/UPPERCASE]</label>
+          <include>Objects_FSInfoButton</include>
+		</control>
+
+        <control type="button" id ="6">
+          <description>Refresh</description>
+          <label>31410</label>
+           <include>Objects_FSInfoButton</include>
+		</control>
+	     <control type="button" id ="10">
+          <description>Get Thumb</description>
+         <label>31418</label>
+          <include>Objects_FSInfoButton</include>
+       	</control>
+	     <control type="button" id ="12">
+          <description>Get Fanart</description>
+          <label>31412</label>
+           <include>Objects_FSInfoButton</include>
+		</control>
+      </control>
+
+		<control type="textbox">
+			<description>Plot</description>
+			<posx>3</posx>
+			<posy>250</posy>
+			<width>630</width>
+			<height>212</height>
+			<align>left</align>
+			<font>Font_FSInfoPlot</font>
+			<autoscroll delay="15000" time="3000" repeat="10000">true</autoscroll>			
+			<label fallback="31414">$INFO[ListItem.Plot]</label>
+			<include>White_OffWhite</include>
+			<visible>!Control.IsVisible(50)</visible>
+		</control>
+		
+		<control type="label">
+			<description>IMDB:</description>
+			<posx>3</posx>
+			<posy>583</posy>
+			<width>110</width>
+			<height>29</height>
+			<align>left</align>
+			<font>Font_FSIMDB</font>
+			<label>31417</label>
+			<include>White_Grey</include>
+		</control>
+<!--		
+		<control type="label">
+			<description>IMDB rating</description>
+			<posx>76</posx>
+			<posy>570</posy>
+			<width>110</width>
+			<height>39</height>
+			<align>left</align>
+			<font>Font_FSIMDBData</font>
+			<label>[UPPERCASE]$INFO[ListItem.Rating][/UPPERCASE]</label>
+			<include>White_OffWhite</include>
+			<visible>Skin.HasSetting(movieratingtext)</visible>			
+		</control>
+	
+		<control type="image">
+			<description>IMDB rating</description>
+			<posx>76</posx>
+			<posy>573</posy>
+			<width>201</width>
+			<height>43</height>
+			<info>ListItem.StarRating</info>
+			<visible>!Skin.HasSetting(movieratingtext)</visible>
+		</control>		
+-->	
+	</control>
+	
+<!-- Episode info -->
+
+	<control type="group">
+		<posx>550</posx>
+		<posy>45</posy>
+		<width>695</width>
+		<height>569</height>
+		<visible>Container.Content(episodes)</visible>
+		
+		<control type="image">
+			<description>background image</description>
+			<posx>0</posx>
+			<posy>60</posy>
+			<width>695</width>
+			<height>569</height>
+			<texture>info/info_tv_panellines.png</texture>
+			<animation effect="fade" start="70" end="70" time="0" condition="Skin.HasSetting(lite)">Conditional</animation>				
+		</control>
+		
+		<control type="label">
+			<description>Movie title</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>700</width>
+			<font>Font_FSInfoTitle</font>
+			<label>$INFO[ListItem.Title]</label>
+			<include>White_OffWhite</include>
+		</control>
+		
+		<control type="label">
+			<description>Movie year</description>
+			<posx>0</posx>
+			<posy>58</posy>
+			<align>left</align>
+			<include>Objects_FSInfoYear</include>
+		</control>
+		
+		<control type="label">
+			<description>Genre</description>
+			<posx>120</posx>
+			<posy>58</posy>
+			<width>370</width>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>Font_FSInfoGenre</font>
+			<label fallback="31425">[UPPERCASE]$LOCALIZE[31432] $INFO[ListItem.Season], $LOCALIZE[31433] $INFO[ListItem.Episode][/UPPERCASE]</label>
+			<include>White_Grey</include>
+			<height>56</height>	
+		</control>
+		
+		<control type="label">
+			<description>Director:</description>
+			<posy>112</posy>
+			<label>31402</label>
+			<include>Objects_FSInfoLabel</include>
+		</control>
+
+		<control type="label">
+			<description>Writer:</description>
+			<posy>141</posy>
+			<label>31401</label>
+			<include>Objects_FSInfoLabel</include>
+		</control>
+<!--		
+		<control type="label">
+			<description>Starring:</description>
+			<posy>170</posy>
+			<label>31405</label>
+			<include>Objects_FSInfoLabel</include>
+		</control>
+-->		
+		<control type="label">
+			<description>Director value</description>
+			<posy>112</posy>
+			<label fallback="31425">$INFO[ListItem.Director]</label>
+			<include>Objects_FSInfoValue</include>
+		</control>
+		
+		<control type="label">
+			<description>Writer value</description>
+			<posy>141</posy>
+			<label fallback="31425">$INFO[ListItem.Writer]</label>
+			<include>Objects_FSInfoValue</include>
+		</control>
+<!--		
+		<control type="textbox">
+			<description>Cast</description>
+			<posx>120</posx>
+			<posy>173</posy>
+			<width>500</width>
+			<height>108</height>
+			<align>left</align>
+			<font>Font_FSInfoData</font>
+			<label fallback="31435">$INFO[ListItem.CastAndRole]</label>
+			<include>White_OffWhite</include>
+		</control>
+-->
+<!--
+		<control type="label">
+			<description>Filename</description>
+			<posy>635</posy>
+			<posx>0</posx>
+			<width>700</width>
+			<include>Objects_FSInfoLabel</include>
+			<visible>Control.Hasfocus(10)</visible>
+			<scroll>true</scroll>
+			<wrapmultiline>true</wrapmultiline>
+			<label>$INFO[ListItem.filenameandpath]</label>
+		</control>		
+-->
+	<control type="grouplist" id="9000">
+			<width>848</width>
+			<height>33</height>
+			<itemgap>0</itemgap>
+			<orientation>horizontal</orientation>
+    	    <posx>-37</posx>
+       		<posy>210</posy>
+			<ondown>50</ondown>
+        <control type="button" id ="5">
+          <description>Plot/Cast</description>
+          <label>[UPPERCASE]$LOCALIZE[206][/UPPERCASE]</label>
+          <include>Objects_FSInfoButton</include>
+		</control>
+		<control type="button" id="8">
+          <label>[UPPERCASE]$LOCALIZE[31411][/UPPERCASE]</label>
+			<include>Objects_FSInfoButton</include>
+		</control>
+		<control type="button" id="6">
+          <label>[UPPERCASE]$LOCALIZE[31410][/UPPERCASE]</label>
+			<include>Objects_FSInfoButton</include>
+			<visible>!Skin.HasSetting(kiosk)</visible>	
+		</control>
+		<control type="button" id="10">
+          <label>[UPPERCASE]$LOCALIZE[31418][/UPPERCASE]</label>
+			<include>Objects_FSInfoButton</include>
+		</control>
+	</control>
+
+		<control type="textbox">
+			<description>Plot</description>
+			<posx>3</posx>
+			<posy>250</posy>
+			<width>630</width>
+			<height>212</height>
+			<align>left</align>
+			<font>Font_FSInfoPlot</font>
+			<autoscroll delay="15000" time="3000" repeat="10000">true</autoscroll>			
+			<label fallback="31414">$INFO[ListItem.Plot]</label>
+		    <visible>!Control.IsVisible(50)</visible>
+			<include>White_OffWhite</include>
+		</control>
+		
+		<control type="label">
+			<description>IMDB:</description>
+			<posx>3</posx>
+			<posy>583</posy>
+			<width>110</width>
+			<height>29</height>
+			<align>left</align>
+			<font>Font_FSIMDB</font>
+			<label>31417</label>
+			<include>White_Grey</include>
+		</control>
+<!--		
+		<control type="label">
+			<description>IMDB rating</description>
+			<posx>76</posx>
+			<posy>570</posy>
+			<width>110</width>
+			<height>29</height>
+			<align>left</align>
+			<font>Font_FSIMDBData</font>
+			<label>[UPPERCASE]$INFO[ListItem.Rating][/UPPERCASE]</label>
+			<include>White_OffWhite</include>
+			<visible>Skin.HasSetting(movieratingtext)</visible>			
+		</control>
+		
+		<control type="image">
+			<description>IMDB rating</description>
+			<posx>80</posx>
+			<posy>575</posy>
+			<width>201</width>
+			<height>43</height>
+			<info>ListItem.StarRating</info>
+			<visible>!Skin.HasSetting(movieratingtext)</visible>
+		</control>		
+-->	
+	</control>	
+ <!-- castmod removed this for search dialog -->
+    <!-- <include>Background_ContextBlack</include> --><!-- end castmod removed this for search dialog -->
+    <!-- castmod displays selectable cast -->
+    <control type="list" id="50">
+      <description>Cast List Container</description>
+      <posx>550</posx>
+	  <posy>300</posy>
+      <width>340</width>
+      <height>206</height>
+      <font>Font_FSInfoPlot</font>
+<!--      <animation effect="slide" start="0,0" end="0,-25" time="0" condition="!Container.Content(movies)">conditional</animation> -->
+        <onup>5</onup>
+        <ondown>5</ondown>
+        <onleft>8</onleft>
+        <onright>10</onright>
+      <orientation>vertical</orientation>
+      <itemlayout width="250" height="29">
+       <control type="image">
+         <posx>0</posx>
+          <posy>3</posy>
+          <width>22</width>
+          <height>22</height>
+          <texture>DefaultActorBig.png</texture>
+          <info>ListItem.icon</info>
+        </control>
+        <control type="label">
+          <posx>30</posx>
+          <posy>3</posy>
+          <width>470</width>
+          <height>22</height>
+         <font>Font_FSInfoPlot</font>
+          <include>White_Grey</include>
+         <aligny>center</aligny>
+          <selectedcolor>green</selectedcolor>
+          <align>left</align>
+          <info>ListItem.Label</info>
+        </control>
+      </itemlayout>
+      <focusedlayout height="29" width="250">
+
+        <control type="image">
+          <posx>0</posx>
+         <posy>3</posy>
+          <width>22</width>
+          <height>22</height>
+          <texture>DefaultActorBig.png</texture>
+          <info>ListItem.icon</info>
+        </control>
+        <control type="label">
+          <posx>30</posx>
+          <posy>3</posy>
+          <width>370</width>
+          <height>22</height>
+          <font>Font_FSInfoPlot</font>
+          <aligny>center</aligny>
+          <selectedcolor>green</selectedcolor>
+          <align>left</align>
+          <info>ListItem.Label</info>
+        </control>
+     </focusedlayout>
+    </control>
+<!--
+    <control type="group">
+      <visible>Control.IsVisible(50)</visible>
+      <animation effect="slide" start="0,0" end="25,0" time="0" condition="!Control.IsVisible(61)">conditional</animation>
+      <animation effect="slide" start="0,0" end="0,-25" time="0" condition="!Container.Content(movies)">conditional</animation>
+      <control type="image">
+       <description>Actor image</description>
+       <posx>920</posx>
+        <posy>410</posy>
+        <width>150</width>
+        <height>200</height>
+        <info>Container(50).ListItem.Icon</info>
+        <aspectratio aligny="center">keep</aspectratio>
+        <align>center</align>
+      </control>
+    </control>
+-->
+    <!-- castmod displays selectable cast -->
+  </controls>
+  </window>	
+
+

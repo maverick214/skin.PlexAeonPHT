@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- $Revision: 204$ -->
+<!--  strings 31000 thru 31999 reserved for skins  -->
+
+ <strings>
+	<string id="31000">0.9 (STARK)</string> <!-- DO NOT CHANGE -->
+	<string id="31001">Н/Д</string>
+	<string id="31002">БЕЗ ЗВУКА</string>
+	<string id="31003">ПОГОДА НЕ ДОСТУПНА В ЭТОЙ ВЕРСИИ</string>
+	<string id="31004">СБРОСИТЬ ФОН</string>
+	<string id="31005">ОБЪЕКТ(А,ОВ)</string>
+	<string id="31006">СЕЙЧАС ИГРАЕТ</string>
+	<string id="31007">ПАУЗА</string>
+	<string id="31008">ТЕМПЕРАТУРА</string>
+	<string id="31009">ЕДИНИЦЫ</string>
+  
+<!-- Main Menu -->
+  
+	<string id="31010">МУЗЫКА</string>
+	<string id="31011">ПРИЛОЖЕНИЯ</string>
+	<string id="31012">ИЗОБРАЖЕНИЯ</string>
+	<string id="31013">ФИЛЬМЫ</string>
+	<string id="31014">ТЕЛЕШОУ</string>
+	<string id="31015">ВИДЕО</string>
+	<string id="31016">ОПЦИИ</string>
+	<string id="31017">ПОГОДА</string>
+	<string id="31018">ДИСК</string>
+	<string id="31019">ВЫКЛЮЧЕНИЕ</string>
+	<string id="31020">СКРИПТЫ</string>
+	<string id="31021">ИЗБРАННОЕ</string>
+
+<!-- Plexaeon Viewtype Mods Settings-->
+
+	<string id="32010">ИСПОЛЬЗОВАТЬ ПОСТЕРЫ В РЕЖИМЕ MULTIPLEX</string>
+	<string id="32011">ИСПОЛЬЗОВАТЬ НОВЫЙ РЕЖИМ WALL</string>
+	<string id="32012">ИСПОЛЬЗОВАТЬ СТАРЫЙ ЭКРАН ИНФОРМАЦИИ ОБ ЭПИЗОДЕ</string>
+	<string id="32013">ФОН ПОГОДЫ СООТВЕТСТВУЕТ ТЕКУЩЕМУ ПРОГНОЗУ</string>
+	<string id="32014">ВКЛЮЧИТЬ СТАРТОВЫЙ ПЛЕЙЛИСТ</string>
+	<string id="32015">- ПУТЬ К СТАРТОВОМУ ФАЙЛУ/ПЛЕЙЛИСТУ</string>
+	<string id="32016">УБРАТЬ 'EXTRA ZOOM' ИЗ КОНТЕКСТНОГО МЕНЮ</string>
+	<string id="32017">ВКЛЮЧИТЬ ОТОБРАЖЕНИЕ КОРОБОК CD/DVD</string>	
+	<string id="32018">БЫСТРАЯ ПРОКРУТКА ОПИСАНИЙ</string>
+	<string id="32019">ИСПОЛЬЗОВАТЬ ВЕРТИКАЛЬНЫЕ МЕНЮ</string>
+	<string id="32020">ИСПОЛЬЗОВАТЬ ФАНАРТЫ</string>
+	<string id="32021">ПУТЬ К ФАЙЛУ AVI ДЛЯ ПРОВЕРКИ ЗВУКА</string>
+	<string id="32022">ПРОИГРЫВАТЬ СЛУЧАЙНОЕ ВИДЕО ПОСЛЕ СТАРТА ФИЛЬМА (CINEMA PLAY MODE)</string>
+	<string id="32023">- ПУТЬ К ПАПКЕ ФИЛЬМОВ</string>
+	<string id="32024">ТЕЛЕШОУ БЕЗ ПОСТЕРОВ</string>
+	<string id="32025">ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ ЭКРАНА OSD</string>
+	<string id="32026">ПУТЬ К ПОЛЬЗОВАТЕЛЬСКОМУ ФОНУ</string>
+	<string id="32027">ИСПОЛЬЗОВАТЬ ФОН ИЗ МЕНЮ ПРИ ОТСУТСТВИИ ФАНАРТА (ВЫКЛ ДЛЯ ЧЕРНОГО ЭКРАНА)</string>
+	<string id="32028">АНИМАЦИЯ ФОНА (KEN BURNS EFFECT)</string>
+	<string id="32029">ОТОБРАЖАТЬ ОБЩЕЕ КОЛИЧЕСТВО ПОКАЗОВ</string>
+	<string id="32030">ОСАДКИ</string>
+	<string id="32031">СУБТИТРЫ</string>
+	<string id="31170">НАЖАТИЕ "UP" АКТИВИРУЕТ КОНТЕКСТНОЕ МЕНЮ (ВЫКЛ ДЛЯ ИЗБРАННОГО)</string>
+	<string id="31171">ТЕМНАЯ ПАНЕЛЬ</string>
+	<string id="31172">УСЫПИТЬ MAC ВМЕСТО ВЫКЛЮЧЕНИЯ</string> 
+
+<!-- Media Window titles -->
+ 
+	<string id="31030">ПРИЛОЖЕНИЯ</string> 
+	<string id="31031">ИЗОБРАЖЕНИЯ</string>
+	<string id="31032">ФИЛЬМЫ</string> 
+	<string id="31033">ТЕЛЕШОУ</string>
+	<string id="31034">ВИДЕО</string>
+	<string id="31035">ПОГОДА</string>
+	<string id="31036">СКРИПТЫ</string>
+	<string id="31037">МУЗЫКА</string>
+	<string id="31038">ПЛЕЙЛИСТ</string>
+	<string id="31039">РЕДАКТОР</string>
+	<string id="31040">ИГРАЕТ:</string>
+	<string id="31041">ОТ:</string>
+
+<!-- Media Window options -->
+	<string id="31542">ТЕМА: CLEAR</string>
+	<string id="31042">ТЕМА: LIGHT</string>
+	<string id="31043">ТЕМА: NIGHT</string>
+	<string id="31044">РИСУНОК</string>
+	<string id="31045">ОБЛОЖКА</string>
+	<string id="31046">ОПИСАНИЕ</string>
+	<string id="31047">СЛОЙ</string>
+	<string id="31048">ТРИГГЕР</string>
+	<string id="31049">АВТО</string>
+	<string id="31050">ВИД:</string> 
+	<string id="31051">СЛУЧАЙНО</string>
+	<string id="31052">ТОЛСТАЯ</string> 
+	<string id="31053">ТОНКАЯ</string> 
+	<string id="31054">УСТАНОВКИ</string> 
+	<string id="31055">СТЕК</string> 
+	<string id="31056">ОБЛОЖКА: КВАДРАТ</string>
+	<string id="31057">ФАЙЛЫ</string>
+	<string id="31058">СКРЫТЬ НОВЫЕ</string>
+	<string id="31059">ОБЛОЖКА: ПОСТЕР</string>
+	<string id="31060">СЛОЙ: 2D</string>
+	<string id="31061">СЛОЙ: 3D</string>
+	<string id="31062">СЕЗОН</string>
+	<string id="310621">ВСЕ СЕЗОНЫ</string>
+	<string id="31063">ЭПИЗОД</string>
+	<string id="31064">ФАНАРТ</string>
+	<string id="31065">ПАНЕЛЬ</string>
+	<string id="31066">НАЛОЖЕНИЕ</string>
+	<string id="31067">ФОНЫ</string>
+	<string id="31068">МЕДИАТЕКА</string>
+	<string id="31069">ЛОГО СТУДИЙ</string>
+	<string id="31070">ИНФО</string>
+	<string id="31071">ТОНКИЙ</string>
+	<string id="31072">ПОЛНЫЙ</string>
+	<string id="31073">СТАНДАРТ</string>
+	<string id="31074">МАКСИМАЛЬНЫЙ</string>
+	<string id="31075">СЛОЙ</string>
+	<string id="31076">СЕТКА</string>
+	<string id="31077">ВКЛ</string>
+	<string id="31078">ВЫКЛ</string>
+	<string id="31079">СКРЫВАТЬ</string>
+	<string id="310791">ГОРИЗОНТАЛЬНО</string>
+	<string id="310792">ВЕРТИКАЛЬНО</string>
+	<string id="310793">ПРОЗРАЧНОСТЬ: ВЫКЛ</string>
+	<string id="310794">ПРОЗРАЧНОСТЬ: ВКЛ</string>
+	<string id="310795">ИНФО: ВЫКЛ</string>
+	<string id="310796">ИНФО: ВКЛ</string>
+	<string id="310797">ПАНЕЛЬ: LIGHT</string>
+	<string id="310798">ПАНЕЛЬ: NIGHT</string>
+	<string id="310799">ПОКАЗАТЬ ЖАНРЫ</string>	
+<!-- Aeon Customisation Virtual Home page labels -->
+  
+	<string id="31080">ФОН</string>
+	<string id="31081">ИЗМЕНИТЬ ФОН</string>
+	<string id="31082">'LEFT/RIGHT' ДЛЯ ПРОСМОТРА, 'ENTER' ДЛЯ ИЗМЕНЕНИЯ, 'UP/DOWN' ДЛЯ  ПРОДОЛЖЕНИЯ</string>
+	<string id="31083">ВЫБРАТЬ ФОН</string>
+	<string id="31084">ВЫБРАТЬ ТИП ФОНА</string>
+	<string id="31085">'UP' ДЛЯ ВЫБОРА ОДИНОЧНОГО ФОНА, 'DOWN' ДЛЯ СЛАЙДШОУ, 'LEFT/RIGHT' ДЛЯ ВЫХОДА</string>
+	<string id="31086">ЯРЛЫКИ</string>
+	<string id="31087">ВКЛ/ВЫКЛ ПУНКТОВ ГЛАВНОГО МЕНЮ</string>
+	<string id="31088">'LEFT/RIGHT' ДЛЯ ПРОСМОТРА, 'ENTER' ДЛЯ ПЕРЕКЛЮЧЕНИЯ, 'UP/DOWN' ДЛЯ  ПРОДОЛЖЕНИЯ</string>
+	<string id="31089">РАССТАНОВКА</string>
+	<string id="31090">РАЗМЕЩЕНИЕ ОБЪЕКТОВ НА ГЛАВНОЙ СТРАНИЦЕ</string>
+	<string id="31091">'LEFT/RIGHT' ДЛЯ ПРОСМОТРА, 'ENTER' ДЛЯ ПЕРЕМЕЩЕНИЯ</string>
+	<string id="31092">'ENTER' ДЛЯ ПЕРЕМЕЩЕНИЯ СТРОКИ ГЛАВНОГО МЕНЮ, 'LEFT/RIGHT' ДЛЯ ПРОДОЛЖЕНИЯ</string>
+	<string id="31093">'ENTER' ДЛЯ ПРИСОЕДИНЕНИЯ ЧАСОВ К СТРОКЕ ГЛАВНОГО МЕНЮ, 'LEFT/RIGHT' ДЛЯ ПРОДОЛЖЕНИЯ</string>
+	<string id="31094">'ENTER' ДЛЯ ОТСОЕДИНЕНИЯ ЧАСОВ ОТ СТРОКИ ГЛАВНОГО МЕНЮ, 'LEFT/RIGHT' ДЛЯ ПРОДОЛЖЕНИЯ</string>
+	<string id="31095">'ENTER' ДЛЯ ПРИСОЕДИНЕНИЯ СТРОКИ RSS К СТРОКЕ ГЛАВНОГО МЕНЮ, 'LEFT/RIGHT' ДЛЯ ПРОДОЛЖЕНИЯ</string>
+	<string id="31096">'ENTER' ДЛЯ ОТСОЕДИНЕНИЯ СТРОКИ RSS ОТ СТРОКИ ГЛАВНОГО МЕНЮ, 'LEFT/RIGHT' ДЛЯ ПРОДОЛЖЕНИЯ</string>
+	<string id="31097">СБРОСИТЬ НАСТРОЙКИ</string>
+	<string id="31098">СБРОСИТЬ ГЛАВНЫЕ НАСТРОЙКИ</string>
+	<string id="31099">НАЖМИТЕ 'LEFT/RIGHT' ДЛЯ ПОДГОТОВКИ К СБРОСУ НАСТРОЕК</string>
+	<string id="31100">ВНИМАНИЕ! ЭТОТ ПРОЦЕСС НЕОБРАТИМ!</string>
+	<string id="31101">НАЖМИТЕ 'LEFT/RIGHT' ДЛЯ ОТМЕНЫ, 'ENTER' ДЛЯ ПОДТВЕРЖДЕНИЯ СБРОСА НАСТРОЕК</string>
+	<string id="31102">ВЫБРЕРИТЕ ФОН МЕНЮ "</string>
+	<string id="31103">"</string>
+	<string id="31104">ВКЛ/ВЫКЛ ПУНКТА "</string>
+	<string id="31105">"</string>
+	<string id="31106">УПОРЯДОЧИВАНИЕ ОБЪЕКТОВ ЭКРАНА OSD</string>
+	<string id="31107">'LEFT/RIGHT' ДЛЯ ПРОСМОТРА, 'ENTER' ДЛЯ ПЕРЕКЛЮЧЕНИЯ</string>
+	<string id="31108">ПЕРЕКЛЮЧИТЬ СТИЛЬ ВЕРХНЕГО МЕНЮ (СЕЙЧАС: МАЛОЕ)</string>
+	<string id="31109">ВКЛ/ВЫКЛ ОТОБРАЖЕНИЕ "PROGRESS BAR" (СЕЙЧАС: ВКЛ)</string>
+	<string id="31110">ВКЛ/ВЫКЛ ОТОБРАЖЕНИЕ "ВРЕМЯ/ПРОДОЛЖИТЕЛЬНОСТЬ" (СЕЙЧАС: ВЫКЛ)</string>
+	<string id="31111">ПЕРЕКЛЮЧИТЬ СТИЛЬ ВЕРХНЕГО МЕНЮ (СЕЙЧАС: БОЛЬШОЕ)</string>
+	<string id="31112">ВКЛ/ВЫКЛ ОТОБРАЖЕНИЕ "PROGRESS BAR" (СЕЙЧАС: ВЫКЛ)</string>
+	<string id="31113">ВКЛ/ВЫКЛ ОТОБРАЖЕНИЕ "ВРЕМЯ/ПРОДОЛЖИТЕЛЬНОСТЬ" (СЕЙЧАС: ВКЛ)</string>	
+  
+<!-- Aeon Customisation Menu labels -->
+  
+	<string id="31120">ФОН</string>
+	<string id="31121">УСТАНОВКА ФОНОВ AEON</string>
+	<string id="31122">ЯРЛЫКИ</string>
+	<string id="31123">ГЛАВНОЕ МЕНЮ</string>
+	<string id="31124">РАСПОЛОЖЕНИЕ</string>
+	<string id="31125">МЕНЮ, ВРЕМЯ И RSS</string>
+	<string id="31126">СБРОС</string> 
+	<string id="31127">СБРОСИТЬ МОИ НАСТРОЙКИ</string>
+	<string id="31128">ЭКРАН OSD</string>
+	<string id="31129">ИНФОРМАЦИЯ НА ЭКРАНЕ</string>
+
+<!-- PLEX Settings Menu labels -->
+  
+	<string id="31140">ВИДЕО</string>
+	<string id="31141">НАСТРОЙКИ ВИДЕО</string>
+	<string id="31142">МУЗЫКА</string>
+	<string id="31143">НАСТРОЙКИ АУДИО</string>
+	<string id="31144">ПРИЛОЖЕНИЯ</string>
+	<string id="31145">ИГРЫ И ПРОГРАММЫ</string>
+	<string id="31146">ИЗОБРАЖЕНИЯ</string>
+	<string id="31147">ПРОСМОТР И СЛАЙДШОУ</string>
+	<string id="31148">ПОГОДА</string>
+	<string id="31149">КООРДИНАТЫ</string>
+	<string id="31150">СЕТЬ</string>
+	<string id="31151">СЕТЬ И ИНТЕРНЕТ</string>
+	<string id="31152">СИСТЕМА</string>
+	<string id="31153">КЕШИ И ОБОРУДОВАНИЕ</string>
+	<string id="31154">ОФОРМЛЕНИЕ</string>
+	<string id="31155">ИНТЕРФЕЙС И ЭКРАН</string>
+	<string id="31156">AEON</string>
+	<string id="31157">НАСТРОЙКИ СКИНА</string>
+	<string id="31158">РАЗНОЕ</string>
+	<string id="31159">РАСШИРЕННЫЕ НАСТРОЙКИ</string>
+	<string id="31160">ПРОФИЛИ</string>
+	<string id="31161">ПОЛЬЗОВАТЕЛИ</string>
+	<string id="31162">ЭКРАН ВХОДА</string>
+	<string id="31163">НАСТРОЙКИ</string>
+	<string id="31164">ЭКРАН ВХОДА</string>
+	<string id="31165">ПОЛЬЗОВАТЕЛИ</string>
+	<string id="31166">УПРАВЛЕНИЕ ПРОФИЛЯМИ</string>
+	<string id="31167">ТЕСТ ЗВУКА</string>
+	<string id="31168">ПРОВЕРКА SURROUND SOUND</string>
+	<string id="31169">СКИН</string>
+
+<!--  Button / Shutdown Menu  --> 
+
+	<string id="31200">НАСТРОЙКИ PLEX</string> 
+	<string id="31201">НАСТРОЙКИ AEON</string>
+	<string id="31202">ВЫКЛЮЧЕНИЕ MAC</string> 
+	<string id="31203">ВИЗУАЛИЗАТОР В МЕНЮ: ВЫКЛ</string>
+	<string id="31204">ВИЗУАЛИЗАТОР В МЕНЮ: ВКЛ</string> 
+	<string id="31205">СЕЙЧАС ИГРАЕТ</string>
+	<string id="31206">ТАЙМЕР ВЫКЛЮЧЕНИЯ</string> 
+	<string id="31207">УСЫПИТЬ MAC</string> 
+	<string id="31208">ВЫХОД ИЗ PLEX</string>
+	<string id="31209">ВЫХОД</string>
+	<string id="31210">ИЗВЛЕЧЬ</string>
+
+<!--  Shutdown Submenu  --> 
+
+	<string id="31211">ПЕРЕЗАГРУЗКА</string>
+	<string id="31212">СОН</string>
+	<string id="31213">ВЫКЛЮЧЕНИЕ</string>
+	<string id="31214">ВЫКЛЮЧИТЬ ТАЙМЕР</string>
+
+<!--  Set Content / Add Source dialogs  --> 
+  
+	<string id="31220">СОДЕРЖАНИЕ КАТАЛОГА:</string>
+	<string id="31221">ВВЕДИТЕ ПУТЬ ИЛИ НАЙДИТЕ МЕДИА</string>
+	<string id="31222">ВВЕДИТЕ НАЗВАНИЕ ЭТОГО РАЗДЕЛА</string>
+	<string id="31223">СПИСОК</string>
+	<string id="31224">ПЛИТКА</string>
+
+<!-- Aeon Advanced Menu labels -->
+  
+	<string id="31230">AEON</string> 
+	<string id="31231">НАСТРОЙКИ</string>
+	<string id="31232">ОБЩИЕ</string>
+	<string id="31233">ОСНОВНЫЕ НАСТРОЙКИ</string>
+	<string id="31234">ГЛАВНОЕ МЕНЮ</string>
+	<string id="31235">НАСТРОЙКИ ГЛАВНОГО МЕНЮ</string>
+	<string id="31236">ПРОСМОТР</string>
+	<string id="31237">НАСТРОЙКИ ПРОСМОТРА</string>
+	<string id="31238">ПРЕСЕТЫ</string>
+	<string id="31239">БЫСТРЫЕ НАСТРОЙКИ</string>
+	<string id="31240">ФАНАРТ</string>
+	<string id="31241">КОНТЕКСТНЫЕ ИЗОБРАЖЕНИЯ</string>
+	<string id="31242">ВКЛЮЧИТЬ ВСЕ</string>
+	<string id="31243">ВЫКЛЮЧИТЬ ВСЕ</string>
+	<string id="31244">МЕНЮ</string>
+	<string id="31245">СХЕМА ПРОСМОТРА</string>
+	<string id="31246">ВИДЫ ПРОСМОТРА</string>
+	<string id="31247">ВЫКЛ ВИДОВ ПРОСМОТРА</string>
+	<string id="312573">НАЖМИТЕ 'DOWN' ДЛЯ ПРОСМОТРА ТРЕЙЛЕРА</string>
+	<string id="312574">НАЖМИТЕ 'X' ДЛЯ ОСТАНОВКИ</string>
+	<string id="312575">НАЖМИТЕ 'RIGHT' ДЛЯ ПРОСМОТРА ТРЕЙЛЕРА</string>
+  
+<!-- Aeon Advanced options -->
+
+	<string id="31249">ВКЛЮЧИТЬ ОТОБРАЖЕНИЕ MEDIA FLAGS</string>
+ 	<string id="31250">ПЕРЕКЛЮЧАТЕЛЬ СЛОЯ MULTIPLEX/SHOWCASE (FANART, PLOT, THUMBSHOW)</string>
+ 	<string id="31251">ПЕРЕКЛЮЧАТЕЛЬ ИНФО MULTIPLEX/SHOWCASE (ВКЛ, ВЫКЛ, АВТО, ТРИГГЕР)</string>
+ 	<string id="31252">ЭФФЕКТ ГРАДИЕНТА В ГЛАВНОМ МЕНЮ</string>
+ 	<string id="31253">ПРИВЯЗКА ЯРЛЫКА 'ИГРЫ' К ПЛАГИНУ ЗАПУСКА</string>
+ 	<string id="31258">ПОКАЗЫВАТЬ РЕЙТИНГ IMDB НА СТРАНИЦЕ  ИНФОРМАЦИИ О ФИЛЬМЕ</string>
+	<string id="31259">ПОКАЗЫВАТЬ СТАНДАРТНЫЕ ИКОНКИ MEDIA FLAGS</string>
+	<string id="31260">ПОКАЗЫВАТЬ ПАНЕЛЬ ВРЕМЕНИ</string>
+	<string id="31261">ПОКАЗЫВАТЬ ОКНО ПОГОДЫ НА ГЛАВНОЙ СТРАНИЦЕ</string>
+	<string id="31262">ИСПОЛЬЗОВАТЬ ФАНАРТ ДЛЯ МУЗЫКИ</string>
+	<string id="31264">ИСПОЛЬЗОВАТЬ ФАНАРТ ДЛЯ ФИЛЬМОВ</string>
+	<string id="31265">ИСПОЛЬЗОВАТЬ ФАНАРТ ДЛЯ ТЕЛЕШОУ</string>
+	<string id="31266">ИСПОЛЬЗОВАТЬ ФАНАРТ ДЛЯ ФОТО</string>
+	<string id="31268">ПОКАЗЫВАТЬ СТРОКУ RSS И "ИГРАЕТ СЕЙЧАС" В РЕЖИМЕ WALL</string>
+	<string id="312691">ПОКАЗЫВАТЬ СООТНОШЕНИЕ СТОРОН (ИСПОЛЬЗОВАТЬ STUDIO ЕСЛИ ОТКЛЮЧЕН)</string>
+	<string id="312692">ИСПОЛЬЗОВАТЬ CDART В ПРОИГРЫВАЕМОЙ ВИЗУАЛИЗАЦИИ</string>
+	<string id="312693">- ИСПОЛЬЗОВАТЬ ФОН МЕНЮ "МУЗЫКА" В CDART</string>
+	<string id="312694">- РАЗРЕШИТЬ ИСПОЛЬЗОВАНИЕ ПАПКИ ПОЛЬЗОВАТЕЛЯ ДЛЯ ФАНАРТОВ И КАРТИНОК CD</string>
+	<string id="312695">- ПУТЬ К ПАПКЕ С ФАНАРТАМИ И КАРТИНКАМИ CD</string>
+	<string id="31270">ВКЛЮЧИТЬ АНИМАЦИЮ СКИНА</string>
+	<string id="31271">ЗАТЕМНЯТЬ НЕАКТИВНЫЕ ПУНКТЫ МЕНЮ</string>
+	<string id="31278">РАЗРЕШИТЬ ПРОКРУТКУ ДЛЯ СОДЕРЖАНИЙ И ОПИСАНИЙ</string>
+	<string id="31279">ИСПОЛЬЗОВАТЬ ФАНАРТ НА СТРАНИЦЕ ПОЛНОЭКРАННОЙ ИНФОРМАЦИИ</string>
+	<string id="31280">РЕЖИМ РАЗРАБОТЧИКА</string>
+	<string id="31281">ЗНАЧКИ MEDIA FLAGS (ЛОГОТИП СТУДИИ, ФОРМАТ ВИДЕО...)</string>
+	<string id="31284">ВКЛЮЧИТЬ ВИЗУАЛИЗАТОР НА СТРАНИЦЕ ГЛАВНОГО МЕНЮ</string>
+	<string id="31285">ИСПОЛЬЗОВАТЬ ТЕКСТ ДЛЯ РЕЙТИНГА ФИЛЬМОВ (ОТКЛЮЧЕНИЕ ЗВЕЗД)</string>
+	<string id="31286">ИСПОЛЬЗОВАТЬ ТЕКСТ ДЛЯ РЕЙТИНГА МУЗЫКИ (ОТКЛЮЧЕНИЕ ЗВЕЗД)</string>	
+	<string id="31287">РЕЖИМ КИОСКА (УБРАТЬ ВСЕ МЕНЮ ИЗ ОКНА МЕДИА)</string>
+	<string id="31288">ПОИСК ФИЛЬМА (МЕДИАТЕКА ФИЛЬМОВ)</string>
+	<string id="31289">ТВ ПОИСК (МЕДИАТЕКА ТЕЛЕШОУ)</string>
+	<string id="31290">НАСТРОЙКИ ЯРЛЫКОВ (ВСЕ МЕДИА)</string>
+	<string id="31291">ПЕРЕКЛЮЧАТЕЛЬ 'ПРОСМОТРЕНО/НЕ ПРОСМОТРЕНО ФИЛЬМОВ' (МЕДИАТЕКА)</string>
+	<string id="31292">ПЕРЕКЛЮЧАТЕЛЬ 'ПРОСМОТРЕНО/НЕ ПРОСМОТРЕНО ТЕЛЕШОУ' (МЕДИАТЕКА)</string>
+	<string id="31293">ОТОБРАЖЕНИЕ ЯРЛЫКОВ ФАЙЛОВ (МЕДИАТЕКА ФИЛЬМОВ И ТЕЛЕШОУ)</string>
+	<string id="31294">БОЛЬШАЯ КЛАВИАТУРА / ЦИФРОВОЙ КЕЙПАД</string>
+	<string id="31295">УЛУЧШЕННАЯ ЧИТАЕМОСТЬ (БОЛЬШИЕ ВРЕМЯ И RSS)</string>
+	<string id="31296">ПЕРЕКЛЮЧАТЕЛЬ ТЕМ LIGHT/NIGHT</string>
+	<string id="31297">ИСПОЛЬЗОВАТЬ ОДНУ ОБЛОЖКУ ДЛЯ СПИСКА МУЗЫКИ</string>
+	<string id="31298">ИСПОЛЬЗОВАТЬ ОДНУ ОБЛОЖКУ ДЛЯ СПИСКА ФИЛЬМОВ</string>
+	<string id="31299">ПОКАЗЫВАТЬ RSS В РЕЖИМЕ SHOWCASE</string>
+	<string id="31310">СКРЫТЬ ИНФОРМАЦИЮ ОБ ИСПОЛНИТЕЛЕ В ВИЗУАЛИЗАТОРЕ</string>
+	
+<!-- PLEX Settings Menu headings -->
+	
+	<string id="31300">ВИДЕО</string>
+	<string id="31301">ИЗОБРАЖЕНИЯ</string>
+	<string id="31302">ОФОРМЛЕНИЕ</string>
+	<string id="31303">СЕТЬ</string>
+	<string id="31304">СИСТЕМА</string>
+	<string id="31305">МУЗЫКА</string>
+	<string id="31306">ПОГОДА</string>
+	<string id="31307">ПРОГРАММЫ</string>
+	<string id="31308">НАСТРОЙКИ</string>
+	
+<!-- PLEX Settings Subtitles -->
+	
+	<string id="31319">СТАНДАРТНЫЕ ВИДЫ</string>
+	<string id="31320">КОНТРОЛЬ БАЗЫ ДАННЫХ</string>
+	<string id="31321">КАЧЕСТВО И КАЛИБРОВКА</string>
+	<string id="31322">ТЭГИ И ЭКРАН</string>
+	<string id="31324">ТЭГИ И ЭКРАН</string>
+	<string id="31325">ВРЕМЯ И ЭФФЕКТЫ</string>
+	<string id="31326">ОБЛОЖКИ И АУДИО</string>
+	<string id="31327">ЯЗЫК И РАСПОЛОЖЕНИЕ</string>
+	<string id="31328">НАСТРОЙКИ RSS</string>
+
+	<string id="31331">WEB И СЕРВЕР UPNP</string>
+	<string id="31332">КЛИЕНТ</string>
+	<string id="31333">ОБНОВЛЕНИЕ PLEX</string>
+	<string id="31336">РАЗРЕШЕНИЕ</string>
+	<string id="31337">ОБОРУДОВАНИЕ</string>
+	<string id="31338">ПУЛЬТ ДУ</string>
+	<string id="31339">КОНТРОЛЬ И СКРОББЛИНГ</string>
+	<string id="31340">ВРЕМЯ И СОДЕРЖАНИЕ</string>
+	<string id="31341">ВРЕМЯ И СОДЕРЖАНИЕ</string>
+	<string id="31342">ВИЗУАЛИЗАЦИЯ</string> 
+	<string id="31343">КОНТРОЛЬ БАЗЫ ДАННЫХ</string> 
+	<string id="31344">ПРОФИЛИ</string> 
+	<string id="31345">ФОНЫ И ТЕМЫ</string> 
+	<string id="31349">ГОРОДА И РЕГИОНЫ</string>
+	<string id="31350">СТАНДАРТНЫЙ ПРОСМОТР</string>
+	
+
+<!--  Fullscreen info panel  -->
+
+	<string id="31400">НЕТ ОБЛОЖКИ?[CR][CR]ПРОВЕРЬТЕ ДОСТУПНОСТЬ ОБЛОЖКИ РЯДОМ С ФАЙЛОМ ФИЛЬМА[CR]НАЗВАНИЕ ОБЛОЖКИ ДОЛЖНО СОВПАДАТЬ[CR](BARBARELLA.MKV-BIG.PNG)[CR][CR]ИЛИ ПОСМОТРИТЕ В БОЛЕЕ ДЕТАЛЬНОЙ СПРАВКЕ AEON</string>
+	<string id="31401">СЦЕНАРИСТ</string>
+	<string id="31402">РЕЖИССЕР</string>
+	<string id="31403">ЭПИЗОДЫ:</string>
+	<string id="31404">СТУДИЯ:</string>
+	<string id="31405">В РОЛЯХ</string>
+	<string id="31406">ЭПИЗОДЫ</string>
+	<string id="31407">ПРЕМЬЕРА</string>
+	<string id="31408">IMDB</string>
+	<string id="31409">ТРЕЙЛЕР</string>
+	<string id="31410">ОБНОВИТЬ</string>
+	<string id="31411">ИГРАТЬ</string>
+	<string id="31412">ФАНАРТ</string>
+	<string id="31413">НАСТРОЕНИЯ</string>
+	<string id="31414">НЕТ ОПИСАНИЯ</string>
+	<string id="31415">НЕТ БИОГРАФИИ</string>
+	<string id="31416">СТИЛИ</string>
+	<string id="31417">РЕЙТИНГ</string>
+	<string id="31418">ОБЛОЖКА</string>
+	<string id="31419">ОБНОВИТЬ</string>
+	<string id="31420">ДАЛЕЕ</string>
+	<string id="31421">ИГРАТЬ</string>
+	<string id="31422">ЗАМЕТКИ</string>
+	<string id="31423">ЭТИКЕТКА</string>
+	<string id="31424">НЕТ РЕЦЕНЗИИ</string>
+	<string id="31425">НЕТ ИНФОРМАЦИИ</string>
+	<string id="31426">ДОРОЖКА</string>
+	<string id="31427">ДЛИТЕЛЬНОСТЬ</string>
+	<string id="31428">НЕТ КОММЕНТАРИЕВ</string>
+	<string id="31429">ОБ АЛЬБОМЕ</string>
+	<string id="31430">COMMIT</string>
+	<string id="31431">'UP/DOWN' ДЛЯ ИЗМЕНЕНИЯ РЕЙТИНГА</string>
+	<string id="31432">СЕЗОН</string>
+	<string id="31433">ЭПИЗОД</string>
+	<string id="31434">ДЛИТЕЛЬНОСТЬ</string>
+	<string id="31435">НЕТ ИНФОРМАЦИИ</string>
+	<string id="31436">ГОД</string>
+	<string id="31438">ЖАНР</string>
+	<string id="31439">ПРОСМОТРЕН</string>
+	<string id="31440">НЕ ПРОСМОТРЕН</string>
+	<string id="31441">ДАТА НЕДОСТУПНА</string>
+	<string id="31442">ДАТА ИЗМЕНЕНИЯ НЕДОСТУПНА</string>
+	<string id="31443">ИНФО О РАЗРЕШЕНИИ НЕДОСТУПНО</string>
+	<string id="31444">РАЗМЕР ФАЙЛА НЕДОСТУПЕН</string>
+	<string id="31445">РЕЙТИНГ</string>
+	
+<!--  Aeon Assistant  -->
+
+	<string id="31500">НОВОСТИ</string>
+	<string id="31501">ОБНОВЛЕНИЯ AEON</string>
+	<string id="31502">ВНУТРЕННОСТИ</string>
+	<string id="31503">СТАТИСТИКА PLEX</string>
+	<string id="31504">СОЗДАТЕЛИ</string>
+	<string id="31505">АВТОРЫ И БЛАГОДАРНОСТИ</string>
+	<string id="31510">ПОМОЩЬ</string>
+	<string id="31511">ПОСЛЕДНИЕ НОВОСТИ</string>
+	<string id="31512">ВОЗВРАЩАЙТЕСЬ СЮДА ДЛЯ ПЕРИОДИЧЕСКИХ ОБНОВЛЕНИЙ С СЕРВЕРА AEON</string>
+	<string id="31520">ЗАПУСК ТУРА</string>
+	<string id="31521">ДОБРО ПОЖАЛОВАТЬ В AEON</string>
+	<string id="31522">ВЕРНУТЬСЯ НА ОСНОВНУЮ</string>
+	<string id="31523">НАЖМИТЕ 'SELECT' ДЛЯ ПРОСМОТРА ТУРА AEON</string>
+	<string id="31524">СОЕДИНЕНИЕ С СЕРВЕРОМ AEON</string>
+	
+<!--  Aeon Assistant Tutorials  -->
+
+	<!-- 31550-31590 RESERVED -->
+	
+<!-- Aeon Assistant vitals -->
+
+	<string id="31598">ДАТА СОЗДАНИЯ XBMC[CR]ВЕРСИЯ AEON[CR]ТЕКУЩАЯ ТЕМА[CR]ЯЗЫК[CR]РАЗРЕШЕНИЕ ЭКРАНА[CR]ДОСТУПНАЯ ПАМЯТЬ RAM[CR]ЖЕСТКИЙ ДИСК[CR]ТЕМПЕРАТУРА CPU[CR]ТЕМПЕРАТУРА GPU[CR]СИСТЕМА РАБОТАЕТ[CR]СТАТУС ONLINE[CR]АДРЕС IP[CR]ОПТИЧЕСКИЙ ПРИВОД</string>
+	
+<!-- Debug mode -->
+
+	<string id="31600">AEON VERSION: 1.0</string>
+	<string id="31601">FREE SYSTEM RAM:</string>
+	<string id="31602">PLEX BUILD DATE:</string>
+	<string id="31603">FPS:</string>
+	<string id="31604">CURRENT WINDOW ID:</string>
+	<string id="31605">CURRENT FOCUS:</string>
+	<string id="31606">ACTIVE VIEW TYPE:</string>
+	<string id="31607">REFRESH</string>
+	<string id="31608">INFO ON/OFF</string>
+	<string id="31609">THIS LIBRARY IS EMPTY</string>
+	<string id="31610">POPULATE IT VIA THE VIDEOS WINDOW</string>
+	<string id="31611">POPULATE IT VIA THE FILES WINDOW</string>
+
+<!-- Welcome screen / Aeon Tour -->
+<!-- ENSURE LOWER/UPPER CASE IS OBEYED --> 
+
+	<string id="31650">Welcome to PlexAeon, the new home of home entertainment.[CR]The way you enjoy your movies, television shows, music and photos is[CR]about to change. To begin using PlexAeon, press H or hit MENU on your remote[CR]or for a slideshow, press right three times, then SELECT</string>
+	<string id="31651">Central to Aeon is a horizontally-scrolling menu which provides instant access to[CR]its various environments. Backdrops can be assigned to each option as either[CR]a single image or slideshow. The menu can be switched between positions[CR]with a single button-press. Time and RSS can also be relocated and detached.</string>
+	<string id="31652">Movies and music are enjoyed in Aeon through four distinct views.[CR]Each is designed to meet specific requirements. Showcase offers maximum[CR]artwork visibilty; Panel offers more conventional thumbnail views; List[CR]speaks for itself; Wall provides maximum screen real estate for large collections.</string>
+	<string id="31653">Aeon loves artwork. Its visual philosophy revolves entirely around the[CR]tastes and content of each individual user. Like action movies? Fantasy[CR]videogames? Rousing period drama? Decorate your environment accordingly.[CR]Posters and cover art, meanwhile, are displayed in beautiful high definition.</string>
+	<string id="31654">Building a library of movies, television shows or music lets Aeon exploit[CR]the full power of PLEX, providing a rich and informative browsing experience.[CR]Plot synopses and album reviews are just the tip of the iceberg thanks to[CR]info pulled from the IMDb, Allmusic, or one of many user-selected sources.</string>	
+	<string id="31655">НАЖМИТЕ 'ENTER' ДЛЯ НАЧАЛА ТУРА. НАЖМИТЕ НАЗАД ДЛЯ ПРОПУСКА</string>
+	<string id="31656">'DOWN' ДЛЯ СЛЕДУЮЩЕГО СЛАЙДА, 'ENTER' ДЛЯ ПРОПУСКА</string>
+	<string id="31657">'DOWN' ДЛЯ СЛЕДУЮЩЕГО СЛАЙДА, 'UP' ДЛЯ ПРЕДЫДУЩЕГО СЛАЙДА ИЛИ 'ENTER' ДЛЯ ПРОПУСКА</string>
+	<string id="31659">Navigating between Aeon's views and windows couldn't be easier.[CR]The Global Menu can be accessed at any time from any place, providing[CR]shortcuts to Settings, Customisation, and the Aeon Assistant. A four-way[CR]"compass" menu provides instant access to any view type.</string>
+	<string id="31660">Every aspect of Aeon and PLEX can be configured behind the scenes.[CR]A multi-faceted Settings environment is available from every screen,[CR]split into sections for ease of use. Its Virtual Home page provides an[CR]intuitive visual reference for all your personalisation needs.</string>
+	<string id="31661">There's no limit to how many wallpapers you can splash across Aeon's[CR]backgrounds. Folders containing thousands of images can be assigned to[CR]sections like Movies and Pictures. Anything above the current screen[CR]resolution will be downscaled, anything below upscaled.</string>
+	<string id="31662">Control every aspect of PLEX's media playback without missing a second.[CR]On-screen displays for video and music let you adjust everything from[CR]subtitles and aspect ratio to audiovisual sync. Permanent bookmarks[CR]can be set for easy access to your favourite scenes.</string>
+	<string id="31663">Gone are the days when user customisation came at a price, and when[CR]high quality art was anything but. The Aeon Project website provides hundreds[CR]of the best wallpapers for all of Aeon's windows, free of charge and annoying[CR]adverts. Check the Aeon Assistant for live updates on new content.</string>
+
+<!-- OSD -->
+
+	<string id="31700">CODEC</string>
+	<string id="31701">BITRATE</string>
+	<string id="31702">SAMPLERATE</string>
+	<string id="31703">CHANNELS</string>
+	<string id="31704">СЛЕДУЮЩИЙ</string>
+	<string id="31705">НАЗАД</string>
+	<string id="31706">ВПЕРЕД</string>
+	<string id="31707">ГРОМКОСТЬ</string>
+	<string id="31708">ПОЗИЦИЯ</string>
+	<string id="31709">ВРЕМЯ ПРОСМОТРА</string>
+	<string id="31710">ВРЕМЯ ОКОНЧАНИЯ</string>
+	<string id="31711">ЗАКЛАДКИ ДОСТУПНЫ</string>
+	<string id="31712">'UP/DOWN': МЕНЮ/ЗАКЛАДКИ[CR]'LEFT/RIGHT': ОПЦИИ МЕНЮ</string>
+	<string id="31713">ОБЪЕКТОВ В ПЛЕЙЛИСТЕ</string>
+	<string id="31714">ТЕКУЩАЯ ПОЗИЦИЯ</string>
+	<string id="31715">ПРЕДЫДУЩИЙ</string>
+	<string id="31716">НАЗВАНИЕ ПЕСНИ</string>
+	<string id="31717">НАЗВАНИЕ АЛЬБОМА</string>
+	<string id="31718">НАЗВАНИЕ ИСПОЛНИТЕЛЯ</string>
+	<string id="31719">ПРОИГРАНО / ПРОДОЛЖИТЕЛЬНОСТЬ</string>
+	<string id="31720">ТЕКУЩЕЕ ВРЕМЯ</string>
+	
+<!-- View select -->
+
+	<string id="31750">WALL</string>
+	<string id="31751">SHOWCASE</string>
+	<string id="31752">FULL LIST</string>
+	<string id="31753">ПАНЕЛЬ</string>	
+	<string id="31754">ВЫБОР</string>	
+	<string id="31755">ВЫБОР НАПРАВЛЕНИЯ ПРОСМОТРА[CR]НАЖМИТЕ ДЛЯ ОТМЕНЫ</string>	
+	<string id="31756">ДОСТУПЕН ДЛЯ ЭПИЗОДОВ ТОЛЬКО В РЕЖИМЕ LIST</string>
+	<string id="31757">MULTIPLEX</string>
+	<string id="31578">STRIPSHOW</string>
+	<string id="31579">SLIM LIST</string>
+	<string id="31580">LOW LIST</string>
+	<string id="31581">CLEAR LIST</string>
+	<string id="31582">OLD MULTIPLEX</string>
+	<string id="31785">ANOOBIE2</string>
+	<string id="31786">ANOOBIE3</string>
+<!-- Aeon Settings panel labels -->
+
+<!-- Aeon Settings panel labels -->
+  
+	<string id="31800">АВТОНОМНЫЕ СУБТИТРЫ</string>
+	<string id="31801">ИМЯ ФАЙЛА СУБТИТРОВ И ИМЯ ФАЙЛА ВИДЕО ДОЛЖНЫ СОВПАДАТЬ.[CR]ДЛЯ ПРИМЕРА: ВИДЕО - VEXILLE.AVI, ФАЙЛ СУБТИТРОВ - VEXILE.SRT.</string>
+	<string id="31802">МУЗЫКАЛЬНОЕ ВИДЕО</string>
+	<string id="31803">PLEX СЛЕДИТ ЗА ВИДЕОКЛИПАМИ ТАК ЖЕ, КАК И ЗА ФИЛЬМАМИ В МЕДИАТЕКЕ. [CR]НУЖНО ЛИШЬ ОПРЕДЕЛИТЬ ПАПКУ КАК 'MUSIC VIDEOS'.</string>
+	<string id="31804">ЭМУЛЯЦИЯ</string>
+	<string id="31805">PLEX МОЖЕТ БЫТЬ ИСПОЛЬЗОВАН ДЛЯ ЗАПУСКА ЭМУЛЯТОРОВ НА ВСЕХ ПЛАТФОРМАХ.[CR]УЗНАЙТЕ О ПОДДЕРЖИВАЕМОМ ПО НА ФОРУМАХ PLEX (WWW.PLEXAPP.COM).</string>
+	<string id="31806">ПОВОРОТ С ИСПОЛЬЗОВАНИЕМ ИНФОРМАЦИИ EXIF</string>
+	<string id="31807">СОВРЕМЕННЫЕ КАМЕРЫ СОХРАНЯЮТ ВСЮ ИНФОРМАЦИЮ О КАЖДОМ ИЗОБРАЖЕНИИ.[CR]КОГДА ЭТА ОПЦИЯ ВКЛЮЧЕНА, ИЗОБРАЖЕНИЯ АВТОМАТИЧЕСКИ ПОВОРАЧИВАЮТСЯ.</string>
+	<string id="31808">ПРОГНОЗ ПОГОДЫ</string>
+	<string id="31809">PLEX ПОКАЗЫВАЕТ ПРОГНОЗ ПОГОДЫ В  ВЫБРАННЫХ ВАМИ ГОРОДАХ.[CR]ИНФОРМАЦИЯ БЕРЕТСЯ С САЙТА WEATHER.COM.</string>
+	<string id="31810">СОЗДАЙ СВОЙ AEON</string>
+	<string id="31811">ПЕРЕМЕСТИТЬ МЕНЮ AEON МОЖНО В ОДНО ПРИКОСНОВЕНИЕ. ПРОСТО НАЖМИТЕ[CR]'UP' ИЛИ 'DOWN' ДЛЯ СМЕНЫ ПОЗИЦИИ МЕНЮ И НАСТРОЙТЕ ВСЕ ПОД СЕБЯ.</string>
+	<string id="31812">ОБМЕН С ВНЕШНИМИ НАКОПИТЕЛЯМИ</string>
+	<string id="31813">ВЫСОКИЙ ПОТЕНЦИАЛ ПЕРЕНОСНЫХ НОСИТЕЛЕЙ (500GB+) ПОЗВОЛЯЕТ ХРАНИТЬ НА НИХ[CR]ФИЛЬМЫ ВЫСОКОГО КАЧЕСТВА HD. XBMC СПОСОБЕН ОБРАБАТЫВАТ ТЫСЯЧИ ФИЛЬМОВ.</string>
+	<string id="31814">HIGH DEFINITION</string>
+	<string id="31815">PLEXAEON С ЛЕГКОСТЬЮ ПРОРИСОВЫВАЕТ ВИДЕО С РАЗРЕШЕНИЕМ 1080P, ПЕРЕДАВАЯ ЕГО ЛЮБОМУ[CR]HD-ДИСПЛЕЮ. ВСЕ УПИРАЕТСЯ В ВАШИ ПОТРЕБНОСТИ К КАЧЕСТВУ ФИЛЬМОВ.</string>
+	<string id="31816">ВЫДЕРЖИТ ЛИ ВАШЕ ОБОРУДОВАНИЕ?</string>
+	<string id="31817">PLEX СПОСОБЕН РАБОТАТЬ НА РАЗЛИЧНЫХ ТИПАХ ЦИФРОВОГО МУЛЬТИМЕДИА-ОБОРУДОВАНИЯ. [CR]ДЛЯ HD-КОНТЕНТА РЕКОМЕНДОВАННЫ ВИДЕОКАРТЫ С ПОДДЕРЖКОЙ PIXEL SHADER 3.</string>
+	<string id="31818">ЗАБАВНЫЕ ДЕТАЛИ</string>	
+	<string id="31819">ВЫ МОЖЕТЕ УПРАВЛЯТЬ СВОИМ AEON'ОМ МЕНЯЯ ВСЕ, ЧТО УГОДНО</string>
+	<string id="31820">С МИРУ ПО НИТКЕ</string>
+	<string id="31821">PLEX ПОДДЕРЖИВАЕТ РАБОТУ СО МНОЖЕСТВОМ ПОЛЬЗОВАТЕЛЕЙ, НЕ ТЕРЯЯ ИХ НАСТРОЙКИ.[CR]RSS, ОПЦИИ ВИДА И НАСТРОЙКИ МЕДИАТЕКИ МОГУТ БЫТЬ ЭКСПОРТИРОВАНЫ И СОХРАНЕНЫ.</string>
+	<string id="31822">ПРОВЕРКА ЗВУКА SURROUND SOUND</string>	
+	<string id="31823">ПРОВЕРКА СИСТЕМЫ SURROUND</string>
+	<string id="31824">НЕ МОГУ ПРОВЕРИТЬ! УКАЖИТЕ ПРОВЕРОЧНЫЙ ВИДЕОФАЙЛ AVI В НАСТРОЙКАХ</string>
+	
+<!-- Credits -->
+
+	<string id="31900">ТЕКСТУРЫ</string>
+	<string id="31901">СТАНДАРТНЫЕ ОБОИ</string>
+	<string id="31902">СТАНДАРТНЫЕ ИКОНКИ ОТ</string>
+	<string id="31903">ПЕРЕВОД</string>
+	<string id="31904">ТЕСТИРОВАНИЕ</string>
+	<string id="31905">AEONPROJECT WEBSITE</string>
+	<string id="31906">СПАСИБО</string>
+	<string id="31907">ВСЕ НА PLEX ФОРУМЕ</string>
+	<string id="31908">...И ТЫ</string>
+	<string id="31909">AEON ВЕРНЕТСЯ В</string>
+	<string id="31910">ОБОИ ПОГОДЫ</string>
+	
+<!-- Submenu / Objects -->
+
+	<string id="31920">ПОСЛЕДНИЕ</string>
+	<string id="31921">НАЗВАНИЯ</string>
+	<string id="31922">ЖАНРЫ</string>
+	<string id="31923">ГОДЫ</string>
+	<string id="31924">АКТЕРЫ</string>
+	<string id="31925">РЕЖИССЕРЫ</string>
+	<string id="31926">СТУДИИ</string>
+	<string id="31927">ИСПОЛНИТЕЛИ</string>
+	<string id="31928">АЛЬБОМЫ</string>
+	<string id="31929">ПЛЕЙЛИСТЫ</string>
+	<string id="31930">ПОСЛЕДНИЕ</string>
+	<string id="31931">ВИДЕО</string>
+	<string id="31932">ФАЙЛЫ</string>
+	<string id="31933">ШОУ</string>
+	<string id="31934">ФИЛЬМ(А,ОВ)</string>
+	<string id="31935">ОБЪЕКТ(А,ОВ)</string>
+	<string id="31936">ТРЕК(А,ОВ)</string>
+	<string id="31937">СЕЗОНЫ</string>
+	<string id="31938">ЭПИЗОД(А,ОВ)</string>
+	<string id="31939">ПОТОКИ</string>	
+	<string id="31940">ВИДЕОКЛИПЫ</string> 
+	<string id="31941">ПОПУЛЯРНЫЕ</string>
+	<string id="31950">НОВЫЕ</string>
+	<string id="31951">ПОПУЛЯРНЫЕ</string>
+	<string id="31952">КАТЕГОРИИ</string>
+	<string id="31953">УСТАНОВЛЕННЫЕ</string>
+	<string id="31954">ИСТОРИЯ</string>
+	<string id="31955">ТИПЫ МЕДИА</string>
+	<string id="31956">ВСЕ</string>
+	<string id="31957">РЕКОМЕНДАЦИИ</string>	
+
+<!-- Trailer Mod -->
+
+	<string id="32000">Трейлер</string>
+	<string id="32001">Большой трейлер</string>
+	
+	<!--	Перевод SHUFFLE		shuffledj@gmail.com	26/01/2010-->	
+	
+</strings>

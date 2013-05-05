@@ -1,0 +1,31 @@
+<window>
+	<defaultcontrol always="true">1</defaultcontrol>
+	<controls>
+
+	<control type="button" id="1">
+		<description>ReplaceWindow Trigger</description>
+		<posx>35</posx>
+		<posy>235</posy>
+		<font>special15</font>
+		<onfocus>Skin.Reset(OnDeckBottom)</onfocus>
+		<onfocus>ReplaceWindow(Home)</onfocus>
+		<texturefocus>-</texturefocus>
+		<texturenofocus>-</texturenofocus>
+		<visible>!Skin.HasSetting(startplay)</visible>
+	</control>
+	<control type="button" id="1">
+		<description>ReplaceWindow Trigger</description>
+		<posx>35</posx>
+		<posy>235</posy>
+		<font>special15</font>
+		<onfocus>Skin.Reset(OnDeckBottom)</onfocus>
+		<onfocus>ReplaceWindow(Home)</onfocus>
+		<onfocus>XBMC.PlayMedia($INFO[Skin.String(startuplocation)])</onfocus>
+		<onfocus>XBMC.ReloadSkin()</onfocus>
+		<texturefocus>-</texturefocus>
+		<texturenofocus>-</texturenofocus>
+		<visible>Skin.HasSetting(startplay)</visible>
+	</control>
+
+	</controls>
+</window>

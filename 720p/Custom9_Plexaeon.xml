@@ -1,0 +1,213 @@
+<window id="1111" type="dialog">
+	<defaultcontrol>4112</defaultcontrol>
+	<zorder>3</zorder>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
+	<animation type="WindowOpen" reversible="false">
+		<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+		<effect type="fade" start="0" end="100" time="300" />
+	</animation>
+	<animation type="WindowClose" reversible="false">
+		<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+		<effect type="fade" start="100" end="0" time="200" />
+	</animation>
+	<controls>
+		<control type="group">
+
+			<posx>486</posx>
+			<posy>184</posy>
+			<width>308</width>
+			<height>404</height>
+			<animation effect="slide" start="0,-19" end="0,-19" time="0" condition="![system.hasloginscreen | System.HasMediaDVD]">Conditional</animation>
+			<animation effect="slide" start="0,-38" end="0,-38" time="0" condition="system.hasloginscreen + System.HasMediaDVD">Conditional</animation>
+			<control type="image">
+				<description>background top image</description>
+				<posx>0</posx>
+				<posy>-26</posy>
+				<width>308</width>
+				<height>26</height>
+				<texture>dialogs/context_top.png</texture>
+			</control>
+
+			<control type="image">
+				<description>background image</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>308</width>
+				<include condition="![system.hasloginscreen | System.HasMediaDVD]">Objects_ButtonMenu10Group</include>
+				<include condition="[system.hasloginscreen + !System.HasMediaDVD] | [!system.hasloginscreen + System.HasMediaDVD]">Objects_ButtonMenu11Group</include>
+				<include condition="system.hasloginscreen + System.HasMediaDVD">Objects_ButtonMenu12Group</include>
+				<texture>dialogs/context_middle.png</texture>
+			</control>
+
+			<control type="image">
+				<description>background bottom image</description>
+				<posx>0</posx>
+				<posy>429</posy>
+				<width>308</width>
+				<height>27</height>
+				<animation effect="slide" start="0,-39" end="0,-39" time="0" condition="![system.hasloginscreen | System.HasMediaDVD]">Conditional</animation>
+				<animation effect="slide" start="0,39" end="0,39" time="0" condition="system.hasloginscreen + System.HasMediaDVD">Conditional</animation>
+				<texture>dialogs/context_bottom.png</texture>
+			</control>
+
+			<control type="grouplist" id="4112">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>308</width>
+				<include condition="![system.hasloginscreen | System.HasMediaDVD]">Objects_ButtonMenu10Group</include>
+				<include condition="[system.hasloginscreen + !System.HasMediaDVD] | [!system.hasloginscreen + System.HasMediaDVD]">Objects_ButtonMenu11Group</include>
+				<include condition="system.hasloginscreen + System.HasMediaDVD">Objects_ButtonMenu12Group</include>
+				<itemgap>0</itemgap>
+				<orientation>vertical</orientation>
+				<onup>4112</onup>
+				<ondown>4112</ondown>
+				<onright>SetFocus(300)</onright>
+ 				<onleft>SetFocus(300)</onleft>
+				<onright>Dialog.Close(1111)</onright>
+				<onright>SetFocus(300)</onright>
+ 				<onleft>Dialog.Close(1111)</onleft>
+				<onleft>SetFocus(300)</onleft>
+
+				<control type="togglebutton" id="812">
+					<description>Sections Only</description>
+					<label>Media Sections Only: OFF</label>
+					<altlabel>Media Sections Only: ON</altlabel>
+					<include>Objects_ContextMenuButton</include>
+					<onclick>Skin.ToggleSetting(SectionsMenu)</onclick>
+					<usealttexture>Skin.HasSetting(SectionsMenu)</usealttexture>
+					<include condition="Skin.HasSetting(NoZoom)">AnimationNoZoomContext</include>
+					<include condition="!Skin.HasSetting(NoZoom)">AnimationZoomContext</include>
+				</control>
+
+				<control type="button" id="801">
+					<description>Settings</description>
+					<label>31200</label>
+					<include>Objects_ContextMenuButton</include>
+					<onclick>Dialog.Close(1111)</onclick>
+					<onclick>XBMC.ActivateWindow(4)</onclick>
+					<include condition="Skin.HasSetting(NoZoom)">AnimationNoZoomContext</include>
+					<include condition="!Skin.HasSetting(NoZoom)">AnimationZoomContext</include>
+				</control>
+
+				<control type="button" id="802">
+					<description>Customise</description>
+					<label>31201</label>
+					<include>Objects_ContextMenuButton</include>
+					<onclick>Dialog.Close(1111)</onclick>
+					<onclick>XBMC.ActivateWindow(1604)</onclick>
+					<include condition="Skin.HasSetting(NoZoom)">AnimationNoZoomContext</include>
+					<include condition="!Skin.HasSetting(NoZoom)">AnimationZoomContext</include>
+				</control>
+
+<!--
+				<control type="button" id="811">
+					<description>File Manager</description>
+					<label>10003</label>
+					<include>Objects_ContextMenuButton</include>
+					<onclick>XBMC.ActivateWindow(3)</onclick>
+					<include condition="Skin.HasSetting(NoZoom)">AnimationNoZoomContext</include>
+					<include condition="!Skin.HasSetting(NoZoom)">AnimationZoomContext</include>
+				</control>
+-->
+				<control type="togglebutton" id="804">
+					<description>Custom Script</description>
+					<label>$INFO[Skin.String(ContextScriptName1)]</label>
+					<onclick>Plex.RunScript($INFO[Skin.String(Contextscript1)])</onclick>
+					<include>Objects_ContextMenuButton</include>
+					<include condition="Skin.HasSetting(NoZoom)">AnimationNoZoomContext</include>
+					<include condition="!Skin.HasSetting(NoZoom)">AnimationZoomContext</include>
+					<visible>Skin.HasSetting(ContextScriptOn1)</visible>
+				</control>
+
+				<control type="button" id="805">
+					<description>Now Playing</description>
+					<label>31205</label>
+					<include>Objects_ContextMenuButton</include>
+					<onclick>Dialog.Close(1111)</onclick>
+					<onclick>XBMC.ActivateWindow(500)</onclick>
+					<include condition="Skin.HasSetting(NoZoom)">AnimationNoZoomContext</include>
+					<include condition="!Skin.HasSetting(NoZoom)">AnimationZoomContext</include>
+				</control>
+
+				<control type="button" id="810">
+					<description>Eject Tray</description>
+					<label>31210</label>
+					<include>Objects_ContextMenuButton</include>
+					<onclick>EjectTray()</onclick>
+					<visible>System.HasMediaDVD</visible>
+					<include condition="Skin.HasSetting(NoZoom)">AnimationNoZoomContext</include>
+					<include condition="!Skin.HasSetting(NoZoom)">AnimationZoomContext</include>
+				</control>
+
+				<control type="button" id="808">
+					<description>Sleep Mac</description>
+					<label>31207</label>
+					<include>Objects_ContextMenuButton</include>
+					<onclick>Plex.Suspend()</onclick>
+					<include condition="Skin.HasSetting(NoZoom)">AnimationNoZoomContext</include>
+					<include condition="!Skin.HasSetting(NoZoom)">AnimationZoomContext</include>
+				</control>
+				<control type="button" id="803">
+					<description>ShutDown MAC</description>
+					<label>31202</label>
+					<include>Objects_ContextMenuButton</include>
+					<onclick>Dialog.Close(1111)</onclick>
+					<onclick>Plex.Powerdown()</onclick>
+					<include condition="Skin.HasSetting(NoZoom)">AnimationNoZoomContext</include>
+					<include condition="!Skin.HasSetting(NoZoom)">AnimationZoomContext</include>
+				</control>
+
+				<control type="button" id="806">
+					<description>Shutdown Timer</description>
+					<label>31206</label>
+					<include>Objects_ContextMenuButton</include>
+					<onclick>AlarmClock(,Shutdown,)</onclick>
+					<include condition="Skin.HasSetting(NoZoom)">AnimationNoZoomContext</include>
+					<include condition="!Skin.HasSetting(NoZoom)">AnimationZoomContext</include>
+				</control>
+
+				<control type="button" id="807">
+					<description>Log Out</description>
+					<label>31209</label>
+					<include>Objects_ContextMenuButton</include>
+					<onclick>System.LogOff</onclick>
+					<visible>system.hasloginscreen</visible>
+					<include condition="Skin.HasSetting(NoZoom)">AnimationNoZoomContext</include>
+					<include condition="!Skin.HasSetting(NoZoom)">AnimationZoomContext</include>
+				</control>
+				<control type="button" id="815">
+					<description>Reboot Mac</description>
+					<label>31965</label>
+					<include>Objects_ContextMenuButton</include>
+					<onclick>Reboot</onclick>
+					<include condition="Skin.HasSetting(NoZoom)">AnimationNoZoomContext</include>
+					<include condition="!Skin.HasSetting(NoZoom)">AnimationZoomContext</include>
+				</control>
+
+				<control type="button" id="809">
+					<description>Quit Plex</description>
+					<label>31208</label>
+					<include>Objects_ContextMenuButton</include>
+					<onclick>Shutdown</onclick>
+					<include condition="Skin.HasSetting(NoZoom)">AnimationNoZoomContext</include>
+					<include condition="!Skin.HasSetting(NoZoom)">AnimationZoomContext</include>
+				</control>
+				<control type="button" id="813">
+					<description>Exit Menu</description>
+					<label>Right or Left to Exit</label>
+					<include>Objects_ContextMenuButton</include>
+					<onclick>Dialog.Close(1111)</onclick>
+					<include condition="Skin.HasSetting(NoZoom)">AnimationNoZoomContext</include>
+					<include condition="!Skin.HasSetting(NoZoom)">AnimationZoomContext</include>
+				</control>
+
+			</control>
+
+		</control>
+
+	</controls>
+</window>

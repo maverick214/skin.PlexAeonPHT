@@ -1,0 +1,1 @@
+here's the fallback cdArt image if there's no cdArt for the playing album. 

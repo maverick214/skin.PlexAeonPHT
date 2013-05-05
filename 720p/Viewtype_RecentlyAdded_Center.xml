@@ -1,0 +1,1222 @@
+<includes>
+  <include name="OnDown11003">
+     <visible>Control.HasFocus(11003)</visible>
+  </include>
+
+  <include name="OnDown11002">
+      <visible>Control.HasFocus(11002)</visible>
+  </include>
+
+  <include name="OnDown11000or11001">
+      <visible>Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(451)</visible>
+  </include>
+  
+  <include name="OnDown11003or11004">
+      <visible>Control.HasFocus(11003) | Control.HasFocus(11004) | Control.HasFocus(451)</visible>
+  </include>
+
+	<include name="Viewtype_RecentlyAdded_Center">
+
+  		<control type="button" id="451">
+			<onfocus>SetFocus(300)</onfocus>
+			<visible>[Control.IsVisible(11000) + !Control.IsVisible(11001)] | [!Control.IsVisible(11000) + Control.IsVisible(11001)]</visible>
+		</control>
+
+		<control type="button" id="451">
+			<onfocus>SetFocus(11000)</onfocus>
+			<onfocus>Skin.ToggleSetting(OnDeckBottom)</onfocus>
+			<visible>!Skin.HasSetting(OnDeckBottom) + [Control.IsVisible(11000) | Control.IsVisible(11001)]</visible>
+		</control>
+
+		<control type="button" id="451">
+			<onfocus>SetFocus(11001)</onfocus>
+			<onfocus>Skin.Reset(OnDeckBottom)</onfocus>
+			<visible>Skin.HasSetting(OnDeckBottom) + [Control.IsVisible(11000) | Control.IsVisible(11001)]</visible>
+		</control>
+		<control type="button" id="451">
+			<onfocus>SetFocus(11004)</onfocus>
+			<onfocus>Skin.ToggleSetting(OnDeckBottom)</onfocus>
+			<visible>!Skin.HasSetting(OnDeckBottom) + Control.IsVisible(11004) + Control.HasFocus(11003)</visible>
+		</control>
+
+		<control type="button" id="451">
+			<onfocus>SetFocus(11003)</onfocus>
+			<onfocus>Skin.Reset(OnDeckBottom)</onfocus>
+			<visible>Skin.HasSetting(OnDeckBottom) + Control.HasFocus(11004) + Control.IsVisible(11003)</visible>
+		</control>
+
+
+	<control type="group">
+			<posx>15</posx>
+
+
+<!-- Channels for 11002 -->
+
+	<control type="group">
+			<animation effect="fade" start="100" end="80" time="0" condition="!Control.HasFocus(11002)">Conditional</animation>
+			<visible>!Skin.HasSetting(MovieTVOnlyPopup)</visible>
+
+	<control type="group">
+			<posy>0</posy>
+			<visible>!Skin.HasSetting(MovieTVOnlyPopup)</visible>
+			<visible>Control.IsVisible(11002) + Control.IsVisible(87)</visible>
+			<animation effect="fade" start="0" end="100" time="400">Visible</animation>
+			<animation effect="fade" end="0" time="0" delay="0">Hidden</animation>
+			<posy>150</posy>
+			<include>Animation_CommonFade</include>
+			<include condition="Skin.HasSetting(OnDownRecentlyAdded)">OnDown11002</include>
+
+		<control type="largeimage">
+			<posx>460</posx>
+			<posy>419</posy>
+			<width>440</width>
+			<height>20</height>
+			<texture flipx="true">common/rssbar_mid.png</texture>
+			<visible>!Control.HasFocus(11002) + Control.IsVisible(11002)</visible>
+		</control>
+		<control type="largeimage">
+			<posx>460</posx>
+			<posy>419</posy>
+			<width>440</width>
+			<height>20</height>
+			<texture flipx="true">common/newpanel_mid.png</texture>
+			<animation effect="fade" start="100" end="0" time="700">Hidden</animation>
+			<visible>Control.HasFocus(11002) + Control.IsVisible(11002)</visible>
+		</control>
+		<control type="label">
+			<posx>870</posx>
+			<posy>420</posy>
+			<width>400</width>
+			<font>Font_RecentlyAdded</font>
+			<align>right</align>
+			<label>[COLOR FFFFFFFF][UPPERCASE]RECENTLY USED[/UPPERCASE][/COLOR]</label>
+			<visible>Control.IsVisible(11002)</visible>
+		</control>
+				
+		<control type="fixedlist" id="11002">
+			<posx>20</posx>
+			<posy>214</posy>
+			<height>615</height>
+			<width>1200</width>
+			<onleft>11002</onleft>
+			<onright>11002</onright>
+			<onup>300</onup>
+			<ondown>300</ondown>
+			<viewtype label="Poster Half">list</viewtype>
+			<orientation>horizontal</orientation>
+			<focusposition>0</focusposition>
+			<scrolltime>400</scrolltime>
+			<preloaditems>2</preloaditems>
+			<animation effect="zoom" center="auto" start="100" end="45" time="0" condition="true">Conditional</animation>
+			<visible>!Skin.HasSetting(MovieTVOnlyPopup)</visible>
+			<itemlayout width="240" height="245">
+				<control type="group">
+				<posx>145</posx>
+				<posy>0</posy>
+
+					<control type="largeimage">
+						<posx>-145</posx>
+						<posy>131</posy>
+						<width>205</width>
+						<height>205</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true">$INFO[ListItem.Icon]</texture>
+						<fadetime>200</fadetime>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>true</visible>
+					</control>
+
+				</control>
+				</itemlayout>
+			<focusedlayout width="270" height="515">
+				<control type="group">
+				<posx>144</posx>
+				<posy>0</posy>
+
+					<control type="largeimage">
+						<posx>-145</posx>
+						<posy>115</posy>
+						<width>205</width>
+						<height>205</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true">$INFO[ListItem.Icon]</texture>
+						<fadetime>200</fadetime>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" center="auto" start="80" end="130" time="600" tween="back" easing="out" />
+						</animation>
+						<visible>true</visible>
+					</control>
+			</control>	
+			</focusedlayout>
+		</control>
+	</control>
+	</control>
+
+<!-- Queue for 11003-->
+
+
+
+			  <!-- Queue -->
+		<control type="group">
+			<visible>Control.IsVisible(11003) + Control.IsVisible(87)</visible>
+			<animation effect="slide" start="0,0" end="0,150" time="1000" tween="cubic" easing="inout" condition="Skin.HasSetting(OnDeckBottom)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-150" time="0" tween="cubic" easing="inout" condition="Skin.HasSetting(OnDeckBottom) + !Control.IsVisible(11004)">Conditional</animation>
+			<animation effect="fade" start="0" end="100" delay="200" time="400">Visible</animation>
+			<animation effect="fade" end="0" time="0" delay="0">Hidden</animation>
+			<animation effect="fade" start="100" end="80" time="0" condition="Control.HasFocus(11004) | !Control.HasFocus(11003)">Conditional</animation>
+			<include>Animation_CommonFade</include>
+			<include condition="Skin.HasSetting(OnDownRecentlyAdded)">OnDown11003or11004</include>
+<!--
+		<control type="largeimage">
+			<posx>460</posx>
+			<posy>419</posy>
+			<width>440</width>
+			<height>20</height>
+			<texture flipx="true">common/rssbar_mid.png</texture>
+			<visible>!Control.HasFocus(11003)</visible>
+		</control>
+		<control type="largeimage">
+			<posx>460</posx>
+			<posy>419</posy>
+			<width>440</width>
+			<height>20</height>
+			<texture flipx="true">common/newpanel_mid.png</texture>
+			<animation effect="fade" start="100" end="0" time="700">Hidden</animation>
+			<visible>Control.HasFocus(11003)</visible>
+		</control>
+		<control type="label">
+			<posx>870</posx>
+			<posy>420</posy>
+			<width>400</width>
+			<font>Font_RecentlyAdded</font>
+			<align>right</align>
+			<label>[COLOR FFFFFFFF][UPPERCASE]Queue[/UPPERCASE][/COLOR]</label>
+			<visible>Control.IsVisible(11003)</visible>
+		</control>
+-->
+<!--
+					<control type="largeimage">
+						<posx>200</posx>
+						<posy>200</posy>
+						<width>168</width>
+						<height>241</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="movie-poster/posterview_diffuse.png">$INFO[ListItem.Icon]</texture>
+						<fadetime>200</fadetime>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>ListItem.Type(movie)</visible>
+					</control>
+					<control type="largeimage">
+						<posx>200</posx>
+						<posy>200</posy>
+						<width>168</width>
+						<height>241</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="movie-poster/posterview_diffuse.png">$INFO[ListItem.Icon]</texture>
+						<fadetime>200</fadetime>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>ListItem.Type(episode)</visible>
+					</control>
+-->
+			  	
+		<control type="fixedlist" id="11003">
+			<visible allowhiddenfocus="false">false</visible>
+			<posx>320</posx>
+			<posy>450</posy>
+			<height>615</height>
+			<width>580</width>
+			<onleft>11003</onleft>
+			<onright>11003</onright>
+			<onup>300</onup>
+			<ondown>451</ondown>
+			<viewtype label="Poster Half">list</viewtype>
+			<orientation>horizontal</orientation>
+			<focusposition>0</focusposition>
+			<scrolltime>400</scrolltime>
+			<itemlayout width="150" height="140">
+
+					<control type="largeimage">
+						<width>110</width>
+						<height>110</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="movie-poster/posterview_diffuse.png">$INFO[ListItem.Icon]</texture>
+						<fadetime>200</fadetime>
+						<aspectratio scalediffuse="false" align="bottom">scale</aspectratio>
+						<visible>true</visible>
+					</control>
+
+				</itemlayout>
+
+			<focusedlayout width="150" height="615">
+
+					<control type="largeimage">
+						<width>110</width>
+						<height>110</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="movie-poster/posterview_diffuse.png">$INFO[ListItem.Icon]</texture>
+						<fadetime>200</fadetime>
+						<aspectratio scalediffuse="false" align="bottom">scale</aspectratio>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" center="auto" start="80" end="130" time="600" tween="back" easing="out" />
+						</animation>
+						<visible>true</visible>
+					</control>
+
+			</focusedlayout>
+		</control>
+	</control>
+
+				<!-- Recommended -->
+<!--
+		<control type="group">
+			<visible>Control.IsVisible(11004) + Control.IsVisible(87)</visible>
+			<animation effect="slide" start="0,0" end="0,-150" time="1000" tween="cubic" easing="inout" condition="Skin.HasSetting(OnDeckBottom)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-150" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(OnDeckBottom) + !Control.IsVisible(11003)">Conditional</animation>
+			<animation effect="fade" end="0" time="0" delay="0">Hidden</animation>
+			<animation effect="fade" start="0" end="100" delay="200" time="400">Visible</animation>
+			<animation effect="fade" start="100" end="80" time="0" condition="Control.HasFocus(11003) | !Control.HasFocus(11004)">Conditional</animation>
+			<include>Animation_CommonFade</include>
+			<include condition="Skin.HasSetting(OnDownRecentlyAdded)">OnDown11003or11004</include>
+
+		<control type="largeimage">
+			<posx>460</posx>
+			<posy>569</posy>
+			<width>440</width>
+			<height>20</height>
+			<texture flipx="true">common/rssbar_mid.png</texture>
+			<visible>!Control.HasFocus(11004) + Control.IsVisible(87)</visible>
+		</control>
+		<control type="largeimage">
+			<posx>460</posx>
+			<posy>569</posy>
+			<width>440</width>
+			<height>20</height>
+			<texture flipx="true">common/newpanel_mid.png</texture>
+			<visible>Control.HasFocus(11004) + Control.IsVisible(87)</visible>
+		</control>
+		<control type="label">
+			<posx>870</posx>
+			<posy>570</posy>
+			<width>400</width>
+			<font>Font_RecentlyAdded</font>
+			<align>right</align>
+			<visible>true</visible>
+			<label>[COLOR FFFFFFFF] RECOMMENDED[/COLOR]</label>
+			<visible>Control.IsVisible(11004) + Control.IsVisible(87)</visible>
+		</control>
+
+		<control type="fixedlist" id="11004">
+			<visible allowhiddenfocus="false">false</visible>
+			<posx>320</posx>
+			<posy>600</posy>
+			<height>615</height>
+			<width>580</width>
+			<onleft>11004</onleft>
+			<onright>11004</onright>
+			<onup>300</onup>
+			<ondown>451</ondown>
+			<viewtype label="Poster Half">list</viewtype>
+			<orientation>horizontal</orientation>
+			<focusposition>0</focusposition>
+			<scrolltime>400</scrolltime>
+			<itemlayout width="150" height="140">
+
+					<control type="largeimage">
+						<width>110</width>
+						<height>110</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="movie-poster/posterview_diffuse.png">$INFO[ListItem.Icon]</texture>
+						<fadetime>200</fadetime>
+						<aspectratio scalediffuse="false" align="bottom">scale</aspectratio>
+						<visible>true</visible>
+					</control>
+
+				</itemlayout>
+
+			<focusedlayout width="150" height="515">
+
+					<control type="largeimage">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>110</width>
+						<height>110</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="movie-poster/posterview_diffuse.png">$INFO[ListItem.Icon]</texture>
+						<fadetime>200</fadetime>
+						<aspectratio scalediffuse="false" align="bottom">scale</aspectratio>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" center="auto" start="80" end="130" time="600" tween="back" easing="out" />
+						</animation>
+						<visible>true</visible>
+					</control>
+
+			</focusedlayout>
+		</control>
+		</control>
+-->
+			  <!-- TV Movies ON DECK -->
+		<control type="group">
+			<visible>Control.IsVisible(11001) + [Container(11001).ListItem(0).Type(movie) | Container(11001).ListItem(0).Type(episode)] + Control.IsVisible(87)</visible>
+			<animation effect="slide" start="0,0" end="0,150" time="1000" tween="cubic" easing="inout" condition="Skin.HasSetting(OnDeckBottom)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-150" time="0" tween="cubic" easing="inout" condition="Skin.HasSetting(OnDeckBottom) + !Control.IsVisible(11000)">Conditional</animation>
+			<animation effect="fade" start="0" end="100" delay="200" time="400">Visible</animation>
+			<animation effect="fade" end="0" time="0" delay="0">Hidden</animation>
+			<animation effect="fade" start="100" end="80" time="0" condition="Control.HasFocus(11000) | !Control.HasFocus(11001)">Conditional</animation>
+			<include>Animation_CommonFade</include>
+			<include condition="Skin.HasSetting(OnDownRecentlyAdded)">OnDown11000or11001</include>
+
+		<control type="largeimage">
+			<posx>460</posx>
+			<posy>419</posy>
+			<width>440</width>
+			<height>20</height>
+			<texture flipx="true">common/rssbar_mid.png</texture>
+			<visible>!Control.HasFocus(11001)</visible>
+		</control>
+		<control type="largeimage">
+			<posx>460</posx>
+			<posy>419</posy>
+			<width>440</width>
+			<height>20</height>
+			<texture flipx="true">common/newpanel_mid.png</texture>
+			<animation effect="fade" start="100" end="0" time="700">Hidden</animation>
+			<visible>Control.HasFocus(11001)</visible>
+		</control>
+		<control type="label">
+			<posx>870</posx>
+			<posy>420</posy>
+			<width>400</width>
+			<font>Font_RecentlyAdded</font>
+			<align>right</align>
+			<label>[COLOR FFFFFFFF][UPPERCASE]In Progress[/UPPERCASE][/COLOR]</label>
+			<visible>Container(11001).ListItem(0).Type(movie) + Control.IsVisible(11001)</visible>
+		</control>
+		<control type="label">
+			<posx>870</posx>
+			<posy>420</posy>
+			<width>400</width>
+			<font>Font_RecentlyAdded</font>
+			<align>right</align>
+			<label>[COLOR FFFFFFFF][UPPERCASE]Next Episodes[/UPPERCASE][/COLOR]</label>
+			<visible>Container(11001).ListItem(0).Type(episode) + Control.IsVisible(11001)</visible>
+		</control>
+
+					<control type="largeimage">
+						<posx>200</posx>
+						<posy>200</posy>
+						<width>168</width>
+						<height>241</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="movie-poster/posterview_diffuse.png">$INFO[ListItem.Icon]</texture>
+						<fadetime>200</fadetime>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>ListItem.Type(movie)</visible>
+					</control>
+					<control type="largeimage">
+						<posx>200</posx>
+						<posy>200</posy>
+						<width>168</width>
+						<height>241</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="movie-poster/posterview_diffuse.png">$INFO[ListItem.Icon]</texture>
+						<fadetime>200</fadetime>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>ListItem.Type(episode)</visible>
+					</control>
+			  	
+		<control type="fixedlist" id="11001">
+			<visible allowhiddenfocus="false">false</visible>
+			<posx>70</posx>
+			<posy>221</posy>
+			<height>615</height>
+			<width>1100</width>
+			<onleft>11001</onleft>
+			<onright>11001</onright>
+			<onup>300</onup>
+			<ondown>451</ondown>
+			<viewtype label="Poster Half">list</viewtype>
+			<orientation>horizontal</orientation>
+			<focusposition>0</focusposition>
+			<scrolltime>400</scrolltime>
+			<preloaditems>2</preloaditems>
+			<animation effect="zoom" center="auto" start="100" end="50" time="0" condition="true">Conditional</animation>
+			<itemlayout width="176" height="245">
+				<control type="group">
+				<posx>154</posx>
+				<posy>0</posy>
+
+					<control type="largeimage">
+						<posx>-149</posx>
+						<posy>131</posy>
+						<width>168</width>
+						<height>241</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="movie-poster/posterview_diffuse.png">$INFO[ListItem.Icon]</texture>
+						<fadetime>200</fadetime>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>ListItem.Type(movie)</visible>
+					</control>
+					<control type="largeimage">
+						<posx>-149</posx>
+						<posy>131</posy>
+						<width>168</width>
+						<height>241</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="movie-poster/posterview_diffuse.png">$INFO[ListItem.GrandparentThumb]</texture>
+						<fadetime>200</fadetime>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>ListItem.Type(episode)</visible>
+					</control>
+					<control type="largeimage">
+						<posx>-150</posx>
+						<posy>135</posy>
+						<width>165</width>
+						<height>235</height>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+					    <texture>thumbs/poster_glass_noedge.png</texture>
+					</control>		
+
+				</control>
+				</itemlayout>
+			<focusedlayout width="220" height="515">
+				<control type="group">
+				<posx>144</posx>
+				<posy>0</posy>
+					<control type="largeimage">
+						<posx>-148</posx>
+						<posy>90</posy>
+						<width>211</width>
+						<height>300</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="movie-poster/posterview_diffuse.png">$INFO[ListItem.Icon]</texture>
+						<fadetime>200</fadetime>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" center="60,238" start="80" end="110" time="600" tween="back" easing="out" />
+						</animation>
+						<visible>ListItem.Type(movie)</visible>
+					</control>
+					<control type="largeimage">
+						<posx>-148</posx>
+						<posy>90</posy>
+						<width>211</width>
+						<height>300</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="movie-poster/posterview_diffuse.png">$INFO[ListItem.GrandparentThumb]</texture>
+						<fadetime>200</fadetime>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" center="60,238" start="80" end="110" time="600" tween="back" easing="out" />
+						</animation>
+						<visible>ListItem.Type(episode)</visible>
+					</control>
+					<control type="largeimage">
+						<posx>-112</posx>
+						<posy>118</posy>
+						<width>168</width>
+						<height>241</height>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+					    <texture>thumbs/poster_glass_noedge.png</texture>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" center="47,238" start="100" end="133" time="600" tween="back" easing="out" />
+						</animation>
+					</control>		
+			</control>	
+			</focusedlayout>
+		</control>
+	</control>
+
+				<!-- Recently Added (Not Albums) -->
+		<control type="group">
+			<visible>Control.IsVisible(11000) + [Container(11000).ListItem(0).Type(movie) | Container(11000).ListItem(0).Type(episode)] + Control.IsVisible(87)</visible>
+			<animation effect="slide" start="0,0" end="0,-150" time="1000" tween="cubic" easing="inout" condition="Skin.HasSetting(OnDeckBottom)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-150" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(OnDeckBottom) + !Control.IsVisible(11001)">Conditional</animation>
+			<animation effect="fade" end="0" time="0" delay="0">Hidden</animation>
+			<animation effect="fade" start="0" end="100" delay="200" time="400">Visible</animation>
+			<animation effect="fade" start="100" end="80" time="0" condition="Control.HasFocus(11001) | !Control.HasFocus(11000)">Conditional</animation>
+			<include>Animation_CommonFade</include>
+			<include condition="Skin.HasSetting(OnDownRecentlyAdded)">OnDown11000or11001</include>
+
+		<control type="largeimage">
+			<posx>460</posx>
+			<posy>569</posy>
+			<width>440</width>
+			<height>20</height>
+			<texture flipx="true">common/rssbar_mid.png</texture>
+			<visible>[Container(11000).ListItem(0).Type(movie) | Container(11000).ListItem(0).Type(episode)] + !Control.HasFocus(11000) + Control.IsVisible(87)</visible>
+		</control>
+		<control type="largeimage">
+			<posx>460</posx>
+			<posy>569</posy>
+			<width>440</width>
+			<height>20</height>
+			<texture flipx="true">common/newpanel_mid.png</texture>
+			<visible>[Container(11000).ListItem(0).Type(movie) | Container(11000).ListItem(0).Type(episode)] + Control.HasFocus(11000) + Control.IsVisible(87)</visible>
+		</control>
+
+		<control type="label">
+			<posx>870</posx>
+			<posy>570</posy>
+			<width>400</width>
+			<font>Font_RecentlyAdded</font>
+			<align>right</align>
+			<visible>true</visible>
+			<label>[COLOR FFFFFFFF]LATEST MOVIES[/COLOR]</label>
+			<visible>Container(11000).ListItem(0).Type(movie) + Control.IsVisible(11000) + Control.IsVisible(87)</visible>
+		</control>
+
+		<control type="label">
+			<posx>870</posx>
+			<posy>570</posy>
+			<width>400</width>
+			<font>Font_RecentlyAdded</font>
+			<align>right</align>
+			<visible>true</visible>
+			<label>[COLOR FFFFFFFF]LATEST EPISODES[/COLOR]</label>
+			<visible>Container(11000).ListItem(0).Type(episode) + Control.IsVisible(11000) + Control.IsVisible(87)</visible>
+		</control>
+
+		<control type="fixedlist" id="11000">
+			<visible>!Container(11000).ListItem(0).Type(album)</visible>
+			<posx>70</posx>
+			<posy>371</posy>
+			<height>615</height>
+			<width>1100</width>
+			<onleft>11000</onleft>
+			<onright>11000</onright>
+			<onup>300</onup>
+			<ondown>451</ondown>
+			<viewtype label="Poster Half">list</viewtype>
+			<orientation>horizontal</orientation>
+			<focusposition>0</focusposition>
+			<scrolltime>400</scrolltime>
+			<pagecontrol>665</pagecontrol>
+			<include>Animation_HiddenByInfo</include>
+			<animation effect="zoom" center="auto" start="100" end="50" time="0" condition="true">Conditional</animation>
+			<itemlayout width="176" height="245">
+				<control type="group">
+				<posx>154</posx>
+				<posy>0</posy>
+
+					<control type="largeimage">
+						<posx>-149</posx>
+						<posy>131</posy>
+						<width>168</width>
+						<height>241</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="movie-poster/posterview_diffuse.png">$INFO[ListItem.Icon]</texture>
+						<fadetime>200</fadetime>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>ListItem.Type(movie)</visible>
+					</control>
+					<control type="largeimage">
+						<posx>-149</posx>
+						<posy>131</posy>
+						<width>168</width>
+						<height>241</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="movie-poster/posterview_diffuse.png">$INFO[ListItem.GrandparentThumb]</texture>
+						<fadetime>200</fadetime>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>ListItem.Type(episode)</visible>
+					</control>
+					<control type="largeimage">
+						<posx>-150</posx>
+						<posy>135</posy>
+						<width>165</width>
+						<height>235</height>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+					    <texture>thumbs/poster_glass_noedge.png</texture>
+					</control>		
+
+				</control>
+				</itemlayout>
+			<focusedlayout width="220" height="515">
+				<control type="group">
+				<posx>144</posx>
+				<posy>0</posy>
+
+					<control type="largeimage">
+						<posx>-148</posx>
+						<posy>90</posy>
+						<width>211</width>
+						<height>300</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="movie-poster/posterview_diffuse.png">$INFO[ListItem.Icon]</texture>
+						<fadetime>200</fadetime>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" center="60,238" start="80" end="110" time="600" tween="back" easing="out" />
+						</animation>
+						<visible>ListItem.Type(movie)</visible>
+					</control>
+					<control type="largeimage">
+						<posx>-148</posx>
+						<posy>90</posy>
+						<width>211</width>
+						<height>300</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="movie-poster/posterview_diffuse.png">$INFO[ListItem.GrandparentThumb]</texture>
+						<fadetime>200</fadetime>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" center="60,238" start="80" end="110" time="600" tween="back" easing="out" />
+						</animation>
+						<visible>ListItem.Type(episode)</visible>
+					</control>
+					<control type="largeimage">
+						<posx>-112</posx>
+						<posy>118</posy>
+						<width>168</width>
+						<height>241</height>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+					    <texture>thumbs/poster_glass_noedge.png</texture>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" center="47,238" start="100" end="133" time="600" tween="back" easing="out" />
+						</animation>
+					</control>		
+
+			</control>	
+			</focusedlayout>
+		</control>
+		</control>
+
+<!-- Recently Added Albums -->
+
+	<control type="group">
+			<posy>-150</posy>
+			<animation effect="fade" start="100" end="80" time="0" condition="[Control.IsVisible(11000)  + Container(11000).ListItem(0).Type(album)] + !Control.HasFocus(11000)">Conditional</animation>
+			<visible>!Skin.HasSetting(MovieTVOnlyPopup)</visible>
+			<include condition="Skin.HasSetting(OnDownRecentlyAdded)">OnDown11000or11001</include>
+
+		<control type="group">
+			<visible>Control.IsVisible(11000)  + Container(11000).ListItem(0).Type(album) + Control.IsVisible(87)</visible>
+			<animation effect="fade" end="0" time="0" delay="0">Hidden</animation>
+			<animation effect="fade" start="0" end="100" time="400">Visible</animation>
+			<posy>150</posy>
+			<include>Animation_CommonFade</include>
+
+		<control type="largeimage">
+			<posx>460</posx>
+			<posy>419</posy>
+			<width>440</width>
+			<height>20</height>
+			<texture flipx="true">common/rssbar_mid.png</texture>
+			<visible>!Control.HasFocus(11000)</visible>
+		</control>
+		<control type="largeimage">
+			<posx>460</posx>
+			<posy>419</posy>
+			<width>440</width>
+			<height>20</height>
+			<texture flipx="true">common/newpanel_mid.png</texture>
+			<visible>Control.HasFocus(11000)</visible>
+		</control>
+
+		<control type="label">
+			<posx>870</posx>
+			<posy>420</posy>
+			<width>400</width>
+			<font>Font_RecentlyAdded</font>
+			<align>right</align>
+			<visible>true</visible>
+			<label>[COLOR FFFFFFFF]LATEST ALBUMS[/COLOR]</label>
+			<visible>Container(11000).ListItem(0).Type(album) + Control.IsVisible(11000)</visible>
+		</control>
+
+				
+		<control type="fixedlist" id="11000">
+			<visible>!Skin.HasSetting(MovieTVOnlyPopup)</visible>
+			<posx>20</posx>
+			<posy>214</posy>
+			<height>615</height>
+			<width>1200</width>
+			<onleft>11000</onleft>
+			<onright>11000</onright>
+			<onup>300</onup>
+			<ondown>300</ondown>
+			<viewtype label="Poster Half">list</viewtype>
+			<orientation>horizontal</orientation>
+			<focusposition>0</focusposition>
+			<scrolltime>400</scrolltime>
+			<preloaditems>2</preloaditems>
+			<animation effect="zoom" center="auto" start="100" end="45" time="0" condition="true">Conditional</animation>
+			<itemlayout width="240" height="245">
+				<control type="group">
+				<posx>144</posx>
+				<posy>0</posy>
+
+					<control type="largeimage">
+						<posx>-149</posx>
+						<posy>131</posy>
+						<width>220</width>
+						<height>220</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="movie-poster/posterview_diffuse.png">$INFO[ListItem.Icon]</texture>
+						<fadetime>200</fadetime>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>true</visible>
+					</control>
+
+				</control>
+				</itemlayout>
+			<focusedlayout width="270" height="515">
+				<control type="group">
+				<posx>144</posx>
+				<posy>0</posy>
+
+					<control type="largeimage">
+						<posx>-148</posx>
+						<posy>115</posy>
+						<width>210</width>
+						<height>210</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="movie-poster/posterview_diffuse.png">$INFO[ListItem.Icon]</texture>
+						<fadetime>200</fadetime>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" center="auto" start="80" end="130" time="600" tween="back" easing="out" />
+						</animation>
+						<visible>true</visible>
+					</control>
+			</control>	
+			</focusedlayout>
+		</control>
+		</control>
+		</control>
+		
+		<!-- Browser label and flags -->
+		
+		<control type="group">
+			<visible>Control.HasFocus(11001) | Control.HasFocus(11000) | Control.HasFocus(11003) | Control.HasFocus(11004) | Control.HasFocus(451)</visible>
+			<animation effect="fade" start="0" end="100" time="200" delay="1300">Visible</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+
+<!-- Extra Icons -->
+
+		<control type="group">
+			<visible>!Container(11000).ListItem(0).Type(album)</visible>
+			<include>Animation_CommonFade</include>
+
+ 					<control type="largeimage">
+   		         	  <posx>127.5</posx>
+       		       	  <posy>120</posy>
+    	           	  <width>181</width>
+        	       	  <height>248</height>
+                   	  <aspectratio scalediffuse="false">stretch</aspectratio>
+                   	  <fadetime>700</fadetime>
+                   	  <texture fallback="thumbs/boxes/default_case.png">thumbs/boxes/movies/$INFO[Container(11001).ListItem(0).Property(mediaTag-videoResolution)].png</texture>
+					  <visible>Control.HasFocus(11001)</visible>
+        	    	</control>
+
+ 					<control type="largeimage">
+   		         	  <posx>127.5</posx>
+       		       	  <posy>120</posy>
+    	           	  <width>181</width>
+        	       	  <height>248</height>
+                   	  <aspectratio scalediffuse="false">stretch</aspectratio>
+                   	  <fadetime>700</fadetime>
+                   	  <texture background="true" fallback="thumbs/boxes/default_case.png">thumbs/boxes/movies/$INFO[Container(11000).ListItem(0).Property(mediaTag-videoResolution)].png</texture>
+					  <visible>Control.HasFocus(11000)</visible>
+        	    	</control>
+
+					<control type="largeimage">
+						<posx>131</posx>
+						<posy>149</posy>
+						<width>162</width>
+						<height>200</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="thumbs/boxes/case_mask.png">$INFO[Container(11001).ListItem(0).Icon]</texture>
+						<fadetime>700</fadetime>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>Container(11001).ListItem(0).Type(movie)</visible>
+						<visible>Control.HasFocus(11001)</visible>
+					</control>
+					<control type="largeimage">
+						<posx>131</posx>
+						<posy>149</posy>
+						<width>162</width>
+						<height>200</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="thumbs/boxes/case_mask.png">$INFO[Container(11001).ListItem(0).GrandparentThumb]</texture>
+						<fadetime>700</fadetime>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>Container(11001).ListItem(0).Type(episode)</visible>
+						<visible>Control.HasFocus(11001)</visible>
+					</control>
+
+					<control type="largeimage">
+						<posx>131</posx>
+						<posy>149</posy>
+						<width>162</width>
+						<height>200</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="thumbs/boxes/case_mask.png">$INFO[Container(11000).ListItem(0).Icon]</texture>
+						<fadetime>700</fadetime>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>Container(11000).ListItem(0).Type(movie)</visible>
+						<visible>Control.HasFocus(11000)</visible>
+					</control>
+					<control type="largeimage">
+						<posx>131</posx>
+						<posy>149</posy>
+						<width>162</width>
+						<height>200</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="thumbs/boxes/case_mask.png">$INFO[Container(11000).ListItem(0).GrandparentThumb]</texture>
+						<fadetime>700</fadetime>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>Container(11000).ListItem(0).Type(episode)</visible>
+						<visible>Control.HasFocus(11000)</visible>
+					</control>
+					<control type="largeimage">
+   		         	  <posx>132</posx>
+       		       	  <posy>123</posy>
+    	           	  <width>168</width>
+        	       	  <height>235</height>
+                   	  <aspectratio scalediffuse="false">stretch</aspectratio>
+                   	  <fadetime>700</fadetime>
+                   	  <texture background="true">thumbs/boxes/dvd3.png</texture>
+					  <visible>Control.HasFocus(11001) | Control.HasFocus(11000)</visible>
+        	    	</control>
+			</control>
+
+<!-- Extra Icons for Queue and Recommendations and Albums--->
+
+					<control type="largeimage">
+						<posx>40</posx>
+						<posy>120</posy>
+						<width>270</width>
+						<height>200</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="thumbs/boxes/case_mask.png">$INFO[Container(11003).ListItem(0).Icon]</texture>
+						<fadetime>700</fadetime>
+						<aspectratio scalediffuse="false" align="top">keep</aspectratio>
+						<visible>Control.HasFocus(11003)</visible>
+					</control>
+
+					<control type="largeimage">
+						<posx>40</posx>
+						<posy>120</posy>
+						<width>270</width>
+						<height>200</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="thumbs/boxes/case_mask.png">$INFO[Container(11004).ListItem(0).Icon]</texture>
+						<fadetime>700</fadetime>
+						<aspectratio scalediffuse="false" align="top">keep</aspectratio>
+						<visible>Control.HasFocus(11004)</visible>
+					</control>
+
+					<control type="largeimage">
+						<posx>40</posx>
+						<posy>120</posy>
+						<width>270</width>
+						<height>200</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="thumbs/boxes/case_mask.png">$INFO[Container(11000).ListItem(0).Icon]</texture>
+						<fadetime>700</fadetime>
+						<aspectratio scalediffuse="false" align="top">keep</aspectratio>
+						<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(album)</visible>
+					</control>
+
+
+
+<!-- Titles and Plots -->
+
+		<control type="group">
+				<posx>30</posx>
+				<posy>-20</posy>
+				<include>Animation_CommonFade</include>
+
+			<control type="label">
+				<posx>310</posx>
+				<posy>140</posy>
+				<width>610</width>
+				<height>70</height>
+				<align>justify</align>
+				<font>Font_Bold24</font>
+				<textcolor>FFe1e1e1</textcolor>
+				<label>[UPPERCASE]$INFO[Container(11001).ListItem(0).Label][/UPPERCASE]</label>
+				<visible>Control.HasFocus(11001) + Container(11001).ListItem(0).Type(movie)</visible>
+			</control>
+
+			<control type="label">
+				<posx>310</posx>
+				<posy>140</posy>
+				<width>610</width>
+				<height>70</height>
+				<align>justify</align>
+				<font>Font_Bold24</font>
+				<textcolor>FFe1e1e1</textcolor>
+				<label>[UPPERCASE]$INFO[Container(11000).ListItem(0).Label][/UPPERCASE]</label>
+				<visible>Control.HasFocus(11000) + [Container(11000).ListItem(0).Type(movie) | Container(11000).ListItem(0).Type(album)]</visible>
+			</control>
+
+			<control type="label">
+				<posx>310</posx>
+				<posy>140</posy>
+				<width>610</width>
+				<height>20</height>
+				<align>justify</align>
+				<font>Font_Bold24</font>
+				<textcolor>FFe1e1e1</textcolor>
+	            <label>[UPPERCASE]$INFO[Container(11001).ListItem(0).TVShowTitle][/UPPERCASE]</label>
+				<visible>Control.HasFocus(11001) + Container(11001).ListItem(0).Type(episode)</visible>
+			</control>
+			<control type="label">
+				<posx>310</posx>
+				<posy>165</posy>
+				<width>610</width>
+				<height>20</height>
+				<align>justify</align>
+				<font>Font_Bold24</font>
+				<textcolor>FFe1e1e1</textcolor>
+	            <label>[UPPERCASE]$INFO[Container(11001).ListItem(0).Season].$INFO[Container(11001).ListItem(0).Episode] $INFO[Container(11001).ListItem(0).Label][/UPPERCASE]</label>
+				<visible>Control.HasFocus(11001) + Container(11001).ListItem(0).Type(episode)</visible>
+			</control>
+
+			<control type="label">
+				<posx>310</posx>
+				<posy>140</posy>
+				<width>610</width>
+				<height>20</height>
+				<align>justify</align>
+				<font>Font_Bold24</font>
+				<textcolor>FFe1e1e1</textcolor>
+	            <label>[UPPERCASE]$INFO[Container(11000).ListItem(0).TVShowTitle][/UPPERCASE]</label>
+				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(episode)</visible>
+			</control>
+			<control type="label">
+				<posx>310</posx>
+				<posy>165</posy>
+				<width>610</width>
+				<height>20</height>
+				<align>justify</align>
+				<font>Font_Bold24</font>
+				<textcolor>FFe1e1e1</textcolor>
+	            <label>[UPPERCASE]$INFO[Container(11000).ListItem(0).Season].$INFO[Container(11000).ListItem(0).Episode] $INFO[Container(11000).ListItem(0).Label][/UPPERCASE]</label>
+				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(episode)</visible>
+			</control>
+
+			<control type="label">
+				<posx>310</posx>
+				<posy>180</posy>
+				<width>660</width>
+				<height>70</height>
+				<align>left</align>
+				<font>Font_RSS_Big</font>
+				<textcolor>ffffffff</textcolor>
+                <label>$INFO[Container(11000).ListItem(0).Artist] $INFO[Container(11000).ListItem(0).Year]</label>
+				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(album)</visible>
+			</control>
+
+		<control type="label">
+				<posx>310</posx>
+				<posy>140</posy>
+				<width>610</width>
+				<height>70</height>
+				<align>justify</align>
+				<font>Font_Bold24</font>
+				<textcolor>FFe1e1e1</textcolor>
+				<label>[UPPERCASE]$INFO[Container(11003).ListItem(0).Label][/UPPERCASE]</label>
+				<visible>Control.HasFocus(11003)</visible>
+			</control>
+
+		<control type="label">
+				<posx>310</posx>
+				<posy>140</posy>
+				<width>610</width>
+				<height>70</height>
+				<align>justify</align>
+				<font>Font_Bold24</font>
+				<textcolor>FFe1e1e1</textcolor>
+				<label>[UPPERCASE]$INFO[Container(11004).ListItem(0).Label][/UPPERCASE]</label>
+				<visible>Control.HasFocus(11004)</visible>
+			</control>
+
+<!-- Movie -->
+			<control type="label">
+				<posx>310</posx>
+				<posy>180</posy>
+				<width>660</width>
+				<height>70</height>
+				<align>left</align>
+				<font>Font_RSS_Big</font>
+				<textcolor>ffffffff</textcolor>
+                <label>$INFO[Container(11001).ListItem(0).Year] • $INFO[Container(11001).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] • $INFO[Container(11001).ListItem(0).Rating] </label>
+				<visible>Control.HasFocus(11001) + Container(11001).ListItem(0).Type(movie) + !IsEmpty(Container(11001).ListItem(0).Rating)</visible>
+			</control>
+			<control type="label">
+				<posx>310</posx>
+				<posy>180</posy>
+				<width>660</width>
+				<height>70</height>
+				<align>left</align>
+				<font>Font_RSS_Big</font>
+				<textcolor>ffffffff</textcolor>
+                <label>$INFO[Container(11000).ListItem(0).Year] • $INFO[Container(11000).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] • $INFO[Container(11000).ListItem(0).Rating] </label>
+				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(movie) + !IsEmpty(Container(11000).ListItem(0).Rating)</visible>
+			</control>
+
+			<control type="label">
+				<posx>310</posx>
+				<posy>180</posy>
+				<width>660</width>
+				<height>70</height>
+				<align>left</align>
+				<font>Font_RSS_Big</font>
+				<textcolor>ffffffff</textcolor>
+                <label>$INFO[Container(11001).ListItem(0).Year] • $INFO[Container(11001).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] </label>
+				<visible>Control.HasFocus(11001) + Container(11001).ListItem(0).Type(movie) + IsEmpty(Container(11001).ListItem(0).Rating)</visible>
+			</control>
+			<control type="label">
+				<posx>310</posx>
+				<posy>180</posy>
+				<width>660</width>
+				<height>70</height>
+				<align>left</align>
+				<font>Font_RSS_Big</font>
+				<textcolor>ffffffff</textcolor>
+                <label>$INFO[Container(11000).ListItem(0).Year] • $INFO[Container(11000).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] </label>
+				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(movie) + IsEmpty(Container(11000).ListItem(0).Rating)</visible>
+			</control>
+
+<!-- Queue and Recommends -->
+			<control type="label">
+				<posx>310</posx>
+				<posy>195</posy>
+				<width>660</width>
+				<height>70</height>
+				<align>left</align>
+				<font>Font_RSS_Big</font>
+          		<textcolor>abFFFFFF</textcolor>
+                <label>$INFO[Container(11003).ListItem(0).Date] • $INFO[Container(11003).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] • $INFO[Container(11003).ListItem(0).Rating] </label>
+				<visible>Control.HasFocus(11003) + !IsEmpty(Container(11003).ListItem(0).Rating)</visible>
+			</control>
+
+			<control type="label">
+				<posx>310</posx>
+				<posy>195</posy>
+				<width>660</width>
+				<height>70</height>
+				<align>left</align>
+				<font>Font_RSS_Big</font>
+          		<textcolor>abFFFFFF</textcolor>
+                <label>$INFO[Container(11003).ListItem(0).Date] • $INFO[Container(11003).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE]</label>
+				<visible>Control.HasFocus(11003) + IsEmpty(Container(11003).ListItem(0).Rating)</visible>
+			</control>
+
+			<control type="label">
+				<posx>310</posx>
+				<posy>195</posy>
+				<width>660</width>
+				<height>70</height>
+				<align>left</align>
+				<font>Font_RSS_Big</font>
+          		<textcolor>abFFFFFF</textcolor>
+                <label>$INFO[Container(11004).ListItem(0).Date] • $INFO[Container(11004).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] • $INFO[Container(11004).ListItem(0).Rating] • Recommended by $INFO[Container(11004).ListItem(0).Property(Recommender)]</label>
+				<visible>Control.HasFocus(11004) + !IsEmpty(Container(11004).ListItem(0).Rating)</visible>
+			</control>
+
+			<control type="label">
+				<posx>310</posx>
+				<posy>195</posy>
+				<width>660</width>
+				<height>70</height>
+				<align>left</align>
+				<font>Font_RSS_Big</font>
+          		<textcolor>abFFFFFF</textcolor>
+                <label>$INFO[Container(11004).ListItem(0).Date] • $INFO[Container(11004).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] • Recommended by $INFO[Container(11004).ListItem(0).Property(Recommender)]</label>
+				<visible>Control.HasFocus(11004) + IsEmpty(Container(11004).ListItem(0).Rating)</visible>
+			</control>
+
+<!-- TV Shows -->
+			<control type="label">
+				<posx>310</posx>
+				<posy>195</posy>
+				<width>660</width>
+				<height>70</height>
+				<align>left</align>
+				<font>Font_RSS_Big</font>
+          		<textcolor>abFFFFFF</textcolor>
+                <label>$INFO[Container(11001).ListItem(0).Date] • $INFO[Container(11001).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] • $INFO[Container(11001).ListItem(0).Rating] </label>
+				<visible>Control.HasFocus(11001) + Container(11001).ListItem(0).Type(episode) + !IsEmpty(Container(11001).ListItem(0).Rating)</visible>
+			</control>
+			<control type="label">
+				<posx>310</posx>
+				<posy>195</posy>
+				<width>660</width>
+				<height>70</height>
+				<align>left</align>
+				<font>Font_RSS_Big</font>
+          		<textcolor>abFFFFFF</textcolor>
+                <label>$INFO[Container(11000).ListItem(0).Date] • $INFO[Container(11000).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] • $INFO[Container(11000).ListItem(0).Rating] </label>
+				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(episode) + !IsEmpty(Container(11000).ListItem(0).Rating)</visible>
+			</control>
+
+			<control type="label">
+				<posx>310</posx>
+				<posy>195</posy>
+				<width>660</width>
+				<height>70</height>
+				<align>left</align>
+				<font>Font_RSS_Big</font>
+          		<textcolor>abFFFFFF</textcolor>
+                <label>$INFO[Container(11001).ListItem(0).Date] • $INFO[Container(11001).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] </label>
+				<visible>Control.HasFocus(11001) + Container(11001).ListItem(0).Type(episode) + IsEmpty(Container(11001).ListItem(0).Rating)</visible>
+			</control>
+			<control type="label">
+				<posx>310</posx>
+				<posy>195</posy>
+				<width>660</width>
+				<height>70</height>
+				<align>left</align>
+				<font>Font_RSS_Big</font>
+          		<textcolor>abFFFFFF</textcolor>
+                <label>$INFO[Container(11000).ListItem(0).Date] • $INFO[Container(11000).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] </label>
+				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(episode) + IsEmpty(Container(11000).ListItem(0).Rating)</visible>
+			</control>
+
+			<control type="textbox">
+				<description>Plot Movie</description>
+				<posx>310</posx>
+				<posy>220</posy>
+				<width>610</width>
+				<height>168</height>
+				<align>justify</align>
+				<label>$INFO[Container(11001).ListItem(0).Plot]</label>
+				<font>Font_Reg18</font>
+				<textcolor>ffffffff</textcolor>
+				<autoscroll time="3000" delay="5000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
+				<animation effect="slide" start="0,0" end="0,5" time="0" tween="cubic" easing="inout" condition="Container(11001).ListItem(0).Type(episode)">Conditional</animation>
+				<visible>Control.HasFocus(11001)</visible>
+			</control>
+			<control type="textbox">
+				<description>Plot Movie</description>
+				<posx>310</posx>
+				<posy>220</posy>
+				<width>610</width>
+				<height>168</height>
+				<align>justify</align>
+				<label>$INFO[Container(11000).ListItem(0).Plot]</label>
+				<font>Font_Reg18</font>
+				<textcolor>ffffffff</textcolor>
+				<autoscroll time="3000" delay="5000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
+				<animation effect="slide" start="0,0" end="0,5" time="0" tween="cubic" easing="inout" condition="Container(11000).ListItem(0).Type(episode)">Conditional</animation>
+				<visible>Control.HasFocus(11000)</visible>
+			</control>
+
+			<control type="textbox">
+				<description>Plot Queue</description>
+				<posx>310</posx>
+				<posy>220</posy>
+				<width>610</width>
+				<height>168</height>
+				<align>justify</align>
+				<label>$INFO[Container(11003).ListItem(0).Plot]</label>
+				<font>Font_Reg18</font>
+				<textcolor>ffffffff</textcolor>
+				<autoscroll time="3000" delay="5000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
+				<animation effect="slide" start="0,0" end="0,5" time="0" tween="cubic" easing="inout" condition="Container(11001).ListItem(0).Type(episode)">Conditional</animation>
+				<visible>Control.HasFocus(11003)</visible>
+			</control>
+			<control type="textbox">
+				<description>Plot Recommendations</description>
+				<posx>310</posx>
+				<posy>220</posy>
+				<width>610</width>
+				<height>168</height>
+				<align>justify</align>
+				<label>$INFO[Container(11004).ListItem(0).Plot]</label>
+				<font>Font_Reg18</font>
+				<textcolor>ffffffff</textcolor>
+				<autoscroll time="3000" delay="5000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
+				<animation effect="slide" start="0,0" end="0,5" time="0" tween="cubic" easing="inout" condition="Container(11001).ListItem(0).Type(episode)">Conditional</animation>
+				<visible>Control.HasFocus(11004)</visible>
+			</control>
+		</control>
+
+		</control>
+	</control>
+
+<!------ ENd ---->
+		
+	</include>
+	
+	
+</includes>

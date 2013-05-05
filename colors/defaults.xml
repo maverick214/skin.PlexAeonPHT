@@ -1,0 +1,13 @@
+<colors>
+	<color name="menutext">FF383838</color>
+	<color name="red">FFFF3333</color>
+	<color name="orange">FFFF8040</color>
+	<color name="yellow">FFFFFF00</color>
+	<color name="green">FF00FF00</color>
+	<color name="high">FFFF3333</color>
+	<color name="low">FF0099FF</color>
+	<color name="default">5FFFFFFF</color>
+	<color name="grey">7fffffff</color>
+	<color name="blue">FF0055be</color>
+
+</colors>

@@ -1,0 +1,175 @@
+<window type="dialog" id="134">
+	<defaultcontrol always="true">450</defaultcontrol>
+
+	<controls>
+		<control type="image">
+			<description>Darken screen</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>BlackTransparent.png</texture>
+			<colordiffuse>F1C2C2C2</colordiffuse>
+			<include>Animation_CommonFade</include>
+		</control>
+<control type ="group">
+
+	<animation type="WindowOpen" reversible="false">
+		<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
+		<effect type="fade" start="0" end="100" time="400" />
+	</animation>
+	<animation type="WindowClose" reversible="false">
+		<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+		<effect type="fade" start="100" end="0" time="400" />
+	</animation>
+
+<!--
+		<control type="image">
+			<description>Panel</description>
+			<posx>890</posx>
+			<posy>62</posy>
+			<width>160</width>
+			<height>240</height>
+			<aspectratio>stretch</aspectratio>
+			<texture>home/home_weather_big.png</texture>
+			<visible>!IsEmpty(ListItem.Icon)</visible>
+		</control>
+-->
+		<control type="image">
+			<description>Panel</description>
+			<posx>390</posx>
+			<posy>30</posy>
+			<width>500</width>
+			<height>390</height>
+			<aspectratio>stretch</aspectratio>
+			<texture>home/home_weather_big.png</texture>
+		</control>
+
+		<control type="label">
+			<description>Favourites Label</description>
+			<posx>390</posx>
+			<posy>55</posy>
+			<width>481</width>
+			<height>40</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<textcolor>dFffffff</textcolor>
+			<label>$LOCALIZE[1036]</label>
+			<font>Font_VirtualMainMenu</font>
+		</control>
+
+		<control type="list" id="450">
+			<posx>399</posx>
+			<posy>125</posy>
+			<width>481</width>
+			<height>280</height>
+			<onright>XBMC.Shutdown</onright>
+			<onleft>Plex.SleepSystem</onleft>
+			<onup>450</onup>
+			<ondown>450</ondown>
+			<pagecontrol>-</pagecontrol>
+			<scrolltime>0</scrolltime>
+			<itemlayout height="40">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>500</width>
+					<height>40</height>
+					<texture>lowlist/lowlistpanel_line.png</texture>
+				</control>
+
+				<control type="label">
+					<posx>230</posx>
+					<posy>0</posy>
+					<width>421</width>
+					<height>40</height>
+					<textcolor>FF929191</textcolor>
+					<selectedcolor>9b3cd2fd</selectedcolor>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>Font_WeatherTemp</font>
+					<info>ListItem.label</info>
+				</control>
+
+			</itemlayout>
+			<focusedlayout height="40">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>481</width>
+					<height>40</height>
+					<texture>verticalmenu/button.png</texture>
+				</control>
+
+				<control type="label">
+					<posx>230</posx>
+					<posy>0</posy>
+					<width>421</width>
+					<height>40</height>
+					<textcolor>FFFFFFFF</textcolor>
+					<selectedcolor>9b3cd2fd</selectedcolor>
+					<aligny>center</aligny>
+					<align>center</align>
+					<font>Font_WeatherTemp</font>
+					<info>ListItem.Label</info>
+				</control>
+
+			</focusedlayout>
+		</control>
+		<control type="image">
+			<description>Icon</description>
+			<posx>895</posx>
+			<posy>62</posy>
+			<width>150</width>
+			<height>250</height>
+			<aligny>bottom</aligny>
+			<aspectratio>keep</aspectratio>
+			<texture>$INFO[ListItem.Icon]</texture>
+		</control>
+
+		<control type="image">
+			<posx>345</posx>
+			<posy>457</posy>
+			<width>33</width>
+			<height>37</height>
+			<texture>multiplex/multiplex_arrow2.png</texture>
+			<include>Animation_HideMultiplex</include>
+		</control>
+
+		<control type="label">
+			<description>Sleep Mac Label</description>
+			<posx>390</posx>
+			<posy>455</posy>
+			<width>250</width>
+			<height>40</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<textcolor>dFffffff</textcolor>
+			<label>$LOCALIZE[31207]</label>
+			<font>Font_VirtualMainMenu</font>
+		</control>
+ 
+		<control type="image">
+			<posx>900</posx>
+			<posy>457</posy>
+			<width>33</width>
+			<height>37</height>
+			<texture flipx="true">multiplex/multiplex_arrow2.png</texture>
+			<include>Animation_HideMultiplex</include>
+		</control>
+		<control type="label">
+			<description>Quit Plex Label</description>
+			<posx>890</posx>
+			<posy>455</posy>
+			<width>200</width>
+			<height>40</height>
+			<align>right</align>
+			<aligny>center</aligny>
+			<textcolor>dFffffff</textcolor>
+			<label>$LOCALIZE[31208]</label>
+			<font>Font_VirtualMainMenu</font>
+		</control>
+ 	</control>
+
+	</controls>
+</window>

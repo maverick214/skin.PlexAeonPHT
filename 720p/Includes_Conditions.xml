@@ -1,0 +1,42 @@
+<includes>
+	<include name="Conditions_NoHomeVisualisation">
+		<visible>[!Player.HasMedia | !Skin.HasSetting(Visualisation) | !Skin.HasSetting(videohome)]</visible>
+	</include>
+
+	<include name="Conditions_HasFormedOrNeither">
+		<visible>[IsEmpty(ListItem.Property(Born)) + !IsEmpty(ListItem.Property(Formed))] | [IsEmpty(ListItem.Property(Born)) + IsEmpty(ListItem.Property(Formed))]</visible>
+	</include>
+
+	<include name="Conditions_HasBorn">
+		<visible>IsEmpty(ListItem.Property(Formed) + !IsEmpty(ListItem.Property(Born))</visible>
+	</include>
+
+	<include name="Conditions_HasDisbandedOrNeither">
+		<visible>[IsEmpty(ListItem.Property(Died)) + !IsEmpty(ListItem.Property(Disbanded))] | [IsEmpty(ListItem.Property(Died)) + IsEmpty(ListItem.Property(Disbanded))]</visible>
+	</include>
+
+	<include name="Conditions_HasDied">
+		<visible>IsEmpty(ListItem.Property(Disbanded) + !IsEmpty(ListItem.Property(Died))</visible>
+	</include>
+
+	<include name="Conditions_NeitherDiedNorDisbanded">
+		<visible>IsEmpty(ListItem.Property(Disbanded) + IsEmpty(ListItem.Property(Died))</visible>
+	</include>
+<!--
+	<include name="Conditions_HiddenByAeonAssistant">
+		<visible>![Window.IsActive(605) | Window.IsActive(1604) | Window.Next(AppearanceSettings)]</visible>
+	</include>
+-->
+	<include name="Conditions_HiddenByInfoPages">
+		<visible>![Window.IsActive(2001) | Window.IsActive(2003)]</visible>
+	</include>
+
+	<include name="Conditions_ShowcaseIsVisible">
+		<visible>Control.IsVisible(57)</visible>
+	</include>
+
+	<include name="Conditions_Weather">
+		<visible>Container(300).HasFocus(10) + !Skin.HasSetting(noweatherpopup)</visible>
+	</include>
+
+</includes>

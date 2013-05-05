@@ -1,0 +1,283 @@
+<window id="0">
+	<defaultcontrol always="true">333</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+		<control type="button" id="333">
+			<description>Defaults Trigger</description>
+			<posx>35</posx>
+			<posy>235</posy>
+			<font>special15</font>
+			<onfocus>Skin.SetBool(multiplexfanart)</onfocus>
+			<onfocus>Skin.SetBool(showcasefanart)</onfocus>
+			<onfocus>Skin.SetBool(oldmultiplexfanart)</onfocus>
+			<onfocus>Skin.SetBool(darkfloor)</onfocus>
+			<onfocus>Skin.SetBool(highlist)</onfocus>
+			<onfocus>Skin.SetBool(anoobiefanart)</onfocus>
+			<onfocus>Skin.SetBool(flattenflow)</onfocus>
+			<onfocus>Skin.SetBool(FanartSlideshow)</onfocus>
+			<onfocus>Skin.SetBool(flattenshowcase)</onfocus>
+			<onfocus>Skin.SetBool(programs)</onfocus>
+			<onfocus>Skin.SetBool(DefaultsSet)</onfocus>
+			<onfocus>Skin.SetBool(cListmovieshowinfo)</onfocus>
+			<onfocus>Skin.SetBool(usecasesinfowall)</onfocus>
+			<onfocus>Skin.SetBool(ForceLowList)</onfocus>
+			<onfocus>ReloadSkin()</onfocus>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<visible>!Skin.HasSetting(DefaultsSet)</visible>
+		</control>
+		<control type="button" id="333">
+			<description>Defaults Trigger</description>
+			<onfocus>SetFocus(334)</onfocus>
+			<visible>Skin.HasSetting(DefaultsSet)</visible>
+		</control>
+ 		<control type="button" id="334">
+	      <description>Home Menu Offset</description>
+   	      <onfocus>Control.Move(300,$INFO[Skin.String(HomeFocusOffset)])</onfocus>
+		  <onfocus>ReplaceWindow(Home)</onfocus>
+   	      <onfocus>SetFocus(300)</onfocus>
+   	      <visible>Window.Previous(startup) + Skin.HasSetting(customstartupfocus)</visible>
+  		</control>
+		<control type="button" id="334">
+	      <description>Home Menu Offset</description>
+<!--   	      <onfocus>Control.Move(300,3)</onfocus>   -->
+   	      <onfocus>SetFocus(300)</onfocus>
+   	      <visible>Window.Previous(startup) + !Skin.HasSetting(customstartupfocus)</visible>
+  		</control>
+ 		<control type="button" id="334">
+	      <description>Home Menu Offset</description>
+   	      <onfocus>SetFocus(300)</onfocus>
+   	      <texturenofocus>-</texturenofocus>
+   	      <texturefocus>-</texturefocus>
+   	      <visible>!Window.Previous(startup)</visible>
+  		</control>
+
+		<control type="image" id="87">
+			<texture>-</texture>
+			<visible>!Container(300).OnNext + !Container(300).OnPrevious</visible>
+			<animation effect="fade" time="150" delay="500">visible</animation>
+		</control>
+		<control type="image" id="88">
+			<texture>-</texture>
+			<visible>Control.IsVisible(300)</visible>
+			<animation effect="fade" time="150" delay="300">Hidden</animation>
+		</control>
+		<control type="image" id="89">
+			<texture>-</texture>
+			<visible>Window.Previous(4)</visible>
+			<animation effect="fade" time="150">Hidden</animation>
+		</control>
+
+		<!-- THE FANART BACKGROUNDS -->
+		<control type="group">
+			<visible>Skin.HasSetting(FanartSlideshow) + !Skin.HasSetting(CustomFanartSlideshow)</visible>
+			<!-- Fix for Default Picture fanart slideshow when 10101 is empty -->
+			<control type="largeimage">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
+				<aligny>top</aligny>
+				<visible>Control.IsVisible(10101)</visible>
+				<texture>backdrops/amt.jpg</texture>
+				<animation effect="fade" start="30" end="30" time="0" condition="Control.IsVisible(10101)">Conditional</animation>
+			</control>
+
+			<control type="multiimage" id="10101">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
+				<aligny>top</aligny>
+				<timeperimage>8000</timeperimage>
+				<fadetime>1000</fadetime>
+				<randomize>true</randomize>
+				<loop>yes</loop>
+				<visible>true</visible>
+			</control>
+
+			<!-- "new list" focused item fanart while using inside the list -->
+			<!-- on deck -->
+			<control type="largeimage">
+				<visible>Control.HasFocus(11000)</visible>
+				<info background="true">Container(11000).ListItem.Art(fanart)</info>
+				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
+				<fadetime>1000</fadetime>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<animation effect="fade" time="800" delay="300">Hidden</animation>
+			</control>
+			<!-- recently added -->
+			<control type="largeimage">
+				<visible>Control.HasFocus(11001)</visible>
+				<info background="true">Container(11001).ListItem.Art(fanart)</info>
+				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
+				<fadetime>1000</fadetime>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<animation effect="fade" time="800" delay="300">Hidden</animation>
+			</control>
+			<!-- recently used -->
+			<control type="largeimage">
+				<visible>ControlGroup(11002).HasFocus</visible>
+				<info background="true">Container(11002).ListItem.Art(fanart)</info>
+				<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
+				<fadetime>1000</fadetime>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<animation effect="fade" time="800" delay="300">Hidden</animation>
+			</control>
+		</control>	
+
+	<control type="multiimage">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>1280</width>
+		<height>720</height>
+		<imagepath>-</imagepath>
+		<timeperimage>8000</timeperimage>
+		<fadetime>1000</fadetime>
+		<randomize>true</randomize>
+		<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+		<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+		<info>Skin.String(CustomFanartSlideshowFolder)</info>
+		<visible>Skin.HasSetting(FanartSlideshow) + Skin.HasSetting(CustomFanartSlideshow)</visible>
+	</control>
+
+		<include condition="!Skin.HasSetting(FanartSlideshow) + !Skin.HasSetting(CustomFanartSlideshow)">Background_Wallpaper</include>
+
+
+			<!-- Fanart Dimming overlay -->
+		<control type="group">
+			<visible>!Skin.HasSetting(lowermainmenu)</visible>
+
+			<control type="largeimage">
+				<width>1280</width>
+				<height>720</height>
+				<posy>387</posy>
+				<texture>BlackTransparent.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<animation effect="fade" end="50" time="200" delay="0">Visible</animation>
+				<animation effect="fade" start="50" end="0" time="1000" delay="500">Hidden</animation>
+				<visible>[!Skin.HasSetting(OnDownRecentlyAdded) + [Control.IsVisible(11000) | Control.IsVisible(11001) | Control.IsVisible(11002) | Control.IsVisible(11003) | Control.IsVisible(11004) | Control.IsVisible(12000)]] | [Skin.HasSetting(OnDownRecentlyAdded) + [Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11002) | Control.HasFocus(11003) | Control.HasFocus(11004) | Control.HasFocus(12000)]]</visible>
+
+				<animation effect="fade" start="70" end="0" time="0" delay="00">WindowClose</animation>
+				<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(11004) | Control.HasFocus(12000) | Control.HasFocus(451)">Conditional</animation>
+			</control>
+
+			<!-- second dim lists are visible -->
+			<control type="largeimage">
+				<width>1280</width>
+				<height>720</height>
+				<posy>387</posy>
+				<texture>BlackTransparent.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<animation effect="fade" end="70" time="300" delay="0">Visible</animation>
+				<visible>Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(11004) | Control.HasFocus(11002) | Control.HasFocus(451)</visible>
+			<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(11004) | Control.HasFocus(12000) | Control.HasFocus(451)">Conditional</animation>
+			</control>
+		</control>
+
+		<control type="group">
+			<visible>Skin.HasSetting(lowermainmenu)</visible>
+
+			<control type="largeimage">
+				<width>1280</width>
+				<height>720</height>
+				<posy>0</posy>
+				<texture>BlackTransparent.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<animation effect="fade" end="90" time="200" delay="0">Visible</animation>
+				<animation effect="fade" start="50" end="0" time="1000" delay="500">Hidden</animation>
+				<visible>Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11002) | Control.HasFocus(11003) | Control.HasFocus(11004)</visible>
+				<animation effect="fade" start="70" end="0" time="0" delay="00">WindowClose</animation>
+			</control>
+
+		</control>
+
+<!-- Second List for Severs -->
+
+		<control type="largeimage">
+			<posx>79</posx>
+			<posy>386</posy>
+			<include>Animation_SubMenu</include>
+			<width>1123</width>
+			<height>23</height>
+			<texture>home/submenubar_music.png</texture>
+			<animation effect="fade" end="50" time="200" delay="0">Visible</animation>
+			<animation effect="fade" start="50" end="0" time="1000" delay="500">Hidden</animation>
+			<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="[Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(11004) | Control.HasFocus(12000) | Control.HasFocus(451)] + !Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,275" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>  
+			<visible>!IsEmpty(Container(300).ListItem.Label2)</visible>
+		</control>
+
+		<control type="label">
+			<align>center</align>
+			<posx>79</posx>
+			<posy>388</posy>
+			<font>Font_RecentlyAdded</font>
+			<include>Animation_SubMenu</include>
+			<width>1123</width>
+			<height>33</height>
+			<animation effect="fade" end="50" time="200" delay="0">Visible</animation>
+			<animation effect="fade" start="50" end="0" time="1000" delay="500">Hidden</animation>
+			<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="[Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(11004) | Control.HasFocus(12000) | Control.HasFocus(451)] + !Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,275" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>  
+			<textcolor>FFFFFFFF</textcolor>
+			<label>$INFO[Container(300).ListItem.Label2]</label>
+			<visible>!IsEmpty(Container(300).ListItem.Label2)</visible>
+		</control>
+
+
+		<include>Furniture_HomeNowPlaying</include>
+		<include>Objects_WeatherPopup</include> 
+		<include>Furniture_Time</include>
+<!--		<include>Furniture_HomeRSS</include> -->
+		<include>Submenu</include>
+		<control type="group">
+			<posx>0</posx>
+			<posy>-20</posy>
+			<width>1280</width>
+			<height>720</height>
+			<animation effect="slide" start="0,0" end="0,275" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>  
+			<animation effect="slide" start="0,0" end="0,-290" time="1000" delay="300" tween="cubic" easing="inout" condition="[Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11003) | Control.HasFocus(11004) | Control.HasFocus(12000) | Control.HasFocus(451)] + !Skin.HasSetting(lowermainmenu)">Conditional</animation>
+
+			<control type="largeimage">
+				<posx>0</posx>
+				<posy>302</posy>
+				<width>1280</width>
+				<height>150</height>
+				<texture>home/homemenu_back.png</texture>
+			</control>
+			<control type="group">
+				<posx>0</posx>
+				<posy>343</posy>
+				<width>1280</width>
+				<height>61</height>
+				<defaultcontrol>300</defaultcontrol>
+				<include>MainMenu</include>
+			</control>
+			<control type="largeimage">
+				<posx>0</posx>
+				<posy>302</posy>
+				<width>1280</width>
+				<height>150</height>
+				<texture>home/homemenu_gradient.png</texture>
+				<visible>!Skin.HasSetting(nohomegradient)</visible>
+				<colordiffuse>d0FFFFFF</colordiffuse>
+			</control>
+		</control>
+		<include>Furniture_Debug</include>
+		<include condition="!Skin.HasSetting(RecentlyAddedOff) + Skin.HasSetting(lowermainmenu)">Viewtype_RecentlyAdded_Lower</include>
+		<include condition="!Skin.HasSetting(RecentlyAddedOff) + !Skin.HasSetting(lowermainmenu)">Viewtype_RecentlyAdded_Center</include>
+		<include>CerberosSmoke</include>
+	</controls>
+</window>

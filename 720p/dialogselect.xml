@@ -1,0 +1,117 @@
+<window type="dialog" id="2000">
+	<defaultcontrol>3</defaultcontrol>
+	<zorder>3</zorder>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
+	<controls>
+		<include>Animation_DialogPopup</include>
+		<control type="image">
+			<description>Darken screen</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>common/black.png</texture>
+			<colordiffuse>97FFFFFF</colordiffuse>
+			<include>Animation_CommonFade</include>
+			<visible>true</visible>
+		</control>
+
+		<control type="image">
+			<description>Panel</description>
+			<posx>200</posx>
+			<posy>120</posy>
+			<width>881</width>
+			<height>481</height>
+			<texture>osd/osd_settings_back.png</texture>
+		</control>
+		<control type="image">
+			<posx>250</posx>
+			<posy>155</posy>
+			<width>781</width>
+			<height>40</height>
+			<texture>osd/osd_settings_buttonnf.png</texture>
+		</control>
+		<control type="label" id="1">
+			<description>Header Label</description>
+			<posx>280</posx>
+			<posy>150</posy>
+			<width>400</width>
+			<height>40</height>
+			<textcolor>FFFFFFFF</textcolor>
+			<font>Font_OSDOptions</font>
+			<label>SELECT MOVIE:</label>
+			<align>left</align>
+			<aligny>center</aligny>
+		</control>
+		<control type="list" id="3">
+			<posx>250</posx>
+			<posy>195</posy>
+			<width>781</width>
+			<height>360</height>
+			<onleft>5</onleft>
+			<onright>5</onright>
+			<onup>3</onup>
+			<ondown>3</ondown>
+			<scrolltime>200</scrolltime>
+			<itemlayout height="40">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>781</width>
+					<height>40</height>
+					<texture>osd/osd_settings_buttonnf.png</texture>
+				</control>
+				<control type="label">
+					<posx>30</posx>
+					<posy>0</posy>
+					<width>721</width>
+					<height>40</height>
+					<textcolor>FF929191</textcolor>
+					<aligny>center</aligny>
+					<font>Font_OSDOptions</font>
+					<info>ListItem.Label</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="40">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>781</width>
+					<height>40</height>
+					<texture>osd/osd_settings_buttonf.png</texture>
+				</control>
+				<control type="label">
+					<posx>30</posx>
+					<posy>0</posy>
+					<width>721</width>
+					<height>40</height>
+					<textcolor>FFFFFFFF</textcolor>
+					<aligny>center</aligny>
+					<font>Font_OSDOptions</font>
+					<info>ListItem.Label</info>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="button" id="5">
+			<description>Manual Button</description>
+			<posx>800</posx>
+			<posy>150</posy>
+			<width>210</width>
+			<height>40</height>
+			<label>186</label>
+			<textcolor>FF929191</textcolor>
+			<focusedcolor>FFFFFFFF</focusedcolor>
+			<font>Font_OSDOptions</font>
+			<align>right</align>
+			<label>368</label>
+			<onleft>3</onleft>
+			<onright>3</onright>
+			<onup>3</onup>
+			<ondown>3</ondown>
+		</control>
+	</controls>
+</window>
