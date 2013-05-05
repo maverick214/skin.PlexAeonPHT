@@ -23,14 +23,14 @@
 	<include>Viewtype_List</include>
 	<include condition="!Skin.HasSetting(InfoWallOff)">ViewType_InfoWall</include>
 	<include condition="!Skin.HasSetting(CoverflowOff)">Viewtype_Coverflow</include>
-	<include condition="!Container.Content(plugins)">ViewType_Wall</include>
+	<include>ViewType_Wall</include>
 	<include condition="!Skin.HasSetting(ListLowOff)">Viewtype_List_Low</include>
 	<include condition="!Skin.HasSetting(ShowcaseOff)">Viewtype_Showcase</include>
 	<!--	<include condition="!Skin.HasSetting(SlimListOff)">Viewtype_List_Slim</include> -->
 	<include condition="!Skin.HasSetting(Anoobie3Off)">Viewtype_Anoobie3</include>
 	<include condition="!Skin.HasSetting(MultiplexOff)">Viewtype_Multiplex</include>
 	<include condition="!Skin.HasSetting(OldMultiplexOff)">Viewtype_MultiplexOld</include>
-	<include condition="!Skin.HasSetting(Anoobie2Off)">Viewtype_Anoobie2</include>  
+	<!-- 	<include condition="!Skin.HasSetting(Anoobie2Off)">Viewtype_Anoobie2</include>  -->
 	<include condition="!Skin.HasSetting(ClearListOff)">Viewtype_ClearList</include>
 	<include>NewMediaMenu</include>
 	<include>Furniture_DarkGradient</include>
