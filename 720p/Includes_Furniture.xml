@@ -127,7 +127,7 @@
 			<height>27</height>
 			<texture>common/timepanel_mid.png</texture>
 			<animation type="Conditional" condition="Skin.HasSetting(bighome)">
-				<effect type="slide" start="-200,-7" end="-200,-7" time="0" />
+				<effect type="slide" start="-30,-7" end="-30,-7" time="0" />
 				<effect type="zoom" start="125" end="125" time="0" />
 			</animation>
 		</control>
@@ -139,7 +139,7 @@
 			<align>right</align>
 			<include>Colour_WhiteAlpha80</include>
 			<visible>!Skin.HasSetting(bighome)</visible>
-			<label>[COLOR FFe5e5e5][UPPERCASE] $INFO[System.Date][/UPPERCASE]  |  [/COLOR][COLOR FFcdcdcd]$INFO[System.Time][/COLOR]</label>
+			<label>[COLOR FFe5e5e5][UPPERCASE] $INFO[System.Date][/UPPERCASE]   [/COLOR][COLOR FFcdcdcd]$INFO[System.Time][/COLOR]</label>
 		</control>
 <!--
 		<control type="image">
@@ -153,13 +153,13 @@
 -->
 		<control type="label" id="70">
 			<posx>340</posx>
-			<posy>-4</posy>
+			<posy>-6</posy>
 			<width>600</width>
 			<font>Font_BigTime</font>
 			<align>right</align>
 			<include>Colour_WhiteAlpha80</include>
 			<visible>Skin.HasSetting(bighome)</visible>
-			<label>[COLOR FFe5e5e5][UPPERCASE]$INFO[System.Date][/UPPERCASE]  |  [/COLOR][COLOR FFcdcdcd]$INFO[System.Time][/COLOR]</label>
+			<label>[COLOR FFe5e5e5][UPPERCASE]$INFO[System.Date][/UPPERCASE]   [/COLOR][COLOR FFcdcdcd]$INFO[System.Time][/COLOR]</label>
 		</control>
 <!--
 		<control type="image">
@@ -195,7 +195,7 @@
 			<align>right</align>
 			<include>Colour_WhiteAlpha80</include>
 			<visible>!Skin.HasSetting(bighome)</visible>
-			<label>[COLOR FFe5e5e5][UPPERCASE]$INFO[System.Date][/UPPERCASE]  |  [/COLOR][COLOR FFcdcdcd]$INFO[System.Time][/COLOR]</label>
+			<label>[COLOR FFe5e5e5][UPPERCASE]$INFO[System.Date][/UPPERCASE]   [/COLOR][COLOR FFcdcdcd]$INFO[System.Time][/COLOR]</label>
 		</control>
 		<control type="label" id="70">
 			<posx>335</posx>
@@ -205,7 +205,7 @@
 			<align>right</align>
 			<include>Colour_WhiteAlpha80</include>
 			<visible>Skin.HasSetting(bighome)</visible>
-			<label>[COLOR FFe5e5e5][UPPERCASE]$INFO[System.Date][/UPPERCASE]  |  [/COLOR][COLOR FFcdcdcd]$INFO[System.Time][/COLOR]</label>
+			<label>[COLOR FFe5e5e5][UPPERCASE]$INFO[System.Date][/UPPERCASE]   [/COLOR][COLOR FFcdcdcd]$INFO[System.Time][/COLOR]</label>
 		</control>
 <!--
 		<control type="image">

@@ -154,7 +154,7 @@
 <font>
       <name>Font_bigtime</name>
       <filename>aeon_main.ttf</filename>
-      <size>85</size>
+      <size>28</size>
   </font>    
   
     <font>
@@ -202,9 +202,9 @@
 		</font>
 		<font>
 			<name>Font_Time</name>
-			<filename>aeon_rss_ce.ttf</filename>
-			<size>15</size>
-		</font>
+    		<filename>Ubuntu-B.ttf</filename>
+     		<size>17</size>
+      		</font>
 		<font>
 			<name>Font_BigRSS</name>
 			<filename>aeon_rss.ttf</filename>
@@ -3328,7 +3328,7 @@
 <font>
       <name>Font_bigtime</name>
       <filename>aeon_main.ttf</filename>
-      <size>85</size>
+      <size>26</size>
   </font>    
   
     <font>

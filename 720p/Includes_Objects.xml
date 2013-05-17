@@ -1,5 +1,6 @@
 <includes>
 	<!-- Home page -->
+<!--
 	<include name="Objects_WeatherBack">
 		<posy>0</posy>
 		<width>196</width>
@@ -122,7 +123,7 @@
 			</control>
 			</control>
 </include>
-
+-->
 	<!-- Media windows -->
 	<include name="Objects_MediaLogo">
 		<posx>49</posx>

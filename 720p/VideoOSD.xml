@@ -25,8 +25,8 @@
 
 			<control type="grouplist" id="213">
 
-				<include condition="VideoPlayer.HasMenu">Objects_OSDButtonGroup12</include>
-				<include condition="!VideoPlayer.HasMenu">Objects_OSDButtonGroup11</include>
+				<include condition="VideoPlayer.HasMenu">Objects_OSDButtonGroup10</include>
+				<include condition="!VideoPlayer.HasMenu">Objects_OSDButtonGroup9</include>
 
 				<width>790</width>
 				<posx>245</posx>
@@ -54,12 +54,12 @@
 					<onclick>XBMC.PlayerControl(ShowVideoMenu)</onclick>
 					<visible>VideoPlayer.HasMenu</visible>
 				</control>
-
+<!--
 				<control type="button" id="9">
 					<include>Objects_OSDButton</include>
 					<onclick>XBMC.ActivateWindow(28)</onclick>
 				</control>
-
+-->
 				<control type="button" id="10">
 					<include>Objects_OSDButton</include>
 					<onclick>XBMC.ActivateWindow(125)</onclick>
@@ -109,8 +109,8 @@
 
 			<control type="grouplist" id="214">
 
-				<include condition="VideoPlayer.HasMenu">Objects_OSDButtonGroup12</include>
-				<include condition="!VideoPlayer.HasMenu">Objects_OSDButtonGroup11</include>
+				<include condition="VideoPlayer.HasMenu">Objects_OSDButtonGroup10</include>
+				<include condition="!VideoPlayer.HasMenu">Objects_OSDButtonGroup9</include>
 
 				<width>790</width>
 				<posx>245</posx>
@@ -139,13 +139,13 @@
 					<animation effect="fade" start="100" end="50" time="200" condition="!Control.HasFocus(8)">Conditional</animation>
 					<visible>VideoPlayer.HasMenu</visible>
 				</control>
-
+<!--
 				<control type="button">
 					<include>Objects_OSDButtonTop</include>
 					<texturenofocus>osd/osd_button_playlist.png</texturenofocus>
 					<animation effect="fade" start="100" end="50" time="200" condition="!Control.HasFocus(9)">Conditional</animation>
 				</control>
-
+-->
 				<control type="button">
 					<include>Objects_OSDButtonTop</include>
 					<texturenofocus>osd/osd_button_book.png</texturenofocus>
