@@ -1,6 +1,5 @@
-<window>
-	<id>123</id>
-	<defaultcontrol>2</defaultcontrol>
+<window id="123">
+	<defaultcontrol always="true">5</defaultcontrol>
 	<coordinates>
 		<system>1</system>
 		<posx>0</posx>
@@ -20,6 +19,17 @@
 				<colordiffuse>C7FFFFFF</colordiffuse>
 				<texture>multiplex/multiplex_back.png</texture>
 			</control>
+			<control type="label" id="2">
+				<description>Settings Heading</description>
+				<posx>10</posx>
+				<posy>32</posy>
+				<width>640</width>
+				<height>40</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>METF_SettingsHeading</font>
+				<textcolor>DialogTextFO</textcolor>
+			</control>
 
 			<control type="grouplist" id="5">
 				<description>control area</description>
@@ -27,12 +37,13 @@
 				<posy>130</posy>
 				<width>781</width>
 				<height>440</height>
-				<texture>-</texture>
-				<itemgap>0</itemgap>
-				<onleft>5</onleft>
-				<onright>5</onright>
-				<onup>5</onup>
-				<ondown>5</ondown>
+				<itemgap>2</itemgap>
+				<orientation>vertical</orientation>
+				<pagecontrol>60</pagecontrol>
+				<onleft>28</onleft>
+				<onright>28</onright>
+				<onup>28</onup>
+				<ondown>28</ondown>
 			</control>
 
 			<control type="button" id="7">
