@@ -56,7 +56,7 @@
 		</control>
 		<control type="button" id="351">
 			<onfocus>SetFocus(11002)</onfocus>
-			<visible>[Container(300).HasFocus(2) | Container(300).HasFocus(3) | Container(300).HasFocus(1) | Container(300).HasFocus(4)] + Control.IsVisible(11002)</visible>
+			<visible>[Container(300).HasFocus(2) | Container(300).HasFocus(3) | Container(300).HasFocus(1) | Container(300).HasFocus(14)] + Control.IsVisible(11002)</visible>
 		</control>
 		<control type="button" id="351">
 			<onfocus>SetFocus(944)</onfocus>
@@ -121,7 +121,7 @@
 		</control>
 		<control type="button" id="351">
 			<onfocus>XBMC.ActivateWindow(1111)</onfocus>
-			<visible>Container(300).HasFocus(2) | Container(300).HasFocus(3) | Container(300).HasFocus(1) | Container(300).HasFocus(4)</visible>
+			<visible>Container(300).HasFocus(2) | Container(300).HasFocus(3) | Container(300).HasFocus(1) | Container(300).HasFocus(14)</visible>
 		</control>
 		<control type="button" id="351">
 			<onfocus>SetFocus(944)</onfocus>
@@ -166,7 +166,7 @@
 
 		<control type="button" id="351">
 			<onfocus>XBMC.ActivateWindow(1111)</onfocus>
-			<visible>![Container(300).HasFocus(2) | Container(300).HasFocus(3) | Container(300).HasFocus(1) | Container(300).HasFocus(4) | Container(300).HasFocus(22)]</visible>
+			<visible>![Container(300).HasFocus(2) | Container(300).HasFocus(3) | Container(300).HasFocus(1) | Container(300).HasFocus(14) | Container(300).HasFocus(22)]</visible>
 		</control>
 	</include>
 
@@ -239,7 +239,7 @@
 					<visible>!Skin.HasSetting(novideos)</visible>
 					<width min="95" max="95">auto</width>
 				</item>
-				<item id="4">
+				<item id="14">
 					<label>31144</label>
 					<include>BackgroundVarsPrograms</include>
 					<onclick>XBMC.ActivateWindow(1)</onclick>
@@ -447,7 +447,7 @@
 					<width min="95" max="95">auto</width>
 					<visible>!Skin.HasSetting(nopictures)</visible>
 				</item>
-				<item id="4">
+				<item id="14">
 					<label>31144</label>
 					<include>BackgroundVarsPrograms</include>
 					<onclick>Skin.SetString(custom,CustomProgramsfolder)</onclick>

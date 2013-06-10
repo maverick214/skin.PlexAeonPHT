@@ -920,7 +920,7 @@
 			<height>720</height>
 			<texture>backdrops/default_programs/default.jpg</texture>
 			<info>Skin.String(CustomPrograms)</info>
-			<visible>[Container(300).HasFocus(4) + Control.IsVisible(300)]</visible>
+			<visible>[Container(300).HasFocus(14) + Control.IsVisible(300)]</visible>
 			<visible>!Skin.String(CustomProgramsFolder)</visible>
 		</control>
 
@@ -928,7 +928,7 @@
 			<include>Background_ImageFolder</include>
 			<info>Skin.String(CustomProgramsFolder)</info>
 			<randomize>true</randomize>
-			<visible>[Container(300).HasFocus(4) + Control.IsVisible(300)]</visible>
+			<visible>[Container(300).HasFocus(14) + Control.IsVisible(300)]</visible>
 			<visible>Skin.String(CustomProgramsFolder)</visible>			
 		</control>
 
@@ -1247,14 +1247,14 @@
 			<include>Background_VirtualSingleImage</include>
 			<imagepath>backdrops/default_programs</imagepath>
 			<info>Skin.String(CustomPrograms)</info>
-			<visible>[Container(300).HasFocus(4) + Control.IsVisible(300)] | [Container(301).HasFocus(4) + Control.IsVisible(301)]</visible>
+			<visible>[Container(300).HasFocus(14) + Control.IsVisible(300)] | [Container(301).HasFocus(14) + Control.IsVisible(301)]</visible>
 			<visible>!Skin.String(CustomProgramsFolder)</visible>
 		</control>
 
 		<control type="multiimage">
 			<include>Background_VirtualImageFolder</include>
 			<info>Skin.String(CustomProgramsFolder)</info>
-			<visible>[Container(300).HasFocus(4) + Control.IsVisible(300)] | [Container(301).HasFocus(4) + Control.IsVisible(301)]</visible>
+			<visible>[Container(300).HasFocus(14) + Control.IsVisible(300)] | [Container(301).HasFocus(14) + Control.IsVisible(301)]</visible>
 			<visible>Skin.String(CustomProgramsFolder)</visible>
 		</control>
 
