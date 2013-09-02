@@ -210,7 +210,7 @@
 					<description>Channel Directory</description>
 					<include>BackgroundVarsGames</include>
 					<label> $LOCALIZE[31952]</label>
-					<onclick>Plex.ActivateWindow(1,plex://127.0.0.1/system/plexonline,return)</onclick>
+					<onclick>Plex.ActivateWindow(1,plexserver://channeldirectory,return)</onclick>
 					<visible>!Skin.HasSetting(SectionsMenu) + !Skin.HasSetting(NoPlexOnline)</visible>
 					<width min="95" max="95">auto</width>
 				</item>
@@ -232,6 +232,7 @@
 					<visible>!Skin.HasSetting(SectionsMenu)</visible>
 					<width min="95" max="95">auto</width>
 				</item>
+<!--
 				<item id="1">
 					<label>$LOCALIZE[31971]</label>
 					<include>BackgroundVarsVideo</include>
@@ -239,6 +240,7 @@
 					<visible>!Skin.HasSetting(novideos)</visible>
 					<width min="95" max="95">auto</width>
 				</item>
+-->
 				<item id="14">
 					<label>31144</label>
 					<include>BackgroundVarsPrograms</include>
@@ -254,7 +256,8 @@
 					<onclick>Plex.ActivateWindow(10051)</onclick>
 					<visible>!Skin.HasSetting(noSearch)</visible>
 				</item>
-					<item id="3">
+<!--
+				<item id="3">
 					<label>$LOCALIZE[31973]</label>
 					<include>BackgroundVarsPictures</include>
 					<onclick>XBMC.ActivateWindow(2)</onclick>
@@ -270,6 +273,7 @@
 					<visible>!Skin.HasSetting(SectionsMenu)</visible>
 					<width min="95" max="95">auto</width>
 				</item>
+-->
 <!--
 				<item id="10">
 					<description>Weather</description>
