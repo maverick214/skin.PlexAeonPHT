@@ -204,6 +204,8 @@
 		</control>
 
 <!-- Second List for Severs -->
+		<control type="group">
+			<visible>!Skin.HasSetting(NoServerID)</visible>
 
 		<control type="largeimage">
 			<posx>79</posx>
@@ -234,6 +236,8 @@
 			<textcolor>FFFFFFFF</textcolor>
 			<label>$INFO[Container(300).ListItem.Label2]</label>
 			<visible>!IsEmpty(Container(300).ListItem.Label2)</visible>
+		</control>
+
 		</control>
 
 

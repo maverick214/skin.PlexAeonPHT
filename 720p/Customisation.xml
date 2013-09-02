@@ -197,7 +197,12 @@
 				<onclick>Skin.ToggleSetting(lowermainmenu)</onclick>
 				<selected>Skin.HasSetting(lowermainmenu)</selected>
 			</control>
-
+			<control type="radiobutton" id="502">
+				<include>Objects_SettingsDefaultRadioButton</include>
+				<label>Hide Server ID in Home Menu</label>
+				<onclick>Skin.ToggleSetting(NoServerID)</onclick>
+				<selected>Skin.HasSetting(NoServerID)</selected>
+			</control>
 			<control type="radiobutton" id="503">
 				<include>Objects_SettingsDefaultRadioButton</include>
 				<label>Latest/In Progress Hidden until pressing Up or Down</label>
