@@ -191,7 +191,6 @@
 			<control type="grouplist">
 			<posx>930</posx>
 			<posy>575</posy>
-			<animation effect="slide" end="30,-50" time="0" condition="Control.IsVisible(50) + Container.Content(episodes)">Conditional</animation>
 			<orientation>horizontal</orientation>
 			<itemgap>10</itemgap>
 				<control type="largeimage">

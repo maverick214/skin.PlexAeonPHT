@@ -149,7 +149,7 @@
 		<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
 		<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
 		<info>Skin.String(CustomFanartSlideshowFolder)</info>
-		<visible>Skin.HasSetting(CustomFanartSlideshow)</visible>
+		<visible>Skin.HasSetting(FanartSlideshow) + Skin.HasSetting(CustomFanartSlideshow)</visible>
 	</control>
 
 		<include condition="!Skin.HasSetting(FanartSlideshow) + !Skin.HasSetting(CustomFanartSlideshow)">Background_Wallpaper</include>

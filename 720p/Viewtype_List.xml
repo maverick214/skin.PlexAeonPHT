@@ -475,7 +475,7 @@
 	</control>
 
 	<control type="textbox">
-		<visible>Control.IsVisible(50) + !IsEmpty(ListItem.Plot) + !Container.Content(plugincontent) + !Container.Content(plugins) + !Container.Content(clip)</visible>
+		<visible>Control.IsVisible(50) + !IsEmpty(ListItem.Plot) + Container.Content(movies)</visible>
 		<posy>83</posy>
 		<posx>870</posx>
 		<height>55</height>
@@ -488,7 +488,7 @@
 	  <include>Animation_CommonFade</include>
 	</control>
 	<control type="textbox">
-		<visible>Control.IsVisible(50) + !IsEmpty(ListItem.Plot) + [Container.Content(plugincontent) | Container.Content(plugins) | Container.Content(clip)]</visible>
+		<visible>Control.IsVisible(50) + !IsEmpty(ListItem.Plot) + ![Container.Content(movies) | Container.Content(tvshows)]</visible>
 		<posy>400</posy>
 		<posx>870</posx>
 		<height>162</height>
@@ -497,7 +497,7 @@
 		<textcolor>d0ffffff</textcolor>
 		<include>Animation_PlotFade</include>
 		<info>ListItem.Plot</info>
-		<autoscroll delay="6000" time="3000" repeat="2000">visible</autoscroll>
+		<autoscroll delay="2000" time="3000" repeat="2000">visible</autoscroll>
 	  <include>Animation_CommonFade</include>
 	</control>
 	<control type="textbox">
@@ -748,12 +748,11 @@
 		
 	</control>
 
-<!-- SINGLE POSTER -->
-
+<!-- SINGLE POSTER (Seasons) -->
 	<control type="group">
 		<posx>95</posx>
 		<posy>8</posy>
-		<visible>[Skin.HasSetting(singlemovielisticon) + !Container.Content(episodes) + [Window.IsActive(28) | Window.IsActive(25)]] | Container.Content(Seasons)</visible>
+		<visible>Container.Content(Seasons)</visible>
 		<animation type="WindowOpen" reversible="false">
 			<effect type="fade" start="0" end="100" time="500" />
 			<effect type="slide" start="300,0" end="0,0" time="500" easing="out" tween="quadratic" acceleration="-1" />
@@ -782,7 +781,7 @@
 		</control>		
 	</control>
 
-<!-- SINGLE POSTER Plugins and Secondary List -->
+<!-- SINGLE POSTER Episodes Plugins and Secondary List -->
 
 	<control type="group">
 		<posx>95</posx>
@@ -816,22 +815,9 @@
 			<texture diffuse="thumbs/movieposter_mask.png">defaultvideobig.png</texture>		
 			<info>Listitem.Icon</info>
 			<fadetime>400</fadetime>
-			<visible>!IsEmpty(ListItem.Icon) + !Container.content(secondary)</visible>
+			<visible>true</visible>
 		</control>
 
-		<control type="largeimage">
-			<posx>775</posx>
-			<posy>180</posy>
-			<width>390</width>
-			<height>200</height>
-			<aligny>top</aligny>
-			<align>center</align>
-			<aspectratio scalediffuse="false">keep</aspectratio>
-			<texture diffuse="thumbs/movieposter_mask.png">defaultvideobig.png</texture>		
-			<info>ListItem.Art(fanart)</info>
-			<fadetime>400</fadetime>
-			<visible>IsEmpty(ListItem.Icon) + !Container.content(secondary)</visible>
-		</control>
 
 <!--  Disabled for blank showing default 
 
