@@ -72,6 +72,8 @@
 		<control type="group">
 			<visible>!Skin.HasSetting(CustomFanartSlideshow)</visible>
 			<!-- Fix for Default Picture fanart slideshow when 10101 is empty -->
+
+<!--
 			<control type="largeimage">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -83,7 +85,7 @@
 				<texture>backdrops/amt.jpg</texture>
 				<animation effect="fade" start="30" end="30" time="0" condition="Control.IsVisible(10101)">Conditional</animation>
 			</control>
-
+-->
 			<control type="multiimage" id="10101">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -152,7 +154,7 @@
 		<visible>Skin.HasSetting(FanartSlideshow) + Skin.HasSetting(CustomFanartSlideshow)</visible>
 	</control>
 
-		<include condition="!Skin.HasSetting(FanartSlideshow) + !Skin.HasSetting(CustomFanartSlideshow)">Background_Wallpaper</include>
+<!--		<include condition="!Skin.HasSetting(FanartSlideshow) + !Skin.HasSetting(CustomFanartSlideshow)">Background_Wallpaper</include>  -->
 
 
 			<!-- Fanart Dimming overlay -->
