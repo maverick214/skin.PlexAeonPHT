@@ -1909,15 +1909,15 @@
 				<label>$LOCALIZE[31439]: [COLOR d0ffffff]$INFO[ListItem.Property(WatchedEpisodes)][/COLOR]</label>
 				<visible>Container.Content(seasons)</visible>
 			</control>
-<!--
+
 			<control type="label">
 				<description>FIRST AIRED:</description>
 				<include>LowList_DetailInfoLabelPos4L</include>
-				<label>[UPPERCASE]$LOCALIZE[20416]:[/UPPERCASE] [COLOR d0ffffff]$INFO[ListItem.premiered][/COLOR]</label>
-				<visible>!IsEmpty(ListItem.premiered)</visible>
+				<label>[UPPERCASE]$LOCALIZE[20416]:[/UPPERCASE] [COLOR d0ffffff]$INFO[ListItem.Date][/COLOR]</label>
+				<visible>!IsEmpty(ListItem.Date)</visible>
 				<visible>Container.Content(episodes)</visible>
 			</control>
-
+<!--
 			<control type="label">
 				<include>LowList_DetailInfoLabelPos4L</include>
 				<label>$LOCALIZE[20416]: [COLOR d0ffffff]-[/COLOR]</label>

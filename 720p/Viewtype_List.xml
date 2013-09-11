@@ -405,7 +405,7 @@
 				<font>Font_MediaWindowTitleBig</font>	
 				<aligny>center</aligny>
 				<include>listcolorfocus</include>	
-				<label>$INFO[ListItem.TVShowTitle]</label>
+				<info>Container.FirstTitle</info>
 				<visible>Container.Content(episodes)</visible>
 			</control>
 
@@ -427,7 +427,7 @@
 				<include>listcolorfocus</include>	
 				<label>([UPPERCASE]$LOCALIZE[31062] $INFO[ListItem.Season], $LOCALIZE[31063] $INFO[ListItem.Episode])[/UPPERCASE]</label>
 				<visible>Container.Content(episodes) + !IsEmpty(ListItem.Season) + !IsEmpty(ListItem.Episode)</visible>
-		<scroll>true</scroll>
+				<scroll>true</scroll>
 			</control>
 
 			<control type="label">
