@@ -94,6 +94,10 @@
 			<visible>!Control.IsVisible(11001) + Control.IsVisible(11000)</visible>
 		</control>
 		<control type="button" id="351">
+			<onfocus>SetFocus(11002)</onfocus>
+			<visible>Control.IsVisible(11002)</visible>
+		</control>
+		<control type="button" id="351">
 			<onfocus>SetFocus(11003)</onfocus>
 			<visible>[!Skin.HasSetting(OnDeckBottom) + Control.IsVisible(11003)] | !Control.IsVisible(11004)</visible>
 		</control>
