@@ -515,7 +515,7 @@
 
 				<!-- Recently Added (Not Albums) -->
 		<control type="group">
-			<visible>Control.IsVisible(11000) + [Container(11000).ListItem(0).Type(movie) | Container(11000).ListItem(0).Type(episode)] + Control.IsVisible(87)</visible>
+			<visible>Control.IsVisible(11000) + [Container(11000).ListItem(0).Type(movie) | Container(11000).ListItem(0).Type(episode) | Container(11000).ListItem(0).Type(season)] + Control.IsVisible(87)</visible>
 			<animation effect="slide" start="0,0" end="0,-150" time="1000" tween="cubic" easing="inout" condition="Skin.HasSetting(OnDeckBottom)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,-150" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(OnDeckBottom) + !Control.IsVisible(11001)">Conditional</animation>
 			<animation effect="fade" end="0" time="0" delay="0">Hidden</animation>
@@ -530,7 +530,7 @@
 			<width>440</width>
 			<height>20</height>
 			<texture flipx="true">common/rssbar_mid.png</texture>
-			<visible>[Container(11000).ListItem(0).Type(movie) | Container(11000).ListItem(0).Type(episode)] + !Control.HasFocus(11000) + Control.IsVisible(87)</visible>
+			<visible>[Container(11000).ListItem(0).Type(movie) | Container(11000).ListItem(0).Type(episode) | Container(11000).ListItem(0).Type(season)] + !Control.HasFocus(11000) + Control.IsVisible(87)</visible>
 		</control>
 		<control type="largeimage">
 			<posx>460</posx>
@@ -538,7 +538,7 @@
 			<width>440</width>
 			<height>20</height>
 			<texture flipx="true">common/newpanel_mid.png</texture>
-			<visible>[Container(11000).ListItem(0).Type(movie) | Container(11000).ListItem(0).Type(episode)] + Control.HasFocus(11000) + Control.IsVisible(87)</visible>
+			<visible>[Container(11000).ListItem(0).Type(movie) | Container(11000).ListItem(0).Type(episode) | Container(11000).ListItem(0).Type(season)] + Control.HasFocus(11000) + Control.IsVisible(87)</visible>
 		</control>
 
 		<control type="label">
@@ -560,7 +560,7 @@
 			<align>right</align>
 			<visible>true</visible>
 			<label>[COLOR FFFFFFFF]LATEST EPISODES[/COLOR]</label>
-			<visible>Container(11000).ListItem(0).Type(episode) + Control.IsVisible(11000) + Control.IsVisible(87)</visible>
+			<visible>[Container(11000).ListItem(0).Type(episode) | Container(11000).ListItem(0).Type(season)] + Control.IsVisible(11000) + Control.IsVisible(87)</visible>
 		</control>
 
 		<control type="fixedlist" id="11000">
@@ -606,6 +606,16 @@
 						<visible>ListItem.Type(episode)</visible>
 					</control>
 					<control type="largeimage">
+						<posx>-149</posx>
+						<posy>131</posy>
+						<width>168</width>
+						<height>241</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="movie-poster/posterview_diffuse.png">$INFO[ListItem.Art(thumb)]</texture>
+						<fadetime>200</fadetime>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>ListItem.Type(season)</visible>
+					</control>
+					<control type="largeimage">
 						<posx>-150</posx>
 						<posy>135</posy>
 						<width>165</width>
@@ -646,6 +656,19 @@
 							<effect type="zoom" center="60,238" start="80" end="110" time="600" tween="back" easing="out" />
 						</animation>
 						<visible>ListItem.Type(episode)</visible>
+					</control>
+					<control type="largeimage">
+						<posx>-148</posx>
+						<posy>90</posy>
+						<width>211</width>
+						<height>300</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="movie-poster/posterview_diffuse.png">$INFO[ListItem.Art(thumb)]</texture>
+						<fadetime>200</fadetime>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" center="60,238" start="80" end="110" time="600" tween="back" easing="out" />
+						</animation>
+						<visible>ListItem.Type(season)</visible>
 					</control>
 					<control type="largeimage">
 						<posx>-112</posx>
@@ -848,6 +871,17 @@
 						<visible>Control.HasFocus(11000)</visible>
 					</control>
 					<control type="largeimage">
+						<posx>131</posx>
+						<posy>149</posy>
+						<width>162</width>
+						<height>200</height>
+						<texture fallback="defaultVideoBigPoster.png" background="true" diffuse="thumbs/boxes/case_mask.png">$INFO[Container(11000).ListItem.Art(thumb)]</texture>
+						<fadetime>700</fadetime>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>Container(11000).ListItem(0).Type(season)</visible>
+						<visible>Control.HasFocus(11000)</visible>
+					</control>
+					<control type="largeimage">
    		         	  <posx>132</posx>
        		       	  <posy>123</posy>
     	           	  <width>168</width>
@@ -937,6 +971,28 @@
 				<textcolor>FFe1e1e1</textcolor>
 	            <label>[UPPERCASE]$INFO[Container(11001).ListItem(0).TVShowTitle][/UPPERCASE]</label>
 				<visible>Control.HasFocus(11001) + Container(11001).ListItem(0).Type(episode)</visible>
+			</control>
+			<control type="label">
+				<posx>310</posx>
+				<posy>140</posy>
+				<width>610</width>
+				<height>20</height>
+				<align>justify</align>
+				<font>Font_Bold24</font>
+				<textcolor>FFe1e1e1</textcolor>
+	            <label>[UPPERCASE]$INFO[Container(11000).ListItem(0).TVShowTitle][/UPPERCASE]</label>
+				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(season)</visible>
+			</control>
+			<control type="label">
+				<posx>310</posx>
+				<posy>165</posy>
+				<width>610</width>
+				<height>20</height>
+				<align>justify</align>
+				<font>Font_Bold24</font>
+				<textcolor>FFe1e1e1</textcolor>
+	            <label>[UPPERCASE]$INFO[Container(11000).ListItem(0).Label][/UPPERCASE]</label>
+				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(season)</visible>
 			</control>
 			<control type="label">
 				<posx>310</posx>
@@ -1128,6 +1184,17 @@
                 <label>$INFO[Container(11000).ListItem(0).Date] • $INFO[Container(11000).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] • $INFO[Container(11000).ListItem(0).Rating] </label>
 				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(episode) + !IsEmpty(Container(11000).ListItem(0).Rating)</visible>
 			</control>
+			<control type="label">
+				<posx>310</posx>
+				<posy>285</posy>
+				<width>660</width>
+				<height>70</height>
+				<align>left</align>
+				<font>Font_Reg18</font>
+          		<textcolor>FFFFFFFF</textcolor>
+                <label>$LOCALIZE[31439]: $INFO[Container(11000).ListItem(0).Property(WatchedEpisodes)][CR]$LOCALIZE[31440]: $INFO[Container(11000).ListItem(0).Property(UnWatchedEpisodes)]</label>
+				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(season)</visible>
+			</control>
 
 			<control type="label">
 				<posx>310</posx>
@@ -1151,7 +1218,7 @@
                 <label>$INFO[Container(11000).ListItem(0).Date] • $INFO[Container(11000).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] </label>
 				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(episode) + IsEmpty(Container(11000).ListItem(0).Rating)</visible>
 			</control>
-
+<!-- Plots -->
 			<control type="textbox">
 				<description>Plot Movie</description>
 				<posx>310</posx>
