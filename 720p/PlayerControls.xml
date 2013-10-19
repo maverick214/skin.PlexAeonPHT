@@ -634,7 +634,7 @@
 		<font>Font_OSDSeek</font>
 		<label>[COLOR ffc1c2c3]$LOCALIZE[31062] $INFO[VideoPlayer.Season] | $LOCALIZE[31063] $INFO[VideoPlayer.Episode][/COLOR]</label>
 		<!--<label>[B][COLOR ffc1c2c3]Season $INFO[VideoPlayer.Season] | Episode $INFO[VideoPlayer.Episode][/COLOR][/B]</label>-->
-		<visible>VideoPlayer.Content(episodes)</visible>
+		<visible>videoplayer.content(episodes)</visible>
 	</control>
 <!--
 	<control type="label">
@@ -646,7 +646,7 @@
 		<aligny>center</aligny>
 		<font>Font_OSDSeek</font>
 		<label>[COLOR ffc1c2c3]$INFO[VideoPlayer.mpaa][/COLOR]</label>
-		<visible>VideoPlayer.Content(movies)</visible>
+		<visible>videoplayer.content(movies)</visible>
 	</control>
 -->
 	<control type="label">
@@ -691,7 +691,7 @@
 	  <width>150</width> 
 	  <height>225</height>
 	  <texture diffuse="thumbs/movieposter_mask.png">$INFO[VideoPlayer.cover]</texture>
-	  <visible>VideoPlayer.Content(movies)</visible>
+	  <visible>videoplayer.content(movies)</visible>
   </control>
   
   <control type="image">
@@ -701,7 +701,7 @@
 	  <height>225</height>
 	  <texture>thumbs/poster_glass.png</texture>
 	  <aspectratio>stretch</aspectratio>
-	  <visible>VideoPlayer.Content(movies)</visible>
+	  <visible>videoplayer.content(movies)</visible>
  </control>
 
 </control>
@@ -715,7 +715,7 @@
 		<height>115</height> 
 		<texture>clearart/$INFO[VideoPlayer.TVShowTitle].png</texture>
 		<aspectratio>keep</aspectratio>
-		<visible>VideoPlayer.Content(episodes) + !Skin.HasSetting(yesclearart)</visible>
+		<visible>videoplayer.content(episodes) + !Skin.HasSetting(yesclearart)</visible>
 	</control>
 
 	<control type ="image"> 
@@ -725,7 +725,7 @@
 		<width>230</width>     
 		<height>115</height> 
 		<texture diffuse="thumbs/movieposter_mask.png">showart/$INFO[VideoPlayer.TVShowTitle].jpg</texture>
-		<visible>VideoPlayer.Content(episodes) + Skin.HasSetting(yesclearart)</visible>
+		<visible>videoplayer.content(episodes) + Skin.HasSetting(yesclearart)</visible>
 	</control>
 
 	<control type="image">
@@ -735,7 +735,7 @@
 		<height>115</height> 
 		<texture>thumbs/fanart_glass.png</texture>
 		<aspectratio>stretch</aspectratio>
-		<visible>VideoPlayer.Content(episodes) + Skin.HasSetting(yesclearart)</visible>
+		<visible>videoplayer.content(episodes) + Skin.HasSetting(yesclearart)</visible>
 	</control>
 
 </control>

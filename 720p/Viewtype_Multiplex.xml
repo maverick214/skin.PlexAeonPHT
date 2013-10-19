@@ -567,7 +567,7 @@
 					<posy>1</posy>
 					<width>453</width>
 					<height>254</height>
-					<visible>[[Control.IsVisible(52) + !Control.HasFocus(197) + [Control.IsVisible(109) | Control.HasFocus(110) | Skin.HasSetting(multiplexinfoon) | [ControlGroup(7000).HasFocus() + Skin.HasSetting(multiplexinfotrigger)]]] | VideoPlayer.Content(movies) + !VideoPlayer.Content(music)] + Skin.HasSetting(homevis)</visible>
+					<visible>[[Control.IsVisible(52) + !Control.HasFocus(197) + [Control.IsVisible(109) | Control.HasFocus(110) | Skin.HasSetting(multiplexinfoon) | [ControlGroup(7000).HasFocus() + Skin.HasSetting(multiplexinfotrigger)]]] | videoplayer.content(movies) + !videoplayer.content(music)] + Skin.HasSetting(homevis)</visible>
 				</control>
  
 				<control type="largeimage">
@@ -641,7 +641,7 @@
 					<posy>1</posy>
 					<width>593</width>
 					<height>333</height>
-					<visible>[[Control.IsVisible(52) + [Skin.HasSetting(multiplexbigtrailer) | Skin.HasSetting(multiplexfanart)] + !Control.HasFocus(197) + [Control.IsVisible(109) | Control.HasFocus(110) | Skin.HasSetting(multiplexinfoon) | [ControlGroup(7000).HasFocus() + Skin.HasSetting(multiplexinfotrigger)]]] | VideoPlayer.Content(movies)] + Skin.HasSetting(homevis)</visible>
+					<visible>[[Control.IsVisible(52) + [Skin.HasSetting(multiplexbigtrailer) | Skin.HasSetting(multiplexfanart)] + !Control.HasFocus(197) + [Control.IsVisible(109) | Control.HasFocus(110) | Skin.HasSetting(multiplexinfoon) | [ControlGroup(7000).HasFocus() + Skin.HasSetting(multiplexinfotrigger)]]] | videoplayer.content(movies)] + Skin.HasSetting(homevis)</visible>
 				</control>
  
 				<control type="largeimage">

@@ -99,7 +99,7 @@
 		<align>center</align>
 		<font>Font_SettingsSectionTitle</font>
 		<label>[COLOR FFffffff]$INFO[VideoPlayer.Title] ($INFO[VideoPlayer.Year])[/COLOR]</label>
-		<visible>!VideoPlayer.Content(episodes)</visible>
+		<visible>!videoplayer.content(episodes)</visible>
 	</control>
 
 	<control type="label">
@@ -110,7 +110,7 @@
 		<align>center</align>
 		<font>Font_SettingsSectionTitle</font>
 		<label>[COLOR FFffffff]$INFO[VideoPlayer.Title][/COLOR] [COLOR ffc1c2c3]S$INFO[VideoPlayer.Season] E$INFO[VideoPlayer.Episode][/COLOR]</label>
-		<visible>VideoPlayer.Content(episodes)</visible>
+		<visible>videoplayer.content(episodes)</visible>
 	</control>
 
 	<control type="textbox">
@@ -138,7 +138,7 @@
   <align>left</align> 
   <aligny>center</aligny> 
   <font>Font_OSDTime</font>
-<visible>VideoPlayer.Content(episodes)</visible> 
+<visible>videoplayer.content(episodes)</visible> 
  </control>
  
  <control type="label">
@@ -150,7 +150,7 @@
   <align>left</align> 
   <aligny>center</aligny> 
   <font>Font_OSDTime</font>
-<visible>VideoPlayer.Content(movies)</visible> 
+<visible>videoplayer.content(movies)</visible> 
  </control>
  
 
@@ -163,7 +163,7 @@
   <align>left</align> 
   <aligny>center</aligny> 
   <font>Font_OSDTime</font> 
-<visible>System.HasMediadvd + ![VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)]</visible>
+<visible>System.HasMediadvd + ![videoplayer.content(movies) | videoplayer.content(episodes)]</visible>
   </control>
 
 <control type="label">
@@ -193,7 +193,7 @@
 	  <width>150</width> 
 	  <height>225</height>
 	  <texture diffuse="thumbs/movieposter_mask.png">$INFO[VideoPlayer.cover]</texture>
-	  <visible>VideoPlayer.Content(movies)</visible>
+	  <visible>videoplayer.content(movies)</visible>
   </control>
   
   <control type="image">
@@ -203,7 +203,7 @@
 	  <height>225</height>
 	  <texture>thumbs/poster_glass.png</texture>
 	  <aspectratio>stretch</aspectratio>
-	  <visible>VideoPlayer.Content(movies)</visible>
+	  <visible>videoplayer.content(movies)</visible>
  </control>
 
 </control>
@@ -215,9 +215,9 @@
 		<posy>-108</posy>    
 		<width>230</width>     
 		<height>115</height> 
-		<texture>clearart/$INFO[VideoPlayer.TVShowTitle].png</texture>
+		<texture>clearart/$INFO[videoplayer.tvshowtitle].png</texture>
 		<aspectratio>keep</aspectratio>
-		<visible>VideoPlayer.Content(episodes) + !Skin.HasSetting(yesclearart)</visible>
+		<visible>!Skin.HasSetting(yesclearart)</visible>
 	</control>
 
 	<control type ="image"> 
@@ -226,8 +226,8 @@
 		<posy>-108</posy>    
 		<width>230</width>     
 		<height>115</height> 
-		<texture diffuse="thumbs/movieposter_mask.png">showart/$INFO[VideoPlayer.TVShowTitle].jpg</texture>
-		<visible>VideoPlayer.Content(episodes) + Skin.HasSetting(yesclearart)</visible>
+		<texture diffuse="thumbs/movieposter_mask.png">showart/$INFO[videoplayer.tvshowtitle].jpg</texture>
+		<visible>Skin.HasSetting(yesclearart)</visible>
 	</control>
 
 	<control type="image">
@@ -237,7 +237,7 @@
 		<height>115</height> 
 		<texture>thumbs/fanart_glass.png</texture>
 		<aspectratio>stretch</aspectratio>
-		<visible>VideoPlayer.Content(episodes) + Skin.HasSetting(yesclearart)</visible>
+		<visible>Skin.HasSetting(yesclearart)</visible>
 	</control>
 
 </control>
