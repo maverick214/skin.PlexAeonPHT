@@ -32,11 +32,6 @@
 		<onup>350</onup>
 		<ondown>351</ondown>
 	</include>
-	<!-- Weather Backdrop by Current Weather Conditions -->
-	<include name="BackgroundVarsWeather2">
-		<thumb>$INFO[Skin.String(CustomWeather)]$INFO[Weather.FanartCode]</thumb>
-	</include>
-	<!-- End -->
 
 	<include name="MainMenu_Controls_Center">
 
@@ -278,18 +273,6 @@
 					<width min="95" max="95">auto</width>
 				</item>
 -->
-<!--
-				<item id="10">
-					<description>Weather</description>
-					<label>31017</label>
-					<include condition="Skin.HasSetting(CustomWeatherConditions)">BackgroundVarsWeather2</include>
-					<include condition="!Skin.HasSetting(CustomWeatherConditions)">BackgroundVarsWeather</include>
-					<onclick>xbmc.activatewindow(2600)</onclick>
-					<visible>!Skin.HasSetting(noweather)</visible>
-					<visible>!Skin.HasSetting(SectionsMenu)</visible>
-					<width min="95" max="95">auto</width>
-				</item>
--->
 				<item id="9">
 					<label>31016</label>
 					<include>BackgroundVarsSettings</include>
@@ -502,17 +485,6 @@
 					<width min="95" max="95">auto</width>
 					<visible>true</visible>
 				</item>
-<!--
-				<item id="10">
-					<description>Weather</description>
-					<label>31017</label>
-					<include>BackgroundVarsVideo</include>
-					<onclick>Skin.SetString(custom,CustomWeatherfolder)</onclick>
-					<onclick>SetFocus(92)</onclick>
-					<width min="95" max="95">auto</width>
-					<visible>!Skin.HasSetting(noweather)</visible>
-				</item>
--->
 				<item id="13">
 					<description>Play DVD</description>
 					<label>31018</label>
@@ -836,26 +808,6 @@
 					<width min="95" max="95">auto</width>
 					<visible>Skin.HasSetting(novideos)</visible>
 				</item>
-<!--
-				<item id="10">
-					<label2>31017</label2>
-					<include condition="Skin.HasSetting(CustomWeatherConditions)">BackgroundVarsWeather2</include>
-					<include condition="!Skin.HasSetting(CustomWeatherConditions)">BackgroundVarsWeather</include>
-					<onclick>Skin.Reset(noweather)</onclick>
-					<width min="95" max="95">auto</width>
-					<visible>Skin.HasSetting(noweather)</visible>
-				</item>
-
-				<item id="10">
-					<description>Weather</description>
-					<label>31017</label>
-					<icon>backdrops/summer/summer.png</icon>
-					<thumb>$INFO[Skin.String(CustomWeather)]</thumb>
-					<width min="95" max="95">auto</width>
-					<onclick>Skin.SetBool(noweather)</onclick>
-					<visible>!Skin.HasSetting(noweather)</visible>
-				</item>
--->
 <!--
 				<item id="24">
 					<description>My Scripts</description>

@@ -77,13 +77,6 @@
 					<label>31146</label>
 					<onclick>XBMC.ActivateWindow(PicturesSettings)</onclick>
 				</control>
-<!--
-				<control type="button" id="44">
-					<include>Submenu_Button</include>
-					<label>31017</label>
-					<onclick>XBMC.ActivateWindow(WeatherSettings)</onclick>
-				</control>
--->
 
 			</control>
 

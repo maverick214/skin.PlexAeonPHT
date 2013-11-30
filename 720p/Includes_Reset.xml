@@ -18,7 +18,6 @@
 		<onclick>Skin.Reset(visualisation)</onclick>
 		<onclick>Skin.Reset(mediapanel)</onclick>
 		<onclick>Skin.Reset(timepanel)</onclick>
-		<onclick>Skin.Reset(weatherpanel)</onclick>
 		<onclick>Skin.Reset(tutorials)</onclick>
 		<onclick>Skin.Reset(visualisation)</onclick>
 		<onclick>Skin.Reset(nomusic)</onclick>
@@ -31,7 +30,6 @@
 		<onclick>Skin.Reset(tvlibrary)</onclick>
 		<onclick>Skin.Reset(clips)</onclick>
 		<onclick>Skin.Reset(nopictures)</onclick>
-		<onclick>Skin.Reset(weather)</onclick>
 		<onclick>Skin.Reset(adult)</onclick>
 		<onclick>Skin.Reset(keepiconaspect)</onclick>
 		<onclick>Skin.Reset(keepposteraspect)</onclick>

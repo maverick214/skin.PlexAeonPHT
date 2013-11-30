@@ -35,8 +35,4 @@
 		<visible>Control.IsVisible(57)</visible>
 	</include>
 
-	<include name="Conditions_Weather">
-		<visible>Container(300).HasFocus(10) + !Skin.HasSetting(noweatherpopup)</visible>
-	</include>
-
 </includes>

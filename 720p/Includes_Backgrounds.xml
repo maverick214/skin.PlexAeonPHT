@@ -215,34 +215,6 @@
 		<info>Skin.String(CustomShutdownbg)</info>
 	</include>
 
-	<include name="BackgroundVarsWeatherSpring">
-		<icon>backdrops/spring/spring.png</icon>
-		<imagepath>backdrops/spring/spring.png</imagepath>
-	</include>
-
-	<include name="BackgroundVarsWeatherSummer">
-		<icon>backdrops/summer/summer.png</icon>
-		<imagepath>backdrops/summer/summer.png</imagepath>
-	</include>
-
-	<include name="BackgroundVarsWeatherWinter">
-		<icon>backdrops/winter/winter.png</icon>
-		<imagepath>backdrops/winter/winter.png</imagepath>
-	</include>
-
-	<include name="BackgroundVarsWeatherAutumn">
-		<icon>backdrops/autumn/autumn.png</icon>
-		<imagepath>backdrops/autumn/autumn.png</imagepath>
-	</include>
- 
-	<include name="BackgroundVarsWeather">
-		<include condition="System.Date(03-21,06-21)">BackgroundVarsWeatherSpring</include>
-		<include condition="System.Date(06-21,09-23)">BackgroundVarsWeatherSummer</include>
-		<include condition="System.Date(12-21,03-21)">BackgroundVarsWeatherWinter</include>
-		<include condition="System.Date(09-23,12-21)">BackgroundVarsWeatherAutumn</include>
-		<thumb>$INFO[Skin.String(CustomWeather)]</thumb>
-		<info>Skin.String(CustomWeather)</info>
-	</include>
 <!--
 	<include name="MediaBackdropsMovies">
 		<control type="multiimage">
@@ -339,42 +311,6 @@
 		<control type="videowindow">
 			<include>FullscreenDimensions</include>
 			<visible>Skin.HasSetting(videohome) + Player.HasVideo</visible>
-		</control>
-
-		<control type="multiimage">
-			<include>Background_SingleImage</include>
-			<imagepath>backdrops/winter</imagepath>
-			<info>Skin.String(CustomWeatherbg)</info>
-			<visible>Container(300).HasFocus(10) + Control.IsVisible(300)</visible>
-			<visible>!Skin.String(CustomWeatherbgFolder)</visible>
-			<visible>System.Date(12-21,03-21)</visible>
-		</control>
-
-		<control type="multiimage">
-			<include>Background_SingleImage</include>
-			<imagepath>backdrops/spring</imagepath>
-			<info>Skin.String(CustomWeatherbg)</info>
-			<visible>Container(300).HasFocus(10) + Control.IsVisible(300)</visible>
-			<visible>!Skin.String(CustomWeatherbgFolder)</visible>
-			<visible>System.Date(03-21,06-21)</visible>
-		</control>
-
-		<control type="multiimage">
-			<include>Background_SingleImage</include>
-			<imagepath>backdrops/summer</imagepath>
-			<info>Skin.String(CustomWeatherbg)</info>
-			<visible>Container(300).HasFocus(10) + Control.IsVisible(300)</visible>
-			<visible>!Skin.String(CustomWeatherbgFolder)</visible>
-			<visible>System.Date(06-21,09-23)</visible>
-		</control>
-
-		<control type="multiimage">
-			<include>Background_SingleImage</include>
-			<imagepath>backdrops/autumn</imagepath>
-			<info>Skin.String(CustomWeatherbg)</info>
-			<visible>Container(300).HasFocus(10) + Control.IsVisible(300)</visible>
-			<visible>!Skin.String(CustomWeatherbgFolder)</visible>
-			<visible>System.Date(09-23,12-21)</visible>
 		</control>
 	</include>
 -->
@@ -692,100 +628,6 @@
  
 		</control>
 		<!------------------------------------------------------------------->
-
-
-<control type="group">
-		<visible>Skin.HasSetting(NoCustomWeatherConditions)</visible>
-		<control type="multiimage">
-			<include>Background_SingleImage</include>
-			<imagepath>backdrops/winter</imagepath>
-			<visible>Container(300).HasFocus(10) + Control.IsVisible(300)</visible>
-			<visible>System.Date(12-21, 12-31)</visible>
-		</control>
-
-		<control type="multiimage">
-			<include>Background_SingleImage</include>
-			<imagepath>backdrops/winter</imagepath>
-			<visible>Container(300).HasFocus(10) + Control.IsVisible(300)</visible>
-			<visible>System.Date(01-01, 03-21)</visible>
-			<visible>!Skin.String(CustomWeatherFolder)</visible>
-		</control>
-		
-		<control type="multiimage">
-			<include>Background_SingleImage</include>
-			<imagepath>backdrops/spring</imagepath>
-			<visible>Container(300).HasFocus(10) + Control.IsVisible(300)</visible>
-			<visible>System.Date(03-21,06-21)</visible>
-			<visible>!Skin.String(CustomWeatherFolder)</visible>
-		</control>
-
-		<control type="multiimage">
-			<include>Background_SingleImage</include>
-			<imagepath>backdrops/summer</imagepath>
-			<visible>Container(300).HasFocus(10) + Control.IsVisible(300)</visible>
-			<visible>System.Date(06-21,09-23)</visible>
-			<visible>!Skin.String(CustomWeatherFolder)</visible>
-		</control>		
-		
-		<control type="multiimage">
-			<include>Background_SingleImage</include>
-			<imagepath>backdrops/autumn</imagepath>
-			<visible>Container(300).HasFocus(10) + Control.IsVisible(300)</visible>
-			<visible>System.Date(09-23,12-21)</visible>
-			<visible>!Skin.String(CustomWeatherFolder)</visible>
-		</control>
-
-		<control type="multiimage">
-			<include>Background_ImageFolder</include>
-			<info>Skin.String(CustomWeatherFolder)</info>
-			<visible>Container(300).HasFocus(10) + Control.IsVisible(300)</visible>
-			<visible>Skin.HasSetting(NoCustomWeatherConditions)</visible>
-			<visible>Skin.String(CustomWeatherFolder)</visible>
-		</control>
-</control>
-		<control type="multiimage">
-			<include>Background_SingleImage</include>
-			<imagepath>backdrops/winter</imagepath>
-			<info>Skin.String(CustomWeatherbg)</info>
-			<visible>Container(300).HasFocus(10) + Control.IsVisible(300)</visible>
-			<visible>!Skin.String(CustomWeatherbgFolder)</visible>
-			<visible>System.Date(12-21,03-21)</visible>
-		</control>
-
-		<control type="multiimage">
-			<include>Background_SingleImage</include>
-			<imagepath>backdrops/spring</imagepath>
-			<info>Skin.String(CustomWeatherbg)</info>
-			<visible>Container(300).HasFocus(10) + Control.IsVisible(300)</visible>
-			<visible>!Skin.String(CustomWeatherbgFolder)</visible>
-			<visible>System.Date(03-21,06-21)</visible>
-		</control>
-
-		<control type="multiimage">
-			<include>Background_SingleImage</include>
-			<imagepath>backdrops/summer</imagepath>
-			<info>Skin.String(CustomWeatherbg)</info>
-			<visible>Container(300).HasFocus(10) + Control.IsVisible(300)</visible>
-			<visible>!Skin.String(CustomWeatherbgFolder)</visible>
-			<visible>System.Date(06-21,09-23)</visible>
-		</control>
-
-		<control type="multiimage">
-			<include>Background_SingleImage</include>
-			<imagepath>backdrops/autumn</imagepath>
-			<info>Skin.String(CustomWeatherbg)</info>
-			<visible>Container(300).HasFocus(10) + Control.IsVisible(300)</visible>
-			<visible>!Skin.String(CustomWeatherbgFolder)</visible>
-			<visible>System.Date(09-23,12-21)</visible>
-		</control>
-
-		<control type="multiimage">
-			<include>Background_ImageFolder</include>
-			<imagepath>weather/$INFO[Weather.FanartCode]</imagepath>
-			<visible>Container(300).HasFocus(10) + Control.IsVisible(300)</visible>
-			<visible>!Skin.HasSetting(NoCustomWeatherConditions)</visible>
-			<visible>!Skin.String(CustomWeatherFolder)</visible>
-		</control>
 
 		<control type="largeimage">
 			<animation effect="fade" end="100" time="600" delay="50">Visible</animation>
@@ -1212,22 +1054,6 @@
 			<visible>[Container(301).HasFocus(3) + Control.IsVisible(301)] | [Container(300).HasFocus(3) + Control.IsVisible(300)]</visible>
 			<visible>Skin.String(CustomPicturesFolder)</visible>			
 		</control>
-
-		<control type="multiimage">
-			<include>Background_VirtualSingleImage</include>
-			<imagepath>backdrops/winter</imagepath>
-			<info>Skin.String(CustomWeather)</info>
-			<visible>[Container(301).HasFocus(10) + Control.IsVisible(301)] | [Container(300).HasFocus(10) + Control.IsVisible(300)]</visible>
-			<visible>!Skin.String(CustomWeatherFolder)</visible>
-		</control>
-
-		<control type="multiimage">
-			<include>Background_VirtualImageFolder</include>
-			<info>Skin.String(CustomWeatherFolder)</info>
-			<visible>[Container(301).HasFocus(10) + Control.IsVisible(301)] | [Container(300).HasFocus(10) + Control.IsVisible(300)]</visible>
-			<visible>Skin.String(CustomWeatherFolder)</visible>			
-		</control>
-
 		<control type="multiimage">
 			<include>Background_VirtualSingleImage</include>
 			<imagepath>backdrops/default_games</imagepath>

@@ -164,24 +164,6 @@
 			</control>
 
 		</control>
-<!--
-		<control type="group">
-
-			<description>Settings Labels - Tier 1: Weather</description>
-			<include>Labels_MainLabelGroup</include>
-			<visible>Control.HasFocus(10)</visible>
-			<control type="label">
-				<include>Labels_MainLabelBigVars</include>
-				<label>31808</label>
-			</control>
-
-			<control type="label">
-				<include>Labels_MainLabelSmallVars</include>
-				<label>31809</label>
-			</control>
-
-		</control>
--->
 		<control type="group">
 
 			<description>Settings Labels - Tier 1: Customisation Options</description>
@@ -1368,36 +1350,6 @@
 				<visible>Control.HasFocus(2)</visible>
 			</control>
 <!--
-			<control type="button" id="10">
-				<description>My Weather</description>
-				<posy>348</posy>
-				<label>31148</label>
-				<onclick>ActivateWindow(MyWeatherSettings)</onclick>
-				<include>Objects_SettingsSectionMenuButton</include>
-				<onup>3</onup>
-				<ondown>6</ondown>
-			</control>
-
-			<control type="label">
-				<description>My Weather Sub Unfocused</description>
-				<posy>380</posy>
-				<label>31149</label>
-				<textcolor>FFf5f5f5</textcolor>
-				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
-				<visible>!Control.HasFocus(10)</visible>
-			</control>
-
-			<control type="label">
-				<description>My Weather Sub Unfocused</description>
-				<posy>380</posy>
-				<label>31149</label>
-				<textcolor>FF262728</textcolor>
-				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
-				<visible>Control.HasFocus(10)</visible>
-			</control>
-
--->
-<!--
 			<control type="button" id="12">
 				<description>Backdrops Settings</description>
 				<posy>522</posy>
@@ -1711,25 +1663,6 @@
 				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
 				<visible>ControlGroup(3).HasFocus(33)</visible>
 			</control>
-<!--
-			<control type="label">
-				<description>My Weather Sub Unfocused</description>
-				<posy>264</posy>
-				<label>31330</label>
-				<textcolor>FFf5f5f5</textcolor>
-				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
-				<visible>!ControlGroup(3).HasFocus(34)</visible>
-			</control>
-
-			<control type="label">
-				<description>My Weather Sub Unfocused</description>
-				<posy>264</posy>
-				<label>31330</label>
-				<textcolor>FF262728</textcolor>
-				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
-				<visible>ControlGroup(3).HasFocus(34)</visible>
-			</control>
--->
 		</control>
 
 		<control type="group">
@@ -1808,25 +1741,6 @@
 				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
 				<visible>ControlGroup(3).HasFocus(33)</visible>
 			</control>
-<!--
-			<control type="label">
-				<description>My Weather Sub Unfocused</description>
-				<posy>264</posy>
-				<label>31335</label>
-				<textcolor>FFf5f5f5</textcolor>
-				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
-				<visible>!ControlGroup(3).HasFocus(34)</visible>
-			</control>
-
-			<control type="label">
-				<description>My Weather Sub Unfocused</description>
-				<posy>264</posy>
-				<label>31335</label>
-				<textcolor>FF262728</textcolor>
-				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
-				<visible>ControlGroup(3).HasFocus(34)</visible>
-			</control>
--->
 		</control>
 
 		<control type="group">
@@ -1923,25 +1837,6 @@
 				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
 				<visible>ControlGroup(3).HasFocus(33)</visible>
 			</control>
-<!--
-			<control type="label">
-				<description>My Weather Sub Unfocused</description>
-				<posy>322</posy>
-				<label>31341</label>
-				<textcolor>FFf5f5f5</textcolor>
-				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
-				<visible>!ControlGroup(3).HasFocus(34)</visible>
-			</control>
-
-			<control type="label">
-				<description>My Weather Sub focused</description>
-				<posy>322</posy>
-				<label>31341</label>
-				<textcolor>FF262728</textcolor>
-				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
-				<visible>ControlGroup(3).HasFocus(34)</visible>
-			</control>
--->
 		</control>
 
 		<control type="group">
@@ -2021,23 +1916,6 @@
 				<visible>ControlGroup(3).HasFocus(33)</visible>
 			</control>
 
-			<control type="label">
-				<description>My Weather Sub Unfocused</description>
-				<posy>264</posy>
-				<label>31346</label>
-				<textcolor>FFf5f5f5</textcolor>
-				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
-				<visible>!ControlGroup(3).HasFocus(34)</visible>
-			</control>
-
-			<control type="label">
-				<description>My Weather Sub Unfocused</description>
-				<posy>264</posy>
-				<label>31346</label>
-				<textcolor>FF262728</textcolor>
-				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
-				<visible>ControlGroup(3).HasFocus(34)</visible>
-			</control>
 -->
 			<control type="label">
 				<description>My Network Sub Unfocused</description>
@@ -2077,37 +1955,6 @@
 
 		</control>
 
-		<control type="group">
-
-			<include>Settings_ButtonGroupDimensionsXBMC</include>
-			<visible>Window.IsActive(MyWeatherSettings)</visible>
-			<include>Animations_SettingsButtonFade</include>
-			<control type="label">
-				<description>My Weather Sub</description>
-				<posy>32</posy>
-				<label>31349</label>
-				<textcolor>FF262728</textcolor>
-				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
-				<visible>!Control.HasFocus(6)</visible>
-			</control>
-
-		</control>
-
-		<control type="group">
-
-			<include>Settings_ButtonGroupDimensionsXBMC</include>
-			<visible>Window.IsActive(MyProgramsSettings)</visible>
-			<include>Animations_SettingsButtonFade</include>
-			<control type="label">
-				<description>My Weather Sub</description>
-				<posy>32</posy>
-				<label>31350</label>
-				<textcolor>FF262728</textcolor>
-				<include>Objects_SettingsSectionMenuButtonSubtitle</include>
-				<visible>!Control.HasFocus(6)</visible>
-			</control>
-
-		</control>
 
 	</include>
 
