@@ -1156,7 +1156,7 @@
 			<showonepage>false</showonepage>
 			<onup>61</onup>
 			<ondown>61</ondown>
-			<onleft>7000</onleft>
+			<onleft>1300</onleft>
 			<onright>50</onright>
 			<include>Animation_CommonFade</include>
 			<animation effect="slide" start="0,0" end="46,0" time="200">Focus</animation>
@@ -2043,29 +2043,27 @@
 
 	</include>
 	<include name="Vertical_MediaMenuButtonVars">
-		<height>30</height>
-		<width>325</width>
+		<height>25</height>
+		<width>258</width>
 		<textcolor>FF3243C1</textcolor>
 		<focusedcolor>FFFFFFFF</focusedcolor>
-		<textoffsetx>30</textoffsetx>
+		<textoffsetx>8</textoffsetx>
 		<texturefocus>windows/mediamenu.png</texturefocus>
-		<texturenofocus>verticalmenu/button.png</texturenofocus>
 		<alttexturefocus>windows/mediamenu.png</alttexturefocus>
-		<alttexturenofocus>verticalmenu/button.png</alttexturenofocus>
-		<radiowidth>72</radiowidth>
-		<radioposx>230</radioposx>
-		<radioheight>50</radioheight>
+		<radiowidth>62</radiowidth>
+		<radioposx>190</radioposx>
+		<radioheight>60</radioheight>
 		<textureradiofocus>settings/settings_radiobuttononfocus.png</textureradiofocus>
 		<textureradionofocus>settings/settings_radiobuttonon.png</textureradionofocus>
 		<align>left</align>
 		<aligny>center</aligny>
-
+		<itemgap>0</itemgap>
 	</include>
 	<!-- Common Button -->
 	<include name="MediaMenuButton">
 		<include>Vertical_MediaMenuButtonVars</include>
 		<pulseonselect>false</pulseonselect>
-		<font>Font_MediaWindowTitleMenu</font>
+		<font>MediaMenuButton</font>
 	</include>
 	<include name="VerticalMenu_ButtonSecondColumn">
 		<height>35</height>
@@ -2106,18 +2104,17 @@
 		<aligny>center</aligny>
 	</include>
 	<include name="Vertical_MediaMenuGroup">
-		<posx>0</posx>
-		<posy>110</posy>
-		<width>325</width>
+		<posx>-260</posx>
+		<posy>80</posy>
+		<width>320</width>
 		<height>600</height>
-		<itemgap>1</itemgap>
+		<itemgap>0</itemgap>
 		<orientation>vertical</orientation>
 		<scroll>false</scroll>
 		<onleft>50</onleft>
 		<onright>50</onright>
 		<onup>7000</onup>
 		<ondown>7000</ondown>
-		<include>Animation_CommonFade</include>
 		<visible>!Skin.HasSetting(kiosk)</visible>
 	</include>
 	<!--############################################ Buttons ####################################################-->
@@ -2154,16 +2151,15 @@
 		<control type="button" id="102">
 			<onclick>Container.NextViewMode</onclick>
 			<label>[B]$LOCALIZE[31050] [COLOR=FFFFFFFF]$INFO[Container.ViewMode][/COLOR][/B]</label>
-			<height>30</height>
-			<width>325</width>
+			<height>25</height>
+			<width>258</width>
 			<textcolor>FF3243C1</textcolor>
 			<focusedcolor>FFFFFFFF</focusedcolor>
-			<textoffsetx>30</textoffsetx>
+			<textoffsetx>5</textoffsetx>
 			<include>MediaMenuButton</include>
-			<align>center</align>
+			<align>left</align>
 			<aligny>center</aligny>
 			<font>Font_MediaWindowTitleMenu</font>
-			<include>Animation_CommonFade</include>
 		</control>
 	</include>
 
@@ -3336,17 +3332,8 @@
 	<!--#########################################################################################################-->
 	<include name="NewMediaMenu">
 		<control type="group">
-			<visible allowhiddenfocus="true">ControlGroup(7000).HasFocus</visible>
-			<animation effect="slide" start="-300" end="0" time="100">Visible</animation>
-			<animation effect="slide" start="0" end="-300" time="100">Hidden</animation>
-			<control type="largeimage">
-				<posx>-20</posx>
-				<posy>35</posy>
-				<width>352</width>
-				<height>720</height>
-				<texture>list/listpanel_back_dark2.png</texture>
-				<visible>true</visible>
-			</control>
+			<include>leftMenuSlide3</include>
+<!--
 			<control type="largeimage">
 				<include>MediaMenuLogo</include>
 				<texture>windows/logo_movies.png</texture>
@@ -3407,6 +3394,25 @@
 				<info>Container.FirstTitle</info>
 				<visible>Window.IsActive(25) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(movies)]</visible>
 			</control>
+-->
+			<control type="label">
+				<textoffsety>5</textoffsety>
+				<textoffsetx>15</textoffsetx>
+				<font>Condensed-26</font>
+				<height>55</height>
+				<textcolor>FFCCCCCC</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<texturenofocus>-</texturenofocus>
+				<animation type="Conditional" condition="true">
+					<effect type="fade" start="0" end="100"/>
+				</animation>
+				<align>left</align>
+				<width>253</width>
+				<posy>22</posy>
+				<posx>-260</posx>
+				<label>VIEWTYPE SETTINGS</label>
+				<visible>true</visible>
+			</control>
 
 			<control type="grouplist" id="7000">
 <!--			<include condition="Skin.HasSetting(novertikalmenu)">Horizontal_MediaMenuGroup</include>
@@ -3440,7 +3446,6 @@
 				<include>MediaMenuButton_PanelDensity</include>
 				<include>MediaMenuButton_PanelDark</include>
 				<include>MediaMenuButton_DVDCases</include>
-				<include>MediaMenuButton_ForceLowList</include> 
 				<include>MediaMenuButton_WallInfo</include> 
 				<include>MediaMenuButton_Overlay</include>
 				<include>WatchedIcon</include>
@@ -3548,7 +3553,7 @@
 		<textcolor>FFFFFFFF</textcolor>
 	</include>
 	<include name="OldMultiplexInfoAutoUp">
-		<onup>7000</onup>
+		<onup>1300</onup>
 	</include>
 	<include name="OldMultiplexInfoTriggerUp">
 		<onup>110</onup>
@@ -4905,7 +4910,7 @@
             <texturenofocus>-</texturenofocus>
             <onleft>563</onleft>
             <onright>563</onright>
-            <onup>7000</onup>
+            <onup>1300</onup>
             <ondown>563</ondown>
         </control>
 		<control type="scrollbar" id="60">
@@ -4937,7 +4942,7 @@
 			<pagecontrol>60</pagecontrol>
 			<onleft>563</onleft>
 			<onright>563</onright>
-			<onup>7000</onup>
+			<onup>1300</onup>
 			<ondown>60</ondown>
 			<orientation>horizontal</orientation>
 			<focusposition>5</focusposition>	
@@ -7065,7 +7070,7 @@
 				<include>MovieFlowGroupVars</include>
 	            <onleft>55</onleft>
 	            <onright>55</onright>
-	            <onup>7000</onup>
+	            <onup>1300</onup>
 	            <ondown>60</ondown>
 	            <pagecontrol>60</pagecontrol>
 	            <orientation>horizontal</orientation>

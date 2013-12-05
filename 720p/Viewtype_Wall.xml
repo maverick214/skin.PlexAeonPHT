@@ -16,8 +16,8 @@
 	</include>
 
 	<include name="VerticalWall">
-		<onleft>7000</onleft>
-		<onright>7000</onright>
+		<onleft>1300</onleft>
+		<onright>1300</onright>
 		<onup>53</onup>
 		<ondown>53</ondown>
 		<orientation>vertical</orientation>
@@ -26,8 +26,8 @@
 	<include name="HorizontalWall">
 		<onleft>53</onleft>
 		<onright>53</onright>
-		<onup>7000</onup>
-		<ondown>7000</ondown>
+		<onup>1300</onup>
+		<ondown>1300</ondown>
 		<pagecontrol>60</pagecontrol>
 		<orientation>horizontal</orientation>
 	</include>

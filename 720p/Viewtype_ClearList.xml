@@ -174,7 +174,7 @@
 		<posx>160</posx>
 		<posy>696</posy>
 		<height>25</height>
-		<font>Font_MediaWindowTitleMenuObjects</font>
+		<font>Font_MediaWindowMenu</font>
 		<include condition="!Skin.HasSetting(Lightclearlist)">cList_NightInfoColor</include>
 		<include condition="Skin.HasSetting(Lightclearlist)">cList_LightInfoColor</include>
 		<align>center</align>
@@ -184,7 +184,7 @@
 		<posx>0</posx>
 		<width>250</width>
 		<height>13</height>
-		<font>Font_MediaWindowTitleMenuObjects</font>
+		<font>Font_MediaWindowMenu</font>
 		<include condition="!Skin.HasSetting(Lightclearlist)">cList_NightInfoColor</include>
 		<include condition="Skin.HasSetting(Lightclearlist)">cList_LightInfoColor</include>
 	</include>
@@ -192,7 +192,7 @@
 		<posx>0</posx>
 		<width>250</width>
 		<height>13</height>
-		<font>Font_MediaWindowTitleMenuObjects</font>
+		<font>Font_MediaWindowMenu</font>
 		<include condition="!Skin.HasSetting(Lightclearlist)">cList_NightLabelColors</include>
 		<include condition="Skin.HasSetting(Lightclearlist)">cList_NightLabelColorsFocus</include>
 	</include>
@@ -972,7 +972,7 @@
 	</include>
 	<!--#########################################################################################################-->
 	<include name="cList_OnRightPlaylist">
-		<onright>7000</onright>
+		<onright>1300</onright>
 	</include>
 	<!-- Info Panel Toggle -->
 	<include name="cList_OnRightLibraryMovies">
@@ -1008,7 +1008,7 @@
 				<height>593</height>
 				<onup>54</onup>
 				<ondown>54</ondown>
-				<onleft>7000</onleft>
+				<onleft>1300</onleft>
 				<onright>2505</onright>
       			<pagecontrol>2505</pagecontrol>
 				<itemlayout width="450" height="40">

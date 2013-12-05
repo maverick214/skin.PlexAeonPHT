@@ -133,7 +133,7 @@
 		</control>
 		<control type="label" id="70">
 			<posx>340</posx>
-			<posy>3</posy>
+			<posy>13</posy>
 			<width>400</width>
 			<font>Font_Time</font>
 			<align>right</align>
@@ -144,7 +144,7 @@
 
 		<control type="label" id="70">
 			<posx>340</posx>
-			<posy>-6</posy>
+			<posy>4</posy>
 			<width>600</width>
 			<font>Font_BigTime</font>
 			<align>right</align>
@@ -170,7 +170,7 @@
 		</control>
 		<control type="label" id="70">
 			<posx>335</posx>
-			<posy>3</posy>
+			<posy>13</posy>
 			<width>400</width>
 			<font>Font_Time</font>
 			<align>right</align>
@@ -180,7 +180,7 @@
 		</control>
 		<control type="label" id="70">
 			<posx>335</posx>
-			<posy>3</posy>
+			<posy>13</posy>
 			<width>600</width>
 			<font>Font_BigTime</font>
 			<align>right</align>
@@ -773,11 +773,11 @@
 
 	<include name="Furniture_MediaPanel">
 	<control type="group">
-		<include>Animation_OpenCloseSlide</include>
+		<include>Animation_WindowFade600</include>
+   		<include>rightSideSlide</include>
 		<control type="image">
 			<include>FullscreenDimensions</include>
 			<texture>wall/infowall_background.png</texture>
-			<include>Animation_WindowFade200</include>
 			<animation effect="fade" start="100" end="90" time="0" condition="true">Conditional</animation>
 			<visible>Control.IsVisible(512)</visible>
 		</control>

@@ -85,7 +85,7 @@
 		</control>
 		<control type="label">
 			<posx>870</posx>
-			<posy>420</posy>
+			<posy>430</posy>
 			<width>400</width>
 			<font>Font_RecentlyAdded</font>
 			<align>right</align>
@@ -377,7 +377,7 @@
 		</control>
 		<control type="label">
 			<posx>870</posx>
-			<posy>420</posy>
+			<posy>430</posy>
 			<width>400</width>
 			<font>Font_RecentlyAdded</font>
 			<align>right</align>
@@ -386,7 +386,7 @@
 		</control>
 		<control type="label">
 			<posx>870</posx>
-			<posy>420</posy>
+			<posy>430</posy>
 			<width>400</width>
 			<font>Font_RecentlyAdded</font>
 			<align>right</align>
@@ -543,7 +543,7 @@
 
 		<control type="label">
 			<posx>870</posx>
-			<posy>570</posy>
+			<posy>580</posy>
 			<width>400</width>
 			<font>Font_RecentlyAdded</font>
 			<align>right</align>
@@ -554,7 +554,7 @@
 
 		<control type="label">
 			<posx>870</posx>
-			<posy>570</posy>
+			<posy>580</posy>
 			<width>400</width>
 			<font>Font_RecentlyAdded</font>
 			<align>right</align>
@@ -578,7 +578,6 @@
 			<focusposition>0</focusposition>
 			<scrolltime>400</scrolltime>
 			<pagecontrol>665</pagecontrol>
-			<include>Animation_HiddenByInfo</include>
 			<animation effect="zoom" center="auto" start="100" end="50" time="0" condition="true">Conditional</animation>
 			<itemlayout width="176" height="245">
 				<control type="group">
@@ -721,7 +720,7 @@
 
 		<control type="label">
 			<posx>870</posx>
-			<posy>420</posy>
+			<posy>430</posy>
 			<width>400</width>
 			<font>Font_RecentlyAdded</font>
 			<align>right</align>
@@ -1035,7 +1034,7 @@
 				<width>660</width>
 				<height>70</height>
 				<align>left</align>
-				<font>Font_RSS_Big</font>
+				<font>Font_BigRSS</font>
 				<textcolor>ffffffff</textcolor>
                 <label>$INFO[Container(11000).ListItem(0).Artist] $INFO[Container(11000).ListItem(0).Year]</label>
 				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(album)</visible>
@@ -1068,22 +1067,22 @@
 <!-- Movie -->
 			<control type="label">
 				<posx>310</posx>
-				<posy>180</posy>
+				<posy>165</posy>
 				<width>660</width>
 				<height>70</height>
 				<align>left</align>
-				<font>Font_RSS_Big</font>
+				<font>Font_BigRSS</font>
 				<textcolor>ffffffff</textcolor>
                 <label>$INFO[Container(11001).ListItem(0).Year] • $INFO[Container(11001).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] • $INFO[Container(11001).ListItem(0).Rating] </label>
 				<visible>Control.HasFocus(11001) + Container(11001).ListItem(0).Type(movie) + !IsEmpty(Container(11001).ListItem(0).Rating)</visible>
 			</control>
 			<control type="label">
 				<posx>310</posx>
-				<posy>180</posy>
+				<posy>165</posy>
 				<width>660</width>
 				<height>70</height>
 				<align>left</align>
-				<font>Font_RSS_Big</font>
+				<font>Font_BigRSS</font>
 				<textcolor>ffffffff</textcolor>
                 <label>$INFO[Container(11000).ListItem(0).Year] • $INFO[Container(11000).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] • $INFO[Container(11000).ListItem(0).Rating] </label>
 				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(movie) + !IsEmpty(Container(11000).ListItem(0).Rating)</visible>
@@ -1091,22 +1090,22 @@
 
 			<control type="label">
 				<posx>310</posx>
-				<posy>180</posy>
+				<posy>165</posy>
 				<width>660</width>
 				<height>70</height>
 				<align>left</align>
-				<font>Font_RSS_Big</font>
+				<font>Font_BigRSS</font>
 				<textcolor>ffffffff</textcolor>
                 <label>$INFO[Container(11001).ListItem(0).Year] • $INFO[Container(11001).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] </label>
 				<visible>Control.HasFocus(11001) + Container(11001).ListItem(0).Type(movie) + IsEmpty(Container(11001).ListItem(0).Rating)</visible>
 			</control>
 			<control type="label">
 				<posx>310</posx>
-				<posy>180</posy>
+				<posy>165</posy>
 				<width>660</width>
 				<height>70</height>
 				<align>left</align>
-				<font>Font_RSS_Big</font>
+				<font>Font_BigRSS</font>
 				<textcolor>ffffffff</textcolor>
                 <label>$INFO[Container(11000).ListItem(0).Year] • $INFO[Container(11000).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] </label>
 				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(movie) + IsEmpty(Container(11000).ListItem(0).Rating)</visible>
@@ -1119,7 +1118,7 @@
 				<width>660</width>
 				<height>70</height>
 				<align>left</align>
-				<font>Font_RSS_Big</font>
+				<font>Font_BigRSS</font>
           		<textcolor>abFFFFFF</textcolor>
                 <label>$INFO[Container(11003).ListItem(0).Date] • $INFO[Container(11003).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] • $INFO[Container(11003).ListItem(0).Rating] </label>
 				<visible>Control.HasFocus(11003) + !IsEmpty(Container(11003).ListItem(0).Rating)</visible>
@@ -1131,7 +1130,7 @@
 				<width>660</width>
 				<height>70</height>
 				<align>left</align>
-				<font>Font_RSS_Big</font>
+				<font>Font_BigRSS</font>
           		<textcolor>abFFFFFF</textcolor>
                 <label>$INFO[Container(11003).ListItem(0).Date] • $INFO[Container(11003).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE]</label>
 				<visible>Control.HasFocus(11003) + IsEmpty(Container(11003).ListItem(0).Rating)</visible>
@@ -1143,7 +1142,7 @@
 				<width>660</width>
 				<height>70</height>
 				<align>left</align>
-				<font>Font_RSS_Big</font>
+				<font>Font_BigRSS</font>
           		<textcolor>abFFFFFF</textcolor>
                 <label>$INFO[Container(11004).ListItem(0).Date] • $INFO[Container(11004).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] • $INFO[Container(11004).ListItem(0).Rating] • Recommended by $INFO[Container(11004).ListItem(0).Property(Recommender)]</label>
 				<visible>Control.HasFocus(11004) + !IsEmpty(Container(11004).ListItem(0).Rating)</visible>
@@ -1155,7 +1154,7 @@
 				<width>660</width>
 				<height>70</height>
 				<align>left</align>
-				<font>Font_RSS_Big</font>
+				<font>Font_BigRSS</font>
           		<textcolor>abFFFFFF</textcolor>
                 <label>$INFO[Container(11004).ListItem(0).Date] • $INFO[Container(11004).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] • Recommended by $INFO[Container(11004).ListItem(0).Property(Recommender)]</label>
 				<visible>Control.HasFocus(11004) + IsEmpty(Container(11004).ListItem(0).Rating)</visible>
@@ -1164,56 +1163,56 @@
 <!-- TV Shows -->
 			<control type="label">
 				<posx>310</posx>
-				<posy>195</posy>
+				<posy>165</posy>
 				<width>660</width>
 				<height>70</height>
 				<align>left</align>
-				<font>Font_RSS_Big</font>
+				<font>Font_BigRSS</font>
           		<textcolor>abFFFFFF</textcolor>
                 <label>$INFO[Container(11001).ListItem(0).Date] • $INFO[Container(11001).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] • $INFO[Container(11001).ListItem(0).Rating] </label>
 				<visible>Control.HasFocus(11001) + Container(11001).ListItem(0).Type(episode) + !IsEmpty(Container(11001).ListItem(0).Rating)</visible>
 			</control>
 			<control type="label">
 				<posx>310</posx>
-				<posy>195</posy>
+				<posy>165</posy>
 				<width>660</width>
 				<height>70</height>
 				<align>left</align>
-				<font>Font_RSS_Big</font>
+				<font>Font_BigRSS</font>
           		<textcolor>abFFFFFF</textcolor>
-                <label>$INFO[Container(11000).ListItem(0).Date] • $INFO[Container(11000).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] • $INFO[Container(11000).ListItem(0).Rating] </label>
+          		<label>$INFO[Container(11000).ListItem(0).Date] • $INFO[Container(11000).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] • $INFO[Container(11000).ListItem(0).Rating] </label>
 				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(episode) + !IsEmpty(Container(11000).ListItem(0).Rating)</visible>
 			</control>
 			<control type="label">
 				<posx>310</posx>
-				<posy>285</posy>
+				<posy>165</posy>
 				<width>660</width>
 				<height>70</height>
 				<align>left</align>
-				<font>Font_Reg18</font>
-          		<textcolor>FFFFFFFF</textcolor>
+				<font>Font_BigRSS</font>
+          		<textcolor>abFFFFFF</textcolor>
                 <label>$LOCALIZE[31439]: $INFO[Container(11000).ListItem(0).Property(WatchedEpisodes)][CR]$LOCALIZE[31440]: $INFO[Container(11000).ListItem(0).Property(UnWatchedEpisodes)]</label>
 				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(season)</visible>
 			</control>
 
 			<control type="label">
 				<posx>310</posx>
-				<posy>195</posy>
+				<posy>165</posy>
 				<width>660</width>
 				<height>70</height>
 				<align>left</align>
-				<font>Font_RSS_Big</font>
+				<font>Font_BigRSS</font>
           		<textcolor>abFFFFFF</textcolor>
                 <label>$INFO[Container(11001).ListItem(0).Date] • $INFO[Container(11001).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] </label>
 				<visible>Control.HasFocus(11001) + Container(11001).ListItem(0).Type(episode) + IsEmpty(Container(11001).ListItem(0).Rating)</visible>
 			</control>
 			<control type="label">
 				<posx>310</posx>
-				<posy>195</posy>
+				<posy>165</posy>
 				<width>660</width>
 				<height>70</height>
 				<align>left</align>
-				<font>Font_RSS_Big</font>
+				<font>Font_BigRSS</font>
           		<textcolor>abFFFFFF</textcolor>
                 <label>$INFO[Container(11000).ListItem(0).Date] • $INFO[Container(11000).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] </label>
 				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(episode) + IsEmpty(Container(11000).ListItem(0).Rating)</visible>

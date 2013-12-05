@@ -104,7 +104,7 @@
 			<scrolltime>0</scrolltime>
 			<onleft>51</onleft>
 			<onright>51</onright>
-			<onup>7000</onup>
+			<onup>1300</onup>
 			<ondown>60</ondown>
 			<orientation>horizontal</orientation>
 			<visible>Window.IsActive(2)</visible>

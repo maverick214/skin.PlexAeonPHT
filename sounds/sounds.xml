@@ -30,22 +30,20 @@
     </action>
     <action>
       <name>screenshot</name>
-      <file>-</file>
+      <file>Shutter.wav</file>
     </action>
   </actions>
 
   <windows>
     <window>
-      <name>startup</name>
-      <activate>startup.wav</activate>
+      <name>InfoDialog</name>
+      <activate>Notify.wav</activate>
+      <deactivate>Out.wav</deactivate>
     </window>
     <window>
-      <name>0</name>
-      <deactivate>-</deactivate>
-    </window>
-    <window>
-      <name>4</name>
-      <deactivate>-</deactivate>
+      <name>Startup</name>
+      <activate>Start.wav</activate>
     </window>
   </windows>
+
 </sounds>

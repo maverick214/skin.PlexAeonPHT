@@ -969,7 +969,7 @@
 	</include>
  
 	<include name="MultiplexInfoAutoUp">
-		<onup>7000</onup>
+		<onup>1300</onup>
 	</include>
  
 	<include name="MultiplexInfoTriggerUp">
@@ -1484,7 +1484,7 @@
 			<texturenofocus>-</texturenofocus>
 			<onleft>52</onleft>
 			<onright>52</onright>
-			<onup>7000</onup>
+			<onup>1300</onup>
 			<ondown>52</ondown>
 		</control>
  
@@ -1499,12 +1499,8 @@
 			<pagecontrol>60</pagecontrol>
 			<onleft>52</onleft>
 			<onright>52</onright>
-			<include>MultiplexInfoAutoUp</include>
-<!--
-			<include condition="Skin.HasSetting(multiplextvinfotrigger)">MultiplexInfoTriggerUp</include>
--->
-			<include condition="!Skin.HasSetting(multiplextrailer) + !Skin.HasSetting(multiplexbigtrailer)">MultiplexOnDown</include>
-			<include condition="Skin.HasSetting(multiplextrailer) | Skin.HasSetting(multiplexbigtrailer)">MultiplexOnDownTrailer</include>
+			<onup>1300</onup>
+			<ondown>60</ondown>
 			<orientation>horizontal</orientation>
 			<include>MultiplexFocusMovies</include>
 			<scrolltime>200</scrolltime>
@@ -1536,7 +1532,7 @@
 			<pulseonselect/>
 			<orientation>horizontal</orientation>
 			<showonepage>false</showonepage>
-			<onup>57</onup>
+			<onup>52</onup>
 			<ondown>52</ondown>
 			<onleft>60</onleft>
 			<onright>60</onright>

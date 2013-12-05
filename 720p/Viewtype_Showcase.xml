@@ -1,6 +1,6 @@
 <includes>
 	<include name="ShowcaseInfoAutoUp">
-		<onup>7000</onup>
+		<onup>1300</onup>
 	</include>
 	<include name="ShowcaseInfoTriggerUp">
 		<onup>70110</onup>
@@ -3159,7 +3159,7 @@
 			<texturenofocus>-</texturenofocus>
 			<onleft>57</onleft>
 			<onright>57</onright>
-			<onup>7000</onup>
+			<onup>1300</onup>
 			<ondown>57</ondown>
 		</control>
 		<control type="group">
@@ -3170,7 +3170,7 @@
 				<include condition="Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502) | Window.IsActive(2) | Window.IsActive(20)">MusicShowcaseGroupVars</include>
 				<onleft>57</onleft>
 				<onright>57</onright>
-				<onup>7000</onup>
+				<onup>1300</onup>
 				<ondown>60</ondown>
 <!--
 				<include condition="!Skin.HasSetting(showcaseinfotrigger)">ShowcaseInfoAutoUp</include>

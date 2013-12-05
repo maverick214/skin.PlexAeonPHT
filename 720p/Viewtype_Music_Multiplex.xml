@@ -448,7 +448,7 @@
 			<texturenofocus>-</texturenofocus>
 			<onleft>52</onleft>
 			<onright>52</onright>
-			<onup>7000</onup>
+			<onup>1300</onup>
 			<ondown>52</ondown>
 		</control>
 
@@ -464,7 +464,7 @@
 			<pagecontrol>60</pagecontrol>
 			<onleft>52</onleft>
 			<onright>52</onright>
-			<onup>7000</onup>
+			<onup>1300</onup>
 			<ondown>60</ondown>
 			<orientation>horizontal</orientation>
 			<focusposition>4</focusposition>

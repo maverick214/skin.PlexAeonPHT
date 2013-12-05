@@ -450,7 +450,7 @@
 				<height>327</height>
 				<pagecontrol>-</pagecontrol>
 				<focusposition>1</focusposition>
-				<onleft>7000</onleft>
+				<onleft>1300</onleft>
 				<onright>7003</onright>
 				<onup>551</onup>
 				<ondown>551</ondown>
@@ -1217,7 +1217,7 @@
 				<orientation>horizontal</orientation>
 				<onleft>7003</onleft>
 				<onright>7003</onright>
-				<onup>7000</onup>
+				<onup>1300</onup>
 				<visible allowhiddenfocus="true">Control.IsVisible(551) + ControlGroup(7003).HasFocus()</visible>
 				<!-- Music detail menu buttons -->
 				<control type="togglebutton" id="7701">

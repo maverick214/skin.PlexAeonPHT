@@ -1,5 +1,5 @@
 <fonts>
-	<fontset id="Aeon_Standard" unicode="true">
+	<fontset id="default" unicode="true">
 		<!-- Info Wall -->
     <font>
       <name>Font_Info</name>
@@ -58,11 +58,27 @@
     </font>
 
 		<!-- Common -->
-    <font>
-      <name>Font_RecentlyAdded</name>
-      <filename>Ubuntu-B.ttf</filename>
-      <size>15</size>
-    </font>
+ 		<font>
+			<name>Condensed-28</name>
+			<filename>alaska_nocaps.ttf</filename>
+			<size>28</size>
+		</font>
+		<font>
+			<name>Condensed-30</name>
+			<filename>alaska_nocaps.ttf</filename>
+			<size>30</size>
+		</font>
+		<font>
+			<name>MediaMenuButton</name>
+			<filename>aeon_player_cy.ttf</filename>
+			<size>18</size>
+			<linespacing>1</linespacing>
+		</font>
+ 		<font>
+		     <name>Font_RecentlyAdded</name>
+		     <filename>Ubuntu-B.ttf</filename>
+ 		     <size>15</size>
+ 		  </font>
 		<font>
 			<name>Font_Search</name>
 			<filename>alaska_nocaps.ttf</filename>
@@ -315,8 +331,13 @@
 		</font>
 		<font>
 			<name>font13</name>
-			<filename>aeon_list.ttf</filename>
-			<size>16</size>
+			<filename>Ubuntu-B.ttf</filename>
+			<size>22</size>
+		</font>
+		<font>
+			<name>font14</name>
+			<filename>Ubuntu-B.ttf</filename>
+			<size>24</size>
 		</font>
 		<font>
 			<name>Font_ListDetail</name>

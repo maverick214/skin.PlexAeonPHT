@@ -175,7 +175,7 @@
 			<include condition="Skin.HasSetting(lowermainmenu)">MainMenu_Controls_Lower</include> 
 
 		<control type="wraplist" id="300">
-			<posx>-240</posx>
+			<posx>-160</posx>
 			<posy>0</posy>
 			<height>61</height>
 			<width>1520</width>
@@ -247,7 +247,7 @@
 					<visible>!Skin.HasSetting(programs)</visible>
 					<width min="95" max="95">auto</width>
 				</item>
-
+<!--
 				<item id="11">
 					<description>Search Menu</description>
 					<include>BackgroundVarsSearch</include>
@@ -255,6 +255,7 @@
 					<onclick>Plex.ActivateWindow(10051)</onclick>
 					<visible>!Skin.HasSetting(noSearch)</visible>
 				</item>
+-->
 <!--
 				<item id="3">
 					<label>$LOCALIZE[31973]</label>

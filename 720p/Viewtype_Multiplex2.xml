@@ -241,7 +241,7 @@
 			<pagecontrol>60</pagecontrol>
 			<onleft>555</onleft>
 			<onright>555</onright>
-			<onup>7000</onup>
+			<onup>1300</onup>
 			<ondown>-</ondown>
 			<orientation>horizontal</orientation>
 			<focusposition>3</focusposition>	

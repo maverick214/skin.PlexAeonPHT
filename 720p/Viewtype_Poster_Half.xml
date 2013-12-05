@@ -28,7 +28,6 @@
 			<shadowcolor>678b8b8b</shadowcolor>
 			<textcolor>678b8b8b</textcolor>
 			<label>$INFO[ListItem.label]</label>
-			<include>Animation_HiddenByInfo</include>
 			<include>Animation_Bartowski_Context_Zoom</include>
 		</control>
 
@@ -44,7 +43,6 @@
 			<shadowcolor>678b8b8b</shadowcolor>
 			<textcolor>678b8b8b</textcolor>
 			<label>$LOCALIZE[31235]</label>
-			<include>Animation_HiddenByInfo</include>
 			<include>Animation_Bartowski_Context_Zoom</include>
 		</control>
 -->		
@@ -55,8 +53,8 @@
 			<width>1400</width>
 			<onleft>598</onleft>
 			<onright>598</onright>
-			<onup>7000</onup>
-			<ondown>7000</ondown>
+			<onup>1300</onup>
+			<ondown>1300</ondown>
 			<viewtype label="Poster Half">list</viewtype>
 			<orientation>horizontal</orientation>
 			<focusposition>0</focusposition>
@@ -64,7 +62,6 @@
 			<preloaditems>2</preloaditems>
 			<pagecontrol>665</pagecontrol>
 			<include>Animation_ZoomInZoomOut</include>
-			<include>Animation_HiddenByInfo</include>
 			<camera x="1340" y="380" />
 			<animation effect="rotatey" center="50" start="12" end="10" time="0" condition="true">Conditional</animation>
 			<visible>!Skin.HasSetting(no_Poster) + ![Container.Content(episodes) | Container.Content(years)]</visible>
@@ -298,7 +295,6 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<include>Animation_ZoomInZoomOut</include>
-			<include>Animation_HiddenByInfo</include>
 			<control type="textbox">
 				<description>Plot Movie</description>
 				<posx>10</posx>
@@ -440,7 +436,6 @@
 		<posx>20</posx>
 		<posy>110</posy>
 		<include>Animation_ZoomInZoomOut</include>
-		<include>Animation_HiddenByInfo</include>
 <!--		<animation effect="slide" start="0,0" end="0,-40" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(tv_logos)">Conditional</animation> -->
 		<visible>Control.IsVisible(598) + !IsEmpty(ListItem.Title) + [Container.Content(tvshows) | Container.Content(seasons)] + !Player.HasVideo</visible>	
 <!--

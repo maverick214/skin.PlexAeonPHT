@@ -145,7 +145,7 @@
 		<height>387</height>
         <pagecontrol>61</pagecontrol>
 		<scrolltime>0</scrolltime>
-		<onleft>7000</onleft>
+		<onleft>1300</onleft>
 		<onright>61</onright>
 		<onup>50</onup>
 		<ondown>50</ondown>
@@ -204,8 +204,9 @@
 				<include>listcolornofocus</include>
 				<label>[UPPERCASE]$INFO[ListItem.Duration][/UPPERCASE]</label>
 			</control>			
+
 			<control type="label">
-				<visible>!Container.Content(movies) + !StringCompare(ListItem.Property(UnWatchedEpisodes),0)</visible>
+				<visible>!Container.Content(movies) + !Container.Content(episodes) + !StringCompare(ListItem.Property(UnWatchedEpisodes),0)</visible>
 				<include>ListLabel_Detail</include>
 				<include>listcolornofocus</include>
 				<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
@@ -306,7 +307,7 @@
 				<visible>!Control.IsVisible(76)</visible>
 			</control>					
 			<control type="label">
-				<visible>!Container.Content(movies) + !StringCompare(ListItem.Property(UnWatchedEpisodes),0)</visible>
+				<visible>!Container.Content(movies) + !Container.Content(episodes) + !StringCompare(ListItem.Property(UnWatchedEpisodes),0)</visible>
 				<include>ListLabel_Detail</include>
 				<include>listcolorfocus</include>
 				<animation effect="slide" start="0,0" end="-665,0" time="0" easing="inout" tween="cubic" condition="Container.Content(episodes)">Conditional</animation>
