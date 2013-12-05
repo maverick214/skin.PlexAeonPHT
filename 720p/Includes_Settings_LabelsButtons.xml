@@ -51,11 +51,12 @@
 			<description>Settings Labels - Tier 1: Network</description>
 			<include>Labels_MainLabelGroup</include>
 			<visible>Control.HasFocus(2)</visible>
+<!--
 			<control type="label">
 				<include>Labels_MainLabelBigVars</include>
 				<label>31812</label>
 			</control>
-
+-->
 			<control type="label">
 				<include>Labels_MainLabelSmallVars</include>
 				<label>31813</label>
@@ -68,11 +69,12 @@
 			<description>Settings Labels - Tier 1: Appearance</description>
 			<include>Labels_MainLabelGroup</include>
 			<visible>Control.HasFocus(3)</visible>
+<!--
 			<control type="label">
 				<include>Labels_MainLabelBigVars</include>
 				<label>31814</label>
 			</control>
-
+-->
 			<control type="label">
 				<include>Labels_MainLabelSmallVars</include>
 				<label>31815</label>
@@ -85,11 +87,12 @@
 			<description>Settings Labels - Tier 1: System</description>
 			<include>Labels_MainLabelGroup</include>
 			<visible>Control.HasFocus(4)</visible>
+<!--
 			<control type="label">
 				<include>Labels_MainLabelBigVars</include>
 				<label>31816</label>
 			</control>
-
+-->
 			<control type="label">
 				<include>Labels_MainLabelSmallVars</include>
 				<label>31817</label>
@@ -102,11 +105,12 @@
 			<description>Settings Labels - Tier 1: Movies</description>
 			<include>Labels_MainLabelGroup</include>
 			<visible>Control.HasFocus(6)</visible>
+<!--
 			<control type="label">
 				<include>Labels_MainLabelBigVars</include>
 				<label>31800</label>
 			</control>
-
+-->
 			<control type="label">
 				<include>Labels_MainLabelSmallVars</include>
 				<label>31801</label>
@@ -119,11 +123,12 @@
 			<description>Settings Labels - Tier 1: Music</description>
 			<include>Labels_MainLabelGroup</include>
 			<visible>Control.HasFocus(7)</visible>
+<!--
 			<control type="label">
 				<include>Labels_MainLabelBigVars</include>
 				<label>31802</label>
 			</control>
-
+-->
 			<control type="label">
 				<include>Labels_MainLabelSmallVars</include>
 				<label>31803</label>
@@ -147,12 +152,13 @@
 			</control>
 
 		</control>
--->
+
 		<control type="group">
 
 			<description>Settings Labels - Tier 1: Pictures</description>
 			<include>Labels_MainLabelGroup</include>
 			<visible>Control.HasFocus(9)</visible>
+
 			<control type="label">
 				<include>Labels_MainLabelBigVars</include>
 				<label>31806</label>
@@ -164,16 +170,18 @@
 			</control>
 
 		</control>
+-->
 		<control type="group">
 
 			<description>Settings Labels - Tier 1: Customisation Options</description>
 			<include>Labels_MainLabelGroup</include>
 			<visible>Control.HasFocus(11)</visible>
+<!--
 			<control type="label">
 				<include>Labels_MainLabelBigVars</include>
 				<label>31810</label>
 			</control>
-
+-->
 			<control type="label">
 				<include>Labels_MainLabelSmallVars</include>
 				<label>31811</label>
@@ -186,11 +194,12 @@
 			<description>Settings Labels - Tier 1: Advanced Options</description>
 			<include>Labels_MainLabelGroup</include>
 			<visible>Control.HasFocus(12)</visible>
+<!--
 			<control type="label">
 				<include>Labels_MainLabelBigVars</include>
 				<label>31820</label>
 			</control>
-
+-->
 			<control type="label">
 				<include>Labels_MainLabelSmallVars</include>
 				<label>31821</label>
@@ -206,11 +215,12 @@
 			<description>31080</description>
 			<include>Labels_MainLabelGroup</include>
 			<visible>Control.HasFocus(6) | Control.HasFocus(300)</visible>
+<!--
 			<control type="label">
 				<include>Labels_MainLabelBigVars</include>
 				<label>31081</label>
 			</control>
-
+-->
 			<control type="label">
 				<include>Labels_MainLabelSmallVars</include>
 				<label>31082</label>
@@ -223,11 +233,12 @@
 			<description>31083</description>
 			<include>Labels_MainLabelGroup</include>
 			<visible>Control.HasFocus(92)</visible>
+<!--
 			<control type="label">
 				<include>Labels_MainLabelBigVars</include>
 				<label>$LOCALIZE[31102] $INFO[Control.GetLabel(300)] $LOCALIZE[31103]</label>
 			</control>
-
+-->
 			<control type="label">
 				<include>Labels_MainLabelSmallVars</include>
 				<label>31085</label>
@@ -240,11 +251,12 @@
 			<description>31086</description>
 			<include>Labels_MainLabelGroup</include>
 			<visible>Control.HasFocus(7)</visible>
+<!--
 			<control type="label">
 				<include>Labels_MainLabelBigVars</include>
 				<label>31087</label>
 			</control>
-
+-->
 			<control type="label">
 				<include>Labels_MainLabelSmallVars</include>
 				<label>31088</label>
@@ -257,11 +269,12 @@
 			<description>31086</description>
 			<include>Labels_MainLabelGroup</include>
 			<visible>Control.HasFocus(301)</visible>
+<!--
 			<control type="label">
 				<include>Labels_MainLabelBigVars</include>
 				<label>$LOCALIZE[31104] $INFO[Control.GetLabel(301)] $LOCALIZE[31105]</label>
 			</control>
-
+-->
 			<control type="label">
 				<include>Labels_MainLabelSmallVars</include>
 				<label>31088</label>
@@ -274,12 +287,13 @@
 			<description>31089</description>
 			<include>Labels_MainLabelGroup</include>
 			<visible>Control.HasFocus(8) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(32)</visible>
+<!--
 			<control type="label">
 				<include>Labels_MainLabelBigVars</include>
 				<label>31090</label>
 				<visible>Control.HasFocus(8) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(32)</visible>
 			</control>
-
+-->
 			<control type="label">
 				<include>Labels_MainLabelSmallVars</include>
 				<label>31091</label>
@@ -322,12 +336,13 @@
 
 			<include>Labels_MainLabelGroup</include>
 			<visible>Control.HasFocus(10) | Control.HasFocus(60) | Control.HasFocus(61) | Control.HasFocus(62)</visible>
+<!--
 			<control type="label">
 				<include>Labels_MainLabelBigVars</include>
 				<label>31106</label>
 				<visible>Control.HasFocus(10) | Control.HasFocus(60) | Control.HasFocus(61) | Control.HasFocus(62)</visible>
 			</control>
-
+-->
 			<control type="label">
 				<include>Labels_MainLabelSmallVars</include>
 				<label>31107</label>
@@ -377,11 +392,12 @@
 			<description>31097</description>
 			<include>Labels_MainLabelGroup</include>
 			<visible>Control.HasFocus(9)</visible>
+<!--
 			<control type="label">
 				<include>Labels_MainLabelBigVars</include>
 				<label>31098</label>
 			</control>
-
+-->
 			<control type="label">
 				<include>Labels_MainLabelSmallVars</include>
 				<label>31099</label>
@@ -394,11 +410,12 @@
 			<description>31097</description>
 			<include>Labels_MainLabelGroup</include>
 			<visible>Control.HasFocus(40)</visible>
+<!--
 			<control type="label">
 				<include>Labels_MainLabelBigVars</include>
 				<label>31100</label>
 			</control>
-
+-->
 			<control type="label">
 				<include>Labels_MainLabelSmallVars</include>
 				<label>31101</label>
@@ -411,11 +428,12 @@
 			<description>Settings Labels - Tier 1: Advanced Options</description>
 			<include>Labels_MainLabelGroup</include>
 			<visible>Control.HasFocus(12)</visible>
+<!--
 			<control type="label">
 				<include>Labels_MainLabelBigVars</include>
 				<label>31818</label>
 			</control>
-
+-->
 			<control type="label">
 				<include>Labels_MainLabelSmallVars</include>
 				<label>31819</label>
@@ -428,11 +446,12 @@
 			<description>Settings Labels - SURROUND SOUND CHECK</description>
 			<include>Labels_MainLabelGroup</include>
 			<visible>Control.HasFocus(11)</visible>
+<!--
 			<control type="label">
 				<include>Labels_MainLabelBigVars</include>
 				<label>31822</label>
 			</control>
-
+-->
 			<control type="label">
 				<visible>$INFO[Skin.String(soundtest)]</visible>
 				<include>Labels_MainLabelSmallVars</include>
