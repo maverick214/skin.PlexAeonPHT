@@ -1033,7 +1033,7 @@
             <width>350</width>
             <height>208</height>
             <font>Font_Info</font>
-            <label fallback="312577">$INFO[Container.Property(description)]</label>
+            <label fallback="312577">$INFO[Container.ShowPlot]</label>
             <textcolor>d0FFFFFF</textcolor>
             <shadowcolor>black</shadowcolor>
             <autoscroll delay="8000" time="2000" repeat="8000">Skin.HasSetting(AutoScroll)</autoscroll>

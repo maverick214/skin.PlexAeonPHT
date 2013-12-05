@@ -4213,7 +4213,7 @@
 				<width>570</width>
 				<height>197</height>
 				<font>Font_MultiplexPlotOld</font>
-				<info fallback="31414">Container.Property(description)</info>
+				<info fallback="31414">Container.ShowPlot</info>
 				<textcolor>d0FFFFFF</textcolor>
 				<autoscroll delay="15000" time="2000" repeat="10000">Skin.HasSetting(allowscroll)</autoscroll>
 				<visible>Container.Content(seasons)</visible>
@@ -7358,10 +7358,10 @@
 	            </control>
 	            <control type="textbox">
 	                <description>Plot</description>
-	                <label fallback="416">$INFO[Container.Property(description)]</label>
+	                <label fallback="416">$INFO[Container.ShowPlot]</label>
 	                <include>PlotDetailLabel</include>
 					<multiline>true</multiline>
-	                <visible>!IsEmpty(Container.Property(description))</visible>
+	                <visible>!IsEmpty(Container.ShowPlot)</visible>
 	            </control>
 	        </control>
 	    </control>

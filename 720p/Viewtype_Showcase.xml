@@ -344,7 +344,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>IsEmpty(ListItem.Tagline)</visible>
+				<visible>IsEmpty(ListItem.Tagline) + !Container.Content(Seasons)</visible>
 				<control type="textbox">
 					<posx>416</posx>
 					<posy>44</posy>
@@ -380,6 +380,44 @@
 					<visible>Skin.HasSetting(showcasefanart) | Skin.HasSetting(showcasebigthumb) | Skin.HasSetting(showcasebigtrailer)</visible>
 				</control>
 			</control>
+			<control type="group">
+				<visible>IsEmpty(ListItem.Tagline) + Container.Content(Seasons)</visible>
+				<control type="textbox">
+					<posx>416</posx>
+					<posy>44</posy>
+					<width>455</width>
+					<height>300</height>
+					<font>Font_MultiplexPlot</font>
+					<label>$INFO[Container.ShowPlot]</label>
+					<textcolor>d0FFFFFF</textcolor>
+					<autoscroll delay="15000" time="2000" repeat="10000">true</autoscroll>
+					<visible>![Skin.HasSetting(showcasefanart) | Skin.HasSetting(showcasebigthumb) | Skin.HasSetting(showcasebigtrailer) | Skin.HasSetting(showcasetrailer)]</visible>
+					<pagecontrol>13</pagecontrol>
+				</control>
+				<control type="textbox">
+					<posx>905</posx>
+					<posy>44</posy>
+					<width>263</width>
+					<height>300</height>
+					<font>Font_MultiplexPlot</font>
+					<label>$INFO[Container.ShowPlot]</label>
+					<textcolor>d0FFFFFF</textcolor>
+					<autoscroll delay="15000" time="2000" repeat="10000">true</autoscroll>
+					<visible>Skin.HasSetting(showcasetrailer)</visible>
+				</control>
+				<control type="textbox">
+					<posx>105</posx>
+					<posy>205</posy>
+					<width>435</width>
+					<height>149</height>
+					<font>Font_MultiplexPlotSmall</font>
+					<label>$INFO[Container.ShowPlot]</label>
+					<textcolor>d0FFFFFF</textcolor>
+					<autoscroll delay="15000" time="2000" repeat="10000">true</autoscroll>
+					<visible>Skin.HasSetting(showcasefanart) | Skin.HasSetting(showcasebigthumb) | Skin.HasSetting(showcasebigtrailer)</visible>
+				</control>
+			</control>
+			
 			
 			<control type="group">
 				<posx>920</posx>

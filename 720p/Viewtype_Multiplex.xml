@@ -865,7 +865,7 @@
 				<width>375</width>
 				<height>197</height>
 				<font>Font_MultiplexPlotSmall</font>
-				<info>Container.Property(description)</info>
+				<info>Container.ShowPlot</info>
 				<textcolor>d0FFFFFF</textcolor>
 				<autoscroll delay="15000" time="2000" repeat="10000">true</autoscroll>
 				<visible>Container.Content(seasons)</visible>

@@ -668,11 +668,11 @@
 				<width>380</width>
 				<height>196</height>
 				<font>Font_MultiplexPlotSmall</font>
-				<info>Container.Property(description)</info>
+				<info>Container.ShowPlot</info>
 				<include condition="!Skin.HasSetting(Lightclearlist)">cList_NightLabelColorsFocus</include>
 				<include condition="Skin.HasSetting(Lightclearlist)">cList_LightInfoColor</include>
 				<autoscroll delay="15000" time="3000" repeat="10000">true</autoscroll>
-	            <visible>!IsEmpty(Container.Property(description))</visible>
+	            <visible>!IsEmpty(Container.ShowPlot)</visible>
 			</control>
 		</control>
 		<control type="group">

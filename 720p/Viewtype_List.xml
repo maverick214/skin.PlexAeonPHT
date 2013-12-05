@@ -502,7 +502,7 @@
 	  <include>Animation_CommonFade</include>
 	</control>
 	<control type="textbox">
-		<visible>Control.IsVisible(50) + !IsEmpty(Container.Property(description))</visible>
+		<visible>Control.IsVisible(50) + !IsEmpty(Container.ShowPlot)</visible>
 		<posy>83</posy>
 		<posx>870</posx>
 		<height>55</height>
@@ -510,7 +510,7 @@
 		<font>Font_FSInfoPlot</font>
 		<textcolor>d0ffffff</textcolor>
 		<include>Animation_PlotFade</include>
-		<info>Container.Property(description)</info>
+		<info>Container.ShowPlot</info>
 		<autoscroll delay="3000" time="3000" repeat="2000">visible</autoscroll>
 	  <include>Animation_CommonFade</include>
 	</control>

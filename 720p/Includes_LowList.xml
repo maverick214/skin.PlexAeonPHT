@@ -1858,7 +1858,7 @@
 			<control type="textbox">
 				<description>DESCRIPTION: (Short - Seasons)</description>
 				<include>LowList_ShortTextBox</include>
-				<label>$INFO[Container.Property(description),[UPPERCASE][COLOR 66ffffff]$LOCALIZE[21821]: [/COLOR][/UPPERCASE]]</label>
+				<label>$INFO[Container.ShowPlot,[UPPERCASE][COLOR 66ffffff]$LOCALIZE[21821]: [/COLOR][/UPPERCASE]]</label>
 				<visible>Container.Content(seasons) + !Skin.HasSetting(highlist) + ![Skin.HasSetting(tvdescpaneloff) + IsEmpty(ListItem.Art(fanart)) + IsEmpty(container.property(fanart_image))]</visible>
 			</control>
 
@@ -1878,7 +1878,7 @@
 			<control type="textbox">
 				<description>DESCRIPTION: (Tall - Seasons)</description>
 				<include>LowList_TallTextBox</include>
-				<label>$INFO[Container.Property(description),[UPPERCASE][COLOR 66ffffff]$LOCALIZE[21821]:[/COLOR][/UPPERCASE][CR]]</label>
+				<label>$INFO[Container.showplot,[UPPERCASE][COLOR 66ffffff]$LOCALIZE[21821]:[/COLOR][/UPPERCASE][CR]]</label>
 				<visible>Container.Content(seasons) + Skin.HasSetting(highlist) + ![Skin.HasSetting(tvdescpaneloff) + IsEmpty(ListItem.Art(fanart)) + IsEmpty(container.property(fanart_image))]</visible>
 			</control>
 
