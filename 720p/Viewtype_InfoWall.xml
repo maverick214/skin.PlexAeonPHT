@@ -598,6 +598,7 @@
           <label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
 		  <visible>IsEmpty(Container.Property(mixedParents)) + !Container.Content(Episodes)</visible>
         </control>
+<!--
         <control type="label">
           <posx>840</posx>
           <posy>105</posy>
@@ -609,9 +610,10 @@
           <label>[UPPERCASE]$INFO[ListItem.TVShowTitle][/UPPERCASE]</label>
 		  <visible>Container.Content(Episodes)</visible>
         </control>
+-->
         <control type="label">
           <posx>840</posx>
-          <posy>130</posy>
+          <posy>105</posy>
           <height>13</height>
           <width>400</width>
           <font>Font_Bold20</font>
