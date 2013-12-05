@@ -133,7 +133,7 @@
 
 				<control type="label">
 					<include>WallInfoValue</include>
-					<label fallback="31425">$INFO[ListItem.Property(FirstDirector)]</label>
+					<label fallback="31425">$INFO[ListItem.Director]</label>
 				</control>
 
 			</control>
@@ -148,7 +148,7 @@
 
 				<control type="label">
 					<include>WallInfoValue</include>
-					<label fallback="31425">$INFO[ListItem.Property(FirstWriter)]</label>
+					<label fallback="31425">$INFO[ListItem.Writer]</label>
 				</control>
 
 			</control>

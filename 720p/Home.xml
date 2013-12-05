@@ -205,7 +205,7 @@
 
 		</control>
 
-<!-- Second List for Severs -->
+<!-- Second List for Servers -->
 		<control type="group">
 			<visible>!Skin.HasSetting(NoServerID)</visible>
 
@@ -226,7 +226,7 @@
 		<control type="label">
 			<align>center</align>
 			<posx>79</posx>
-			<posy>388</posy>
+			<posy>380</posy>
 			<font>Font_RecentlyAdded</font>
 			<include>Animation_SubMenu</include>
 			<width>1123</width>

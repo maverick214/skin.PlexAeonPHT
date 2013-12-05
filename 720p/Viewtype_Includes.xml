@@ -3611,7 +3611,7 @@
 					</control>
 					<control type="label">
 						<include>OldMultiplexInfoValue</include>
-						<label fallback="31425">$INFO[ListItem.Property(FirstWriter)]</label>
+						<label fallback="31425">$INFO[ListItem.Writer]</label>
 					</control>
 				</control>
 				<control type="group">
@@ -4621,7 +4621,7 @@
 						<wrapmultiline>false</wrapmultiline>
 						<font>cast</font>
 						<textcolor>FFFFFFFF</textcolor>				
-						<label>$INFO[ListItem.Property(FirstDirector)]</label>
+						<label>$INFO[ListItem.Director]</label>
 					</control>			
 				</control>
 				
