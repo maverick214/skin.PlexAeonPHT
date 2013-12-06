@@ -195,7 +195,7 @@
 					</control>
 					<control type="label">
 						<include>ShowcaseInfoValue</include>
-						<label fallback="31425">$INFO[ListItem.Property(FirstGenre)]</label>
+						<label fallback="31425">$INFO[ListItem.Property(Genre)]</label>
 					</control>
 				</control>
 				<control type="group">

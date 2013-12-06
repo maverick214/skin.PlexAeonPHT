@@ -190,7 +190,7 @@
 	</include>
 		<include name="cList_InfoValue">
 		<posx>0</posx>
-		<width>250</width>
+		<width>170</width>
 		<height>13</height>
 		<font>Font_MediaWindowMenu</font>
 		<include condition="!Skin.HasSetting(Lightclearlist)">cList_NightLabelColors</include>
@@ -389,7 +389,7 @@
 					<control type="label">
 						<posy>17</posy>
 						<include>cList_InfoValue</include>
-						<label fallback="31425">$INFO[ListItem.Property(FirstGenre)]</label>
+						<label fallback="31425">$INFO[ListItem.Property(Genre)]</label>
 					</control>
 				</control>
 				</control>
@@ -473,7 +473,7 @@
 					<control type="label">
 						<posy>17</posy>
 						<include>cList_InfoValue</include>
-						<label fallback="31425">$INFO[ListItem.Property(FirstGenre)]</label>
+						<label fallback="31425">$INFO[ListItem.Property(Genre)]</label>
 					</control>
 				</control>
 				<control type="group">
@@ -672,7 +672,7 @@
 				<include condition="!Skin.HasSetting(Lightclearlist)">cList_NightLabelColorsFocus</include>
 				<include condition="Skin.HasSetting(Lightclearlist)">cList_LightInfoColor</include>
 				<autoscroll delay="15000" time="3000" repeat="10000">true</autoscroll>
-	            <visible>!IsEmpty(Container.ShowPlot)</visible>
+	            <visible>!IsEmpty(Container.ShowPlot) + !Container.Content(episodes)</visible>
 			</control>
 		</control>
 		<control type="group">
