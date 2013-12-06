@@ -436,7 +436,7 @@
 		<posx>20</posx>
 		<posy>110</posy>
 		<include>Animation_ZoomInZoomOut</include>
-<!--		<animation effect="slide" start="0,0" end="0,-40" time="0" tween="cubic" easing="inout" condition="!Skin.HasSetting(tv_logos)">Conditional</animation> -->
+		<animation effect="slide" start="0,0" end="0,-40" time="0" tween="cubic" easing="inout" condition="true">Conditional</animation>
 		<visible>Control.IsVisible(598) + !IsEmpty(ListItem.Title) + [Container.Content(tvshows) | Container.Content(seasons)] + !Player.HasVideo</visible>	
 <!--
 			<control type="label">
