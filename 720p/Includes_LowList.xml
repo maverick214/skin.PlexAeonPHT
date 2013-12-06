@@ -1883,12 +1883,20 @@
 			</control>
 
 			<!-- Left aligned labels -->
+<!--
 			<control type="label">
 				<description>GENRE:</description>
 				<include>LowList_DetailInfoLabelPos4L</include>
-				<label>[UPPERCASE]$LOCALIZE[515]:[/UPPERCASE] [COLOR d0ffffff]$INFO[ListItem.Firstgenre][/COLOR]</label>
+				<label>[UPPERCASE]$LOCALIZE[515]:[/UPPERCASE] [COLOR d0ffffff]$INFO[ListItem.genre][/COLOR]</label>
 				<visible>!IsEmpty(ListItem.genre)</visible>
-				<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
+				<visible>Container.Content(tvshows)</visible>
+			</control>
+-->
+			<control type="label">
+				<description>UNWATCHED:</description>
+				<include>LowList_DetailInfoLabelPos4L</include>
+				<label>$LOCALIZE[31440]: [COLOR d0ffffff]$INFO[ListItem.Property(UNwatchedEpisodes)][/COLOR]</label>
+				<visible>Container.Content(TVShows)</visible>
 			</control>
 			<control type="label">
 				<description>Label 2</description>
@@ -1901,7 +1909,7 @@
 				<include>LowList_DetailInfoLabelPos4L</include>
 				<label>[UPPERCASE]$LOCALIZE[515]:[/UPPERCASE] [COLOR d0ffffff]-[/COLOR]</label>
 				<visible>!IsEmpty(ListItem.genre)</visible>
-				<visible>!Container.Content(episodes) + !Container.Content(seasons) +  !Window.IsActive(25)</visible>
+				<visible>!Container.Content(episodes) + !Container.Content(seasons) + !Window.IsActive(25)</visible>
 			</control>
 
 			<control type="label">
