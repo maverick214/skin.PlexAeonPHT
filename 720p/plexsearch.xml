@@ -378,7 +378,7 @@
       </control>
     </control>
 
-			<control type="label" id="310">
+			<control type="edit" id="310">
 				<posx>25</posx>
 				<posy>25</posy>
 				<font>Font_SearchTitle</font>

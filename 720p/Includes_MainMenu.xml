@@ -247,7 +247,7 @@
 					<visible>!Skin.HasSetting(programs)</visible>
 					<width min="95" max="95">auto</width>
 				</item>
-<!--
+
 				<item id="11">
 					<description>Search Menu</description>
 					<include>BackgroundVarsSearch</include>
@@ -255,7 +255,7 @@
 					<onclick>Plex.ActivateWindow(10051)</onclick>
 					<visible>!Skin.HasSetting(noSearch)</visible>
 				</item>
--->
+
 <!--
 				<item id="3">
 					<label>$LOCALIZE[31973]</label>
