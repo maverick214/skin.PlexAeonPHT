@@ -239,11 +239,12 @@
 			<label>$INFO[Container(300).ListItem.Label2]</label>
 			<visible>!IsEmpty(Container(300).ListItem.Label2)</visible>
 		</control>
-
 		</control>
+
 		<include>Furniture_HomeNowPlaying</include>
 		<include>Furniture_Time</include>
 		<include>Submenu</include>
+
 		<control type="group">
 			<posx>0</posx>
 			<posy>-20</posy>

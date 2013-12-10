@@ -236,7 +236,7 @@
 					<label>$LOCALIZE[31971]</label>
 					<include>BackgroundVarsVideo</include>
 					<onclick>XBMC.ActivateWindow(24)</onclick>
-					<visible>!Skin.HasSetting(novideos)</visible>
+					<visible>!Skin.HasSetting(nochannels)</visible>
 					<width min="95" max="95">auto</width>
 				</item>
 -->
@@ -414,6 +414,7 @@
 				</control>
 			</focusedlayout>
 			<content>
+<!--
 				<item id="2">
 					<label>$LOCALIZE[31972]</label>
 					<include>BackgroundVarsMusic</include>
@@ -422,6 +423,7 @@
 					<width min="95" max="95">auto</width>
 					<visible>!Skin.HasSetting(nomusic)</visible>
 				</item>
+-->
 				<item id="12">
 					<!-- App store -->
 					<label>$LOCALIZE[31952]</label>
@@ -430,6 +432,7 @@
 					<onclick>SetFocus(92)</onclick>
 					<width min="95" max="95">auto</width>
 				</item>
+<!--
 				<item id="3">
 					<label>$LOCALIZE[31973]</label>
 					<include>BackgroundVarsPictures</include>
@@ -438,6 +441,7 @@
 					<width min="95" max="95">auto</width>
 					<visible>!Skin.HasSetting(nopictures)</visible>
 				</item>
+-->
 				<item id="14">
 					<label>31144</label>
 					<include>BackgroundVarsPrograms</include>
@@ -453,13 +457,14 @@
 					<width min="95" max="95">auto</width>
 					<visible>!Skin.HasSetting(noSearch)</visible>
 				</item>
+
 				<item id="1">
-					<label>$LOCALIZE[31971]</label>
+					<label>$LOCALIZE[31970]</label>
 					<include>BackgroundVarsVideo</include>
 					<onclick>Skin.SetString(custom,CustomVideofolder)</onclick>
 					<onclick>SetFocus(92)</onclick>
 					<width min="95" max="95">auto</width>
-					<visible>!Skin.HasSetting(novideos)</visible>
+					<visible>!Skin.HasSetting(nochannels)</visible>
 				</item>
 
 				<item id="24">
@@ -485,6 +490,7 @@
 					<width min="95" max="95">auto</width>
 					<visible>true</visible>
 				</item>
+<!--
 				<item id="13">
 					<description>Play DVD</description>
 					<label>31018</label>
@@ -493,6 +499,7 @@
 					<width min="95" max="95">auto</width>
 					<onclick>SetFocus(92)</onclick>
 				</item>
+-->
 <!--
 				<item id="21">
 					<description>Favorites</description>
@@ -723,6 +730,7 @@
 
 			</focusedlayout>
 			<content>
+<!--
 				<item id="2">
 					<label>$LOCALIZE[31972]</label>
 					<include>BackgroundVarsMusic</include>
@@ -737,6 +745,7 @@
 					<width min="95" max="95">auto</width>
 					<visible>Skin.HasSetting(nomusic)</visible>
 				</item>
+-->
 				<item id="12">
 					<label>$LOCALIZE[31952]</label>
 					<include>BackgroundVarsGames</include>
@@ -751,6 +760,7 @@
 					<width min="95" max="95">auto</width>
 					<visible>Skin.HasSetting(NoPlexOnline)</visible>
 				</item>
+<!--
 				<item id="3">
 					<label>$LOCALIZE[31973]</label>
 					<include>BackgroundVarsPictures</include>
@@ -765,6 +775,7 @@
 					<width min="95" max="95">auto</width>
 					<visible>Skin.HasSetting(nopictures)</visible>
 				</item>
+-->
 				<item id="4">
 					<label>31144</label>
 					<include>BackgroundVarsPrograms</include>
@@ -793,21 +804,22 @@
 					<onclick>Skin.Reset(noSearch)</onclick>
 					<visible>Skin.HasSetting(noSearch)</visible>
 				</item>
-
+<!--
 				<item id="1">
-					<label>$LOCALIZE[31971]</label>
+					<label>$LOCALIZE[31970]</label>
 					<include>BackgroundVarsVideo</include>
-					<onclick>Skin.SetBool(novideos)</onclick>
+					<onclick>Skin.SetBool(nochannels)</onclick>
 					<width min="95" max="95">auto</width>
-					<visible>!Skin.HasSetting(novideos)</visible>
+					<visible>!Skin.HasSetting(nochannels)</visible>
 				</item>
 				<item id="1">
-					<label2>$LOCALIZE[31971]</label2>
+					<label2>$LOCALIZE[31970]</label2>
 					<include>BackgroundVarsVideo</include>
-					<onclick>Skin.Reset(novideos)</onclick>
+					<onclick>Skin.Reset(nochannels)</onclick>
 					<width min="95" max="95">auto</width>
-					<visible>Skin.HasSetting(novideos)</visible>
+					<visible>Skin.HasSetting(nochannels)</visible>
 				</item>
+-->
 <!--
 				<item id="24">
 					<description>My Scripts</description>

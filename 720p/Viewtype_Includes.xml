@@ -7355,7 +7355,7 @@
 	                <label fallback="416">$INFO[Container.ShowPlot]</label>
 	                <include>PlotDetailLabel</include>
 					<multiline>true</multiline>
-	                <visible>!IsEmpty(Container.ShowPlot)</visible>
+	                <visible>!IsEmpty(Container.ShowPlot) + IsEmpty(ListItem.Plot)</visible>
 	            </control>
 	        </control>
 	    </control>
