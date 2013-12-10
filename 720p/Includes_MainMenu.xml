@@ -248,14 +248,6 @@
 					<width min="95" max="95">auto</width>
 				</item>
 
-				<item id="11">
-					<description>Search Menu</description>
-					<include>BackgroundVarsSearch</include>
-					<label>$LOCALIZE[137]</label>
-					<onclick>Plex.ActivateWindow(10051)</onclick>
-					<visible>!Skin.HasSetting(noSearch)</visible>
-				</item>
-
 <!--
 				<item id="3">
 					<label>$LOCALIZE[31973]</label>
@@ -281,6 +273,13 @@
 					<onclick>XBMC.ActivateWindow(4)</onclick>
 					<width min="95" max="95">auto</width>
 					<visible>!Skin.HasSetting(SectionsMenu)</visible>
+				</item>
+				<item id="11">
+					<description>Search Menu</description>
+					<include>BackgroundVarsSearch</include>
+					<label>$LOCALIZE[137]</label>
+					<onclick>Plex.ActivateWindow(10051)</onclick>
+					<visible>!Skin.HasSetting(noSearch)</visible>
 				</item>
 <!--
 				<item id="24">

@@ -621,7 +621,7 @@
 		</font>
 		<font>
 			<name>Font_FSInfoLabel</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>aeon_player_cy.ttf</filename>
 			<size>17</size>
 		</font>
 		<font>
@@ -1032,7 +1032,7 @@
 		</font>
 		<font>
 			<name>Font_FSInfoLabel</name>
-			<filename>aeon_edit.ttf</filename>
+			<filename>Ubuntu-B.ttf</filename>
 			<size>16</size>
 		</font>
 		<font>
@@ -1426,7 +1426,7 @@
 		</font>
 		<font>
 			<name>Font_FSInfoLabel</name>
-			<filename>aeon_main_kr.ttf</filename>
+			<filename>Ubuntu-B.ttf</filename>
 			<size>16</size>
 		</font>
 		<font>
@@ -2062,7 +2062,7 @@
 		</font>
 		<font>
 			<name>Font_FSInfoLabel</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-B.ttf</filename>
 			<size>17</size>
 		</font>
 		<font>
@@ -2587,7 +2587,7 @@
 		</font>
 		<font>
 			<name>Font_FSInfoLabel</name>
-			<filename>aeon_edit_ce.ttf</filename>
+			<filename>Ubuntu-B.ttf</filename>
 			<size>16</size>
 		</font>
 		<font>
@@ -3111,7 +3111,7 @@
 		</font>
 		<font>
 			<name>Font_FSInfoLabel</name>
-			<filename>aeon_multiplex.ttf</filename>
+			<filename>Ubuntu-B.ttf</filename>
 			<size>17</size>
 		</font>
 		<font>

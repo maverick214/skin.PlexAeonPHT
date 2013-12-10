@@ -19,6 +19,7 @@
           <scrolltime>200</scrolltime>
           <viewtype label="$LOCALIZE[31283]">icon</viewtype>
           <pagecontrol>60</pagecontrol>
+      	  <include>Animation_CommonFade</include>
           <visible>![Window.IsActive(25) + Container.Content(plugincontent)] + !Container.Content(plugins)</visible>
 <!--
           <itemlayout height="190" width="190" condition="[!Container.Content(movies)+!Container.Content(tvshows)+!Container.Content(episodes) + ![Window.IsActive(1)]|[Window.IsActive(1) +Skin.HasSetting(InfoWallSquare)]">
@@ -571,7 +572,8 @@
 
         </control>
         <control type="scrollbar" id="60">
-          <posx>1227</posx>
+         <include>Animation_CommonFade</include>
+         <posx>1227</posx>
           <posy>100</posy>
           <width>65</width>
           <height>548</height>
@@ -588,7 +590,8 @@
           <onright>7000</onright>
         </control>
         <control type="label">
-          <posx>840</posx>
+         <include>Animation_CommonFade</include>
+         <posx>840</posx>
           <posy>105</posy>
           <height>13</height>
           <width>400</width>
@@ -611,6 +614,8 @@
 		  <visible>Container.Content(Episodes)</visible>
         </control>
 -->
+        <control type="group">
+        <include>Animation_CommonFade</include>
         <control type="label">
           <posx>840</posx>
           <posy>105</posy>
@@ -623,6 +628,7 @@
 		  <visible>Container.Content(Episodes)</visible>
         </control>
         <control type="label">
+       	  <include>Animation_CommonFade</include>
           <posx>840</posx>
           <posy>105</posy>
           <height>13</height>
@@ -1065,6 +1071,7 @@
             <visible>Container.Content(movies)|Container.Content(tvshows)|Container.Content(episodes)|Container.Content(seasons)</visible>
           </control>
         </control>
+      </control>
       </control>
 		<include>Furniture_WallMediaFlags</include>		
     </control>

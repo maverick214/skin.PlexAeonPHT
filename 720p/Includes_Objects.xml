@@ -271,7 +271,7 @@
 
 	<include name="Objects_FSInfoButton">
 		<include>Colour_Grey</include>
-		<width>119</width>
+		<width>139</width>
 		<align>center</align>
 		<aligny>center</aligny>
 		<height>29</height>
