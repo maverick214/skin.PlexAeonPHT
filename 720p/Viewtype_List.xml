@@ -806,7 +806,7 @@
 		</animation>
 		
 		<control type="largeimage">
-			<posx>775</posx>
+			<posx>770</posx>
 			<posy>180</posy>
 			<width>390</width>
 			<height>200</height>
@@ -816,9 +816,22 @@
 			<texture diffuse="thumbs/movieposter_mask.png">defaultvideobig.png</texture>		
 			<info>Listitem.Icon</info>
 			<fadetime>400</fadetime>
-			<visible>true</visible>
+			<visible>![IsEmpty(ListItem.plot) + IsEmpty(ShowPlot)]</visible>
 		</control>
 
+		<control type="largeimage">
+			<posx>775</posx>
+			<posy>180</posy>
+			<width>390</width>
+			<height>405</height>
+			<aligny>top</aligny>
+			<align>center</align>
+			<aspectratio scalediffuse="false">keep</aspectratio>
+			<texture diffuse="thumbs/movieposter_mask.png">defaultvideobig.png</texture>		
+			<info>Listitem.Icon</info>
+			<fadetime>400</fadetime>
+			<visible>[IsEmpty(ListItem.plot) + IsEmpty(ShowPlot)]</visible>
+		</control>
 
 <!--  Disabled for blank showing default 
 
