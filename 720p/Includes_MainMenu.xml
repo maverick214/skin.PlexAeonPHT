@@ -189,7 +189,7 @@
 			<include condition="Skin.HasSetting(lowermainmenu)">MainMenu_Controls_Lower_Activate</include> 
 			<onfocus>SetFocus(299)</onfocus>
 			<animation type="WindowOpen" condition="!Skin.HasSetting(nozooms)" reversible="false">
-				<effect type="slide" start="-1280" end="0" time="400" tween="quadratic" easing="out" />
+				<effect type="slide" start="1280" end="0" time="700" tween="quadratic" easing="out" />
 				<effect type="fade" start="0" end="100" time="400" />
 			</animation>
 			<itemlayout width="400" height="61">

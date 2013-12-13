@@ -30,6 +30,7 @@
 	            <onright>553</onright>
 	            <onup>1300</onup>
 	            <ondown>60</ondown>
+					<onclick>Plex.ActivateWindow(10090)</onclick>
 	            <pagecontrol>60</pagecontrol>
 	            <orientation>horizontal</orientation>
 				<scrolltime>300</scrolltime>

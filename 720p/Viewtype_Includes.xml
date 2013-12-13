@@ -3292,16 +3292,6 @@
 			<onclick>SetFocus(553)</onclick>
 			<visible>Container.Content(movies) + Control.IsVisible(553) + Skin.HasSetting(oldmultiplextrailer)</visible>
 		</control>
-<!--
-		<control type="button" id="700114">
-			<include>MediaMenuButton</include>
-			<label>$LOCALIZE[31047]: $LOCALIZE[32001]</label>
-			<onclick>Skin.SetBool(oldmultiplexposter)</onclick>
-			<onclick>Skin.Reset(oldmultiplexbigtrailer)</onclick>
-			<onclick>SetFocus(553)</onclick>
-			<visible>Container.Content(movies) + Control.IsVisible(553) + Skin.HasSetting(oldmultiplexbigtrailer)</visible>
-		</control>
--->
 		<control type="button" id="700115">
 			<include>MediaMenuButton</include>
 			<label>$LOCALIZE[31047]: $LOCALIZE[32002]</label>
@@ -3317,6 +3307,14 @@
 			<usealttexture>!Skin.HasSetting(oldmultiplextvbigthumb)</usealttexture>
 			<onclick>Skin.ToggleSetting(oldmultiplextvbigthumb)</onclick>
 			<visible>Container.Content(episodes) + Window.IsActive(25) + Control.IsVisible(553)</visible>
+		</control>
+
+		<control type="radiobutton" id="700114">
+			<include>MediaMenuButton</include>
+			<label>Preplay Screen</label>
+			<onclick>Skin.ToggleSetting(PreplayOff)</onclick>
+			<selected>!Skin.HasSetting(PreplayOff)</selected>
+			<visible>true</visible>
 		</control>
 	</include>
 

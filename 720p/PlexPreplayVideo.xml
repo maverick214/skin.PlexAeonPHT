@@ -1,5 +1,5 @@
 <window type="dialog" id="10090">
-	<defaultcontrol always="true">998</defaultcontrol>
+	<defaultcontrol always="true">334</defaultcontrol>
 	<zorder>1</zorder>
 	<coordinates>
 	<system>1</system>
@@ -8,6 +8,80 @@
 	</coordinates>
 	<include>Animation_CommonFade</include>
 	<controls>
+
+	<control type="group">
+		<visible>Skin.HasSetting(PreplayOff)</visible>	
+
+		<control type="image">
+			<include>FullscreenDimensions</include>
+			<texture>BlackTransparent.png</texture>
+			<colordiffuse>EFFFFFFF</colordiffuse>
+		</control>	
+
+		<control type="button" id="334">
+	      <description>Home Menu Offset</description>
+		  <onfocus>Skin.SetBool(PreplayFlagHome)</onfocus>
+		  <onfocus>Skin.Reset(PreplayFlagLibrary)</onfocus>
+		  <onfocus>Skin.Reset(PreplayFlagSearch)</onfocus>
+		  <onfocus>Plex.PlayWith(VideoDefaultPlayer)</onfocus>
+    	  <visible>Window.Previous(home)</visible>
+  		</control>
+		<control type="button" id="334">
+	      <description>Home Menu Offset</description>
+		  <onfocus>Skin.Reset(PreplayFlagHome)</onfocus>
+		  <onfocus>Skin.Reset(PreplayFlagLibrary)</onfocus>
+		  <onfocus>Skin.Reset(PreplayFlagSearch)</onfocus>
+		  <onfocus>Skin.SetBool(PreplayFlagChannels)</onfocus>
+		  <onfocus>Plex.PlayWith(VideoDefaultPlayer)</onfocus>
+   	      <visible>Window.Previous(99)</visible>
+  		</control>
+		<control type="button" id="334">
+	      <description>Home Menu Offset</description>
+		  <onfocus>Skin.Reset(PreplayFlagHome)</onfocus>
+		  <onfocus>Skin.Reset(PreplayFlagChannels)</onfocus>
+		  <onfocus>Skin.Reset(PreplayFlagSearch)</onfocus>
+		  <onfocus>Skin.SetBool(PreplayFlagLibrary)</onfocus>
+		  <onfocus>Plex.PlayWith(VideoDefaultPlayer)</onfocus>
+   	      <visible>Window.Previous(videolibrary)</visible>
+  		</control>
+		<control type="button" id="334">
+	      <description>Home Menu Offset</description>
+		  <onfocus>Skin.Reset(PreplayFlagHome)</onfocus>
+		  <onfocus>Skin.Reset(PreplayFlagLibrary)</onfocus>
+		  <onfocus>Skin.SetBool(PreplayFlagSearch)</onfocus>
+		  <onfocus>Plex.PlayWith(VideoDefaultPlayer)</onfocus>
+   	      <visible>Window.Previous(51)</visible>
+  		</control>
+		<control type="button" id="334">
+	      <description>Home Menu Offset</description>
+          <onfocus>ReplaceWindow(videolibrary)</onfocus>
+    	  <visible>Window.Previous(fullscreenvideo) + Skin.HasSetting(PreplayFlagLibrary)</visible>
+  		</control>
+		<control type="button" id="334">
+	      <description>Home Menu Offset</description>
+          <onfocus>ReplaceWindow(home)</onfocus>
+    	  <visible>Window.Previous(fullscreenvideo) + Skin.HasSetting(PreplayFlagHome)</visible>
+  		</control>
+		<control type="button" id="334">
+	      <description>Home Menu Offset</description>
+          <onfocus>ReplaceWindow(51)</onfocus>
+    	  <visible>Window.Previous(fullscreenvideo) + Skin.HasSetting(PreplayFlagSearch)</visible>
+  		</control>
+
+	</control>	
+
+	<control type="group">
+		<visible>!Skin.HasSetting(PreplayOff)</visible>	
+
+		<control type="button" id="334">
+	      <description>Home Menu Offset</description>
+          <onfocus>SetFocus(998)</onfocus>
+  		</control>
+
+	</control>	
+
+	<control type="group">
+		<visible>!Skin.HasSetting(PreplayOff)</visible>	
 
 	<control type="image">
 		<include>FullscreenDimensions</include>
@@ -916,6 +990,8 @@
     </control>
 -->
     <!-- castmod displays selectable cast -->
+	</control>	
+
   </controls>
   </window>	
 

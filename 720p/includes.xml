@@ -41,6 +41,8 @@
 	<include file="Viewtype_RecentlyAdded_Center.xml" />
 	<include file="LeftSideMenu.xml" />
 	<include file="Custom1_HomeMenu.xml" />
+	<include file="ViewsDialogs.xml" />
+	<include file="DialogFilters.xml" />
 
 	<include name="Search_Label">
 		<posx>15</posx>
