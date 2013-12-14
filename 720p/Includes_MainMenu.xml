@@ -370,6 +370,13 @@
 					<visible>Skin.HasSetting(signout)</visible>
 				</item>
 -->
+					<item id="114">
+						<description>Update and Restart</description>
+						<label>$LOCALIZE[40018]</label>
+						<onclick>Plex.UpdateAndRestart</onclick>
+						<width min="95" max="95">auto</width>
+						<visible>System.UpdateIsAvailable</visible>
+					</item>
 				</content>
 		</control>
 	</include>
