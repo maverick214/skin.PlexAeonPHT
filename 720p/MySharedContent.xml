@@ -184,7 +184,7 @@
 				<height>61</height>
 
 				<control type="wraplist" id="56">
-					<posx>-250</posx>
+					<posx>-160</posx>
 					<posy>0</posy>
 					<height>61</height>
 					<width>1520</width>
@@ -298,7 +298,7 @@
 		<control type="label">
 			<align>center</align>
 			<posx>69</posx>
-			<posy>388</posy>
+			<posy>380</posy>
 			<font>Font_RecentlyAdded</font>
 			<width>1123</width>
 			<height>33</height>

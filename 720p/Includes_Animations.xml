@@ -174,10 +174,10 @@
 	<!-- Dialogs -->
 	<include name="Animation_DialogPopup">
  	<animation type="WindowOpen" reversible="false">
-			<effect type="slide" start="-550,0" end="0,0" time="1400" delay="300" tween="cubic" easing="inout" />  
+			<effect type="slide" start="-550,0" end="0,0" time="1500" delay="300" tween="cubic" easing="inout" />  
 		</animation>
 		<animation type="WindowClose" reversible="false">
-			<effect type="slide" start="0,0" end="-550,0" time="1400" tween="cubic" easing="inout" />  
+			<effect type="slide" start="0,0" end="-550,0" time="1500" tween="cubic" easing="inout" />  
 		</animation>
 		<animation type="Visible" reversible="false">
 			<effect type="zoom" start="80" end="100" center="640,360" delay="200" easing="out" tween="back" time="300" />
