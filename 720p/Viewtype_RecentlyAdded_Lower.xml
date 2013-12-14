@@ -1206,7 +1206,7 @@
 <!-- Movie -->
 			<control type="label">
 				<posx>310</posx>
-				<posy>180</posy>
+				<posy>170</posy>
 				<width>660</width>
 				<height>70</height>
 				<align>left</align>
@@ -1217,7 +1217,7 @@
 			</control>
 			<control type="label">
 				<posx>310</posx>
-				<posy>180</posy>
+				<posy>170</posy>
 				<width>660</width>
 				<height>70</height>
 				<align>left</align>
@@ -1229,7 +1229,7 @@
 
 			<control type="label">
 				<posx>310</posx>
-				<posy>180</posy>
+				<posy>170</posy>
 				<width>660</width>
 				<height>70</height>
 				<align>left</align>
@@ -1240,7 +1240,7 @@
 			</control>
 			<control type="label">
 				<posx>310</posx>
-				<posy>180</posy>
+				<posy>170</posy>
 				<width>660</width>
 				<height>70</height>
 				<align>left</align>
@@ -1252,7 +1252,7 @@
 <!-- TV Shows -->
 			<control type="label">
 				<posx>310</posx>
-				<posy>195</posy>
+				<posy>175</posy>
 				<width>660</width>
 				<height>70</height>
 				<align>left</align>
@@ -1263,19 +1263,19 @@
 			</control>
 			<control type="label">
 				<posx>310</posx>
-				<posy>195</posy>
+				<posy>175</posy>
 				<width>660</width>
 				<height>70</height>
 				<align>left</align>
 				<font>Font_RSS_Big</font>
           		<textcolor>abFFFFFF</textcolor>
-                <label>$INFO[Container(11000).ListItem(0).Date] • $INFO[Container(11000).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] • $INFO[Container(11000).ListItem(0).Rating] </label>
+                <label>$INFO[Container(11000).ListItem(0).Date] • $INFO[Container(11000).ListItem(0).Rating] </label>
 				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(episode) + !IsEmpty(Container(11000).ListItem(0).Rating)</visible>
 			</control>
 
 			<control type="label">
 				<posx>310</posx>
-				<posy>285</posy>
+				<posy>275</posy>
 				<width>660</width>
 				<height>70</height>
 				<align>left</align>
@@ -1286,7 +1286,7 @@
 			</control>
 			<control type="label">
 				<posx>310</posx>
-				<posy>195</posy>
+				<posy>175</posy>
 				<width>660</width>
 				<height>70</height>
 				<align>left</align>
@@ -1297,13 +1297,13 @@
 			</control>
 			<control type="label">
 				<posx>310</posx>
-				<posy>195</posy>
+				<posy>175</posy>
 				<width>660</width>
 				<height>70</height>
 				<align>left</align>
 				<font>Font_RSS_Big</font>
           		<textcolor>abFFFFFF</textcolor>
-                <label>$INFO[Container(11000).ListItem(0).Date] • $INFO[Container(11000).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] </label>
+                <label>$INFO[Container(11000).ListItem(0).Date]</label>
 				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(episode) + IsEmpty(Container(11000).ListItem(0).Rating)</visible>
 			</control>
 

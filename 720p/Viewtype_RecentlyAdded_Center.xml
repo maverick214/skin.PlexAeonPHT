@@ -1180,7 +1180,7 @@
 				<align>left</align>
 				<font>Font_BigRSS</font>
           		<textcolor>abFFFFFF</textcolor>
-          		<label>$INFO[Container(11000).ListItem(0).Date] • $INFO[Container(11000).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] • $INFO[Container(11000).ListItem(0).Rating] </label>
+          		<label>$INFO[Container(11000).ListItem(0).Date] • $INFO[Container(11000).ListItem(0).Rating] </label>
 				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(episode) + !IsEmpty(Container(11000).ListItem(0).Rating)</visible>
 			</control>
 			<control type="label">
@@ -1214,7 +1214,7 @@
 				<align>left</align>
 				<font>Font_BigRSS</font>
           		<textcolor>abFFFFFF</textcolor>
-                <label>$INFO[Container(11000).ListItem(0).Date] • $INFO[Container(11000).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] </label>
+                <label>$INFO[Container(11000).ListItem(0).Date]</label>
 				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(episode) + IsEmpty(Container(11000).ListItem(0).Rating)</visible>
 			</control>
 <!-- Plots -->
