@@ -1,7 +1,7 @@
 <includes>
 	<include name="Dialogs_Group">
-		<posx>386</posx>
-		<posy>600</posy>
+		<posx>0</posx>
+		<posy>0</posy>
 		<width>509</width>
 		<height>91</height>
 	</include>
@@ -14,18 +14,20 @@
 	</include>
 
 	<include name="Dialogs_Tablet">
-		<control type="image">
+		<control type="largeimage">
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>509</width>
 			<height>91</height>
 			<texture>dialogs/scan_backg.png</texture>
+			<animation effect="fade" start="0" end="100" time="1200" delay="400">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="1100" delay="200">WindowClose</animation>
 		</control>
 
 	</include>
 
 	<include name="Dialogs_Exclam">
-		<control type="image">
+		<control type="largeimage">
 			<posx>9</posx>
 			<posy>9</posy>
 			<width>73</width>

@@ -12,13 +12,30 @@
 			<include>Dialogs_Group</include>
 			<include>Dialogs_Tablet</include>
 			<include>Dialogs_Exclam</include>
+
 			<control type="label" id="401">
-				<include>Dialogs_Label2</include>
+				<posy>17</posy>
+				<posx>105</posx>
+				<width>376</width>
+				<height>21</height>
+				<textcolor>menutext</textcolor>
+				<align>left</align>
+				<font>Font_ProgressLabelMid</font>
+				<scroll>false</scroll>
 			</control>
 
 			<control type="label" id="402">
-				<include>Dialogs_Label3</include>
-			</control>
+				<posy>40</posy>
+				<posx>105</posx>
+				<width>376</width>
+				<height>22</height>
+				<textcolor>menutext</textcolor>
+				<align>left</align>
+				<aligny>bottom</aligny>
+				<font>Font_ProgressLabel</font>
+				<scroll>false</scroll>
+       			<wrapmultiline>true</wrapmultiline>
+        	</control>
 
 		</control>
 
