@@ -12,25 +12,30 @@
     <control type="group">
       <include>SmallerDialogs</include>
       <include>Dialogs_Group</include>
-      <include>Dialogs_Tablet</include>
+      <include>Dialogs_Tablet2</include>
       <include>Dialogs_Exclam</include>
-      <control type="label" id="1">
-        <include>Dialogs_Label1</include>
+     <control type="group">
+     <posy>40</posy>
+     <posx>50</posx>
+   <control type="label" id="1">
+        <include>Dialogs_LabelSmall1</include>
       </control>
       <control type="label" id="2">
-        <include>Dialogs_Label2</include>
+        <include>Dialogs_LabelSmall2</include>
       </control>
       <control type="label" id="3">
-        <include>Dialogs_Label3</include>
+        <include>Dialogs_LabelSmall3</include>
       </control>
       <control type="label" id="4">
-        <include>Dialogs_Label4</include>
+        <include>Dialogs_LabelSmall4</include>
       </control>
 			<control type="button" id="10">
+				<posy>130</posy>
 				<description>OK Button</description>
    		    </control>
     </control>
-  </controls>
+     </control>
+ </controls>
 </window>
 
 <!--

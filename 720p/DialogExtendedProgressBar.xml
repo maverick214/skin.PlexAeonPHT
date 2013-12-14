@@ -13,7 +13,7 @@
 				<posy>-10</posy>
 				<width>400</width>
 				<height>70</height>
-				<texture flipy="true" border="20,20,20,2">InfoMessagePanel.png</texture>
+				<texture flipy="true" border="20,20,20,2">dialogs/select_back.png</texture>
 			</control>
 			<control type="label" id="30">
 				<description>Header Label</description>

@@ -502,7 +502,7 @@
 	  <include>Animation_CommonFade</include>
 	</control>
 	<control type="textbox">
-		<visible>Control.IsVisible(50) + !IsEmpty(Container.ShowPlot)</visible>
+		<visible>Control.IsVisible(50) + !IsEmpty(Container.ShowPlot) + !Container.Content(episodes)</visible>
 		<posy>83</posy>
 		<posx>870</posx>
 		<height>55</height>

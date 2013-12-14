@@ -536,6 +536,7 @@
                 <visible>Container.Content(tvshows)</visible>
               <animation effect="zoom" center="125,89" start="100" end="120" time="400" easing="out" tween="back" reversible="false">Focus</animation>
               </control>
+<!--  Causing graphic errors
               <control type="largeimage">
                 <posx>5</posx>
                 <posy>20</posy>
@@ -546,6 +547,7 @@
                 <bordertexture border="-14">wall/wall_tv_fborder.png</bordertexture>
               <animation effect="zoom" center="125,89" start="100" end="120" time="400" easing="out" tween="back" reversible="false">Focus</animation>
               </control>
+-->
             <control type="largeimage">
               <posx>196</posx>
               <posy>16</posy>

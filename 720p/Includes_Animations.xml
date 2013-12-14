@@ -173,7 +173,7 @@
 	<!-- Home page -->
 	<!-- Dialogs -->
 	<include name="Animation_DialogPopup">
- 	<animation type="WindowOpen" reversible="false">
+ 		<animation type="WindowOpen" reversible="false">
 			<effect type="slide" start="-550,0" end="0,0" time="1500" delay="300" tween="cubic" easing="inout" />  
 		</animation>
 		<animation type="WindowClose" reversible="false">

@@ -6,6 +6,19 @@
 		<posy>0</posy>
 	</coordinates>
 	<controls>
+
+		<control type="image">
+			<description>Darken screen</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>common/black.png</texture>
+			<colordiffuse>77FFFFFF</colordiffuse>
+			<include>Animation_CommonFade</include>
+			<visible>true</visible>
+		</control>
+
 <!--
 		<control type="group" id="901">
 			<include>Dialogs_Group</include>
@@ -22,7 +35,7 @@
 			</control>
 
 		</control>
--->
+
 
 		<control type="image">
 			<posx>595</posx>
@@ -30,22 +43,28 @@
 			<width>95</width>
 			<height>88</height>
 			<aspectratio scalediffuse="false">scale</aspectratio>		
-			<texture diffuse="thumbs/cdcover_mask.png">AnimProgress.gif</texture>		
+			<texture diffuse="thumbs/cdcover_mask.png">dialogs/scan_icon.png</texture>		
 			<bordertexture border="-11">thumbs/cd_shadow.png</bordertexture>
    		    <colordiffuse>EFFFFFFF</colordiffuse>
 		</control>
+-->
 		
 		<control type="label">
-			<posx>608</posx>
-			<posy>340</posy>
+		<animation type="WindowOpen" reversible="false">
+			<effect type="fade" delay="0" start="0" end="100" time="500" />
+		</animation>
+		<animation type="WindowClose" reversible="false">
+			<effect type="fade" delay="0" start="100" end="0" time="200" />
+		</animation> 
+			<posx>560</posx>
+			<posy>0</posy>
 			<width>100</width>
-			<height>43</height>
-			<textcolor>CFFFFFFF</textcolor>
+			<height>23</height>
+			<textcolor>FFFFFFFF</textcolor>
 			<label>Loading...</label>
-			<font>ProgressLoading</font>
-			<aligny>center</aligny>	
+			<font>Font_Time</font>
 		</control>
-
+<!--
 		<control type="largeimage">
 			<posx>595</posx>
 			<posy>295</posy>
@@ -54,5 +73,6 @@
 			<texture diffuse="thumbs/cdcover_mask.png">thumbs/poster_glass_noedge.png</texture>		
 			<aspectratio scalediffuse="false">scale</aspectratio>		
 		</control>
+-->
 	</controls>
 </window>
