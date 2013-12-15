@@ -28,11 +28,11 @@
 		<control type="largeimage">
 			<posx>0</posx>
 			<posy>0</posy>
-				<width>688</width>
-				<height>163</height>
+			<width>839</width>
+			<height>150</height>
 			<texture>dialogs/scan_backg.png</texture>
-			<animation effect="fade" start="0" end="100" time="1200" delay="400">WindowOpen</animation>
-			<animation effect="fade" start="100" end="0" time="1100" delay="200">WindowClose</animation>
+			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
 		</control>
 	</include>
 
@@ -44,7 +44,15 @@
 			<height>73</height>
 			<texture>dialogs/exclam_icon.png</texture>
 		</control>
-
+	</include>
+	<include name="Dialogs_ExclamWide">
+		<control type="largeimage">
+			<posx>42</posx>
+			<posy>30</posy>
+			<width>83</width>
+			<height>83</height>
+			<texture>dialogs/exclam_icon.png</texture>
+		</control>
 	</include>
 
 	<include name="Dialogs_HardDrive">
@@ -105,19 +113,16 @@
 		<height>21</height>
 		<textcolor>menutext</textcolor>
 		<align>left</align>
-		<font>Font_ProgressLabelMid</font>
+		<font>Font_Bold20</font>
 		<scroll>false</scroll>
 	</include>
-
-
-	<include name="Dialogs_LabelVarsSmall">
-		<posy>0</posy>
-		<posx>105</posx>
-		<width>376</width>
+	<include name="Dialogs_LabelVarsWide">
+		<posx>165</posx>
+		<width>696</width>
 		<height>21</height>
 		<textcolor>menutext</textcolor>
 		<align>left</align>
-		<font>Font_ProgressLabel</font>
+		<font>Font_Bold20</font>
 		<scroll>false</scroll>
 	</include>
 
@@ -136,21 +141,20 @@
 	<include name="Dialogs_Pos4">
 		<posy>59</posy>
 	</include>
-
-	<include name="Dialogs_PosSmall1">
-		<posy>5</posy>
+	<include name="Dialogs_Pos1Wide">
+		<posy>20</posy>
 	</include>
 
-	<include name="Dialogs_PosSmall2">
-		<posy>23</posy>
+	<include name="Dialogs_Pos2Wide">
+		<posy>44</posy>
 	</include>
 
-	<include name="Dialogs_PosSmall3">
-		<posy>41</posy>
+	<include name="Dialogs_Pos3Wide">
+		<posy>68</posy>
 	</include>
 
-	<include name="Dialogs_PosSmall4">
-		<posy>59</posy>
+	<include name="Dialogs_Pos4Wide">
+		<posy>100</posy>
 	</include>
 
 	<include name="Dialogs_Label1">
@@ -171,23 +175,5 @@
 	<include name="Dialogs_Label4">
 		<include>Dialogs_Pos4</include>
 		<include>Dialogs_LabelVars</include>
-	</include>
-
-	<include name="Dialogs_LabelSmall1">
-		<include>Dialogs_PosSmall1</include>
-		<include>Dialogs_LabelVarsSmall</include>
-	</include>
-
-	<include name="Dialogs_LabelSmall2">
-		<include>Dialogs_PosSmall2</include>
-		<include>Dialogs_LabelVarsSmall</include>
-	</include>
-		<include name="Dialogs_LabelSmall3">
-		<include>Dialogs_PosSmall3</include>
-		<include>Dialogs_LabelVarsSmall</include>
-	</include>
-		<include name="Dialogs_LabelSmall4">
-		<include>Dialogs_PosSmall4</include>
-		<include>Dialogs_LabelVarsSmall</include>
 	</include>
 </includes>

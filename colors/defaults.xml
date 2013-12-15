@@ -1,5 +1,6 @@
 <colors>
 	<color name="menutext">FFFFFFFF</color>
+	<color name="white">FFFFFFFF</color>
 	<color name="red">FFFF3333</color>
 	<color name="orange">FFFF8040</color>
 	<color name="yellow">FFFFFF00</color>

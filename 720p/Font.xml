@@ -1,7 +1,12 @@
 <fonts>
 	<fontset id="default" unicode="true">
 		<!-- Info Wall -->
-    <font>
+	<font>
+		<name>CondensedBold-126</name>
+		<filename>DejaVuSansCondensed-Bold.ttf</filename>
+		<size>126</size>
+   	</font>
+     <font>
       <name>Font_Info</name>
       <filename>Ubuntu-R.ttf</filename>
       <size>16</size>
@@ -461,7 +466,7 @@
 		<font>
 			<name>Font_ProgressLabelYesNo</name>
 			<filename>aeon_rss_ce.ttf</filename>
-			<size>46</size>
+			<size>36</size>
 		</font>
 		<font>
 			<name>Font_AddSourceEdit</name>

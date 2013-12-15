@@ -4,36 +4,49 @@
   <zorder>1</zorder>
   <coordinates>
     <system>1</system>
-    <posx>0</posx>
-    <posy>0</posy>
-  </coordinates>
-  <include>Animation_DialogPopup</include>
+	<posx>265</posx>
+	<posy>450</posy>
+	</coordinates>
+	<animation type="WindowOpen" reversible="false">
+		<effect type="zoom" start="80" end="100" center="640,360" delay="200" easing="out" tween="back" time="300" />
+		<effect type="fade" delay="200" start="0" end="100" time="300" />
+	</animation>
+	<animation type="WindowClose" reversible="false">
+		<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
+		<effect type="fade" start="100" end="0" time="300" />
+	</animation>
   <controls>
-    <control type="group">
-      <include>SmallerDialogs</include>
-      <include>Dialogs_Group</include>
-      <include>Dialogs_Tablet2</include>
-      <include>Dialogs_Exclam</include>
-     <control type="group">
-     <posy>40</posy>
-     <posx>50</posx>
-   <control type="label" id="1">
-        <include>Dialogs_LabelSmall1</include>
-      </control>
-      <control type="label" id="2">
-        <include>Dialogs_LabelSmall2</include>
-      </control>
-      <control type="label" id="3">
-        <include>Dialogs_LabelSmall3</include>
-      </control>
-      <control type="label" id="4">
-        <include>Dialogs_LabelSmall4</include>
-      </control>
-			<control type="button" id="10">
-				<posy>130</posy>
+ 		<control type="group">
+			<include>Dialogs_Group</include>
+			<include>Dialogs_Tablet2</include>
+			<include>Dialogs_ExclamWide</include>
+			
+ 			 <control type="label" id="1">
+ 				<include>Dialogs_LabelVarsWide</include>
+  				<include>Dialogs_Pos1Wide</include>
+            </control>
+			 <control type="label" id="2">
+ 				<include>Dialogs_LabelVarsWide</include>
+  				<include>Dialogs_Pos2Wide</include>
+            </control>
+
+		     <control type="label" id="3">
+ 				<include>Dialogs_LabelVarsWide</include>
+  				<include>Dialogs_Pos3Wide</include>
+			 </control>
+
+             <control type="label" id="4">
+ 				<include>Dialogs_LabelVarsWide</include>
+  				<include>Dialogs_Pos4Wide</include>
+			 </control>			 
+  
+ 			<control type="button" id="10">
+  				<posx>440</posx>
+				<posy>100</posy>
+				<textcolor>menutext</textcolor>
+				<font>Font_Bold20</font>
 				<description>OK Button</description>
    		    </control>
-    </control>
      </control>
  </controls>
 </window>
