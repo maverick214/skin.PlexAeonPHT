@@ -638,7 +638,7 @@
           <font>Font_Bold20</font>
           <textcolor>FFFFFFFF</textcolor>
           <scroll>true</scroll>
-          <label>[UPPERCASE]$INFO[ListItem.TVShowTitle]</label>
+          <label>[UPPERCASE]$INFO[ListItem.TVShowTitle][/UPPERCASE]</label>
 		  <visible>!IsEmpty(Container.Property(mixedParents)) + !Container.Content(Episodes)</visible>
         </control>
 <!--
