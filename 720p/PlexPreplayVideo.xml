@@ -19,15 +19,16 @@
 		</control>	
 
 		<control type="button" id="334">
-	      <description>Home Menu Offset</description>
+	      <description>Home Menu</description>
 		  <onfocus>Skin.SetBool(PreplayFlagHome)</onfocus>
 		  <onfocus>Skin.Reset(PreplayFlagLibrary)</onfocus>
 		  <onfocus>Skin.Reset(PreplayFlagSearch)</onfocus>
+		  <onfocus>Skin.Reset(PreplayFlagChannels)</onfocus>
 		  <onfocus>Plex.PlayWith(VideoDefaultPlayer)</onfocus>
     	  <visible>Window.Previous(home)</visible>
   		</control>
 		<control type="button" id="334">
-	      <description>Home Menu Offset</description>
+	      <description>Channels</description>
 		  <onfocus>Skin.Reset(PreplayFlagHome)</onfocus>
 		  <onfocus>Skin.Reset(PreplayFlagLibrary)</onfocus>
 		  <onfocus>Skin.Reset(PreplayFlagSearch)</onfocus>
@@ -36,7 +37,7 @@
    	      <visible>Window.Previous(99)</visible>
   		</control>
 		<control type="button" id="334">
-	      <description>Home Menu Offset</description>
+	      <description>Library</description>
 		  <onfocus>Skin.Reset(PreplayFlagHome)</onfocus>
 		  <onfocus>Skin.Reset(PreplayFlagChannels)</onfocus>
 		  <onfocus>Skin.Reset(PreplayFlagSearch)</onfocus>
@@ -45,27 +46,38 @@
    	      <visible>Window.Previous(videolibrary)</visible>
   		</control>
 		<control type="button" id="334">
-	      <description>Home Menu Offset</description>
+	      <description>Search</description>
 		  <onfocus>Skin.Reset(PreplayFlagHome)</onfocus>
 		  <onfocus>Skin.Reset(PreplayFlagLibrary)</onfocus>
+		  <onfocus>Skin.Reset(PreplayFlagChannels)</onfocus>
 		  <onfocus>Skin.SetBool(PreplayFlagSearch)</onfocus>
 		  <onfocus>Plex.PlayWith(VideoDefaultPlayer)</onfocus>
    	      <visible>Window.Previous(51)</visible>
   		</control>
+
 		<control type="button" id="334">
-	      <description>Home Menu Offset</description>
+	      <description>Channels</description>
+          <onfocus>ReplaceWindow(99)</onfocus>
+		  <onfocus>Skin.Reset(PreplayFlagChannels)</onfocus>
+    	  <visible>Skin.HasSetting(PreplayFlagChannels)</visible>
+  		</control>
+		<control type="button" id="334">
+	      <description>Library</description>
           <onfocus>ReplaceWindow(videolibrary)</onfocus>
-    	  <visible>Window.Previous(fullscreenvideo) + Skin.HasSetting(PreplayFlagLibrary)</visible>
+		  <onfocus>Skin.Reset(PreplayFlagLibrary)</onfocus>
+    	  <visible>Skin.HasSetting(PreplayFlagLibrary)</visible>
   		</control>
 		<control type="button" id="334">
-	      <description>Home Menu Offset</description>
+	      <description>Home Menu</description>
           <onfocus>ReplaceWindow(home)</onfocus>
-    	  <visible>Window.Previous(fullscreenvideo) + Skin.HasSetting(PreplayFlagHome)</visible>
+		  <onfocus>Skin.Reset(PreplayFlagHome)</onfocus>
+    	  <visible>Skin.HasSetting(PreplayFlagHome)</visible>
   		</control>
 		<control type="button" id="334">
-	      <description>Home Menu Offset</description>
+	      <description>Search</description>
           <onfocus>ReplaceWindow(51)</onfocus>
-    	  <visible>Window.Previous(fullscreenvideo) + Skin.HasSetting(PreplayFlagSearch)</visible>
+		  <onfocus>Skin.Reset(PreplayFlagSearch)</onfocus>
+    	  <visible>Skin.HasSetting(PreplayFlagSearch)</visible>
   		</control>
 
 	</control>	
