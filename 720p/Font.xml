@@ -102,7 +102,7 @@
 
 		<font>
 			<name>Font_SearchTitle</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>26</size>
 		</font>
 
@@ -213,7 +213,7 @@
 
 		<font>
 			<name>Font_RSS</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>15</size>
 		</font>
 		<font>
@@ -304,23 +304,23 @@
 		</font>
 		<font>
 			<name>Font_MediaWindowTitleBig</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>28</size>
 		</font>
 		<font>
 			<name>Font_MediaWindowMenu</name>
-			<filename>aeon_rss_ce.ttf</filename>
-			<size>18</size>
+			<filename>Ubuntu-C.ttf</filename>
+			<size>20</size>
 		</font>
 		<font>
 			<name>Font_MediaWindowTitleMenu</name>
-			<filename>aeon_rss_ce.ttf</filename>
-			<size>21</size>
+			<filename>Ubuntu-C.ttf</filename>
+			<size>25</size>
 		</font>
 <!--
 		<font>
 			<name>Font_List</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>21</size>
 		</font>
 -->
@@ -331,7 +331,7 @@
 	</font>
 		<font>
 			<name>Font_ListSmall</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>18</size>
 		</font>
 		<font>
@@ -346,12 +346,12 @@
 		</font>
 		<font>
 			<name>Font_ListDetail</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>17</size>
 		</font>
 		<font>
 			<name>Font_ListDetailTV</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>15</size>
 		</font>
 		<font>
@@ -361,12 +361,12 @@
 		</font>
 		<font>
 			<name>Font_ListSub</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>17</size>
 		</font>
 		<font>
 			<name>Font_ListObjects</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>16</size>
 		</font>
 		<!-- Settings screens -->
@@ -445,27 +445,27 @@
 		</font>
 		<font>
 			<name>Font_ProgressLabel</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>17</size>
 		</font>
 		<font>
 			<name>Font_ProgressLabelSmall</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>20</size>
 		</font>
 		<font>
 			<name>Font_ProgressLabelMid</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>21</size>
 		</font>
 		<font>
 			<name>Font_ProgressLabelBig</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>35</size>
 		</font>
 		<font>
 			<name>Font_ProgressLabelYesNo</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>36</size>
 		</font>
 		<font>
@@ -498,12 +498,12 @@
 		<!-- Showcase -->
 		<font>
 			<name>Font_ShowcaseMainLabel</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>29</size>
 		</font>
 		<font>
 			<name>Font_ShowcaseDetailLabel</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>19</size>
 		</font>
 		<!-- StripShow -->
@@ -552,18 +552,18 @@
 		</font>
 		<font>
 			<name>Font_MultiplexInfoLabel</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>17</size>
 		</font>
 		<font>
 			<name>Font_MultiplexInfoValue</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>18</size>
 		</font>	 
 
 		<font>
 			<name>Font_ClearInfoValue</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>19</size>
 		</font>	 - <!--  Multiplex Old  -->
 
@@ -616,7 +616,7 @@
 		</font>
 		<font>
 			<name>Font_FSInfoGenre</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>23</size>
 		</font>
 		<font>
@@ -631,7 +631,7 @@
 		</font>
 		<font>
 			<name>Font_FSInfoData</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>20</size>
 			<linespacing>0.8</linespacing>
 		</font>
@@ -1672,7 +1672,7 @@
     </font>
 		<font>
 			<name>Font_RSS</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>15</size>
 		</font>
 		<font>
@@ -1682,7 +1682,7 @@
 		</font>
 		<font>
 			<name>Font_Time</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>15</size>
 		</font>
 		<font>
@@ -1758,37 +1758,37 @@
 		<!-- Media windows -->
 		<font>
 			<name>Font_MediaWindowTitle</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>23</size>
 		</font>
 		<font>
 			<name>Font_MediaWindowMenu</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>18</size>
 		</font>
 		<font>
 			<name>Font_List</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>21</size>
 		</font>
 		<font>
 			<name>Font_ListSmall</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>18</size>
 		</font>
 		<font>
 			<name>font13</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>16</size>
 		</font>
 		<font>
 			<name>Font_ListDetail</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>17</size>
 		</font>
 		<font>
 			<name>Font_ListDetailTV</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>15</size>
 		</font>
 		<font>
@@ -1798,12 +1798,12 @@
 		</font>
 		<font>
 			<name>Font_ListSub</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>17</size>
 		</font>
 		<font>
 			<name>Font_ListObjects</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>16</size>
 		</font>
 		
@@ -1925,23 +1925,23 @@
 		<!-- Flow view type -->
 		<font>
 			<name>Font_FlowMainLabel</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>20</size>
 		</font>
 		<font>
 			<name>Font_FlowSubLabel</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>16</size>
 		</font>
 		<!-- Showcase -->
 		<font>
 			<name>Font_ShowcaseMainLabel</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>29</size>
 		</font>
 		<font>
 			<name>Font_ShowcaseDetailLabel</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>19</size>
 		</font>
 		
@@ -1992,17 +1992,17 @@
 		</font>
 		<font>
 			<name>Font_MultiplexInfoLabel</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>17</size>
 		</font>
 		<font>
 			<name>Font_MultiplexInfoValue</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>18</size>
 		</font>	 
 		<font>
 			<name>Font_ClearInfoValue</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>19</size>
 		</font>
 		
@@ -2057,7 +2057,7 @@
 		</font>
 		<font>
 			<name>Font_FSInfoGenre</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>23</size>
 		</font>
 		<font>
@@ -2072,7 +2072,7 @@
 		</font>
 		<font>
 			<name>Font_FSInfoData</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>20</size>
 			<linespacing>0.8</linespacing>
 		</font>
@@ -2283,18 +2283,18 @@
 		</font>
 		<font>
 			<name>Font_MultiplexInfoLabel</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>17</size>
 		</font>
 		<font>
 			<name>Font_MultiplexInfoValue</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>18</size>
 		</font>	 
 
 		<font>
 			<name>Font_ClearInfoValue</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>19</size>
 		</font>	 - <!--  Multiplex Old  -->
 
@@ -2360,22 +2360,22 @@
 				<!-- Common -->
 		<font>
 			<name>Font_RSS</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>14</size>
 		</font>
 		<font>
 			<name>Font_Time</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>16</size>
 		</font>
 		<font>
 			<name>Font_BigRSS</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>21</size>
 		</font>
 		<font>
 			<name>Font_BigTime</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>21</size>
 		</font>
 		<font>
@@ -2482,7 +2482,7 @@
 		<!-- Virtual Home page -->
 		<font>
 			<name>Font_VirtualRSS</name>
-			<filename>aeon_rss_ce.ttf</filename>
+			<filename>Ubuntu-C.ttf</filename>
 			<size>10</size>
 		</font>
 		<font>

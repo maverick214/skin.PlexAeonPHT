@@ -226,6 +226,16 @@
 				<visible>Window.IsActive(25) + [!Container.Content(Movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)] + IsEmpty(Container.FirstTitle)</visible>
 				<animation effect="fade" time="500">Visible</animation>
 			</control>
+			<control type="label">
+				<width min="0" max="230">auto</width>
+				<height>43</height>
+				<font>Font_Time</font>	
+				<aligny>center</aligny>
+				<include>listcolorfocus</include>	
+				<label>Media Channels</label>
+				<visible>Window.IsActive(mychannels.xml) + [!Container.Content(Movies) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)] + IsEmpty(Container.FirstTitle)</visible>
+				<animation effect="fade" time="500">Visible</animation>
+			</control>
 
 			<control type="label">
 				<width min="0" max="230">auto</width>

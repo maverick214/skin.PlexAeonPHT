@@ -240,24 +240,29 @@
 				<texture>windows/list_dividerbar.png</texture>
 			</control>
 			<control type="largeimage">
-				<posx>0</posx>
-				<posy>2</posy>
-				<width>753</width>
-				<height>40</height>
-				<texture>windows/listselectbar.png</texture>
-				<colordiffuse>CF4250E4</colordiffuse>
+				<posx>-15</posx>
+				<posy>-18</posy>
+				<width>803</width>
+				<height>80</height>
+				<texture>list/list_selectbar.png</texture>
+				<align>center</align>
+				<aligny>center</aligny>
+				<colordiffuse>CF3478ED</colordiffuse>
 				<visible>!Container.Content(Secondary)</visible>
 			</control>
+<!--
 			<control type="largeimage">
 				<posx>10</posx>
-				<posy>2</posy>
-				<width>600</width>
-				<height>40</height>
-				<texture>windows/listselectbar.png</texture>
+				<posy>-14</posy>
+				<width>620</width>
+				<height>70</height>
+				<texture>list/list_selectbar.png</texture>
 				<colordiffuse>CF4250E4</colordiffuse>
 				<align>center</align>
+				<aligny>center</aligny>
 				<visible>Container.Content(Secondary)</visible>
 			</control>
+-->
 			<control type="label">
 				<include>ListLabel_Main</include>
 				<include>listcolorfocus</include>	
