@@ -1,5 +1,5 @@
 <window id="25">
-	<defaultcontrol always="true">50</defaultcontrol>
+	<defaultcontrol always="true">9003</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<views>50,551,52,553,555,563,53,512,57,55,54,598</views>
 	<onload condition="Container.Content(movies)">Skin.SetString(SectionType,movies)</onload>
@@ -26,20 +26,62 @@
 	<include>Furniture_MediaPanel</include>
 
 	<control type="group">
-	<include>rightSideSlide</include>
-	<include>Viewtype_Poster_Half</include>
-	<include>Viewtype_List</include>
-	<include condition="!Skin.HasSetting(InfoWallOff)">ViewType_InfoWall</include>
-	<include condition="!Skin.HasSetting(CoverflowOff)">Viewtype_Coverflow</include>
-	<!--	<include>ViewType_Wall</include>  -->
-	<include condition="!Skin.HasSetting(ListLowOff)">Viewtype_List_Low</include>
-	<include condition="!Skin.HasSetting(ShowcaseOff)">Viewtype_Showcase</include>
-	<!--	<include condition="!Skin.HasSetting(SlimListOff)">Viewtype_List_Slim</include> -->
-	<include condition="!Skin.HasSetting(Anoobie3Off)">Viewtype_Anoobie3</include>
-	<include condition="!Skin.HasSetting(MultiplexOff)">Viewtype_Multiplex</include>
-	<include condition="!Skin.HasSetting(OldMultiplexOff)">Viewtype_MultiplexOld</include>
-	<!-- 	<include condition="!Skin.HasSetting(Anoobie2Off)">Viewtype_Anoobie2</include>  -->
-	<include condition="!Skin.HasSetting(ClearListOff)">Viewtype_ClearList</include>
+		<control type="group" id="901">
+		<posx>400</posx>
+		<posy>150</posy>
+		<width>509</width>
+		<height>91</height>
+			<include>Dialogs_Tablet</include>
+			<include>Dialogs_Exclam</include>
+			<control type="label" id="401">
+				<include>Dialogs_Label2</include>
+				<label>Your List is Empty</label>
+			</control>
+
+			<control type="label" id="401">
+				<include>Dialogs_Label3</include>
+				<label>PLEASE WAIT</label>
+			</control>
+
+			<visible>Container.Content(empty)</visible>
+		</control>
+
+		<control type="button" id="9003">
+			<description>Button to pass through navigation when list is empty</description>
+			<left>-20</left>
+			<top>-20</top>
+			<width>1</width>
+			<height>1</height>
+			<label>-</label>
+			<font>-</font>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onleft>1300</onleft>
+			<onright>1300</onright>
+			<onup>1300</onup>
+			<ondown>1300</ondown>
+			<visible>Container.Content(empty)</visible>
+		</control>
+		<control type="button" id="9003">
+			<description>Button to pass through navigation when list is NOT empty</description>
+			<onfocus>SetFocus(50)</onfocus>
+			<visible>!Container.Content(empty)</visible>
+		</control>
+
+		<include>rightSideSlide</include>
+		<include>Viewtype_Poster_Half</include>
+		<include>Viewtype_List</include>
+		<include condition="!Skin.HasSetting(InfoWallOff)">ViewType_InfoWall</include>
+		<include condition="!Skin.HasSetting(CoverflowOff)">Viewtype_Coverflow</include>
+		<!--	<include>ViewType_Wall</include>  -->
+		<include condition="!Skin.HasSetting(ListLowOff)">Viewtype_List_Low</include>
+		<include condition="!Skin.HasSetting(ShowcaseOff)">Viewtype_Showcase</include>
+		<!--	<include condition="!Skin.HasSetting(SlimListOff)">Viewtype_List_Slim</include> -->
+		<include condition="!Skin.HasSetting(Anoobie3Off)">Viewtype_Anoobie3</include>
+		<include condition="!Skin.HasSetting(MultiplexOff)">Viewtype_Multiplex</include>
+		<include condition="!Skin.HasSetting(OldMultiplexOff)">Viewtype_MultiplexOld</include>
+		<!-- 	<include condition="!Skin.HasSetting(Anoobie2Off)">Viewtype_Anoobie2</include>  -->
+		<include condition="!Skin.HasSetting(ClearListOff)">Viewtype_ClearList</include>
 	</control>
 
 	<include>LeftSideMenu</include>
