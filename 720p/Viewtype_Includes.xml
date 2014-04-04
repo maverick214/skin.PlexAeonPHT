@@ -13,40 +13,40 @@
 	<include name="Furniture_ShowcaseMediaFlagsVars">
 		<posy>677</posy>
 		<width>60</width>
-		<height>35</height>
-		<aspectratio>keep</aspectratio>
+		<height>20</height>
+		<aspectratio>stretch</aspectratio>
  		<include>Animation_CommonFade</include>
 	 	<colordiffuse>efffffff</colordiffuse>
 	</include>
 	<include name="Furniture_ListMediaFlagsVars">
 		<width min="0" max="50">auto</width>
-		<height>35</height>
-		<aspectratio>keep</aspectratio>
+		<height>20</height>
+		<aspectratio>stretch</aspectratio>
 		<include>Animation_CommonFade</include>
 		<visible>!Skin.HasSetting(nomediaflags)</visible>
 	</include>
 	<include name="Furniture_LowClearListMediaFlagsVars">
 		<width min="0" max="60">auto</width>
-		<height>40</height>
-		<aspectratio>keep</aspectratio>
+		<height>20</height>
+		<aspectratio>stretch</aspectratio>
 		<include>Animation_CommonFade</include>
 		<visible>!Skin.HasSetting(nomediaflags)</visible>
 	</include>
 	<include name="LowList_MovieFlagVars">
 		<posx>910</posx>
 		<posy>665</posy>
-		<width>50</width>
+		<width>20</width>
 		<height>29</height>
 		<include>MediaListSelectDelay</include>
 		<include>MediaViewFade</include>
-		<aspectratio>keep</aspectratio>
+		<aspectratio>stretch</aspectratio>
 		<visible>[Control.IsVisible(551) | Control.IsVisible(54) | Control.IsVisible(598)] + ![Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + ![!Skin.HasSetting(highlist) + Control.IsVisible(7898)] + ![!Skin.HasSetting(highlist) + Control.IsVisible(7814)] + ![!Skin.HasSetting(highlist) + Control.IsVisible(7814)] + ![!Skin.HasSetting(highlist) + Control.IsVisible(7814)] + ![!Skin.HasSetting(highlist) + Control.IsVisible(7814)] + ![!Skin.HasSetting(highlist) + Control.IsVisible(7850) + ![IsEmpty(ListItem.Art(fanart)) + IsEmpty(container.property(fanart_image))]]</visible>
 	</include>
 	<include name="Furniture_PanelMediaFlagsVars">
 		<posy>459</posy>
 		<width>70</width>
-		<height>40</height>
-		<aspectratio>keep</aspectratio>
+		<height>20</height>
+		<aspectratio>stretch</aspectratio>
 		<include>Animation_CommonFade</include>
 	</include>
 	<include name="Furniture_ShowcaseMediaFlagsBlack">
@@ -59,9 +59,9 @@
 	<include name="Furniture_PanelMediaFlagsVars2">
 		<posy>640</posy>
 		<width>50</width>
-		<height>30</height>
+		<height>20</height>
 		<aligny>bottom</aligny>
-		<aspectratio>keep</aspectratio>
+		<aspectratio>stretch</aspectratio>
 		<colordiffuse>BFFFFFFF</colordiffuse>
 		<include>Animation_CommonFade</include>
 		<visible>Control.IsVisible(555)</visible>
@@ -611,7 +611,7 @@
 		<include>Animation_WindowFade200</include>
 		<animation effect="fade" start="50" end="50" time="0" condition="Control.IsVisible(53)">Conditional</animation>
 		<animation effect="slide" start="0,0" end="-60,0" time="0" condition="Control.IsVisible(512)">Conditional</animation>
-		<posy>220</posy>
+		<posy>224</posy>
 <!--
 		<control type="group">
 			<posx>85</posx>
@@ -642,8 +642,8 @@
 			<posx>85</posx>
 			<posy>440</posy>
 			<width>50</width>
-			<height>39</height>
-			<aspectratio>keep</aspectratio>
+			<height>20</height>
+			<aspectratio>stretch</aspectratio>
 			<include>Animation_CommonFade</include>
 			<include condition="Skin.HasSetting(WhiteMediaFlags)">WhiteVideoResolutionVars</include>
 			<include condition="!Skin.HasSetting(WhiteMediaFlags)">ColourVideoResolutionVars</include>
@@ -652,8 +652,8 @@
 			<posx>155</posx>
 			<posy>440</posy>
 			<width>50</width>
-			<height>39</height>
-			<aspectratio>keep</aspectratio>
+			<height>20</height>
+			<aspectratio>stretch</aspectratio>
 			<include>Animation_CommonFade</include>
 			<include condition="Skin.HasSetting(WhiteMediaFlags)">WhiteVideoCodecVars</include>
 			<include condition="!Skin.HasSetting(WhiteMediaFlags)">ColourVideoCodecVars</include>
@@ -662,8 +662,8 @@
 			<posx>230</posx>
 			<posy>440</posy>
 			<width>50</width>
-			<height>39</height>
-			<aspectratio>keep</aspectratio>
+			<height>20</height>
+			<aspectratio>stretch</aspectratio>
 			<include>Animation_CommonFade</include>
 			<include condition="Skin.HasSetting(WhiteMediaFlags)">WhiteAudioCodecVars</include>
 			<include condition="!Skin.HasSetting(WhiteMediaFlags)">ColourAudioCodecVars</include>
@@ -672,15 +672,15 @@
 			<posx>305</posx>
 			<posy>440</posy>
 			<width>50</width>
-			<height>39</height>
-			<aspectratio>keep</aspectratio>
+			<height>20</height>
+			<aspectratio>stretch</aspectratio>
 			<include>Animation_CommonFade</include>
 			<include condition="Skin.HasSetting(WhiteMediaFlags)">WhiteAudioChannelsVars</include>
 			<include condition="!Skin.HasSetting(WhiteMediaFlags)">ColourAudioChannelsVars</include>
 		</control>
 		<control type="largeimage">
 			<posx>380</posx>
-			<posy>447</posy>
+			<posy>438</posy>
 			<width min="0" max="50">auto</width>
 			<height>25</height>
 			<aspectratio>stretch</aspectratio>
