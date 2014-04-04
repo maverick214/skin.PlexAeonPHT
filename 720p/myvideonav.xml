@@ -35,12 +35,12 @@
 			<include>Dialogs_Exclam</include>
 			<control type="label" id="401">
 				<include>Dialogs_Label2</include>
-				<label>Your List is Empty</label>
+				<label>List is Empty</label>
 			</control>
 
 			<control type="label" id="401">
 				<include>Dialogs_Label3</include>
-				<label>PLEASE WAIT</label>
+				<label></label>
 			</control>
 
 			<visible>Container.Content(empty)</visible>
