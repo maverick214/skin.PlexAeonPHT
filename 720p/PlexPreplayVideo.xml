@@ -835,6 +835,8 @@
   	 	 	    <posx>0</posx>
    	    		<posy>190</posy>
           		<align>left</align>
+				<onright>XBMC.NextItem</onright>
+				<onleft>XBMC.PrevItem</onleft>
 				<!-- Play -->
 				<control type="button" id="102">
         			<label>[UPPERCASE]$LOCALIZE[208][/UPPERCASE]</label>
