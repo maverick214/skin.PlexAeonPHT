@@ -1212,31 +1212,8 @@
 				<align>left</align>
 				<font>Font_RSS_Big</font>
 				<textcolor>ffffffff</textcolor>
-                <label>$INFO[Container(11001).ListItem(0).Year] • $INFO[Container(11001).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] • $INFO[Container(11001).ListItem(0).Rating] </label>
-				<visible>Control.HasFocus(11001) + Container(11001).ListItem(0).Type(movie) + !IsEmpty(Container(11001).ListItem(0).Rating)</visible>
-			</control>
-			<control type="label">
-				<posx>310</posx>
-				<posy>170</posy>
-				<width>660</width>
-				<height>70</height>
-				<align>left</align>
-				<font>Font_RSS_Big</font>
-				<textcolor>ffffffff</textcolor>
-                <label>$INFO[Container(11000).ListItem(0).Year] • $INFO[Container(11000).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] • $INFO[Container(11000).ListItem(0).Rating] </label>
-				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(movie) + !IsEmpty(Container(11000).ListItem(0).Rating)</visible>
-			</control>
-
-			<control type="label">
-				<posx>310</posx>
-				<posy>170</posy>
-				<width>660</width>
-				<height>70</height>
-				<align>left</align>
-				<font>Font_RSS_Big</font>
-				<textcolor>ffffffff</textcolor>
                 <label>$INFO[Container(11001).ListItem(0).Year] • $INFO[Container(11001).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] </label>
-				<visible>Control.HasFocus(11001) + Container(11001).ListItem(0).Type(movie) + IsEmpty(Container(11001).ListItem(0).Rating)</visible>
+				<visible>Control.HasFocus(11001) + Container(11001).ListItem(0).Type(movie)</visible>
 			</control>
 			<control type="label">
 				<posx>310</posx>
@@ -1247,31 +1224,9 @@
 				<font>Font_RSS_Big</font>
 				<textcolor>ffffffff</textcolor>
                 <label>$INFO[Container(11000).ListItem(0).Year] • $INFO[Container(11000).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] </label>
-				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(movie) + IsEmpty(Container(11000).ListItem(0).Rating)</visible>
+				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(movie)</visible>
 			</control>
 <!-- TV Shows -->
-			<control type="label">
-				<posx>310</posx>
-				<posy>175</posy>
-				<width>660</width>
-				<height>70</height>
-				<align>left</align>
-				<font>Font_RSS_Big</font>
-          		<textcolor>abFFFFFF</textcolor>
-                <label>$INFO[Container(11001).ListItem(0).Date] • $INFO[Container(11001).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] • $INFO[Container(11001).ListItem(0).Rating] </label>
-				<visible>Control.HasFocus(11001) + Container(11001).ListItem(0).Type(episode) + !IsEmpty(Container(11001).ListItem(0).Rating)</visible>
-			</control>
-			<control type="label">
-				<posx>310</posx>
-				<posy>175</posy>
-				<width>660</width>
-				<height>70</height>
-				<align>left</align>
-				<font>Font_RSS_Big</font>
-          		<textcolor>abFFFFFF</textcolor>
-                <label>$INFO[Container(11000).ListItem(0).Date] • $INFO[Container(11000).ListItem(0).Rating] </label>
-				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(episode) + !IsEmpty(Container(11000).ListItem(0).Rating)</visible>
-			</control>
 
 			<control type="label">
 				<posx>310</posx>
@@ -1293,7 +1248,7 @@
 				<font>Font_RSS_Big</font>
           		<textcolor>abFFFFFF</textcolor>
                 <label>$INFO[Container(11001).ListItem(0).Date] • $INFO[Container(11001).ListItem(0).Duration] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE] </label>
-				<visible>Control.HasFocus(11001) + Container(11001).ListItem(0).Type(episode) + IsEmpty(Container(11001).ListItem(0).Rating)</visible>
+				<visible>Control.HasFocus(11001) + Container(11001).ListItem(0).Type(episode)</visible>
 			</control>
 			<control type="label">
 				<posx>310</posx>
@@ -1304,7 +1259,7 @@
 				<font>Font_RSS_Big</font>
           		<textcolor>abFFFFFF</textcolor>
                 <label>$INFO[Container(11000).ListItem(0).Date]</label>
-				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(episode) + IsEmpty(Container(11000).ListItem(0).Rating)</visible>
+				<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(episode)</visible>
 			</control>
 
 			<control type="textbox">
