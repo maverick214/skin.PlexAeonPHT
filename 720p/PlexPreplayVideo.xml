@@ -411,7 +411,7 @@
         			<label>[UPPERCASE]$LOCALIZE[208][/UPPERCASE]</label>
 					<include>Objects_FSInfoButton</include>
 					<texturefocus>windows/listselectbar.png</texturefocus>
-					<colordiffuse>CF4250E4</colordiffuse>
+					<colordiffuse>FF7EBFFF</colordiffuse>
 					<onclick>Plex.PlayWith(VideoDefaultPlayer)</onclick>
 					<onup>109</onup>
 					<ondown>103</ondown>
@@ -422,7 +422,7 @@
         			<label>[UPPERCASE]$LOCALIZE[292][/UPPERCASE]</label>
 					<include>Objects_FSInfoButton</include>
 					<texturefocus>windows/listselectbar.png</texturefocus>
-					<colordiffuse>CF4250E4</colordiffuse>
+					<colordiffuse>FF7EBFFF</colordiffuse>
 					<onclick>ActivateWindow(10205)</onclick>
 					<onup>102</onup>
 					<ondown>104</ondown>
@@ -434,7 +434,7 @@
         			<label>[UPPERCASE]$LOCALIZE[287][/UPPERCASE]</label>
 					<include>Objects_FSInfoButton</include>
 					<texturefocus>windows/listselectbar.png</texturefocus>
-					<colordiffuse>CF4250E4</colordiffuse>
+					<colordiffuse>FF7EBFFF</colordiffuse>
 					<onclick>ActivateWindow(10204)</onclick>
 					<onup>103</onup>
 					<ondown>105</ondown>
@@ -446,7 +446,7 @@
         			<label>[UPPERCASE]$LOCALIZE[40207][/UPPERCASE]</label>
 					<include>Objects_FSInfoButton</include>
 					<texturefocus>windows/listselectbar.png</texturefocus>
-					<colordiffuse>CF4250E4</colordiffuse>
+					<colordiffuse>FF7EBFFF</colordiffuse>
 					<onclick>ActivateWindow(10200,$INFO[ListItem(0).Path])</onclick>
 					<onup>104</onup>
 					<ondown>106</ondown>
@@ -480,7 +480,7 @@
         			<label>[UPPERCASE]$LOCALIZE[16102][/UPPERCASE]</label>
 					<include>Objects_FSInfoButton</include>
 					<texturefocus>windows/listselectbar.png</texturefocus>
-					<colordiffuse>CF4250E4</colordiffuse>
+					<colordiffuse>FF7EBFFF</colordiffuse>
 					<onup>107</onup>
 					<ondown>109</ondown>
 					<onclick>markaswatched</onclick>
@@ -491,8 +491,8 @@
         			<label>[UPPERCASE]$LOCALIZE[16101][/UPPERCASE]</label>
 					<include>Objects_FSInfoButton</include>
 					<texturefocus>windows/listselectbar.png</texturefocus>
-					<colordiffuse>CF4250E4</colordiffuse>
-					<onup>108</onup>
+					<colordiffuse>FF7EBFFF</colordiffuse>
+					<onup>107</onup>
 					<ondown>102</ondown>
 					<onclick>markasunwatched</onclick>
 					<visible>ListItem(0).Status(Watched)</visible>
@@ -842,7 +842,7 @@
         			<label>[UPPERCASE]$LOCALIZE[208][/UPPERCASE]</label>
 					<include>Objects_FSInfoButton</include>
 					<texturefocus>windows/listselectbar.png</texturefocus>
-					<colordiffuse>CF4250E4</colordiffuse>
+					<colordiffuse>FF7EBFFF</colordiffuse>
 					<onclick>Plex.PlayWith(VideoDefaultPlayer)</onclick>
 					<onunfocus>Skin.Reset(DialogPos)</onunfocus>
 				</control>
@@ -851,7 +851,7 @@
         			<label>[UPPERCASE]$LOCALIZE[292][/UPPERCASE]</label>
 					<include>Objects_FSInfoButton</include>
 					<texturefocus>windows/listselectbar.png</texturefocus>
-					<colordiffuse>CF4250E4</colordiffuse>
+					<colordiffuse>FF7EBFFF</colordiffuse>
 					<onclick>ActivateWindow(10205)</onclick>
 					<onup>102</onup>
 					<ondown>104</ondown>
@@ -863,7 +863,7 @@
         			<label>[UPPERCASE]$LOCALIZE[287][/UPPERCASE]</label>
 					<include>Objects_FSInfoButton</include>
 					<texturefocus>windows/listselectbar.png</texturefocus>
-					<colordiffuse>CF4250E4</colordiffuse>
+					<colordiffuse>FF7EBFFF</colordiffuse>
 					<onclick>ActivateWindow(10204)</onclick>
 					<onup>103</onup>
 					<ondown>105</ondown>
@@ -875,7 +875,7 @@
         			<label>[UPPERCASE]$LOCALIZE[40207][/UPPERCASE]</label>
 					<include>Objects_FSInfoButton</include>
 					<texturefocus>windows/listselectbar.png</texturefocus>
-					<colordiffuse>CF4250E4</colordiffuse>
+					<colordiffuse>FF7EBFFF</colordiffuse>
 					<onclick>ActivateWindow(10200,$INFO[ListItem(0).Path])</onclick>
 					<onup>104</onup>
 					<ondown>106</ondown>
@@ -887,7 +887,7 @@
         			<label>[UPPERCASE]RECOMMEND[/UPPERCASE]</label>
 					<include>Objects_FSInfoButton</include>
 					<texturefocus>windows/listselectbar.png</texturefocus>
-					<colordiffuse>CF4250E4</colordiffuse>
+					<colordiffuse>FF7EBFFF</colordiffuse>
 					<onup>105</onup>
 					<ondown>107</ondown>
 					<include>leftMenuPreplayButton</include>
@@ -900,7 +900,7 @@
         			<label>[UPPERCASE]$LOCALIZE[220][/UPPERCASE]</label>
 					<include>Objects_FSInfoButton</include>
 					<texturefocus>windows/listselectbar.png</texturefocus>
-					<colordiffuse>CF4250E4</colordiffuse>
+					<colordiffuse>FF7EBFFF</colordiffuse>
 					<onup>106</onup>
 					<ondown>108</ondown>
 					<visible>!IsEmpty(ListItem(0).Property(canShare))</visible>
@@ -912,7 +912,7 @@
         			<label>[UPPERCASE]$LOCALIZE[16102][/UPPERCASE]</label>
 					<include>Objects_FSInfoButton</include>
 					<texturefocus>windows/listselectbar.png</texturefocus>
-					<colordiffuse>CF4250E4</colordiffuse>
+					<colordiffuse>FF7EBFFF</colordiffuse>
 					<onup>107</onup>
 					<ondown>109</ondown>
 					<onclick>markaswatched</onclick>
@@ -923,8 +923,8 @@
         			<label>[UPPERCASE]$LOCALIZE[16101][/UPPERCASE]</label>
 					<include>Objects_FSInfoButton</include>
 					<texturefocus>windows/listselectbar.png</texturefocus>
-					<colordiffuse>CF4250E4</colordiffuse>
-					<onup>108</onup>
+					<colordiffuse>FF7EBFFF</colordiffuse>
+					<onup>107</onup>
 					<ondown>102</ondown>
 					<onclick>markasunwatched</onclick>
 					<visible>ListItem(0).Status(Watched)</visible>
