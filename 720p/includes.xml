@@ -200,8 +200,7 @@
 	</include>
 
 	<include name="ColourVideoCodecVars">
-	<!--	<texture>$INFO[Listitem.Art(mediaTag::videoCodec),flagging/video/,.png]</texture> -->
-		<info>Listitem.Art(mediaTag::videoCodec)</info>
+		<texture>$INFO[ListItem.Property(mediaTag-videoCodec),flagging/video/,.png]</texture>
 	</include>
 
 	<include name="WhiteVideoCodecVars">
@@ -209,8 +208,7 @@
 	</include>
 
 	<include name="ColourVideoResolutionVars">
-	<!-- 	<texture>$INFO[Listitem.Art(mediaTag::videoResolution),flagging/video/,.png]</texture> -->
-		<info>Listitem.Art(mediaTag::videoResolution)</info>
+		<texture>$INFO[ListItem.Property(mediaTag-videoResolution),flagging/video/,.png]</texture>
 	</include>
 
 	<include name="WhiteVideoResolutionVars">
@@ -218,8 +216,7 @@
 	</include>
 	
 	<include name="ColourAudioCodecVars">
-	<!--	<texture>$INFO[Listitem.Art(mediaTag::audioCodec),flagging/audio/,.png]</texture> -->
-		<info>Listitem.Art(mediaTag::audioCodec)</info>
+		<texture>$INFO[ListItem.Property(mediaTag-audioCodec),flagging/audio/,.png]</texture>
 	</include>
 
 	<include name="WhiteAudioCodecVars">
@@ -227,8 +224,7 @@
 	</include>
 
 	<include name="ColourAudioChannelsVars">
-	<!--	<texture>$INFO[Listitem.Art(mediaTag::audioChannels),flagging/audio/,.png]</texture> -->
-		<info>Listitem.Art(mediaTag::audioChannels)</info>
+		<texture>$INFO[ListItem.Property(mediaTag-audioChannels),flagging/audio/,.png]</texture>
 	</include>
 
 	<include name="WhiteAudioChannelsVars">
@@ -236,8 +232,7 @@
 	</include>
 
 	<include name="ColouraspectRatioVars">
-	<!--	<texture>$INFO[Listitem.Art(mediaTag::aspectRatio),flagging/aspectratio/,.png]</texture> -->
-		<info>Listitem.Art(mediaTag::aspectRatio)</info>
+		<texture>$INFO[ListItem.Property(mediaTag-aspectRatio),flagging/aspectratio/,.png]</texture>
 	</include>
 
 	<include name="WhiteaspectRatioVars">
@@ -245,7 +240,7 @@
 	</include>
 
 	<include name="ColourcontentRatingVars">
-	<!--	<texture>$INFO[Listitem.Art(mediaTag::contentRating),flagging/ratings/mpaa_,.png]</texture> -->
+		<!--	<texture>$INFO[ListItem.Property(mediaTag-contentRating),flagging/ratings/mpaa_,.png]</texture> -->
 		<info>Listitem.Art(mediaTag::contentRating)</info>
 	</include>
 
@@ -254,8 +249,7 @@
 	</include>
 
 	<include name="ColourStudioVars">
-	<!--		<texture>$INFO[Listitem.Art(mediaTag::studio),flagging/studios/,.png]</texture> -->
-		<info>Listitem.Art(mediaTag::studio)</info>
+			<texture>$INFO[ListItem.Property(mediaTag-studio),flagging/studios/,.png]</texture>
 	</include>
 
 	<include name="WhiteStudioVars">

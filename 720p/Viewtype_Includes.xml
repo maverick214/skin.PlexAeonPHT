@@ -13,40 +13,40 @@
 	<include name="Furniture_ShowcaseMediaFlagsVars">
 		<posy>677</posy>
 		<width>60</width>
-		<height>20</height>
-		<aspectratio>stretch</aspectratio>
+		<height>35</height>
+		<aspectratio>keep</aspectratio>
  		<include>Animation_CommonFade</include>
 	 	<colordiffuse>efffffff</colordiffuse>
 	</include>
 	<include name="Furniture_ListMediaFlagsVars">
 		<width min="0" max="50">auto</width>
-		<height>20</height>
-		<aspectratio>stretch</aspectratio>
+		<height>35</height>
+		<aspectratio>keep</aspectratio>
 		<include>Animation_CommonFade</include>
 		<visible>!Skin.HasSetting(nomediaflags)</visible>
 	</include>
 	<include name="Furniture_LowClearListMediaFlagsVars">
 		<width min="0" max="60">auto</width>
-		<height>20</height>
-		<aspectratio>stretch</aspectratio>
+		<height>40</height>
+		<aspectratio>keep</aspectratio>
 		<include>Animation_CommonFade</include>
 		<visible>!Skin.HasSetting(nomediaflags)</visible>
 	</include>
 	<include name="LowList_MovieFlagVars">
 		<posx>910</posx>
 		<posy>665</posy>
-		<width>20</width>
+		<width>50</width>
 		<height>29</height>
 		<include>MediaListSelectDelay</include>
 		<include>MediaViewFade</include>
-		<aspectratio>stretch</aspectratio>
+		<aspectratio>keep</aspectratio>
 		<visible>[Control.IsVisible(551) | Control.IsVisible(54) | Control.IsVisible(598)] + ![Window.IsActive(500) | Window.IsActive(501) | Window.IsActive(502)] + ![!Skin.HasSetting(highlist) + Control.IsVisible(7898)] + ![!Skin.HasSetting(highlist) + Control.IsVisible(7814)] + ![!Skin.HasSetting(highlist) + Control.IsVisible(7814)] + ![!Skin.HasSetting(highlist) + Control.IsVisible(7814)] + ![!Skin.HasSetting(highlist) + Control.IsVisible(7814)] + ![!Skin.HasSetting(highlist) + Control.IsVisible(7850) + ![IsEmpty(ListItem.Art(fanart)) + IsEmpty(container.property(fanart_image))]]</visible>
 	</include>
 	<include name="Furniture_PanelMediaFlagsVars">
 		<posy>459</posy>
 		<width>70</width>
-		<height>20</height>
-		<aspectratio>stretch</aspectratio>
+		<height>40</height>
+		<aspectratio>keep</aspectratio>
 		<include>Animation_CommonFade</include>
 	</include>
 	<include name="Furniture_ShowcaseMediaFlagsBlack">
@@ -59,9 +59,9 @@
 	<include name="Furniture_PanelMediaFlagsVars2">
 		<posy>640</posy>
 		<width>50</width>
-		<height>20</height>
+		<height>30</height>
 		<aligny>bottom</aligny>
-		<aspectratio>stretch</aspectratio>
+		<aspectratio>keep</aspectratio>
 		<colordiffuse>BFFFFFFF</colordiffuse>
 		<include>Animation_CommonFade</include>
 		<visible>Control.IsVisible(555)</visible>
@@ -174,7 +174,7 @@
 			<include>Animation_HideShowcase</include>
 			<include>Animation_HideMultiplex</include>
 			<visible>!Skin.HasSetting(nomediaflags)</visible>
-			<texture>$INFO[ListItem.Art(mediaTag::studio),flagging/studios/,.png]</texture>
+			<texture>$INFO[ListItem.Property(mediaTag-studio),flagging/studios/,.png]</texture>
 			<visible>!IsEmpty(Listitem.Art(mediaTag::studio))</visible>
 		</control>	
 
@@ -237,7 +237,7 @@
 					<include>Animation_HideShowcase</include>
 					<include>Animation_HideMultiplex</include>
 				 	<colordiffuse>efffffff</colordiffuse>
-					<texture>$INFO[ListItem.Art(mediaTag::studio),flagging/studios/,.png]</texture>
+					<texture>$INFO[ListItem.Property(mediaTag-studio),flagging/studios/,.png]</texture>
 					<visible>!Skin.HasSetting(nostudio)</visible>
 				</control>
 				<control type="image">
@@ -301,7 +301,7 @@
 				<height>50</height>
 				<aspectratio>keep</aspectratio>
 				<include>Animation_CommonFade</include>
-				<texture>$INFO[ListItem.Art(mediaTag::studio),flagging/studios/,.png]</texture>
+				<texture>$INFO[ListItem.Property(mediaTag-studio),flagging/studios/,.png]</texture>
 				<visible>!Skin.HasSetting(nostudio)</visible>
 				<colordiffuse>dFFEF280</colordiffuse>
 			</control>
@@ -367,7 +367,7 @@
 					<height>50</height>
 					<aspectratio>keep</aspectratio>
 					<include>Animation_CommonFade</include>
-					<texture>$INFO[ListItem.Art(mediaTag::studio),flagging/studios/,.png]</texture>
+					<texture>$INFO[ListItem.Property(mediaTag-studio),flagging/studios/,.png]</texture>
 					<visible>!Skin.HasSetting(nostudio)</visible>
 				</control>
 				<control type="image" id="91">
@@ -435,7 +435,7 @@
 				<posx>235</posx>
 				<control type="largeimage" id="91">
 					<include>Furniture_PanelMediaFlagsVars2</include>
-			<texture>$INFO[ListItem.Art(mediaTag::studio),flagging/studios/,.png]</texture>
+			<texture>$INFO[ListItem.Property(mediaTag-studio),flagging/studios/,.png]</texture>
 					<visible>!Skin.HasSetting(nostudio)</visible>
 				</control>
 				<control type="largeimage" id="91">
@@ -556,7 +556,7 @@
 				<control type="largeimage">
 				<visible>!Skin.HasSetting(nostudio)</visible>
 				<include>Furniture_MediaFlagsVarsAnoobie3</include>
-				<texture>$INFO[ListItem.Art(mediaTag::studio),flagging/studios/,.png]</texture>
+				<texture>$INFO[ListItem.Property(mediaTag-studio),flagging/studios/,.png]</texture>
 			</control>
 			<control type="largeimage">
 				<include>Furniture_MediaFlagsVarsAnoobie3</include>
@@ -580,7 +580,7 @@
 				<posx>170</posx>
 				<visible>!Skin.HasSetting(WhiteMediaFlags)</visible>
 				<include>Furniture_MediaFlagsVarsAnoobie3</include>
-				<texture>$INFO[ListItem.Art(mediaTag::aspectRatio),flagging/aspectratio/,.png]</texture>
+				<texture>$INFO[ListItem.Property(mediaTag-aspectRatio),flagging/aspectratio/,.png]</texture>
 			</control>
 			<control type="largeimage">
 				<posx>-5</posx>
@@ -611,7 +611,7 @@
 		<include>Animation_WindowFade200</include>
 		<animation effect="fade" start="50" end="50" time="0" condition="Control.IsVisible(53)">Conditional</animation>
 		<animation effect="slide" start="0,0" end="-60,0" time="0" condition="Control.IsVisible(512)">Conditional</animation>
-		<posy>224</posy>
+		<posy>220</posy>
 <!--
 		<control type="group">
 			<posx>85</posx>
@@ -622,7 +622,7 @@
 			<aspectratio>keep</aspectratio>
 			<include>Animation_CommonFade</include>
 			<visible>Control.IsVisible(553) | Control.IsVisible(53)</visible>
-			<texture>$INFO[ListItem.Art(mediaTag::studio),flagging/studios/,.png]</texture>
+			<texture>$INFO[ListItem.Property(mediaTag-studio),flagging/studios/,.png]</texture>
 			<visible>!Skin.HasSetting(nostudio)</visible>
 		</control>
 		<control type="image" id="91">
@@ -642,8 +642,8 @@
 			<posx>85</posx>
 			<posy>440</posy>
 			<width>50</width>
-			<height>20</height>
-			<aspectratio>stretch</aspectratio>
+			<height>39</height>
+			<aspectratio>keep</aspectratio>
 			<include>Animation_CommonFade</include>
 			<include condition="Skin.HasSetting(WhiteMediaFlags)">WhiteVideoResolutionVars</include>
 			<include condition="!Skin.HasSetting(WhiteMediaFlags)">ColourVideoResolutionVars</include>
@@ -652,8 +652,8 @@
 			<posx>155</posx>
 			<posy>440</posy>
 			<width>50</width>
-			<height>20</height>
-			<aspectratio>stretch</aspectratio>
+			<height>39</height>
+			<aspectratio>keep</aspectratio>
 			<include>Animation_CommonFade</include>
 			<include condition="Skin.HasSetting(WhiteMediaFlags)">WhiteVideoCodecVars</include>
 			<include condition="!Skin.HasSetting(WhiteMediaFlags)">ColourVideoCodecVars</include>
@@ -662,8 +662,8 @@
 			<posx>230</posx>
 			<posy>440</posy>
 			<width>50</width>
-			<height>20</height>
-			<aspectratio>stretch</aspectratio>
+			<height>39</height>
+			<aspectratio>keep</aspectratio>
 			<include>Animation_CommonFade</include>
 			<include condition="Skin.HasSetting(WhiteMediaFlags)">WhiteAudioCodecVars</include>
 			<include condition="!Skin.HasSetting(WhiteMediaFlags)">ColourAudioCodecVars</include>
@@ -672,15 +672,15 @@
 			<posx>305</posx>
 			<posy>440</posy>
 			<width>50</width>
-			<height>20</height>
-			<aspectratio>stretch</aspectratio>
+			<height>39</height>
+			<aspectratio>keep</aspectratio>
 			<include>Animation_CommonFade</include>
 			<include condition="Skin.HasSetting(WhiteMediaFlags)">WhiteAudioChannelsVars</include>
 			<include condition="!Skin.HasSetting(WhiteMediaFlags)">ColourAudioChannelsVars</include>
 		</control>
 		<control type="largeimage">
 			<posx>380</posx>
-			<posy>438</posy>
+			<posy>447</posy>
 			<width min="0" max="50">auto</width>
 			<height>25</height>
 			<aspectratio>stretch</aspectratio>
@@ -695,7 +695,7 @@
 			<posy>435</posy>
 			<height>50</height>
 			<width min="1" max="95">auto</width>
-			<texture>$INFO[ListItem.Art(mediaTag::studio),flagging/studios/,.png]</texture>
+			<texture>$INFO[ListItem.Property(mediaTag-studio),flagging/studios/,.png]</texture>
 			<aspectratio>keep</aspectratio>
 			<visible>Container.Content(episodes)</visible>
 		</control>
@@ -804,7 +804,7 @@
 				<posx>342</posx>
 				<height>50</height>
 				<width min="1" max="95">auto</width>
-				<texture>$INFO[ListItem.Art(mediaTag::studio),flagging/studios/,.png]</texture>
+				<texture>$INFO[ListItem.Property(mediaTag-studio),flagging/studios/,.png]</texture>
 				<aspectratio>keep</aspectratio>
 				<animation effect="slide" end="-30,0" time="0" condition="!Control.IsVisible(54)">Conditional</animation>
 				<visible>!Skin.HasSetting(moviegallerypanelon) + !Control.IsVisible(598)</visible>
@@ -4957,7 +4957,7 @@
 					<width>54</width>
 					<height>20</height>
 					<aspectratio>keep</aspectratio>
-					<texture>$INFO[ListItem.Art(mediaTag::videoResolution),hd/,.png]</texture>
+					<texture>$INFO[ListItem.Property(mediaTag-videoResolution),hd/,.png]</texture>
 					<visible>!Skin.HasSetting(HDiconOff)</visible>
 				</control>
 				<control type="largeimage">
@@ -5003,7 +5003,7 @@
 					<width>54</width>
 					<height>20</height>
 					<aspectratio>keep</aspectratio>
-					<texture>$INFO[ListItem.Art(mediaTag::videoResolution),hd/,.png]</texture>
+					<texture>$INFO[ListItem.Property(mediaTag-videoResolution),hd/,.png]</texture>
 					<animation effect="zoom" center="45,75" start="100" end="115" time="400" delay="200" easing="out" tween="cubic" reversible="true">Focus</animation>					
 					<animation effect="zoom" center="45,75" start="115" end="100" time="400" delay="200" easing="out" tween="cubic" reversible="true">Unfocus</animation>					
 					<visible>!Skin.HasSetting(HDiconOff)</visible>
@@ -7085,7 +7085,7 @@
 						<width>54</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Art(mediaTag::videoResolution),hd/,.png]</texture>
+						<texture>$INFO[ListItem.Property(mediaTag-videoResolution),hd/,.png]</texture>
 						<visible>!Skin.HasSetting(HDiconOff) + Skin.HasSetting(flattenflow)</visible>
 					</control>
 				    <control type="largeimage">
@@ -7134,7 +7134,7 @@
 						<width>54</width>
 						<height>28</height>
 						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Art(mediaTag::videoResolution),hd/,.png]</texture>
+						<texture>$INFO[ListItem.Property(mediaTag-videoResolution),hd/,.png]</texture>
 						<animation effect="zoom" start="100" end="110" center="135,130" time="400" delay="300" easing="out" reversible="false" tween="cubic">Focus</animation>
 						<animation effect="zoom" start="110" end="100" center="135,130" time="400" delay="300" easing="out" reversible="false" tween="cubic">Unfocus</animation>
 						<visible>!Skin.HasSetting(HDiconOff) + Skin.HasSetting(flattenflow)</visible>
