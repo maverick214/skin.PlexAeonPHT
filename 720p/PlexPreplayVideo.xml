@@ -502,7 +502,7 @@
  
     	        <control type="largeimage">
 	               <posx>5</posx>
-                   <posy>21</posy>
+                   <posy>20</posy>
                    <width>240</width>
                    <height>135</height>
                    <fadetime>100</fadetime>
