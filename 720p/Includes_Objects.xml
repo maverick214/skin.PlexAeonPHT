@@ -275,7 +275,7 @@
 		<align>center</align>
 		<aligny>center</aligny>
 		<height>29</height>
-		<font>Font_FSInfoLabel</font>
+		<font>Font_RecentlyAdded</font>
 	</include>
 
 	<include name="Objects_FSInfoButtonWide">

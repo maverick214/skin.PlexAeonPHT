@@ -386,7 +386,7 @@
 			<control type="wraplist" id="1300">
 				<description>Home Secondary Menu</description>
 				<posx>0</posx>
-				<posy>297</posy>
+				<posy>287</posy>
 				<width>372</width>
 				<height>320</height>
 				<onup>1300</onup>
@@ -508,7 +508,7 @@
 				</control>
 				<!-- primary filters list -->
 				<control type="grouplist" id="19000">
-					<posy>77</posy>
+					<posy>67</posy>
 					<posx>0</posx>
 					<onup>19010</onup>
 					<ondown>29999</ondown>
@@ -532,7 +532,7 @@
 				</control>
 				<!-- secondary filters list -->
 				<control type="grouplist" id="19001">
-					<posy>318</posy>
+					<posy>308</posy>
 					<posx>0</posx>
 					<onup>19000</onup>
 					<ondown>32000</ondown>
@@ -580,7 +580,7 @@
 				</control>
 				<!-- sorting list -->
 				<control type="grouplist" id="19010">
-					<posy>516</posy>
+					<posy>506</posy>
 					<posx>0</posx>
 					<onup>19001</onup>
 					<ondown>30000</ondown>

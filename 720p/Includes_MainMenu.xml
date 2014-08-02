@@ -277,7 +277,7 @@
 				<item id="11">
 					<description>Search Menu</description>
 					<include>BackgroundVarsSearch</include>
-					<label>$LOCALIZE[137]</label>
+					<label>$LOCALIZE[137] </label>
 					<onclick>Plex.ActivateWindow(10051)</onclick>
 					<visible>!Skin.HasSetting(noSearch)</visible>
 				</item>

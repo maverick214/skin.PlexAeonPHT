@@ -44,10 +44,10 @@
 			<description>button template</description>
 			<include condition="Skin.HasSetting(NoZoom)">AnimationNoZoomContext</include>
 			<include condition="!Skin.HasSetting(NoZoom)">AnimationZoomContext</include>
-			<posx>0</posx>
+			<posx>-20</posx>
 			<posy>0</posy>
 			<height>39</height>
-			<width>308</width>
+			<width>348</width>
 			<textcolor>menutext</textcolor>
 			<focusedcolor>FFdfdfdf</focusedcolor>
 			<texturenofocus>dialogs/context_nofocus.png</texturenofocus>

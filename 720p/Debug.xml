@@ -1,0 +1,934 @@
+<?xml version="1.0"?>
+<includes>
+	<include name="debugFont">
+		<width>570</width>
+		<height>12</height>
+		<font>Regular-12</font>
+		<textcolor>white</textcolor>
+		<align>left</align>
+		<scroll>false</scroll>
+		<wrapmultiline>false</wrapmultiline>
+	</include>
+	<variable name="ContainerContent">
+		<value condition="Container.Content(empty)">empty</value>
+		<value condition="Container.Content(files)">files</value>
+		<value condition="Container.Content(file)">file</value>
+		<value condition="Container.PlexContent(Folder)">folder</value>
+		<value condition="Container.PlexContent(Folders)">folders</value>
+		<value condition="Container.PlexContent(Songs)">songs</value>
+		<value condition="Container.Content(song)">song</value>
+		<value condition="Container.PlexContent(Artists)">artists</value>
+		<value condition="Container.Content(artist)">artist</value>
+		<value condition="Container.PlexContent(Albums)">albums</value>
+		<value condition="Container.Content(album)">album</value>
+		<value condition="Container.PlexContent(Movies)">movies</value>
+		<value condition="Container.PlexContent(Movie)">movie</value>
+		<value condition="Container.PlexContent(TVShows)">tvshows</value>
+		<value condition="Container.Content(tvshow)">tvshow</value>
+		<value condition="Container.PlexContent(Seasons)">seasons</value>
+		<value condition="Container.Content(season)">season</value>
+		<value condition="Container.PlexContent(Episodes)">episodes</value>
+		<value condition="Container.PlexContent(Episode)">episode</value>
+		<value condition="Container.PlexContent(Clips)">clips</value>
+		<value condition="Container.PlexContent(Clip)">clip</value>
+		<value condition="Container.PlexContent(Homemovies)">homemovies</value>
+		<value condition="Container.Content(musicvideos)">musicvideos</value>
+		<value condition="Container.Content(genres)">genres</value>
+		<value condition="Container.Content(years)">years</value>
+		<value condition="Container.Content(actors)">actors</value>
+		<value condition="Container.Content(actor)">actor</value>
+		<value condition="Container.Content(playlists)">playlists</value>
+		<value condition="Container.Content(playlist)">playlist</value>
+		<value condition="Container.Content(plugins)">plugins</value>
+		<value condition="Container.PlexContent(Channels)">channels</value>
+		<value condition="Container.PlexContent(Channel)">channel</value>
+		<value condition="Container.Content(studios)">studios</value>
+		<value condition="Container.Content(directors)">directors</value>
+		<value condition="Container.Content(director)">director</value>
+		<value condition="Container.Content(plugincontent)">plugincontent</value>
+		<value condition="Container.Content(addons)">addons</value>
+		<value condition="Container.PlexContent(Secondary)">secondary</value>
+		<value condition="Container.PlexContent(Photos)">photos</value>
+		<value condition="Container.Content(photoalbum)">photoalbum</value>
+		<value condition="Container.PlexContent(PhotoAlbums)">photoalbums</value>
+		<value/>
+	</variable>
+	<variable name="ListItemType">
+		<value condition="ListItem.Type(files)">files</value>
+		<value condition="ListItem.Type(file)">file</value>
+		<value condition="ListItem.Type(songs)">songs</value>
+		<value condition="ListItem.Type(song)">song</value>
+		<value condition="ListItem.Type(artists)">artists</value>
+		<value condition="ListItem.Type(artist)">artist</value>
+		<value condition="ListItem.Type(albums)">albums</value>
+		<value condition="ListItem.Type(album)">album</value>
+		<value condition="ListItem.Type(movies)">movies</value>
+		<value condition="ListItem.Type(movie)">movie</value>
+		<value condition="ListItem.Type(tvshows)">tvshows</value>
+		<value condition="ListItem.Type(tvshow)">tvshow</value>
+		<value condition="ListItem.Type(seasons)">seasons</value>
+		<value condition="ListItem.Type(season)">season</value>
+		<value condition="ListItem.Type(episodes)">episodes</value>
+		<value condition="ListItem.Type(episode)">episode</value>
+		<value condition="ListItem.Type(clips)">clips</value>
+		<value condition="ListItem.Type(clip)">clip</value>
+		<value condition="ListItem.Type(musicvideos)">musicvideos</value>
+		<value condition="ListItem.Type(genres)">genres</value>
+		<value condition="ListItem.Type(years)">years</value>
+		<value condition="ListItem.Type(actors)">actors</value>
+		<value condition="ListItem.Type(actor)">actor</value>
+		<value condition="ListItem.Type(playlists)">playlists</value>
+		<value condition="ListItem.Type(playlist)">playlist</value>
+		<value condition="ListItem.Type(plugins)">plugins</value>
+		<value condition="ListItem.Type(channels)">channels</value>
+		<value condition="ListItem.Type(channel)">channel</value>
+		<value condition="ListItem.Type(studios)">studios</value>
+		<value condition="ListItem.Type(directors)">directors</value>
+		<value condition="ListItem.Type(director)">director</value>
+		<value condition="ListItem.Type(plugincontent)">plugincontent</value>
+		<value condition="ListItem.Type(addons)">addons</value>
+		<value condition="ListItem.Type(secondary)">secondary</value>
+		<value condition="ListItem.Type(photo)">photo</value>
+		<value condition="ListItem.Type(photos)">photos</value>
+		<value condition="ListItem.Type(photoalbum)">photoalbum</value>
+		<value/>
+	</variable>
+	<variable name="ItemStatus">
+		<value condition="ListItem(0).Status(WaTcHeD)">Watched</value>
+		<value condition="ListItem(0).Status(inprogress)">InProgress</value>
+		<value condition="ListItem(0).Status(unwatched)">Unwatched</value>
+		<value/>
+	</variable>
+	<variable name="PlexPlayQueue">
+		<value condition="System.PlexPlayQueue(video)">Video</value>
+		<value condition="System.PlexPlayQueue(music)">Music</value>
+		<value condition="System.PlexPlayQueue(clip)">Clip</value>
+		<value condition="!System.PlexPlayQueue(any)">None</value>
+	</variable>
+	<variable name="HomeListSelectedItemType">
+		<!-- on deck -->
+		<value condition="ControlGroup(7002).HasFocus + Container(11001).ListItem.Type(episode)">episode</value>
+		<value condition="ControlGroup(7002).HasFocus + Container(11001).ListItem.Type(movie)">movie</value>
+		<value condition="ControlGroup(7002).HasFocus + Container(11001).ListItem.Type(clip)">clip</value>
+		<!-- recently added -->
+		<value condition="ControlGroup(7001).HasFocus + Container(11000).ListItem.Type(episode)">episode</value>
+		<value condition="ControlGroup(7001).HasFocus + Container(11000).ListItem.Type(movie)">movie</value>
+		<value condition="ControlGroup(7001).HasFocus + Container(11000).ListItem.Type(album)">album</value>
+		<value condition="ControlGroup(7001).HasFocus + Container(11000).ListItem.Type(song)">song</value>
+		<value condition="ControlGroup(7001).HasFocus + Container(11000).ListItem.Type(photo)">photo</value>
+		<value condition="ControlGroup(7001).HasFocus + Container(11000).ListItem.Type(photoAlbum)">photoAlbum</value>
+		<!-- queue -->
+		<value condition="ControlGroup(7003).HasFocus + Container(11003).ListItem.Type(episode)">episode</value>
+		<value condition="ControlGroup(7003).HasFocus + Container(11003).ListItem.Type(movie)">movie</value>
+		<value condition="ControlGroup(7003).HasFocus + Container(11003).ListItem.Type(clip)">clip</value>
+		<!-- recommended -->
+		<value condition="ControlGroup(7005).HasFocus + Container(11004).ListItem.Type(episode)">episode</value>
+		<value condition="ControlGroup(7005).HasFocus + Container(11004).ListItem.Type(movie)">movie</value>
+		<value condition="ControlGroup(7005).HasFocus + Container(11004).ListItem.Type(clip)">clip</value>
+	</variable>
+	<variable name="HomeListItemFullInfoTitle">
+		<!-- on deck -->
+		<value condition="ControlGroup(7002).HasFocus + Container(11001).ListItem.Type(episode)">$INFO[Container(11001).ListItem.TVShowTitle]</value>
+		<value condition="ControlGroup(7002).HasFocus + Container(11001).ListItem.Type(movie)">$INFO[Container(11001).ListItem.Label]</value>
+		<!-- recently added -->
+		<value condition="ControlGroup(7001).HasFocus + [Container(11000).ListItem.Type(season) | Container(11000).ListItem.Type(episode)]">$INFO[Container(11000).ListItem.TVShowTitle]</value>
+		<value condition="ControlGroup(7001).HasFocus + [Container(11000).ListItem.Type(movie) | Container(11000).ListItem.Type(clip)]">$INFO[Container(11000).ListItem.Label]</value>
+		<!-- queue -->
+		<value condition="ControlGroup(7003).HasFocus">$INFO[Container(11003).ListItem.Label]</value>
+		<!-- recommended -->
+		<value condition="ControlGroup(7005).HasFocus">$INFO[Container(11004).ListItem.Label]</value>
+		<!--><value>No title available (debug).</value>-->
+	</variable>
+	<include name="debugInfos">
+		<control type="group" id="1">
+			<visible>Skin.HasSetting(showdebug)</visible>
+			<control type="group">
+				<animation effect="fade" start="0" end="85" condition="true">Conditional</animation>
+				<control type="image">
+					<include>FullScreenScaled</include>
+					<texture>black.png</texture>
+				</control>
+				<control type="image">
+					<include>FullScreenScaled</include>
+					<texture>bg-overlay-grainy.png</texture>
+				</control>
+			</control>
+			<!-- left list -->
+			<control type="grouplist">
+				<posx>40</posx>
+				<posy>40</posy>
+				<width>350</width>
+				<height>680</height>
+				<orientation>vertical</orientation>
+				<itemgap>5</itemgap>
+				<control type="label">
+					<include>debugFont</include>
+					<label>System.CurrentWindow : [COLOR=orangeLight]$INFO[System.CurrentWindow][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Window.Property(xmlfile) : [COLOR=orangeLight]$INFO[Window.Property(xmlfile)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>System.CurrentControl : [COLOR=orangeLight]$INFO[System.CurrentControl][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>System.Screenresolution : [COLOR=orangeLight]$INFO[System.Screenresolution][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Skin.AspectRatio : [COLOR=orangeLight]$INFO[Skin.AspectRatio][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>System.Memory(used) : [COLOR=orangeLight]$INFO[System.Memory(used)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>System.CpuFrequency : [COLOR=orangeLight]$INFO[System.CpuFrequency][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>System.PlexPlayQueue : [COLOR=orangeLight]$VAR[PlexPlayQueue][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Network.IPAddress : [COLOR=orangeLight]$INFO[Network.IPAddress][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label/>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Skin.String(SectionType) : [COLOR=orangeLight]$INFO[Skin.String(SectionType)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label/>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.Viewmode : [COLOR=orangeLight]$INFO[Container.Viewmode][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.Content : [COLOR=orangeLight]$VAR[ContainerContent][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.FolderName : [COLOR=orangeLight]$INFO[Container.FolderName][/COLOR]</label>
+				</control>
+				<!--><control type="label">
+					<include>debugFont</include>
+					<label>Container.FolderPath : [COLOR=orangeLight]$INFO[Container.FolderPath][/COLOR]</label>
+				</control>-->
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.FirstTitle : [COLOR=orangeLight]$INFO[Container.FirstTitle][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.SecondTitle : [COLOR=orangeLight]$INFO[Container.SecondTitle][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.Property(parentTitle) : [COLOR=orangeLight]$INFO[Container.Property(parentTitle)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.Property(mixedParents) : [COLOR=orangeLight]$INFO[Container.Property(mixedParents)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container().NumItems : [COLOR=orangeLight]$INFO[Container().NumItems][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.SortMethod : [COLOR=orangeLight]$INFO[Container.SortMethod][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container().TotalTime : [COLOR=orangeLight]$INFO[Container().TotalTime][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label/>
+				</control>
+					<control type="label">
+						<include>debugFont</include>
+						<label>Player.OnNew : [COLOR=orangeLight]NEW[/COLOR]</label>
+						<visible>Player.OnNew</visible>
+					</control>
+					<control type="label">
+						<include>debugFont</include>
+						<label>Player.OnNew : [COLOR=orangeLight]not new[/COLOR]</label>
+						<visible>!Player.OnNew</visible>
+					</control>
+					<control type="label">
+						<include>debugFont</include>
+						<label/>
+					</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.FolderThumb : [COLOR=orangeLight]$INFO[Container.FolderThumb][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.Property(primaryFilterActivated) : [COLOR=orangeLight]1[/COLOR]</label>
+					<visible>!IsEmpty(Container.Property(primaryFilterActivated))</visible>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.Property(primaryFilterActivated) :</label>
+					<visible>IsEmpty(Container.Property(primaryFilterActivated))</visible>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.Property(secondaryFilterActivated) : [COLOR=orangeLight]1[/COLOR]</label>
+					<visible>!IsEmpty(Container.Property(secondaryFilterActivated))</visible>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.Property(secondaryFilterActivated) :</label>
+					<visible>IsEmpty(Container.Property(secondaryFilterActivated))</visible>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.Property(PlexPreplay) : [COLOR=orangeLight]1[/COLOR]</label>
+					<visible>!IsEmpty(Container.Property(PlexPreplay))</visible>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.Property(PlexPreplay) :</label>
+					<visible>IsEmpty(Container.Property(PlexPreplay))</visible>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.Property(PlexContent) : [COLOR=orangeLight]$INFO[Container.Property(PlexContent)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.Property(PlexFilter) : [COLOR=orangeLight]$INFO[Container.Property(PlexFilter)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Property(PlexExtras) : [COLOR=orangeLight]$INFO[ListItem.Property(PlexExtras)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.Property(PlexExtras) : [COLOR=orangeLight]$INFO[Container.Property(PlexExtras)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.Property(PlexEditMode) : [COLOR=orangeLight]$INFO[Container.Property(PlexEditMode)][/COLOR]</label>
+				</control>
+				<!--><control type="label">
+					<include>debugFont</include>
+					<label>ListItem.FileNameAndPath : [COLOR=orangeLight]$INFO[ListItem.FileNameAndPath][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.FolderName : [COLOR=orangeLight]$INFO[ListItem.FolderName][/COLOR]</label>
+				</control>-->
+				<control type="label">
+					<include>debugFont</include>
+					<label/>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>System.NoPlexServers : [COLOR=orangeLight][/COLOR]</label>
+					<visible>!System.NoPlexServers</visible>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>System.NoPlexServers : [COLOR=orangeLight]1[/COLOR]</label>
+					<visible>System.NoPlexServers</visible>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label/>
+				</control>
+				<!--><control type="label">
+					<include>debugFont</include>
+					<label>Container.PluginName : [COLOR=orangeLight]$INFO[Container.PluginName][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.Property(addoncategory) : [COLOR=orangeLight]$INFO[Container.Property(addoncategory)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.Property(reponame) : [COLOR=orangeLight]$INFO[Container.Property(reponame)][/COLOR]</label>
+				</control>-->
+			</control>
+			<!-- middle list -->
+			<control type="grouplist">
+				<posx>400</posx>
+				<posy>40</posy>
+				<width>390</width>
+				<height>680</height>
+				<orientation>vertical</orientation>
+				<itemgap>5</itemgap>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Type : [COLOR=orangeLight]$VAR[ListItemType][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Label : [COLOR=orangeLight]$INFO[ListItem.Label][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.OriginalTitle : [COLOR=orangeLight]$INFO[ListItem.OriginalTitle][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Property(sourceTitle) : [COLOR=orangeLight]$INFO[ListItem.Property(sourceTitle)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Art(sourceIcon) : [COLOR=orangeLight]$INFO[ListItem.Art(sourceIcon)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Property(Recommender) : [COLOR=orangeLight]$INFO[ListItem.Property(Recommender)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Label : [COLOR=orangeLight]$INFO[ListItem.Label][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Label2 : [COLOR=orangeLight]$INFO[ListItem.Label2][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Genre : [COLOR=orangeLight]$INFO[Listitem.Genre][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.DurationStr : [COLOR=orangeLight]$INFO[Listitem.DurationStr][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Year : [COLOR=orangeLight]$INFO[Listitem.Year][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.MPAA : [COLOR=orangeLight]$INFO[Listitem.MPAA][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Rating : [COLOR=orangeLight]$INFO[Listitem.Rating][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Property(hasUserRating) : [COLOR=orangeLight]$INFO[Listitem.Property(hasUserRating)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Director : [COLOR=orangeLight]$INFO[Listitem.Director][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Cast : [COLOR=orangeLight]$INFO[Listitem.Cast][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Plot : [COLOR=orangeLight]$INFO[Listitem.Plot][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.PlotOutline : [COLOR=orangeLight]$INFO[Listitem.PlotOutline][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Tagline : [COLOR=orangeLight]$INFO[Listitem.Tagline][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.Property(summary) : [COLOR=orangeLight]$INFO[Container.Property(summary)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Property(summary) : [COLOR=orangeLight]$INFO[ListItem.Property(summary)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Property(LeafCount) : [COLOR=orangeLight]$INFO[ListItem.Property(LeafCount)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Country : [COLOR=orangeLight]$INFO[ListItem.Country][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Property(firstCountry) : [COLOR=orangeLight]$INFO[ListItem.Property(firstCountry)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.SortLetter : [COLOR=orangeLight]$INFO[ListItem.SortLetter][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Date : [COLOR=orangeLight]$INFO[ListItem.Date][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.DateAdded : [COLOR=orangeLight]$INFO[ListItem.DateAdded][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.LastPlayed : [COLOR=orangeLight]$INFO[ListItem.LastPlayed][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Art(thumb) : [COLOR=orangeLight]$INFO[ListItem.Art(thumb)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Art(poster) : [COLOR=orangeLight]$INFO[ListItem.Art(poster)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Art(banner) : [COLOR=orangeLight]$INFO[ListItem.Art(banner)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Property(plexServerName) : [COLOR=orangeLight]$INFO[ListItem.Property(plexServerName)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Property(plexServerOwner) : [COLOR=orangeLight]$INFO[ListItem.Property(plexServerOwner)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Property(ServerName) : [COLOR=orangeLight]$INFO[ListItem.Property(ServerName)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Property(Unavailable) : [COLOR=orangeLight]$INFO[ListItem.Property(Unavailable)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Property(index) : [COLOR=orangeLight]$INFO[ListItem.Property(index)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label/>
+				</control>
+				<!--><control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Premiered : [COLOR=orangeLight]$INFO[Listitem.Premiered][/COLOR]</label>
+				</control>-->
+				<control type="label">
+					<include>debugFont</include>
+					<label/>
+				</control>
+			</control>
+			<!-- right list -->
+			<!-- PHOTOS -->
+			<control type="grouplist">
+				<posx>820</posx>
+				<posy>40</posy>
+				<width>390</width>
+				<height>680</height>
+				<orientation>vertical</orientation>
+				<itemgap>5</itemgap>
+				<visible>Window.IsVisible(2)</visible>
+				<control type="label">
+					<include>debugFont</include>
+					<label>PHOTO SPECIFIC:</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label/>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.PictureAperture : [COLOR=orangeLight]$INFO[ListItem.PictureAperture][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.PictureCamMake : [COLOR=orangeLight]$INFO[ListItem.PictureCamMake][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.PictureCamModel : [COLOR=orangeLight]$INFO[ListItem.PictureCamModel][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.PictureCaption : [COLOR=orangeLight]$INFO[ListItem.PictureCaption][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.PictureComment : [COLOR=orangeLight]$INFO[ListItem.PictureComment][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.PictureDate : [COLOR=orangeLight]$INFO[ListItem.PictureDate][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.PictureDatetime : [COLOR=orangeLight]$INFO[ListItem.PictureDatetime][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.PictureDesc : [COLOR=orangeLight]$INFO[ListItem.PictureDesc][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.PictureExpMode : [COLOR=orangeLight]$INFO[ListItem.PictureExpMode][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.PictureExpTime : [COLOR=orangeLight]$INFO[ListItem.PictureExpTime][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.PictureResolution : [COLOR=orangeLight]$INFO[ListItem.PictureResolution][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.PicturePath : [COLOR=orangeLight]$INFO[ListItem.PicturePath][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.PictureKeywords : [COLOR=orangeLight]$INFO[ListItem.PictureKeywords][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Property(aspectRatio) : [COLOR=orangeLight]$INFO[ListItem.Property(aspectRatio)][/COLOR]</label>
+				</control>
+			</control>
+			<!-- VIDEO -->
+			<control type="grouplist">
+				<posx>820</posx>
+				<posy>40</posy>
+				<width>390</width>
+				<height>680</height>
+				<orientation>vertical</orientation>
+				<itemgap>5</itemgap>
+				<visible>Window.IsVisible(25) | Window.IsVisible(10090) | [Window.IsVisible(plexplayqueue) + System.PlexPlayQueue(Video)]</visible>
+				<control type="label">
+					<include>debugFont</include>
+					<label>VIDEO SPECIFIC:</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label/>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Property(mediaTag-contentRating) : [COLOR=orangeLight]$INFO[Listitem.Property(mediaTag-contentRating)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Property(mediaTag-videoResolution) : [COLOR=orangeLight]$INFO[Listitem.Property(mediaTag-videoResolution)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Property(mediaTag-aspectRatio) : [COLOR=orangeLight]$INFO[Listitem.Property(mediaTag-aspectRatio)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Property(mediaTag-videoFrameRate) : [COLOR=orangeLight]$INFO[Listitem.Property(mediaTag-videoFrameRate)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Property(mediaTag-videoCodec) : [COLOR=orangeLight]$INFO[Listitem.Property(mediaTag-videoCodec)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Property(mediaTag-audioCodec) : [COLOR=orangeLight]$INFO[Listitem.Property(mediaTag-audioCodec)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Property(mediaTag-audioChannels) : [COLOR=orangeLight]$INFO[Listitem.Property(mediaTag-audioChannels)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Property(mediaTag-Studio) : [COLOR=orangeLight]$INFO[Listitem.Property(mediaTag-Studio)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.PercentPlayed : [COLOR=orangeLight]$INFO[ListItem.PercentPlayed][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.AudioLanguage : [COLOR=orangeLight]$INFO[ListItem.AudioLanguage][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Property(selectedAudioStream) : [COLOR=orangeLight]$INFO[ListItem.Property(selectedAudioStream)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.SubtitleLanguage : [COLOR=orangeLight]$INFO[ListItem.SubtitleLanguage][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Property(selectedSubtitleStream) : [COLOR=orangeLight]$INFO[ListItem.Property(selectedSubtitleStream)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Status / Overlay : [COLOR=orangeLight]$VAR[ItemStatus] $INFO[ListItem.Overlay, / ][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>VideoPlayer.PlexContent : [COLOR=orangeLight]$INFO[VideoPlayer.PlexContentStr][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>VideoPlayer.HasNext : [COLOR=orangeLight]yes[/COLOR]</label>
+					<visible>VideoPlayer.HasNext</visible>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>VideoPlayer.HasNext : [COLOR=orangeLight][/COLOR]</label>
+					<visible>!VideoPlayer.HasNext</visible>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>VideoPlayer.Offset(1).Title : [COLOR=orangeLight]$INFO[VideoPlayer.Offset(1).Title][/COLOR]</label>
+				</control>
+			</control>
+			<!-- VIDEO PLAYER SPECIFIC -->
+			<control type="grouplist">
+				<posx>820</posx>
+				<posy>40</posy>
+				<width>390</width>
+				<height>680</height>
+				<orientation>vertical</orientation>
+				<itemgap>5</itemgap>
+				<visible>Window.IsVisible(2005) | Window.IsVisible(2901)</visible>
+				<control type="label">
+					<include>debugFont</include>
+					<label>VIDEO PLAYER SPECIFIC:</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label/>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Player.Title : [COLOR=orangeLight]$INFO[Player.Title][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Player.Time : [COLOR=orangeLight]$INFO[Player.Time][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Player.FinishTime : [COLOR=orangeLight]$INFO[Player.FinishTime][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Player.TimeRemaining : [COLOR=orangeLight]$INFO[Player.TimeRemaining][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Player.Duration : [COLOR=orangeLight]$INFO[Player.Duration][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>VideoPlayer.TimeSpeed : [COLOR=orangeLight]$INFO[VideoPlayer.TimeSpeed][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Player.Volume : [COLOR=orangeLight]$INFO[Player.Volume][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Player.CacheLevel : [COLOR=orangeLight]$INFO[Player.CacheLevel][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Player.ProgressCache : [COLOR=orangeLight]$INFO[Player.ProgressCache][/COLOR]</label>
+				</control>
+			</control>
+			<!-- TV SPECIFIC -->
+			<control type="grouplist">
+				<posx>820</posx>
+				<posy>400</posy>
+				<width>390</width>
+				<height>680</height>
+				<orientation>vertical</orientation>
+				<itemgap>5</itemgap>
+				<visible>Container.PlexContent(TVShows) | Container.Content(tvshow) | Container.PlexContent(Seasons) | Container.Content(season) | Container.PlexContent(Episodes) | Container.PlexContent(Episode) | [Window.IsVisible(plexplayqueue) + System.PlexPlayQueue(Video)]</visible>
+				<control type="label">
+					<include>debugFont</include>
+					<label>TV SPECIFIC:</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label/>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.TVShowTitle : [COLOR=orangeLight]$INFO[ListItem.TVShowTitle][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Episode : [COLOR=orangeLight]$INFO[Listitem.Episode][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Property(TotalEpisodes) : [COLOR=orangeLight]$INFO[ListItem.Property(TotalEpisodes)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Season : [COLOR=orangeLight]$INFO[ListItem.Season][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Property(TotalSeasons) : [COLOR=orangeLight]$INFO[ListItem.Property(TotalSeasons)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Property(WatchedEpisodes) : [COLOR=orangeLight]$INFO[Listitem.Property(WatchedEpisodes)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Property(UnWatchedEpisodes) : [COLOR=orangeLight]$INFO[ListItem.Property(UnWatchedEpisodes)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Property(NumEpisodes) : [COLOR=orangeLight]$INFO[ListItem.Property(NumEpisodes)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.ShowPlot : [COLOR=orangeLight]$INFO[Container.ShowPlot][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.TVShowThumb : [COLOR=orangeLight]$INFO[Container.TVShowThumb][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Property(SeasonThumb) : [COLOR=orangeLight]$INFO[ListItem.Property(SeasonThumb)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>ListItem.Property(TVShowThumb) : [COLOR=orangeLight]$INFO[ListItem.Property(TVShowThumb)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.SeasonThumb : [COLOR=orangeLight]$INFO[Container.SeasonThumb][/COLOR]</label>
+				</control>
+			</control>
+			<!-- MUSIC -->
+			<control type="grouplist">
+				<posx>820</posx>
+				<posy>40</posy>
+				<width>390</width>
+				<height>680</height>
+				<orientation>vertical</orientation>
+				<itemgap>5</itemgap>
+				<visible>Window.IsVisible(501) | [Window.IsVisible(plexplayqueue) + System.PlexPlayQueue(Music)]</visible>
+				<control type="label">
+					<include>debugFont</include>
+					<label>MUSIC SPECIFIC:</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label/>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Artist : [COLOR=orangeLight]$INFO[Listitem.Artist][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Property(Artist_Description) : [COLOR=orangeLight]$INFO[Listitem.Property(Artist_Description)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Property(Artist_Genre) : [COLOR=orangeLight]$INFO[Listitem.Property(Artist_Genre)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Property(Artist_Formed) : [COLOR=orangeLight]$INFO[Listitem.Property(Artist_Formed)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Property(Artist_Style) : [COLOR=orangeLight]$INFO[Listitem.Property(Artist_Style)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Property(Artist_Mood) : [COLOR=orangeLight]$INFO[Listitem.Property(Artist_Mood)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Album : [COLOR=orangeLight]$INFO[Listitem.Album][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Property(Album_Description) : [COLOR=orangeLight]$INFO[Listitem.Property(Album_Description)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Listitem.Property(Album_Type) : [COLOR=orangeLight]$INFO[Listitem.Property(Album_Type)][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.UniformProperty(Artist) :</label>
+					<visible>!Container.UniformProperty(Artist)</visible>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.UniformProperty(Artist) : [COLOR=orangeLight]true[/COLOR]</label>
+					<visible>Container.UniformProperty(Artist)</visible>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.UniformProperty(Album) :</label>
+					<visible>!Container.UniformProperty(Album)</visible>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Container.UniformProperty(Album) : [COLOR=orangeLight]true[/COLOR]</label>
+					<visible>Container.UniformProperty(Album)</visible>
+				</control>
+			</control>
+			<!-- HOME LISTS DEBUG -->
+			<control type="grouplist">
+				<posx>820</posx>
+				<posy>40</posy>
+				<width>390</width>
+				<height>680</height>
+				<orientation>vertical</orientation>
+				<itemgap>5</itemgap>
+				<visible>Window.IsVisible(0)</visible>
+				<control type="label">
+					<include>debugFont</include>
+					<label>HOME LISTS SPECIFIC:</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label/>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>HomeListSelectedItemType : [COLOR=orangeLight]$VAR[HomeListSelectedItemType][/COLOR]</label>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label/>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label>Hide Unwatched Episodes Plot : [COLOR=orangeLight]OFF[/COLOR]</label>
+					<visible>!Skin.HasSetting(HidePlotForUnwatched)</visible>
+				</control>
+				<control type="label">
+					<include>debugFont</include>
+					<label/>
+				</control>
+			</control>
+		</control>
+	</include>
+</includes>

@@ -35,7 +35,7 @@
 	</include>
 	<include name="ShowcaseInfoValue">
 		<posx>0</posx>
-		<posy>17</posy>
+		<posy>21</posy>
 		<include condition="![Skin.HasSetting(showcasebigthumb) | Skin.HasSetting(showcasefanart) | Skin.HasSetting(showcasebigtrailer)] + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]">ShowcasePlotWidth</include>
 		<include condition="Skin.HasSetting(showcasebigthumb) | Skin.HasSetting(showcasefanart) | Skin.HasSetting(showcasebigtrailer) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]">ShowcaseNoPlotWidth</include>
 		<include condition="[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]">ShowcaseTVWidth</include>
@@ -53,7 +53,7 @@
 	</include>
 	<include name="ShowcaseInfoValueBigThumb">
 		<posx>235</posx>
-		<posy>17</posy>
+		<posy>21</posy>
 		<width>200</width>
 		<height>13</height>
 		<font>Font_MediaWindowMenu</font>

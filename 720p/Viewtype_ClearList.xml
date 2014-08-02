@@ -152,7 +152,7 @@
 	<!--#########################################################################################################-->
 	<include name="cList_Title">
 		<posx>170</posx>
-		<posy>20</posy>
+		<posy>13</posy>
 		<height>25</height>
 	    <font>Font_MediaWindowTitleMenu</font>
 <!--	<include condition="!Skin.HasSetting(Lightclearlist)">cList_NightInfoColor</include>  -->
@@ -387,7 +387,7 @@
 						<label>$LOCALIZE[31438]:</label>
 					</control>
 					<control type="label">
-						<posy>17</posy>
+						<posy>21</posy>
 						<include>cList_InfoValue</include>
 						<label fallback="31425">$INFO[ListItem.Property(Genre)]</label>
 					</control>
@@ -402,7 +402,7 @@
 						<label>$LOCALIZE[12391]:</label>
 					</control>
 					<control type="label">
-						<posy>17</posy>
+						<posy>21</posy>
 						<include>cList_InfoValue</include>
 						<label fallback="31425">$INFO[ListItem.Duration]</label>
 					</control>
@@ -427,7 +427,7 @@
 					</control>
 					<control type="label">
 						<posx>0</posx>
-						<posy>20</posy>
+						<posy>15</posy>
 						<width>140</width>
                         <height>25</height>
 						<label fallback="31425">$INFO[ListItem.Rating]</label>
@@ -441,7 +441,7 @@
 						<label>YEAR:</label>
 					</control>
 					<control type="label">
-						<posy>17</posy>
+						<posy>21</posy>
 						<include>cList_InfoValue</include>
 						<label fallback="31425">$INFO[ListItem.Year]</label>
 					</control>
@@ -471,7 +471,7 @@
 						<label>$LOCALIZE[31438]:</label>
 					</control>
 					<control type="label">
-						<posy>17</posy>
+						<posy>21</posy>
 						<include>cList_InfoValue</include>
 						<label fallback="31425">$INFO[ListItem.Property(Genre)]</label>
 					</control>
@@ -484,7 +484,7 @@
 						<label>$LOCALIZE[31406]:</label>
 					</control>
 					<control type="label">
-						<posy>17</posy>
+						<posy>21</posy>
 						<include>cList_InfoValue</include>
 						<label fallback="31425">$INFO[ListItem.Episode]</label>
 					</control>
@@ -497,7 +497,7 @@
 						<label>$LOCALIZE[31439]:</label>
 					</control>
 					<control type="label">
-						<posy>17</posy>
+						<posy>21</posy>
 						<include>cList_InfoValue</include>
 						<label fallback="31425">$INFO[ListItem.Property(WatchedEpisodes)]</label>
 					</control>
@@ -510,7 +510,7 @@
 						<label>$LOCALIZE[31440]:</label>
 					</control>
 					<control type="label">
-						<posy>17</posy>
+						<posy>21</posy>
 						<include>cList_InfoValue</include>
 						<label fallback="31425">$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
 					</control>
@@ -523,7 +523,7 @@
 						<label>$LOCALIZE[31407]:</label>
 					</control>
 					<control type="label">
-						<posy>17</posy>
+						<posy>21</posy>
 						<include>cList_InfoValue</include>
 						<label fallback="31425">$INFO[ListItem.Date]</label>
 					</control>
@@ -543,7 +543,7 @@
 					</control>
 					<control type="label">
 						<visible>!IsEmpty(ListItem.Title)</visible>
-						<posy>17</posy>
+						<posy>21</posy>
 						<include>cList_InfoValue</include>
 						<label fallback="31425">$INFO[ListItem.Episode]</label>
 					</control>
@@ -556,7 +556,7 @@
 						<label>$LOCALIZE[31439]:</label>
 					</control>
 					<control type="label">
-						<posy>17</posy>
+						<posy>21</posy>
 						<include>cList_InfoValue</include>
 						<label fallback="31425">$INFO[ListItem.Property(WatchedEpisodes)]</label>
 					</control>
@@ -569,7 +569,7 @@
 						<label>$LOCALIZE[31440]:</label>
 					</control>
 					<control type="label">
-						<posy>17</posy>
+						<posy>21</posy>
 						<include>cList_InfoValue</include>
 						<label fallback="31425">$INFO[ListItem.Property(UnwatchedEpisodes)]</label>
 					</control>
@@ -740,7 +740,7 @@
 						<label>Formed:</label>
 					</control>
 					<control type="label">
-						<posy>17</posy>
+						<posy>21</posy>
 						<include>cList_InfoValueMusic</include>
 						<label fallback="31425">$INFO[ListItem.Property(Formed)]</label>
 					</control>
@@ -754,7 +754,7 @@
 						<label>$LOCALIZE[21893] - died:</label>
 					</control>
 					<control type="label">
-						<posy>17</posy>
+						<posy>21</posy>
 						<include>cList_InfoValueMusic</include>
 						<label fallback="31425">$INFO[ListItem.Property(born)] - $INFO[Container(51).listitem.Property(died)]</label>
 					</control>
@@ -768,7 +768,7 @@
 						<label>$LOCALIZE[515]:</label>
 					</control>
 					<control type="label">
-						<posy>17</posy>
+						<posy>21</posy>
 						<include>cList_InfoValueMusic</include>
 						<label fallback="31425">$INFO[ListItem.Property(Genre)]</label>
 					</control>
@@ -782,7 +782,7 @@
 						<label>$LOCALIZE[176]</label>
 					</control>
 					<control type="label">
-						<posy>17</posy>
+						<posy>21</posy>
 						<include>cList_InfoValueMusic</include>
 						<label fallback="31425">$INFO[ListItem.Property(style)]</label>
 					</control>
@@ -796,7 +796,7 @@
 						<label>$LOCALIZE[175]</label>
 					</control>
 					<control type="label">
-						<posy>17</posy>
+						<posy>21</posy>
 						<include>cList_InfoValueMusic</include>
 						<label fallback="31425">$INFO[ListItem.Property(mood)]</label>
 					</control>
@@ -810,7 +810,7 @@
 						<label>INSTRUMENTS:</label>
 					</control>
 					<control type="label">
-						<posy>17</posy>
+						<posy>21</posy>
 						<include>cList_InfoValueMusic</include>
 						<label fallback="31425">$INFO[ListItem.Property(Instruments)]</label>
 					</control>
@@ -824,7 +824,7 @@
 						<label>Years Active:</label>
 					</control>
 					<control type="label">
-						<posy>17</posy>
+						<posy>21</posy>
 						<include>cList_InfoValueMusic</include>
 						<label fallback="31425">$INFO[ListItem.Property(YearsActive)]</label>
 					</control>
@@ -862,7 +862,7 @@
 						<label>$LOCALIZE[175]</label>
 					</control>
 					<control type="label">
-						<posy>17</posy>
+						<posy>21</posy>
 						<include>cList_InfoValueMusic</include>
 						<label fallback="31425">$INFO[ListItem.Property(mood)]</label>
 					</control>
@@ -877,7 +877,7 @@
 						<label>$LOCALIZE[176]</label>
 					</control>
 					<control type="label">
-						<posy>17</posy>
+						<posy>21</posy>
 						<include>cList_InfoValueMusic</include>
 						<label fallback="31425">$INFO[ListItem.Property(style)]</label>
 					</control>
@@ -892,7 +892,7 @@
 						<label>theme:</label>
 					</control>
 					<control type="label">
-						<posy>17</posy>
+						<posy>21</posy>
 						<include>cList_InfoValueMusic</include>
 						<label fallback="31425">$INFO[ListItem.Property(theme)]</label>
 					</control>
@@ -907,7 +907,7 @@
 						<label>$LOCALIZE[21899]:</label>
 					</control>
 					<control type="label">
-						<posy>17</posy>
+						<posy>21</posy>
 						<include>cList_InfoValueMusic</include>
 						<label fallback="31425">$INFO[ListItem.Property(label)]</label>
 					</control>
@@ -922,7 +922,7 @@
 						<label>$LOCALIZE[562]:</label>
 					</control>
 					<control type="label">
-						<posy>17</posy>
+						<posy>21</posy>
 						<include>cList_InfoValueMusic</include>
 						<label fallback="31425">$INFO[ListItem.Year]</label>
 					</control>
