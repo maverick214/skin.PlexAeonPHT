@@ -574,6 +574,19 @@
 				<aspectratio>keep</aspectratio>
 				<visible>Control.IsVisible(598)</visible>
 			</control>
+				<control type="largeimage">
+				<posy>240</posy>
+				<posx>180</posx>
+					<aspectratio>keep</aspectratio>
+					<height>25</height>
+					<width min="0" max="85">auto</width>
+			 		<colordiffuse>efffffff</colordiffuse>
+					<include>Animation_CommonFade</include>
+					<include>Animation_HideShowcase</include>
+					<include>Animation_HideMultiplex</include>
+					<include condition="Skin.HasSetting(WhiteMediaFlags)">WhitecontentRatingVars</include>
+					<include condition="!Skin.HasSetting(WhiteMediaFlags)">ColourcontentRatingVars</include>
+				</control>
 		
 		
 		</control>

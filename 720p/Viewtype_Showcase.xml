@@ -201,14 +201,18 @@
 				<control type="group">
 					<posy>247</posy>
 					<visible>![Skin.HasSetting(showcasebigthumb) | Skin.HasSetting(showcasefanart) | Skin.HasSetting(showcasebigtrailer)] + !Container.Content(Seasons)</visible>
-					<control type="label">
-						<include>ShowcaseInfoLabel</include>
-						<label>$LOCALIZE[31417]:</label>
-					</control>
-					<control type="label">
-						<include>ShowcaseInfoValue</include>
-						<label fallback="31425">$INFO[ListItem.MPAA]</label>
-					</control>
+				<control type="largeimage">
+					<posy>0</posy>
+					<aspectratio>keep</aspectratio>
+					<height>25</height>
+					<width min="0" max="85">auto</width>
+			 		<colordiffuse>efffffff</colordiffuse>
+					<include>Animation_CommonFade</include>
+					<include>Animation_HideShowcase</include>
+					<include>Animation_HideMultiplex</include>
+					<include condition="Skin.HasSetting(WhiteMediaFlags)">WhitecontentRatingVars</include>
+					<include condition="!Skin.HasSetting(WhiteMediaFlags)">ColourcontentRatingVars</include>
+				</control>
 				</control>
 				<control type="group">
 					<posy>292</posy>
@@ -249,14 +253,18 @@
 				<control type="group">
 					<posy>67</posy>
 					<visible>[Skin.HasSetting(showcasefanart) | Skin.HasSetting(showcasebigthumb) | Skin.HasSetting(showcasebigtrailer)] + !Container.Content(Seasons)</visible>
-					<control type="label">
-						<include>ShowcaseInfoLabelBigThumb</include>
-						<label>$LOCALIZE[31417]:</label>
-					</control>
-					<control type="label">
-						<include>ShowcaseInfoValueBigThumb</include>
-						<label fallback="31425">$INFO[ListItem.MPAA]</label>
-					</control>
+				<control type="largeimage">
+					<posy>0</posy>
+					<aspectratio>keep</aspectratio>
+					<height>25</height>
+					<width min="0" max="85">auto</width>
+			 		<colordiffuse>efffffff</colordiffuse>
+					<include>Animation_CommonFade</include>
+					<include>Animation_HideShowcase</include>
+					<include>Animation_HideMultiplex</include>
+					<include condition="Skin.HasSetting(WhiteMediaFlags)">WhitecontentRatingVars</include>
+					<include condition="!Skin.HasSetting(WhiteMediaFlags)">ColourcontentRatingVars</include>
+				</control>
 				</control>
 				<control type="group">
 					<posy>112</posy>

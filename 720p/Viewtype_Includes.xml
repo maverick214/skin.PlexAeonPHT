@@ -3642,14 +3642,18 @@
 				<control type="group">
 					<posy>272</posy>
 					<visible>![Skin.HasSetting(oldmultiplexbigthumb) | Skin.HasSetting(oldmultiplexfanart) | Skin.HasSetting(oldmultiplexbigtrailer)]</visible>
-					<control type="label">
-						<include>OldMultiplexInfoLabel</include>
-						<label>$LOCALIZE[31417]:</label>
-					</control>
-					<control type="label">
-						<include>OldMultiplexInfoValue</include>
-						<label fallback="31425">$INFO[ListItem.MPAA]</label>
-					</control>
+				<control type="largeimage">
+					<posy>0</posy>
+					<aspectratio>keep</aspectratio>
+					<height>25</height>
+					<width min="0" max="85">auto</width>
+			 		<colordiffuse>efffffff</colordiffuse>
+					<include>Animation_CommonFade</include>
+					<include>Animation_HideShowcase</include>
+					<include>Animation_HideMultiplex</include>
+					<include condition="Skin.HasSetting(WhiteMediaFlags)">WhitecontentRatingVars</include>
+					<include condition="!Skin.HasSetting(WhiteMediaFlags)">ColourcontentRatingVars</include>
+				</control>
 				</control>
 				<control type="group">
 					<posy>322</posy>
@@ -3691,14 +3695,18 @@
 					<posx>270</posx>
 					<posy>72</posy>
 					<visible>Skin.HasSetting(oldmultiplexfanart) | Skin.HasSetting(oldmultiplexbigthumb) | Skin.HasSetting(oldmultiplexbigtrailer)</visible>
-					<control type="label">
-						<include>OldMultiplexInfoLabel</include>
-						<label>$LOCALIZE[31417]:</label>
-					</control>
-					<control type="label">
-						<include>OldMultiplexInfoValue</include>
-						<label fallback="31425">$INFO[ListItem.MPAA]</label>
-					</control>
+				<control type="largeimage">
+					<posy>0</posy>
+					<aspectratio>keep</aspectratio>
+					<height>25</height>
+					<width min="0" max="85">auto</width>
+			 		<colordiffuse>efffffff</colordiffuse>
+					<include>Animation_CommonFade</include>
+					<include>Animation_HideShowcase</include>
+					<include>Animation_HideMultiplex</include>
+					<include condition="Skin.HasSetting(WhiteMediaFlags)">WhitecontentRatingVars</include>
+					<include condition="!Skin.HasSetting(WhiteMediaFlags)">ColourcontentRatingVars</include>
+				</control>
 				</control>
 				<control type="group">
 					<posx>270</posx>
@@ -5233,7 +5241,7 @@
 	    <posy>543</posy>
 	    <posx>302</posx>
 		<width>675</width>
-		<height>57</height>
+		<height>56</height>
 	    <font>Font_List</font>
 		<textcolor>d0FFFFFF</textcolor>
 		<autoscroll delay="6000" time="3000" repeat="6000">true</autoscroll>
@@ -7228,7 +7236,6 @@
 	        </control>
 			
 			<include>Furniture_CoverflowMediaFlags</include>
-				
 	        <control type="group">
 	            <include>Animation_CommonFade</include>
  
@@ -7254,7 +7261,30 @@
 	                <animation effect="slide" start="0,10" end="0,10" time="0" condition="true">Conditional</animation>					
                 </control>						
 -->
-	            <control type="label">
+				<control type="largeimage">
+					<posx>1020</posx>
+					<posy>110</posy>
+					<height>30</height>
+					<info>ListItem.StarRating</info>
+			        <colordiffuse>FFFFFF00</colordiffuse>
+					<aspectratio>keep</aspectratio>
+				    <visible>!IsEmpty(ListItem.Rating)</visible>
+					<visible>!Skin.HasSetting(movieratingtext)</visible>
+				</control>				
+				<control type="largeimage">
+					<posx>1180</posx>
+					<posy>110</posy>
+					<aspectratio>keep</aspectratio>
+					<height>25</height>
+					<width min="0" max="85">auto</width>
+			 		<colordiffuse>efffffff</colordiffuse>
+					<include>Animation_CommonFade</include>
+					<include>Animation_HideShowcase</include>
+					<include>Animation_HideMultiplex</include>
+					<include condition="Skin.HasSetting(WhiteMediaFlags)">WhitecontentRatingVars</include>
+					<include condition="!Skin.HasSetting(WhiteMediaFlags)">ColourcontentRatingVars</include>
+				</control>
+ 	            <control type="label">
 	                <description>Title</description>
 	                <label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
 	                <include>FlowMainLabel</include>
@@ -7269,12 +7299,12 @@
 	            </control>
 	            <control type="label" id="75">
 	                <description>Detail</description>
-	                <label>"$INFO[ListItem.TagLine]"</label>
+	                <label>$INFO[ListItem.TagLine]</label>
 					<include>FlowLabelVars</include>
 	  			 	<posy>112</posy>
 					<textcolor>d0FFFFFF</textcolor>
 					<font>Font_List</font>	
-				<visible>!IsEmpty(ListItem.Tagline) + ![Container().OnNext | Container().OnPrevious]</visible>
+					<visible>!IsEmpty(ListItem.Tagline) + ![Container().OnNext | Container().OnPrevious]</visible>
 	            </control>
 	            <control type="label" id="75">
 	                <description>Detail</description>

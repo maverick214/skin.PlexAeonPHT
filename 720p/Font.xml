@@ -331,8 +331,9 @@
 -->
 	<font>
 		<name>Font_List</name>
-		<filename>aeon_list.ttf</filename>
-		<size>16</size>
+			<filename>aeon_sublist_cy.ttf</filename>
+			<size>19</size>
+			<linespacing>1</linespacing>
 	</font>
 		<font>
 			<name>Font_ListSmall</name>

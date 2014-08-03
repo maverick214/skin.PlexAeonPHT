@@ -191,15 +191,18 @@
  
 					<posy>272</posy>
 				<visible>![Skin.HasSetting(multiplexfanart) | Skin.HasSetting(multiplexbigthumb) | Skin.HasSetting(multiplexbigtrailer)]</visible>
-					<control type="label">
-						<include>MultiplexInfoLabel</include>
-						<label>$LOCALIZE[31417]:</label>
-					</control>
- 
-					<control type="label">
-						<include>MultiplexInfoValue</include>
-						<label fallback="31425">$INFO[ListItem.MPAA]</label>
-					</control>
+				<control type="largeimage">
+					<posy>0</posy>
+					<aspectratio>keep</aspectratio>
+					<height>25</height>
+					<width min="0" max="85">auto</width>
+			 		<colordiffuse>efffffff</colordiffuse>
+					<include>Animation_CommonFade</include>
+					<include>Animation_HideShowcase</include>
+					<include>Animation_HideMultiplex</include>
+					<include condition="Skin.HasSetting(WhiteMediaFlags)">WhitecontentRatingVars</include>
+					<include condition="!Skin.HasSetting(WhiteMediaFlags)">ColourcontentRatingVars</include>
+				</control>
  
 				</control>
  
@@ -217,7 +220,7 @@
 						<label fallback="31425">$INFO[ListItem.Rating]</label>
 						<visible>Skin.HasSetting(movieratingtext)</visible>
 					</control>
-					  <control type="largeimage">
+					<control type="largeimage">
                         <description>IMDB rating</description>
 						<posy>20</posy>
 						<width>100</width>
@@ -251,15 +254,18 @@
  
 					<posy>72</posy>
 					<visible>Skin.HasSetting(multiplexfanart) | Skin.HasSetting(multiplexbigthumb) | Skin.HasSetting(multiplexbigtrailer)</visible>
-					<control type="label">
-						<include>MultiplexInfoLabelBigThumb</include>
-						<label>$LOCALIZE[31417]:</label>
-					</control>
- 
-					<control type="label">
-						<include>MultiplexInfoValueBigThumb</include>
-						<label fallback="31425">$INFO[ListItem.MPAA]</label>
-					</control>
+				<control type="largeimage">
+					<posx>235</posx>
+					<aspectratio>keep</aspectratio>
+					<height>25</height>
+					<width min="0" max="85">auto</width>
+			 		<colordiffuse>efffffff</colordiffuse>
+					<include>Animation_CommonFade</include>
+					<include>Animation_HideShowcase</include>
+					<include>Animation_HideMultiplex</include>
+					<include condition="Skin.HasSetting(WhiteMediaFlags)">WhitecontentRatingVars</include>
+					<include condition="!Skin.HasSetting(WhiteMediaFlags)">ColourcontentRatingVars</include>
+				</control>
  
 				</control>
  
