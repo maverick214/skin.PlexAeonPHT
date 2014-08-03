@@ -41,8 +41,9 @@
 		<control type="button" id="334">
 	      <description>Home Menu Offset</description>
 		  <onfocus>Control.Move(300,3)</onfocus>
-   	      <onfocus>SetFocus(300)</onfocus>
-   	      <visible>Window.Previous(startup) + !Skin.HasSetting(customstartupfocus)</visible>
+		  <onfocus>ReplaceWindow(0)</onfocus>
+          <onfocus>SetFocus(300)</onfocus>
+  	      <visible>Window.Previous(startup) + !Skin.HasSetting(customstartupfocus)</visible>
   		</control>
  		<control type="button" id="334">
 	      <description>Home Menu Offset</description>
