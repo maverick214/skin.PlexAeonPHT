@@ -255,6 +255,7 @@
 					<visible>[Skin.HasSetting(showcasefanart) | Skin.HasSetting(showcasebigthumb) | Skin.HasSetting(showcasebigtrailer)] + !Container.Content(Seasons)</visible>
 				<control type="largeimage">
 					<posy>0</posy>
+					<posx>233</posx>
 					<aspectratio>keep</aspectratio>
 					<height>25</height>
 					<width min="0" max="85">auto</width>
