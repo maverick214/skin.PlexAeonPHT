@@ -136,7 +136,7 @@
 		<height>720</height>
 		<texture>$INFO[ListItem.Art(fanart)]</texture>
 		<aspectratio>stretch</aspectratio>
-		<visible>Container.Content(episode)</visible>	
+		<visible>Container.Content(episode) | Container.Content(clip)</visible>	
 	</control>
 	<control type="largeimage">
 		<description>Cover image</description>
@@ -156,7 +156,16 @@
 		<height>720</height>
 		<texture>$INFO[ListItem.Art(thumb)]</texture>
 		<aspectratio>stretch</aspectratio>
-		<visible>!Container.Content(episode)</visible>
+		<visible>Container.Content(movie)</visible>
+	</control>
+	<control type="largeimage">
+		<posx>398</posx>
+		<posy>-3</posy>
+		<width>92</width>
+        <height>92</height>
+        <fadetime>100</fadetime>
+		<texture>NewLabel/$INFO[ListItem.overlay]</texture>
+		<visible>Container.Content(movie)</visible>
 	</control>
 <!--
 	<control type="image">
@@ -188,7 +197,7 @@
             <info>ListItem.Icon</info>
 			<texture>$INFO[ListItem.Art(thumb)]</texture>
 			<aspectratio>scale</aspectratio>
-			<visible>Container.Content(episode)</visible>
+			<visible>Container.Content(episode) | Container.Content(clip)</visible>	
 		</control>
 
 		<control type="largeimage">
@@ -570,6 +579,7 @@
   	 	 	    <posx>5</posx>
    	    		<posy>210</posy>
           		<align>left</align>
+     		    <pagecontrol>60</pagecontrol>
 				<control type="button" id="102">
         			<label>[UPPERCASE]$LOCALIZE[208][/UPPERCASE]</label>
 					<include>Objects_FSInfoButton</include>
@@ -591,6 +601,7 @@
 					<onright>110</onright>
 					<onunfocus>Skin.Reset(DialogPos)</onunfocus>
 					<onclick>SetFocus(3)</onclick>
+					<animation effect="fade" start="100" end="20" time="200" condition="StringCompare(Container(3).NumItems,0)">Conditional</animation>
 				</control>
 				<!-- Audio -->
 				<control type="button" id="110">
@@ -651,26 +662,17 @@
 					<onunfocus>Skin.Reset(DialogPos)</onunfocus>
 				</control>
 				<!-- Watched -->
-				<control type="button" id="108">
-        			<label>[UPPERCASE]$LOCALIZE[16102][/UPPERCASE]</label>
+				<control type="togglebutton" id="108">
+					<description>Sections Only</description>
+					<label>[UPPERCASE]$LOCALIZE[16102][/UPPERCASE]</label>
+					<altlabel>[UPPERCASE]$LOCALIZE[16101][/UPPERCASE]</altlabel>
+					<usealttexture>!ListItem.Status(Unwatched)</usealttexture>
 					<include>Objects_FSInfoButton</include>
 					<texturefocus>windows/listselectbar.png</texturefocus>
+					<alttexturefocus>windows/listselectbar.png</alttexturefocus>
 					<colordiffuse>FF7EBFFF</colordiffuse>
-					<onup>107</onup>
-					<ondown>109</ondown>
-					<onclick>markaswatched</onclick>
-					<visible>!ListItem(0).Status(Watched)</visible>
-				</control>
-				<!-- Unwatched -->
-				<control type="button" id="109">
-        			<label>[UPPERCASE]$LOCALIZE[16101][/UPPERCASE]</label>
-					<include>Objects_FSInfoButton</include>
-					<texturefocus>windows/listselectbar.png</texturefocus>
-					<colordiffuse>FF7EBFFF</colordiffuse>
-					<onup>107</onup>
-					<ondown>102</ondown>
-					<onclick>markasunwatched</onclick>
-					<visible>ListItem(0).Status(Watched)</visible>
+					<onright>102</onright>
+					<onclick>togglewatched</onclick>
 				</control>
 			</control>
 
@@ -701,6 +703,17 @@
 			<height>30</height>
 			<info>ListItem.StarRating</info>
 			<visible>true</visible>
+      		<colordiffuse>FFFFFF00</colordiffuse>
+		</control>
+
+		<control type="image">
+			<description>Extras Icon</description>
+			<posx>540</posx>
+			<posy>40</posy>
+			<width>128</width>
+			<height>128</height>
+			<texture>film.png</texture>
+			<visible>!StringCompare(Container(3).NumItems,0)</visible>
       		<colordiffuse>FFFFFF00</colordiffuse>
 		</control>
 	 
@@ -915,7 +928,7 @@
 		</control>
 		
 		<control type="label">
-			<description>Movie title</description>
+			<description>Episode/clip title</description>
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>700</width>
@@ -925,7 +938,7 @@
 		</control>
 		
 		<control type="label">
-			<description>Movie year</description>
+			<description>Episode/clip year</description>
 			<posx>0</posx>
 			<posy>58</posy>
 			<align>left</align>
@@ -940,9 +953,10 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>Font_FSInfoGenre</font>
-			<label fallback="31425">[UPPERCASE]$LOCALIZE[31432] $INFO[ListItem.Season], $LOCALIZE[31433] $INFO[ListItem.Episode][/UPPERCASE]</label>
+			<label>[UPPERCASE]$LOCALIZE[31432] $INFO[ListItem.Season], $LOCALIZE[31433] $INFO[ListItem.Episode][/UPPERCASE]</label>
 			<include>White_Grey</include>
 			<height>56</height>	
+			<visible>![IsEmpty(ListItem.Season) + IsEmpty(LisItem.Episode)]</visible>
 		</control>
 		
 		<control type="label">
@@ -969,14 +983,14 @@
 		<control type="label">
 			<description>Director value</description>
 			<posy>112</posy>
-			<label fallback="31425">$INFO[ListItem.Director]</label>
+			<label>$INFO[ListItem.Director]</label>
 			<include>Objects_FSInfoValue</include>
 		</control>
 		
 		<control type="label">
 			<description>Writer value</description>
 			<posy>141</posy>
-			<label fallback="31425">$INFO[ListItem.Writer]</label>
+			<label>$INFO[ListItem.Writer]</label>
 			<include>Objects_FSInfoValue</include>
 		</control>
 
@@ -1105,26 +1119,17 @@
 					<onunfocus>Skin.Reset(DialogPos)</onunfocus>
 				</control>
 				<!-- Watched -->
-				<control type="button" id="108">
-        			<label>[UPPERCASE]$LOCALIZE[16102][/UPPERCASE]</label>
+				<control type="togglebutton" id="108">
+					<description>Sections Only</description>
+					<label>[UPPERCASE]$LOCALIZE[16102][/UPPERCASE]</label>
+					<altlabel>[UPPERCASE]$LOCALIZE[16101][/UPPERCASE]</altlabel>
+					<usealttexture>!ListItem.Status(Unwatched)</usealttexture>
 					<include>Objects_FSInfoButton</include>
 					<texturefocus>windows/listselectbar.png</texturefocus>
+					<alttexturefocus>windows/listselectbar.png</alttexturefocus>
 					<colordiffuse>FF7EBFFF</colordiffuse>
-					<onup>107</onup>
-					<ondown>109</ondown>
-					<onclick>markaswatched</onclick>
-					<visible>!ListItem(0).Status(Watched)</visible>
-				</control>
-				<!-- Unwatched -->
-				<control type="button" id="109">
-        			<label>[UPPERCASE]$LOCALIZE[16101][/UPPERCASE]</label>
-					<include>Objects_FSInfoButton</include>
-					<texturefocus>windows/listselectbar.png</texturefocus>
-					<colordiffuse>FF7EBFFF</colordiffuse>
-					<onup>107</onup>
-					<ondown>102</ondown>
-					<onclick>markasunwatched</onclick>
-					<visible>ListItem(0).Status(Watched)</visible>
+					<onright>102</onright>
+					<onclick>togglewatched</onclick>
 				</control>
 			</control>
 
