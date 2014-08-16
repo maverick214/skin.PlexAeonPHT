@@ -480,7 +480,7 @@
 			<include>leftMenuSlide</include>
 			
 			<!-- global search-->
-			<!--><include>GlobalSearch</include>-->
+			<!--<include>GlobalSearch</include>-->
 			<!-- filters & sorting menu -->
 			<control type="group" id="1300">
 				<animation type="Conditional" condition="!Window.IsActive(10202)" reversible="false">

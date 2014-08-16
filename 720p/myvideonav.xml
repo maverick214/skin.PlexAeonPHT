@@ -73,7 +73,7 @@
 		<include>Viewtype_List</include>
 		<include condition="!Skin.HasSetting(InfoWallOff)">ViewType_InfoWall</include>
 		<include condition="!Skin.HasSetting(CoverflowOff)">Viewtype_Coverflow</include>
-		<!--	<include>ViewType_Wall</include>  -->
+		<include>Viewtype_Wall</include>
 		<include condition="!Skin.HasSetting(ListLowOff)">Viewtype_List_Low</include>
 		<include condition="!Skin.HasSetting(ShowcaseOff)">Viewtype_Showcase</include>
 		<!--	<include condition="!Skin.HasSetting(SlimListOff)">Viewtype_List_Slim</include> -->

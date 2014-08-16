@@ -3397,7 +3397,7 @@
 					<effect type="fade" start="0" end="100"/>
 				</animation>
 				<align>left</align>
-				<width>253</width>
+				<width>260</width>
 				<posy>22</posy>
 				<posx>-260</posx>
 				<label>VIEWTYPE SETTINGS</label>
