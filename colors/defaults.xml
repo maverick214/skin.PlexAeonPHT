@@ -12,7 +12,7 @@
 	<color name="blue">FF0055be</color>
 	<color name="Focused">FFFFFFFF</color>
 	<color name="Unfocused">FF909090</color>
-	<color name="Selected">FFFFFFFF</color>
+	<color name="Selected"> FF0055be</color>
 	<color name="Highlighted">FFd1801c</color>
 	<color name="Disabled">FF505050</color>
 

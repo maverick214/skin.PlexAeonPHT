@@ -36,19 +36,19 @@
 				<scroll>false</scroll>
 				<orientation>horizontal</orientation>
 
-				<control type="button" id="47">
+				<control type="button" id="42">
 					<include>Submenu_Button</include>
 					<label>31156</label>
 					<onclick>XBMC.ActivateWindow(1604)</onclick>
 				</control>
 
-				<control type="button" id="42">
+				<control type="button" id="43">
 					<include>Submenu_Button</include>
 					<label>31169</label>
 					<onclick>XBMC.ActivateWindow(56)</onclick>
 				</control>
 
-				<control type="button" id="46">
+				<control type="button" id="44">
 					<include>Submenu_Button</include>
 					<label>31154</label>
 					<onclick>XBMC.ActivateWindow(AppearanceSettings)</onclick>
@@ -60,24 +60,31 @@
 					<onclick>XBMC.ActivateWindow(SystemSettings)</onclick>
 				</control>
 
-				<control type="button" id="40">
+				<control type="button" id="46">
 					<include>Submenu_Button</include>
 					<label>31140</label>
 					<onclick>XBMC.ActivateWindow(VideosSettings)</onclick>
 				</control>
 
-				<control type="button" id="41">
+				<control type="button" id="47">
 					<include>Submenu_Button</include>
-					<label>31142</label>
-					<onclick>XBMC.ActivateWindow(MusicSettings)</onclick>
+					<label>Switch User</label>
+					<onclick>XBMC.ActivateWindow(selectuser)</onclick>
+					<visible>System.IsSignedIn + System.UserIsInHome</visible>
 				</control>
-
+				<control type="button" id="48">
+					<include>Submenu_Button</include>
+					<label>Sign In</label>
+					<onclick>Plex.ActivateWindow(plexlogin)</onclick>
+					<visible>!System.IsSignedIn</visible>
+				</control>
+<!--
 				<control type="button" id="43">
 					<include>Submenu_Button</include>
 					<label>31146</label>
 					<onclick>XBMC.ActivateWindow(PicturesSettings)</onclick>
 				</control>
-
+-->
 			</control>
 
 		</control>

@@ -197,10 +197,22 @@
 					<include condition="!Skin.HasSetting(NoZoom)">AnimationZoomContext</include>
 				</control>
 				<control type="button" id="813">
-					<description>Exit Menu</description>
-					<label>Right or Left to Exit</label>
+					<description>Switch User</description>
+					<label>Switch User</label>
 					<include>Objects_ContextMenuButton</include>
 					<onclick>Dialog.Close(1111)</onclick>
+					<onclick>XBMC.ActivateWindow(selectuser)</onclick>
+					<visible>System.IsSignedIn + System.UserIsInHome</visible>
+					<include condition="Skin.HasSetting(NoZoom)">AnimationNoZoomContext</include>
+					<include condition="!Skin.HasSetting(NoZoom)">AnimationZoomContext</include>
+				</control>
+				<control type="button" id="814">
+					<description>Sign In</description>
+					<label>Sign In</label>
+					<include>Objects_ContextMenuButton</include>
+					<onclick>Dialog.Close(1111)</onclick>
+					<onclick>Plex.ActivateWindow(plexlogin)</onclick>
+					<visible>!System.IsSignedIn</visible>
 					<include condition="Skin.HasSetting(NoZoom)">AnimationNoZoomContext</include>
 					<include condition="!Skin.HasSetting(NoZoom)">AnimationZoomContext</include>
 				</control>

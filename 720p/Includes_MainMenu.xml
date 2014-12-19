@@ -161,12 +161,12 @@
 			<onfocus>SetFocus(11004)</onfocus>
 			<visible>Control.IsVisible(11004)</visible>
 		</control>
-
-
+<!--
 		<control type="button" id="351">
 			<onfocus>XBMC.ActivateWindow(1111)</onfocus>
 			<visible>![Container(300).HasFocus(2) | Container(300).HasFocus(3) | Container(300).HasFocus(1) | Container(300).HasFocus(14) | Container(300).HasFocus(22)]</visible>
 		</control>
+-->
 	</include>
 
 	<include name="MainMenu">

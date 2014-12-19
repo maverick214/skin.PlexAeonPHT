@@ -764,7 +764,7 @@
 		<!-- Keyboard -->
 		<font>
 			<name>Font_KeyboardKeys</name>
-			<filename>aeon_player.ttf</filename>
+			<filename>Ubuntu-B.ttf</filename>
 			<size>19</size>
 		</font>
 		<font>
@@ -1148,7 +1148,7 @@
 		<!-- Keyboard -->
 		<font>
 			<name>Font_KeyboardKeys</name>
-			<filename>aeon_edit.ttf</filename>
+			<filename>Ubuntu-B.ttf</filename>
 			<size>17</size>
 		</font>
 		<font>

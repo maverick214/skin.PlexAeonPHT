@@ -156,6 +156,17 @@
 
 <!--		<include condition="!Skin.HasSetting(FanartSlideshow) + !Skin.HasSetting(CustomFanartSlideshow)">Background_Wallpaper</include>  -->
 
+<!--
+		<control type="image">
+			<texture diffuse="thumbs/round.png">unknown-user.png</texture>
+			<aspectratio scalediffuse="true">keep</aspectratio>
+			<posx>1218</posx>
+			<posy>5</posy>
+			<width>50</width>
+			<height>50</height>
+			<info>System.CurrentUserThumb</info>
+		</control>
+-->
 
 			<!-- Fanart Dimming overlay -->
 		<control type="group">

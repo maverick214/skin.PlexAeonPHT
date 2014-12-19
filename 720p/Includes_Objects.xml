@@ -791,8 +791,8 @@
 	<include name="LoginThumbDimensions">
 		<posx>18</posx>
 		<posy>18</posy>
-		<width>234</width>
-		<height>234</height>
+		<width>150</width>
+		<height>150</height>
 	</include>
 
 	<include name="LoginThumbReflectionDimensions">
@@ -804,8 +804,8 @@
 
 	<include name="LoginThumb">
 		<include>LoginThumbDimensions</include>
-		<texture diffuse="thumbs/cdcover_mask.png">defaultAudio.png</texture>
-		<aspectratio scalediffuse="false">scale</aspectratio>
+		<texture diffuse="thumbs/round.png">unknown-user.png</texture>
+		<aspectratio scalediffuse="true">keep</aspectratio>
 	</include>
 
 	<include name="LoginGlassOverlayDimensions">
