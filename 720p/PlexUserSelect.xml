@@ -1,0 +1,499 @@
+<window id="2000">
+	<defaultcontrol always="true">3</defaultcontrol>
+	<controls>
+	
+		<control type="image">
+			<include>FullscreenDimensions</include>
+			<texture>common/black.png</texture>
+			<include>Animation_WindowFade600</include>
+		</control>
+<!--
+		<control type="image">
+			<include>FullscreenDimensions</include>
+			<texture>welcome/Theater.jpg</texture>
+			<include>Animation_WindowFade600</include>
+		<animation effect="fade" start="20" end="20" time="200" condition="true">Conditional</animation>
+		</control>
+
+	<control type="image" id="601">
+		<posx>1280</posx>
+		<posy>600</posy>
+		<width>151</width>
+		<height>129</height>
+		<texture>welcome/welcome_xbmclogo.png</texture>
+		<animation type="WindowOpen" reversible="false">
+			<effect type="fade" start="0" end="100" time="1200" />
+			<effect type="slide" start="0,0" end="-220,0" time="1200" tween="cubic" easing="out" />
+		</animation>
+		<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+		<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+	</control>
+-->	
+	<control type="image" id="601">
+		<posx>-135</posx>
+		<posy>600</posy>
+		<width>100</width>
+		<height>140</height>
+		<texture>welcome/welcome_aeonlogo.png</texture>
+		<animation type="WindowOpen" reversible="false">
+			<effect type="fade" start="0" end="100" time="1200" />
+			<effect type="slide" start="0,0" end="230,0" time="1200" tween="cubic" easing="out" />
+		</animation>
+		<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+		<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>			
+	</control>	
+
+	<control type="image">
+		<posx>1080</posx>
+		<posy>5</posy>
+		<width>1280</width>
+		<height>280</height>
+		<aspectratio>keep</aspectratio>
+		<texture>welcome/backdrops/welcome_backdrops_1.png</texture>
+		<animation type="WindowOpen" reversible="false">
+			<effect type="fade" start="0" end="100" time="1200" />
+			<effect type="slide" start="0,0" end="-1080,0" time="1200" tween="cubic" easing="out" />
+		</animation>
+		<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+		<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>			
+	</control>	
+
+		<control type="list" id="3">
+			<posx>132</posx>
+			<posy>250</posy>
+			<width>1050</width>
+			<height>363</height>
+			<focusposition>1</focusposition>
+			<orientation>horizontal</orientation>
+			<onleft>3</onleft>
+			<onright>3</onright>
+			<onup>3</onup>
+			<ondown>3</ondown>
+			<animation effect="slide" start="367,0" end="367,0" time="0" condition="stringcompare(container(3).numitems,1)">Conditional</animation>
+			<animation effect="slide" start="235,0" end="235,0" time="0" condition="stringcompare(container(3).numitems,2)">Conditional</animation>
+			<animation effect="slide" start="132,0" end="132,0" time="0" condition="stringcompare(container(3).numitems,3)">Conditional</animation>
+		<animation type="WindowOpen" reversible="false">
+			<effect type="fade" start="0" end="100" time="1200" />
+		</animation>
+		<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+		<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>			
+			<itemlayout height="264" width="264">
+				<control type="image">
+					<include>LoginThumb</include>
+					<info>ListItem.Icon</info>
+				</control>
+
+<!--
+				<control type="image">
+					<include>LoginThumbReflection</include>
+					<info>ListItem.Icon</info>
+				</control>
+-->
+				<control type="image">
+					<posx>127</posx>
+					<posy>127</posy>
+					<width>40</width>
+					<height>40</height>
+					<aspectratio>keep</aspectratio>
+					<texture>padlock.png</texture>
+					<visible>!IsEmpty(ListItem.Property(protected))</visible>
+				</control>
+				<control type="label" id="1">
+					<posx>92</posx>
+					<posy>200</posy>
+					<width>400</width>
+					<height>16</height>
+					<font>Font_Bold22</font>
+					<align>center</align>
+					<textcolor>FF909090</textcolor>
+					<scroll>true</scroll>
+					<info>ListItem.Label</info>
+					<include>common-fade</include>
+				</control>
+
+			</itemlayout>
+			<focusedlayout height="264" width="264">
+				<control type="image">
+					<include>LoginThumb</include>
+					<info>ListItem.Icon</info>
+					<animation center="132,132" effect="zoom" start="100" end="110" time="600" tween="cubic" easing="out">Focus</animation>
+					<animation center="132,132" effect="zoom" start="110" end="100" time="600" tween="cubic" easing="out">UnFocus</animation>
+				</control>
+<!--
+				<control type="image">
+					<include>LoginThumbReflection</include>
+					<info>ListItem.Icon</info>
+					<animation center="132,132" effect="zoom" start="100" end="120" time="600" tween="cubic" easing="out">Focus</animation>
+					<animation center="132,132" effect="zoom" start="120" end="100" time="600" tween="cubic" easing="out">UnFocus</animation>
+				</control>
+-->
+				<control type="image">
+					<posx>127</posx>
+					<posy>127</posy>
+					<width>40</width>
+					<height>40</height>
+					<aspectratio>keep</aspectratio>
+					<texture>padlock.png</texture>
+					<animation center="132,132" effect="zoom" start="100" end="110" time="600" tween="cubic" easing="out">Focus</animation>
+					<animation center="132,132" effect="zoom" start="110" end="100" time="600" tween="cubic" easing="out">UnFocus</animation>
+					<visible>!IsEmpty(ListItem.Property(protected))</visible>
+				</control>
+				<control type="label" id="1">
+					<posx>92</posx>
+					<posy>200</posy>
+					<width>400</width>
+					<height>16</height>
+					<font>Font_Bold22</font>
+					<align>center</align>
+					<textcolor>FFFFFFFF</textcolor>
+					<scroll>true</scroll>
+					<info>ListItem.Label</info>
+					<include>common-fade</include>
+				</control>
+
+			</focusedlayout>
+		</control>
+<!--
+		<control type="label" id="1">
+			<posx>0</posx>
+			<posy>650</posy>
+			<width>1280</width>
+			<height>16</height>
+			<font>Font_Bold20</font>
+			<align>center</align>
+			<textcolor>90cbcbcb</textcolor>
+			<info>ListItem.Label2</info>
+			<include>selectedcolor</include>
+			<include>common-fade</include>
+		</control>
+
+		<control type="button" id="98">
+			<description>ShutDown Button</description>
+			<posx>625</posx>
+			<posy>495</posy>
+			<width>26</width>
+			<height>35</height>
+			<align>right</align>
+			<textcolor>60ffffff</textcolor>
+			<onclick>ActivateWindow(ShutdownMenu)</onclick>
+			<texturefocus>Small-Icon-Shutdown-Focus.png</texturefocus>
+			<texturenofocus>Small-Icon-Shutdown-NoFocus.png</texturenofocus>
+			<onleft>3</onleft>
+			<onright>3</onright>
+			<onup>3</onup>
+			<ondown>3</ondown>
+			<include>common-fade</include>
+			<visible>!Window.IsActive(130) + !Window.IsActive(131)</visible>
+		</control>
+-->
+
+			<control type="grouplist" id="500">				
+			<posx>546</posx>
+			<posy>472</posy>
+			<width>189</width>
+			<height>263</height>
+			
+			<visible allowhiddenfocus="true">ControlGroup(500).HasFocus</visible>
+			<control type="group">
+			<control type="image" id="0">
+				<description>Panel</description>
+				<texture>keyboard/numeric_back.png</texture>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>189</width>
+				<height>263</height>
+			</control>
+
+			<control type="label" id="4">
+				<description>Edit Text</description>
+				<posx>17</posx>
+				<posy>208</posy>
+				<width>155</width>
+				<height>31</height>
+				<font>Font_KeyboardEdit</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<onup>49</onup>
+				<include>dialogheadingcolor</include>
+			</control>
+
+			<control type="group">
+
+				<posx>17</posx>
+				<posy>17</posy>
+				<control type="group">
+
+					<posy>0</posy>
+					<control type="button" id="11">
+						<description>'1' button</description>
+						<posx>0</posx>
+						<onleft>13</onleft>
+						<onright>12</onright>
+						<onup>20</onup>
+						<ondown>14</ondown>
+						<label>12311</label>
+						<include>Objects_SingleKeyOff</include>
+					</control>
+
+					<control type="button" id="12">
+						<description>'2' button</description>
+						<posx>42</posx>
+						<onleft>11</onleft>
+						<onright>13</onright>
+						<onup>10</onup>
+						<ondown>15</ondown>
+						<label>12312</label>
+						<include>Objects_SingleKeyOff</include>
+					</control>
+
+					<control type="button" id="13">
+						<description>'3' button</description>
+						<posx>84</posx>
+						<onleft>12</onleft>
+						<onright>11</onright>
+						<onup>21</onup>
+						<ondown>16</ondown>
+						<label>12313</label>
+						<include>Objects_SingleKeyOff</include>
+					</control>
+
+				</control>
+
+				<control type="group">
+
+					<posy>42</posy>
+					<control type="button" id="14">
+						<description>'4' button</description>
+						<posx>0</posx>
+						<onleft>16</onleft>
+						<onright>15</onright>
+						<onup>11</onup>
+						<ondown>17</ondown>
+						<label>12314</label>
+						<include>Objects_SingleKeyOff</include>
+					</control>
+
+					<control type="button" id="15">
+						<description>'5' button</description>
+						<posx>42</posx>
+						<onleft>14</onleft>
+						<onright>16</onright>
+						<onup>12</onup>
+						<ondown>18</ondown>
+						<label>12315</label>
+						<include>Objects_SingleKeyOff</include>
+					</control>
+
+					<control type="button" id="16">
+						<description>'6' button</description>
+						<posx>84</posx>
+						<onleft>15</onleft>
+						<onright>14</onright>
+						<onup>13</onup>
+						<ondown>19</ondown>
+						<label>12316</label>
+						<include>Objects_SingleKeyOff</include>
+					</control>
+
+				</control>
+
+				<control type="group">
+
+					<posy>84</posy>
+					<control type="button" id="17">
+						<description>'7' button</description>
+						<posx>0</posx>
+						<onleft>19</onleft>
+						<onright>18</onright>
+						<onup>14</onup>
+						<ondown>20</ondown>
+						<label>12317</label>
+						<include>Objects_SingleKeyOff</include>
+					</control>
+
+					<control type="button" id="18">
+						<description>'8' button</description>
+						<posx>42</posx>
+						<onleft>17</onleft>
+						<onright>19</onright>
+						<onup>15</onup>
+						<ondown>10</ondown>
+						<label>12318</label>
+						<include>Objects_SingleKeyOff</include>
+					</control>
+
+					<control type="button" id="19">
+						<description>'9' button</description>
+						<posx>84</posx>
+						<onleft>18</onleft>
+						<onright>17</onright>
+						<onup>16</onup>
+						<ondown>21</ondown>
+						<label>12319</label>
+						<include>Objects_SingleKeyOff</include>
+					</control>
+
+				</control>
+
+				<control type="group">
+
+					<posy>126</posy>
+					<control type="button" id="20">
+						<description>'C' button</description>
+						<posx>0</posx>
+						<onleft>21</onleft>
+						<onright>10</onright>
+						<onup>17</onup>
+						<ondown>11</ondown>
+						<label>C</label>
+						<include>Objects_SingleKeyOff</include>
+					</control>
+
+					<control type="button" id="10">
+						<description>'0' button</description>
+						<posx>42</posx>
+						<onleft>20</onleft>
+						<onright>21</onright>
+						<onup>18</onup>
+						<ondown>12</ondown>
+						<label>12310</label>
+						<include>Objects_SingleKeyOff</include>
+					</control>
+
+					<control type="button" id="21">
+						<description>'OK' button</description>
+						<posx>84</posx>
+						<onleft>10</onleft>
+						<onright>20</onright>
+						<onup>18</onup>
+						<ondown>12</ondown>
+						<label>E</label>
+						<include>Objects_SingleKeyOff</include>
+					</control>
+
+				</control>
+
+				<!-- FOCUSED BUTTONS -->
+				<control type="group">
+
+					<posy>0</posy>
+					<control type="button">
+						<description>'1' button</description>
+						<posx>0</posx>
+						<label>$INFO[Control.GetLabel(11)]</label>
+						<visible>Control.HasFocus(11)</visible>
+						<include>Objects_SingleKeyOn</include>
+					</control>
+
+					<control type="button">
+						<description>'2' button</description>
+						<posx>42</posx>
+						<label>$INFO[Control.GetLabel(12)]</label>
+						<visible>Control.HasFocus(12)</visible>
+						<include>Objects_SingleKeyOn</include>
+					</control>
+
+					<control type="button">
+						<description>'3' button</description>
+						<posx>84</posx>
+						<label>$INFO[Control.GetLabel(13)]</label>
+						<visible>Control.HasFocus(13)</visible>
+						<include>Objects_SingleKeyOn</include>
+					</control>
+
+				</control>
+
+				<control type="group">
+
+					<posy>42</posy>
+					<control type="button">
+						<description>'4' button</description>
+						<posx>0</posx>
+						<label>$INFO[Control.GetLabel(14)]</label>
+						<visible>Control.HasFocus(14)</visible>
+						<include>Objects_SingleKeyOn</include>
+					</control>
+
+					<control type="button">
+						<description>'5' button</description>
+						<posx>42</posx>
+						<label>$INFO[Control.GetLabel(15)]</label>
+						<visible>Control.HasFocus(15)</visible>
+						<include>Objects_SingleKeyOn</include>
+					</control>
+
+					<control type="button">
+						<description>'6' button</description>
+						<posx>84</posx>
+						<label>$INFO[Control.GetLabel(16)]</label>
+						<visible>Control.HasFocus(16)</visible>
+						<include>Objects_SingleKeyOn</include>
+					</control>
+
+				</control>
+
+				<control type="group">
+
+					<posy>84</posy>
+					<control type="button">
+						<description>'7' button</description>
+						<posx>0</posx>
+						<label>$INFO[Control.GetLabel(17)]</label>
+						<visible>Control.HasFocus(17)</visible>
+						<include>Objects_SingleKeyOn</include>
+					</control>
+
+					<control type="button">
+						<description>'8' button</description>
+						<posx>42</posx>
+						<label>$INFO[Control.GetLabel(18)]</label>
+						<visible>Control.HasFocus(18)</visible>
+						<include>Objects_SingleKeyOn</include>
+					</control>
+
+					<control type="button">
+						<description>'9' button</description>
+						<posx>84</posx>
+						<label>$INFO[Control.GetLabel(19)]</label>
+						<visible>Control.HasFocus(19)</visible>
+						<include>Objects_SingleKeyOn</include>
+					</control>
+
+				</control>
+
+				<control type="group">
+
+					<posy>126</posy>
+					<control type="button">
+						<description>'C' button</description>
+						<posx>0</posx>
+						<label>$INFO[Control.GetLabel(20)]</label>
+						<visible>Control.HasFocus(20)</visible>
+						<include>Objects_SingleKeyOn</include>
+					</control>
+
+					<control type="button">
+						<description>'0' button</description>
+						<posx>42</posx>
+						<label>$INFO[Control.GetLabel(10)]</label>
+						<visible>Control.HasFocus(10)</visible>
+						<include>Objects_SingleKeyOn</include>
+					</control>
+
+					<control type="button">
+						<description>'E' button</description>
+						<posx>84</posx>
+						<label>$INFO[Control.GetLabel(21)]</label>
+						<visible>Control.HasFocus(21)</visible>
+						<include>Objects_SingleKeyOn</include>
+					</control>
+
+				</control>
+
+			</control>
+
+		</control>
+		</control>
+		<include>Lines</include>
+	</controls>
+</window>
