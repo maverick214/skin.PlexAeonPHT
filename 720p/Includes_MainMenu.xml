@@ -30,7 +30,7 @@
 	</include>
 	<include name="MainMenu_Controls_Lower_Activate">
 		<onup>350</onup>
-		<ondown>351</ondown>
+		<ondown>XBMC.ActivateWindow(1111)</ondown>
 	</include>
 
 	<include name="MainMenu_Controls_Center">
