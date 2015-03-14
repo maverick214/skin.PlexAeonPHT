@@ -539,14 +539,14 @@
 						<label fallback="-">[UPPERCASE]$INFO[ListItem.Year][/UPPERCASE]</label>
 						<visible>[!Control.IsVisible(76) + Container.Content(movies)] | Container.Content(albums)</visible>
 					</control>
-		  			<control type="largeimage">
+		  			<control type="image">
 						<include>WatchedOverlaySlim_Low</include>
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
 						<info>ListItem.Overlay</info>
 						<visible>!Container.Content(albums) + Skin.HasSetting(BlueDot)</visible>
 						<animation effect="slide" start="0,0" end="0,7" time="0" condition="true">Conditional</animation>
 		   			</control>
-		   			<control type="largeimage">
+		   			<control type="image">
 						<include>WatchedOverlaySlim_Low</include>
 						<texture>NewLabel/$INFO[ListItem.Overlay]</texture>
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
@@ -638,14 +638,14 @@
 						<visible>!Control.IsVisible(76) + ![Container.Content(albums) | Window.IsActive(25)]</visible>
 					</control>
 
-		  			<control type="largeimage">
+		  			<control type="image">
 						<include>WatchedOverlaySlim_Low</include>
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
 						<info>ListItem.Overlay</info>
 						<visible>!Container.Content(albums) + Skin.HasSetting(BlueDot)</visible>
 						<animation effect="slide" start="0,0" end="0,7" time="0" condition="true">Conditional</animation>
 		   			</control>
-		   			<control type="largeimage">
+		   			<control type="image">
 						<include>WatchedOverlaySlim_Low</include>
 						<texture>NewLabel/$INFO[ListItem.Overlay]</texture>
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
@@ -786,14 +786,14 @@
 
 					<include>ListLabel_Detail_LowAlbumCover_Low</include>
 
-		  			<control type="largeimage">
+		  			<control type="image">
 						<include>WatchedOverlayFull_Low</include>
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
 						<info>ListItem.Overlay</info>
 						<visible>!Container.Content(albums) + Skin.HasSetting(BlueDot)</visible>
 						<animation effect="slide" start="0,0" end="-7,20" time="0" condition="true">Conditional</animation>
 		   			</control>
-		   			<control type="largeimage">
+		   			<control type="image">
 						<include>WatchedOverlayFull_Low</include>
 						<texture>NewLabel/$INFO[ListItem.Overlay]</texture>
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
@@ -944,14 +944,14 @@
 
 					<include>ListLabel_Detail_LowAlbumCover_Low</include>
 
-		  			<control type="largeimage">
+		  			<control type="image">
 						<include>WatchedOverlayFull_Low</include>
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
 						<info>ListItem.Overlay</info>
 						<visible>!Container.Content(albums) + Skin.HasSetting(BlueDot)</visible>
 						<animation effect="slide" start="0,0" end="-7,20" time="0" condition="true">Conditional</animation>
 		   			</control>
-		   			<control type="largeimage">
+		   			<control type="image">
 						<include>WatchedOverlayFull_Low</include>
 						<texture>NewLabel/$INFO[ListItem.Overlay]</texture>
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
@@ -1027,7 +1027,7 @@
 						<visible>Container.Content(episodes)</visible>
 					</control>
 
-		  			<control type="largeimage">
+		  			<control type="image">
 						<include>WatchedOverlaySlim_Low</include>
 						<include>detailcolornofocus</include>
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
@@ -1035,7 +1035,7 @@
 						<animation effect="slide" start="0,0" end="0,7" time="0" condition="true">Conditional</animation>
 						<visible>!Container.Content(albums) + Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-		   			<control type="largeimage">
+		   			<control type="image">
 						<include>WatchedOverlaySlim_Low</include>
 						<include>detailcolornofocus</include>
 						<texture>NewLabel/$INFO[ListItem.Overlay]</texture>
@@ -1119,14 +1119,14 @@
 						<visible>Container.Content(episodes)</visible>
 					</control>
 
-		  			<control type="largeimage">
+		  			<control type="image">
 						<include>WatchedOverlaySlim_Low</include>
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
 						<info>ListItem.Overlay</info>
 						<visible>!Container.Content(albums) + Skin.HasSetting(BlueDot)</visible>
 						<animation effect="slide" start="0,0" end="0,7" time="0" condition="true">Conditional</animation>
 		   			</control>
-		   			<control type="largeimage">
+		   			<control type="image">
 						<include>WatchedOverlaySlim_Low</include>
 						<texture>NewLabel/$INFO[ListItem.Overlay]</texture>
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>

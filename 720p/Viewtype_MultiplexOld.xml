@@ -49,7 +49,7 @@
                         <include>MovieFlowGlassOverlay</include>
 						<visible>!Control.IsVisible(9000)</visible>
                     </control>
-				<control type="largeimage">
+				<control type="image">
 					<posx>152</posx>
 					<posy>220</posy>
 					<width>70</width>
@@ -58,7 +58,7 @@
 					<texture>$INFO[ListItem.Property(mediaTag-videoResolution),hd/,.png]</texture>
 					<visible>!Skin.HasSetting(HDiconOff)</visible>
 				</control>
-				<control type="largeimage">
+				<control type="image">
 					<posx>141</posx>
 					<posy>5</posy>
 					<width>80</width>
@@ -67,7 +67,7 @@
 					<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
 					<info>ListItem.Overlay</info>
 				</control>
-				<control type="largeimage">
+				<control type="image">
 					<posx>141</posx>
 					<posy>5</posy>
 					<width>80</width>
@@ -95,7 +95,7 @@
 						<animation effect="zoom" start="100" end="120" center="135,130" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
 						<animation effect="zoom" start="120" end="100" center="135,130" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(55)">Unfocus</animation>
 					</control>
-				<control type="largeimage">
+				<control type="image">
 					<posx>152</posx>
 					<posy>220</posy>
 					<width>70</width>
@@ -107,7 +107,7 @@
 					<animation effect="zoom" start="120" end="100" center="135,130" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(55)">Unfocus</animation>
 					<visible>!Skin.HasSetting(HDiconOff)</visible>
 				</control>
-				<control type="largeimage">
+				<control type="image">
 					<posx>141</posx>
 					<posy>5</posy>
 					<width>80</width>
@@ -118,7 +118,7 @@
 					<animation effect="zoom" start="100" end="120" center="135,130" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
 					<animation effect="zoom" start="120" end="100" center="135,130" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(55)">Unfocus</animation>
 				</control>
-				<control type="largeimage">
+				<control type="image">
 					<posx>141</posx>
 					<posy>5</posy>
 					<width>80</width>
@@ -145,7 +145,7 @@
                         <info>ListItem.Icon</info>
 						<visible>!Control.IsVisible(9000) + Container.Content(episodes)</visible>
                     </control>
-					<control type="largeimage">
+					<control type="image">
 						<posx>-501</posx>
 						<posy>11</posy>
 						<width>80</width>
@@ -154,7 +154,7 @@
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
 						<info>ListItem.Overlay</info>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<posx>-521</posx>
 						<posy>12</posy>
 						<width>110</width>
@@ -180,7 +180,7 @@
 						<animation effect="zoom" start="100" end="120" center="auto" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
 						<animation effect="zoom" start="120" end="100" center="auto" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(55)">Unfocus</animation>
                    </control>
-					<control type="largeimage">
+					<control type="image">
 						<posx>-501</posx>
 						<posy>11</posy>
 						<width>80</width>
@@ -191,7 +191,7 @@
 						<animation effect="zoom" center="-616,135" start="100" end="120" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
 						<animation effect="zoom" start="120" end="100" center="-616,135" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(55)">Unfocus</animation>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<posx>-521</posx>
 						<posy>12</posy>
 						<width>110</width>

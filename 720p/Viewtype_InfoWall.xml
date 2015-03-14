@@ -86,7 +86,7 @@
              <texture background="true" diffuse="wall/wall_movie_mask.png">$INFO[ListItem.Art(banner)]</texture>
  						<animation effect="fade" start="70" end="70" time="0" condition="true">Conditional</animation>
            </control>
-			<control type="largeimage">
+			<control type="image">
               <posx>327</posx>
               <posy>25</posy>
    	          <width>45</width>
@@ -96,7 +96,7 @@
 			  <visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
 			  <info>ListItem.Overlay</info>
 			</control>
-			<control type="largeimage">
+			<control type="image">
               <posx>327</posx>
               <posy>25</posy>
               <width>45</width>
@@ -134,7 +134,7 @@
 	<!--			<bordertexture border="-18">wall/boxes/bannerborder.png</bordertexture> -->
               </control>
 
-			<control type="largeimage">
+			<control type="image">
               <posx>327</posx>
               <posy>25</posy>
    	          <width>45</width>
@@ -145,7 +145,7 @@
 			  <visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
 			  <info>ListItem.Overlay</info>
 			</control>
-			<control type="largeimage">
+			<control type="image">
               <posx>327</posx>
               <posy>25</posy>
               <width>45</width>
@@ -199,7 +199,7 @@
               <texture background="true">wall/boxes/wall_nfoverlay.png</texture>
               <visible>Skin.HasSetting(useclearcasesinfowall)</visible>
             </control>
-			<control type="largeimage">
+			<control type="image">
 				<posx>73</posx>
 				<posy>150</posy>
 				<width>45</width>
@@ -208,7 +208,7 @@
 				<texture>$INFO[ListItem.Property(mediaTag-videoResolution),hd/,.png]</texture>
 				<visible>!Skin.HasSetting(HDiconOff)</visible>
 			</control>
-			<control type="largeimage">
+			<control type="image">
 	          <posx>73</posx>
    	          <posy>4</posy>
    	          <width>45</width>
@@ -218,7 +218,7 @@
 			  <visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
 			  <info>ListItem.Overlay</info>
 			</control>
-			<control type="largeimage">
+			<control type="image">
               <posx>70</posx>
               <posy>4</posy>
               <width>45</width>
@@ -274,7 +274,7 @@
         	    <animation effect="zoom" center="58,89" start="100" end="120" time="400" easing="out" tween="back" reversible="false">Focus</animation>
                 <visible>Skin.HasSetting(useclearcasesinfowall)</visible>
               </control>
-			<control type="largeimage">
+			<control type="image">
 				<posx>73</posx>
 				<posy>150</posy>
 				<width>45</width>
@@ -284,7 +284,7 @@
         	    <animation effect="zoom" center="58,89" start="100" end="120" time="400" easing="out" tween="back" reversible="false">Focus</animation>
 				<visible>!Skin.HasSetting(HDiconOff)</visible>
 			</control>
-			<control type="largeimage">
+			<control type="image">
 	          <posx>73</posx>
    	          <posy>4</posy>
    	          <width>45</width>
@@ -295,7 +295,7 @@
 			  <visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
 			  <info>ListItem.Overlay</info>
 			</control>
-			<control type="largeimage">
+			<control type="image">
               <posx>70</posx>
               <posy>4</posy>
               <width>45</width>
@@ -335,7 +335,7 @@
               <aspectratio scalediffuse="false">stretch</aspectratio>
               <texture background="true">thumbs/boxes/Overlay.png</texture>
             </control>
-			<control type="largeimage">
+			<control type="image">
               <posx>71</posx>
               <posy>24</posy>
               <width>40</width>
@@ -345,7 +345,7 @@
 			  <visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
 			  <info>ListItem.Overlay</info>
 			</control>
-			<control type="largeimage">
+			<control type="image">
               <posx>67</posx>
               <posy>20</posy>
               <width>40</width>
@@ -406,7 +406,7 @@
                 <texture background="true">thumbs/boxes/Overlay.png</texture>
               <animation effect="zoom" center="58,93" start="100" end="120" time="400" easing="out" tween="back" reversible="false">Focus</animation>
               </control>
-			<control type="largeimage">
+			<control type="image">
               <posx>71</posx>
               <posy>24</posy>
               <width>40</width>
@@ -417,7 +417,7 @@
 			  <visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
 			  <info>ListItem.Overlay</info>
 			</control>
-			<control type="largeimage">
+			<control type="image">
               <posx>67</posx>
               <posy>20</posy>
               <width>40</width>
@@ -492,7 +492,7 @@
               <label>$LOCALIZE[20359] $INFO[ListItem.Episode]</label>
               <visible>Container.Content(episodes)</visible>
             </control>
-            <control type="largeimage">
+            <control type="image">
               <posx>199</posx>
               <posy>16</posy>
               <width>50</width>
@@ -502,7 +502,7 @@
 			  <visible>Skin.HasSetting(BlueDot)</visible>
 			  <visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
             </control>
-            <control type="largeimage">
+            <control type="image">
               <posx>196</posx>
               <posy>16</posy>
               <width>50</width>
@@ -548,7 +548,7 @@
               <animation effect="zoom" center="125,89" start="100" end="120" time="400" easing="out" tween="back" reversible="false">Focus</animation>
               </control>
 -->
-            <control type="largeimage">
+            <control type="image">
               <posx>196</posx>
               <posy>16</posy>
               <width>50</width>
@@ -559,7 +559,7 @@
 			  <visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
               <animation effect="zoom" center="125,89" start="100" end="120" time="400" easing="out" tween="back" reversible="false">Focus</animation>
             </control>
-            <control type="largeimage">
+            <control type="image">
               <posx>199</posx>
               <posy>16</posy>
               <width>50</width>

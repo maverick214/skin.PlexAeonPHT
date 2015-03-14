@@ -124,7 +124,7 @@
 						<aspectratio scalediffuse="false">stretch</aspectratio>
 						<visible>!Container.Content(Genres)</visible>
 					</control>
-				    <control type="largeimage">
+				    <control type="image">
 						<posx>-46</posx>
 						<posy>129</posy>
 						<width>60</width>
@@ -134,7 +134,7 @@
 						<visible>!Container.Content(albums) + Skin.HasSetting(BlueDot)</visible>
 				        <animation effect="fade" start="70" end="70" time="0" condition="true">Conditional</animation>
 				    </control>
-				    <control type="largeimage">
+				    <control type="image">
 						<posx>-46</posx>
 						<posy>129</posy>
 						<width>60</width>
@@ -239,7 +239,7 @@
 						</animation>
 						<visible>!Container.Content(Genres)</visible>
 					</control>
-				    <control type="largeimage">
+				    <control type="image">
 						<posx>2</posx>
 						<posy>113</posy>
 						<width>60</width>
@@ -252,7 +252,7 @@
 							<effect type="fade" start="0" end="100" time="600" />
 						</animation>
 				    </control>
-				    <control type="largeimage">
+				    <control type="image">
 						<posx>2</posx>
 						<posy>113</posy>
 						<width>60</width>

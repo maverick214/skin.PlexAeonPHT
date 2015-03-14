@@ -4959,7 +4959,7 @@
 					<aspectratio scalediffuse="false">stretch</aspectratio>
 				    <texture>thumbs/poster_glass_noedge.png</texture>
 				</control>		
-				<control type="largeimage">
+				<control type="image">
 					<posx>48</posx>
 					<posy>131</posy>
 					<width>54</width>
@@ -4968,7 +4968,7 @@
 					<texture>$INFO[ListItem.Property(mediaTag-videoResolution),hd/,.png]</texture>
 					<visible>!Skin.HasSetting(HDiconOff)</visible>
 				</control>
-				<control type="largeimage">
+				<control type="image">
 					<posx>43</posx>
 					<posy>18</posy>
 					<width>50</width>
@@ -4977,7 +4977,7 @@
 					<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
 					<info>ListItem.Overlay</info>
 				</control>
-				<control type="largeimage">
+				<control type="image">
 					<posx>43</posx>
 					<posy>18</posy>
 					<width>50</width>
@@ -5005,7 +5005,7 @@
 					<animation effect="zoom" center="45,75" start="100" end="115" time="400" delay="200" easing="out" tween="cubic" reversible="true">Focus</animation>					
 					<animation effect="zoom" center="45,75" start="115" end="100" time="400" delay="200" easing="out" tween="cubic" reversible="true">Unfocus</animation>					
 				</control>		
-				<control type="largeimage">
+				<control type="image">
 					<posx>48</posx>
 					<posy>131</posy>
 					<width>54</width>
@@ -5016,7 +5016,7 @@
 					<animation effect="zoom" center="45,75" start="115" end="100" time="400" delay="200" easing="out" tween="cubic" reversible="true">Unfocus</animation>					
 					<visible>!Skin.HasSetting(HDiconOff)</visible>
 				</control>
-				<control type="largeimage">
+				<control type="image">
 					<posx>43</posx>
 					<posy>18</posy>
 					<width>50</width>
@@ -5027,7 +5027,7 @@
 					<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
 					<info>ListItem.Overlay</info>
 				</control>
-				<control type="largeimage">
+				<control type="image">
 					<posx>43</posx>
 					<posy>18</posy>
 					<width>50</width>
@@ -6134,12 +6134,12 @@
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(6).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(6).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6162,12 +6162,12 @@
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(5).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(5).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6190,12 +6190,12 @@
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(4).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(4).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6218,12 +6218,12 @@
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(3).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(3).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6246,12 +6246,12 @@
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(2).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(2).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6274,12 +6274,12 @@
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(1).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(1).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6307,12 +6307,12 @@
 	                        <description>Black overlay</description>
 	                        <include>MovieFlowOverlay</include>
 	                    </control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(0).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(0).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6336,12 +6336,12 @@
 	                        <description>Black overlay</description>
 	                        <include>MovieFlowOverlay</include>
 	                    </control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(-1).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(-1).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6372,12 +6372,12 @@
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(7).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(7).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6400,12 +6400,12 @@
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(6).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(6).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6428,12 +6428,12 @@
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(5).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(5).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6456,12 +6456,12 @@
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(4).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(4).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6484,12 +6484,12 @@
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(3).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(3).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6512,12 +6512,12 @@
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(2).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(2).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6655,12 +6655,12 @@
 	                        <description>Black overlay</description>
 	                        <include>MovieFlowOverlay</include>
 	                    </control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(0).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(0).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6684,12 +6684,12 @@
 	                        <description>Black overlay</description>
 	                        <include>MovieFlowOverlay</include>
 	                    </control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(0).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(0).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6858,12 +6858,12 @@
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(6).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(6).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6890,12 +6890,12 @@
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(5).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(5).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6922,12 +6922,12 @@
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(4).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(4).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6954,12 +6954,12 @@
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(3).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(3).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -6986,12 +6986,12 @@
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(2).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(2).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -7018,12 +7018,12 @@
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(1).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(1).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -7045,12 +7045,12 @@
 	                    <description>Black overlay</description>
 	                    <include>MovieFlowOverlay</include>
 	                </control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem(0).Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem(0).overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -7096,12 +7096,12 @@
 						<texture>$INFO[ListItem.Property(mediaTag-videoResolution),hd/,.png]</texture>
 						<visible>!Skin.HasSetting(HDiconOff) + Skin.HasSetting(flattenflow)</visible>
 					</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem.Overlay</info>
 						<visible>Skin.HasSetting(flattenflow) + !Control.IsVisible(9000) + !Container.Content(episodes) + Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem.overlay]</texture>
 						<visible>Skin.HasSetting(flattenflow) + !Control.IsVisible(9000) + !Container.Content(episodes) + !Skin.HasSetting(BlueDot)</visible>
@@ -7122,14 +7122,14 @@
 						<animation effect="zoom" start="100" end="110" center="135,130" time="400" delay="300" easing="out" reversible="false" tween="cubic">Focus</animation>
 						<animation effect="zoom" start="110" end="100" center="135,130" time="400" delay="300" easing="out" reversible="false" tween="cubic">Unfocus</animation>
 					</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<info>ListItem.Overlay</info>
 						<visible>Skin.HasSetting(flattenflow) + !Control.IsVisible(9000) + !Container.Content(episodes) + Skin.HasSetting(BlueDot)</visible>
 						<animation effect="zoom" start="100" end="110" center="135,130" time="400" delay="300" easing="out" reversible="false" tween="cubic">Focus</animation>
 						<animation effect="zoom" start="110" end="100" center="135,130" time="400" delay="300" easing="out" reversible="false" tween="cubic">Unfocus</animation>
 		   			</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>MovieWatchedIcon</include>
 						<texture>NewLabel/$INFO[ListItem.overlay]</texture>
 						<visible>Skin.HasSetting(flattenflow) + !Control.IsVisible(9000) + !Container.Content(episodes) + !Skin.HasSetting(BlueDot)</visible>
@@ -7160,12 +7160,12 @@
                         <info>ListItem.Icon</info>
 						<visible>Container.Content(episodes)</visible>
                     </control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>TVWatchedIcon</include>
 						<info>ListItem.Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 		   			</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>TVWatchedIcon</include>
 						<texture>NewLabel/episode/$INFO[ListItem.overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -7184,14 +7184,14 @@
 						<animation effect="zoom" start="100" end="110" center="auto" time="400" delay="300" easing="out" reversible="false" tween="cubic">Focus</animation>
 						<animation effect="zoom" start="110" end="100" center="auto" time="400" delay="300" easing="out" reversible="false" tween="cubic">Unfocus</animation>
                    </control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>TVWatchedIcon</include>
 						<info>ListItem.Overlay</info>
 						<visible>Skin.HasSetting(BlueDot)</visible>
 						<animation effect="zoom" center="-616,135" start="100" end="110" time="400" delay="300" easing="out" reversible="false" tween="cubic">Focus</animation>
 						<animation effect="zoom" center="-616,135" start="110" end="100" time="400" delay="300" easing="out" reversible="false" tween="cubic">Unfocus</animation>
 		   			</control>
-				    <control type="largeimage">
+				    <control type="image">
                         <include>TVWatchedIcon</include>
 						<texture>NewLabel/episode/$INFO[ListItem.overlay]</texture>
 						<visible>!Skin.HasSetting(BlueDot)</visible>

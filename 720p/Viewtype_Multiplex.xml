@@ -1025,13 +1025,13 @@
 			<info>ListItem.Icon</info>
 		</control>
  
- 		<control type="largeimage">
+ 		<control type="image">
 			<include>WatchedOverlayMultiPlexNormal</include>
 			<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
 			<visible>Skin.HasSetting(BlueDot)</visible>
 			<info>ListItem.Overlay</info>
 		</control>
-		<control type="largeimage">
+		<control type="image">
 			<include>WatchedOverlayMultiPlexNormal</include>
 			<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
 			<visible>!Skin.HasSetting(BlueDot)</visible>
@@ -1087,14 +1087,14 @@
 			<visible>!Skin.HasSetting(HDiconOff)</visible>
 		</control>
  
-		<control type="largeimage">
+		<control type="image">
 			<include>WatchedOverlayMultiPlexNormal</include>
 			<visible>Skin.HasSetting(BlueDot)</visible>
 			<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
 			<info>ListItem.Overlay</info>
 			<include>Animation_MultiplexFocusZoom</include>
 		</control>
-		<control type="largeimage">
+		<control type="image">
 			<include>WatchedOverlayMultiPlexNormal</include>
 			<visible>!Skin.HasSetting(BlueDot)</visible>
 			<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
@@ -1159,14 +1159,14 @@
 			<aspectratio scalediffuse="false">scale</aspectratio>
 		</control>
  
-		<control type="largeimage">
+		<control type="image">
 			<include>WatchedOverlayMultiPlexDVD</include>
 			<visible>Skin.HasSetting(BlueDot)</visible>
 			<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
 			<info>ListItem.Overlay</info>
 			<include>Animation_MultiplexFocusZoom</include>
 		</control>
-		<control type="largeimage">
+		<control type="image">
 			<include>WatchedOverlayMultiPlexDVD</include>
 			<visible>!Skin.HasSetting(BlueDot)</visible>
 			<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
@@ -1239,14 +1239,14 @@
 			<include>Animation_MultiplexFocusZoomDVD</include>
 		</control>
  
-		<control type="largeimage">
+		<control type="image">
 			<include>WatchedOverlayMultiPlexDVD</include>
 			<visible>Skin.HasSetting(BlueDot)</visible>
 			<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
 			<info>ListItem.Overlay</info>
 			<include>Animation_MultiplexFocusZoomDVD</include>
 		</control>
-		<control type="largeimage">
+		<control type="image">
 			<include>WatchedOverlayMultiPlexDVD</include>
 			<visible>!Skin.HasSetting(BlueDot)</visible>
 			<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>

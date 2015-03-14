@@ -211,7 +211,7 @@
 				<include>listcolornofocus</include>
 				<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
 			</control>			
-		    <control type="largeimage">
+		    <control type="image">
 				<posx>690</posx>
 				<posy>2</posy>
 				<width>53</width>
@@ -221,7 +221,7 @@
 				<visible>!Container.Content(albums) + Skin.HasSetting(BlueDot)</visible>
 		        <animation effect="fade" start="70" end="70" time="0" condition="true">Conditional</animation>
 		    </control>
-		    <control type="largeimage">
+		    <control type="image">
 				<posx>705</posx>
 				<posy>0</posy>
 				<width>45</width>
@@ -318,7 +318,7 @@
 				<animation effect="slide" start="0,0" end="-665,0" time="0" easing="inout" tween="cubic" condition="Container.Content(episodes)">Conditional</animation>
 				<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
 			</control>			
-		    <control type="largeimage">
+		    <control type="image">
 				<posx>690</posx>
 				<posy>2</posy>
 				<width>53</width>
@@ -328,7 +328,7 @@
 				<visible>!Container.Content(albums) + Skin.HasSetting(BlueDot)</visible>
 		        <animation effect="fade" start="70" end="70" time="0" condition="true">Conditional</animation>
 		    </control>
-		    <control type="largeimage">
+		    <control type="image">
 				<posx>705</posx>
 				<posy>0</posy>
 				<width>45</width>

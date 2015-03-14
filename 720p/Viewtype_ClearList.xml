@@ -306,7 +306,7 @@
         		<bordersize>10</bordersize>
 				<visible>Window.IsActive(25) + ![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)]</visible>
 			</control>
-			<control type="largeimage">
+			<control type="image">
 				<posx>350</posx>
 				<posy>25</posy>
 				<width>53</width>
@@ -318,7 +318,7 @@
 				<visible>Skin.HasSetting(BlueDot)</visible>
 				<animation effect="fade" start="40" time="200" delay="3000" condition="true" pulse="true">Conditional</animation> 
 			</control>
-			<control type="largeimage">
+			<control type="image">
 				<posx>349</posx>
 				<posy>15</posy>
 				<width>60</width>
@@ -1078,7 +1078,7 @@
 						<label>$INFO[ListItem.Title]</label>
 						<visible>Container.Content(episodes) + !Skin.HasSetting(oldCListInfo)</visible>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<posx>405</posx>
 						<posy>2</posy>
 						<width>53</width>
@@ -1089,7 +1089,7 @@
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
 						<visible>!Container.Content(albums) + Skin.HasSetting(BlueDot)</visible>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<posx>405</posx>
 						<posy>-2</posy>
 						<width>43</width>
@@ -1175,7 +1175,7 @@
 						<label>$INFO[ListItem.Title]</label>
 						<visible>Container.Content(episodes) + !Skin.HasSetting(oldCListInfo)</visible>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<posx>405</posx>
 						<posy>2</posy>
 						<width>53</width>
@@ -1185,7 +1185,7 @@
 						<visible>[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]</visible>
 						<visible>!Container.Content(albums) + Skin.HasSetting(BlueDot)</visible>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<posx>405</posx>
 						<posy>-2</posy>
 						<width>43</width>

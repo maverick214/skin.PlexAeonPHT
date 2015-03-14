@@ -2049,14 +2049,14 @@
 						<description>Glass overlay reflection</description>
 						<include>MovieShowcaseThumbReflectionDVD</include>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
 						<visible>[[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]]+ Skin.HasSetting(BlueDot)</visible>
 						<info>ListItem(5).Overlay</info>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
@@ -2085,14 +2085,14 @@
 						<description>Glass overlay reflection</description>
 						<include>MovieShowcaseThumbReflectionDVD</include>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
 						<visible>[[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]]+ Skin.HasSetting(BlueDot)</visible>
 						<info>ListItem(4).Overlay</info>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
@@ -2121,14 +2121,14 @@
 						<description>Glass overlay reflection</description>
 						<include>MovieShowcaseThumbReflectionDVD</include>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
 						<visible>[[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]]+ Skin.HasSetting(BlueDot)</visible>
 						<info>ListItem(3).Overlay</info>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
@@ -2157,14 +2157,14 @@
 						<description>Glass overlay reflection</description>
 						<include>MovieShowcaseThumbReflectionDVD</include>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
 						<visible>[[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]]+ Skin.HasSetting(BlueDot)</visible>
 						<info>ListItem(2).Overlay</info>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
@@ -2193,14 +2193,14 @@
 						<description>Glass overlay reflection</description>
 						<include>MovieShowcaseThumbReflectionDVD</include>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
 						<visible>[[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]]+ Skin.HasSetting(BlueDot)</visible>
 						<info>ListItem(1).Overlay</info>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
@@ -2234,14 +2234,14 @@
 							<description>Glass overlay reflection</description>
 							<include>MovieShowcaseThumbReflectionDVD</include>
 						</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
 						<visible>[[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]]+ Skin.HasSetting(BlueDot)</visible>
 						<info>ListItem.Overlay</info>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
@@ -2271,14 +2271,14 @@
 							<description>Glass overlay reflection</description>
 							<include>MovieShowcaseThumbReflectionDVD</include>
 						</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
 						<visible>[[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]]+ Skin.HasSetting(BlueDot)</visible>
 						<info>ListItem(-1).Overlay</info>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
@@ -2316,14 +2316,14 @@
 						<description>Glass overlay reflection</description>
 						<include>MovieShowcaseThumbReflectionDVD</include>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
 						<visible>[[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]]+ Skin.HasSetting(BlueDot)</visible>
 						<info>ListItem(7).Overlay</info>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
@@ -2352,14 +2352,14 @@
 						<description>Glass overlay reflection</description>
 						<include>MovieShowcaseThumbReflectionDVD</include>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
 						<visible>[[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]]+ Skin.HasSetting(BlueDot)</visible>
 						<info>ListItem(6).Overlay</info>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
@@ -2388,14 +2388,14 @@
 						<description>Glass overlay reflection</description>
 						<include>MovieShowcaseThumbReflectionDVD</include>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
 						<visible>[[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]]+ Skin.HasSetting(BlueDot)</visible>
 						<info>ListItem(5).Overlay</info>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
@@ -2425,14 +2425,14 @@
 						<description>Glass overlay reflection</description>
 						<include>MovieShowcaseThumbReflectionDVD</include>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
 						<visible>[[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]]+ Skin.HasSetting(BlueDot)</visible>
 						<info>ListItem(4).Overlay</info>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
@@ -2461,14 +2461,14 @@
 						<description>Glass overlay reflection</description>
 						<include>MovieShowcaseThumbReflectionDVD</include>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
 						<visible>[[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]]+ Skin.HasSetting(BlueDot)</visible>
 						<info>ListItem(3).Overlay</info>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
@@ -2497,14 +2497,14 @@
 						<description>Glass overlay reflection</description>
 						<include>MovieShowcaseThumbReflectionDVD</include>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
 						<visible>[[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]]+ Skin.HasSetting(BlueDot)</visible>
 						<info>ListItem(2).Overlay</info>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
@@ -2672,14 +2672,14 @@
 							<description>Glass overlay reflection</description>
 							<include>MovieShowcaseThumbReflectionDVD</include>
 						</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
 						<visible>[[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]]+ Skin.HasSetting(BlueDot)</visible>
 						<info>ListItem.Overlay</info>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
@@ -2709,14 +2709,14 @@
 							<description>Glass overlay reflection</description>
 							<include>MovieShowcaseThumbReflectionDVD</include>
 						</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
 						<visible>[[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]]+ Skin.HasSetting(BlueDot)</visible>
 						<info>ListItem(1).Overlay</info>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
@@ -2888,14 +2888,14 @@
 						<description>Glass overlay reflection</description>
 						<include>MovieShowcaseThumbReflectionDVD</include>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
 						<visible>[[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]]+ Skin.HasSetting(BlueDot)</visible>
 						<info>ListItem(-1).Overlay</info>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
@@ -2928,14 +2928,14 @@
 						<description>Glass overlay reflection</description>
 						<include>MovieShowcaseThumbReflectionDVD</include>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
 						<visible>[[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]]+ Skin.HasSetting(BlueDot)</visible>
 						<info>ListItem(6).Overlay</info>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
@@ -2968,14 +2968,14 @@
 						<description>Glass overlay reflection</description>
 						<include>MovieShowcaseThumbReflectionDVD</include>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
 						<visible>[[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]]+ Skin.HasSetting(BlueDot)</visible>
 						<info>ListItem(5).Overlay</info>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
@@ -3008,14 +3008,14 @@
 						<description>Glass overlay reflection</description>
 						<include>MovieShowcaseThumbReflectionDVD</include>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
 						<visible>[[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]]+ Skin.HasSetting(BlueDot)</visible>
 						<info>ListItem(4).Overlay</info>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
@@ -3048,14 +3048,14 @@
 						<description>Glass overlay reflection</description>
 						<include>MovieShowcaseThumbReflectionDVD</include>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
 						<visible>[[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]]+ Skin.HasSetting(BlueDot)</visible>
 						<info>ListItem(3).Overlay</info>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
@@ -3088,14 +3088,14 @@
 						<description>Glass overlay reflection</description>
 						<include>MovieShowcaseThumbReflectionDVD</include>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
 						<visible>[[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]]+ Skin.HasSetting(BlueDot)</visible>
 						<info>ListItem(2).Overlay</info>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
@@ -3128,14 +3128,14 @@
 						<description>Glass overlay reflection</description>
 						<include>MovieShowcaseThumbReflectionDVD</include>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
 						<visible>[[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]]+ Skin.HasSetting(BlueDot)</visible>
 						<info>ListItem(1).Overlay</info>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
@@ -3163,14 +3163,14 @@
 						<description>Glass overlay reflection</description>
 						<include>MovieShowcaseThumbReflectionDVDMain</include>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
 						<visible>[[Container.Content(Movies) + !Skin.HasSetting(nomovieoverlays)] | [!Container.Content(Movies) + !Skin.HasSetting(notvoverlays)]]+ Skin.HasSetting(BlueDot)</visible>
 						<info>ListItem.Overlay</info>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
@@ -3267,7 +3267,7 @@
 						<include>MovieShowcaseThumbReflectionDVD</include>
 						<visible>Skin.HasSetting(flattenshowcase) + !Control.IsVisible(6000)</visible>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
@@ -3275,7 +3275,7 @@
 						<visible>Skin.HasSetting(flattenshowcase) + !Control.IsVisible(6000) + Skin.HasSetting(BlueDot)</visible>
 						<texture>$INFO[ListItem.overlay]</texture>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
@@ -3333,7 +3333,7 @@
 						<animation effect="zoom" start="100" end="105" center="135,120" time="400" delay="400" easing="out" reversible="false" tween="cubic">Focus</animation>
 						<animation effect="zoom" start="105" end="100" center="135,120" time="400" easing="out" reversible="false" tween="cubic" condition="Skin.HasSetting(flattenshowcase)">Unfocus</animation>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
@@ -3343,7 +3343,7 @@
 						<animation effect="zoom" start="100" end="105" center="135,120" time="400" delay="400" easing="out" reversible="false" tween="cubic">Focus</animation>
 						<animation effect="zoom" start="105" end="100" center="135,120" time="400" easing="out" reversible="false" tween="cubic" condition="Skin.HasSetting(flattenshowcase)">Unfocus</animation>
 					</control>
-					<control type="largeimage">
+					<control type="image">
 						<include condition="!Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseNormal</include>
 						<include condition="Skin.HasSetting(dvdcase)">WatchedOverlayShowCaseDVD</include>
 						<include>detailcolornofocus</include>
