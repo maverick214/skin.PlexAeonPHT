@@ -433,14 +433,14 @@
 							<!-----------    EXTRAS AND TRAILERS -------->
 
 		<control type="group">
-			<visible>Control.HasFocus(103) | Control.HasFocus(3)</visible>
+			<visible>Control.HasFocus(103) | Control.HasFocus(30)</visible>
 			<control type="group">
 				<posx>0</posx>
 				<posy>20</posy>
 <!--				<control type="label">
 					<posx>36</posx>
 					<posy>40</posy>
-					<label>$LOCALIZE[41008] ($INFO[Container(3).NumItems])</label>
+					<label>$LOCALIZE[41008] ($INFO[Container(30).NumItems])</label>
 					<font>Bold-36</font>
 					<include>WhiteShadow</include>
 				</control>
@@ -449,11 +449,11 @@
 				<control type="group">
 					<posy>228</posy>
 					<posx>0</posx>
-					<control type="fixedlist" id="3">
+					<control type="fixedlist" id="30">
 						<width>750</width>
 						<height>340</height>
-						<onleft>3</onleft>
-						<onright>3</onright>
+						<onleft>30</onleft>
+						<onright>30</onright>
 						<onup>998</onup>
 						<ondown></ondown>
 						<pagecontrol>61</pagecontrol>
@@ -597,11 +597,11 @@
 					<texturefocus>windows/listselectbar.png</texturefocus>
 					<colordiffuse>FF7EBFFF</colordiffuse>
 					<onup>102</onup>
-					<ondown>3</ondown>
+					<ondown>30</ondown>
 					<onright>110</onright>
 					<onunfocus>Skin.Reset(DialogPos)</onunfocus>
-					<onclick>SetFocus(3)</onclick>
-					<animation effect="fade" start="100" end="20" time="200" condition="StringCompare(Container(3).NumItems,0)">Conditional</animation>
+					<onclick>SetFocus(30)</onclick>
+					<animation effect="fade" start="100" end="20" time="200" condition="StringCompare(Container(30).NumItems,0)">Conditional</animation>
 				</control>
 				<!-- Audio -->
 				<control type="button" id="110">
@@ -689,7 +689,7 @@
 			<include>White_OffWhite</include>
       		<visible>!Control.IsVisible(50)</visible>
       		<visible>!Control.HasFocus(103)</visible>
-      		<visible>!Control.HasFocus(3)</visible>
+      		<visible>!Control.HasFocus(30)</visible>
 
 		</control>
 
@@ -713,7 +713,7 @@
 			<width>128</width>
 			<height>128</height>
 			<texture>film.png</texture>
-			<visible>!StringCompare(Container(3).NumItems,0)</visible>
+			<visible>!StringCompare(Container(30).NumItems,0)</visible>
       		<colordiffuse>FFFFFF00</colordiffuse>
 		</control>
 	 
